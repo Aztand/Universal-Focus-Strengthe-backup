@@ -1,0 +1,35 @@
+default = {
+	ufo = {
+		pool = {
+			icons = {
+				GFX_ufo_2_medium
+				
+			}
+			models = {
+				FRA_light_plane_entity
+			}
+		}
+	}
+	ufo_0 = {
+		pool = {
+			icons = {
+				GFX_ufo_2_medium
+				
+			}
+			models = {
+				FRA_light_plane_entity
+			}
+		}
+	}
+	ufo_2 = {
+		pool = {
+			icons = {
+				GFX_ufo_2_medium
+				
+			}
+			models = {
+				FRA_light_plane_entity
+			}
+		}
+	}
+}

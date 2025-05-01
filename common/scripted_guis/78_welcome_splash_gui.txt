@@ -1,0 +1,23 @@
+scripted_gui = {
+	TYGC_welcome_splash = {
+		context_type = player_context
+		window_name = "TYGC_welcome_splash_container"
+		dirty = TYGC_welcome_splash_variable
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = show_welcome_splash
+		}
+
+		effects = {
+			options_button_click = {
+				clr_country_flag = show_welcome_splash
+				#country_event = TYGC.political.1       #触发一个事件
+			}
+		}
+	}
+}
+

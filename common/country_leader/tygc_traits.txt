@@ -1,0 +1,1531 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+@experience_gain_low = 0.03
+@experience_gain_medium = 0.06
+@experience_gain_high = 0.08
+
+@chief_experience_gain_low = 0.20
+@chief_experience_gain_medium = 0.30
+@chief_experience_gain_high = 0.40
+
+###Todo remove commented advisor experience gains
+
+leader_traits = {
+
+	wxth = {
+		random = no
+		stability_factor = 0.6
+		war_support_factor = -0.1
+		production_speed_buildings_factor = 0.2
+		army_attack_factor = 0.1
+		army_defence_factor = 0.1
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	rysh = {
+		random = no
+		stability_factor = 0.6
+		political_power_gain = 0.15
+		army_org_factor = 0.15
+		neutrality_acceptance = 50
+		fascism_acceptance = 50
+		democratic_acceptance = 50
+		communism_acceptance = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yunnanwang = {
+		random = no
+		stability_factor = 0.2
+		war_support_factor = 0.2
+		political_power_gain = 0.15
+		mobilization_speed = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	xlnh = {
+		random = no
+		stability_factor = 0.6
+		political_power_gain = 0.25
+		conscription_total_factor = 0.15
+		non_core_manpower = 0.85
+		research_speed_factor = 0.25
+		production_speed_buildings_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hjd = {
+		random = no
+		war_support_factor = 0.3
+		army_attack_factor = 0.2
+		army_defence_factor = 0.2
+		army_speed_factor = 0.2
+		targeted_modifier = { 
+			tag = CHI
+			attack_bonus_against = 0.2
+			defense_bonus_against = 0.2
+		}
+		targeted_modifier = { 
+			tag = PRC
+			attack_bonus_against = 0.2
+			defense_bonus_against = 0.2
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	slgydzz = {
+		random = no
+		global_building_slots = 1
+		global_building_slots_factor = 0.2
+		production_speed_buildings_factor = 0.2
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lmdyz = {
+		random = no
+		global_building_slots = 2
+		global_building_slots_factor = 0.2
+		production_speed_buildings_factor = 0.2
+		research_speed_factor = 0.2
+		industrial_capacity_factory = 0.2
+		stability_factor = 0.15
+		war_support_factor = 0.15
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lmdyz2 = {
+		random = no
+		production_speed_buildings_factor = 0.1
+		research_speed_factor = 0.1
+		industrial_capacity_factory = 0.1
+		stability_factor = 0.1
+		war_support_factor = 0.1
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lmefke = {
+		random = no
+		production_speed_buildings_factor = 0.1
+		research_speed_factor = 0.1
+		industrial_capacity_factory = 0.1
+		stability_factor = 0.1
+		war_support_factor = 0.1
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	spzh = {
+		random = no
+		war_support_factor = 0.1
+		breakthrough_factor = 0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jhzj = {
+		random = no
+		army_morale_factor = 0.36
+		army_speed_factor = 0.36
+		army_attack_speed_factor = 0.36
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jpykys = {
+		random = no
+		research_speed_factor = -0.25
+		local_manpower = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yjdlx = {
+		random = no
+		army_core_attack_factor = 0.2
+		army_attack_factor = 0.2
+		army_core_defence_factor = 0.3
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	wdlx = {
+		random = no
+		army_attack_factor = 0.1
+		army_defence_factor = 0.1
+		army_speed_factor = 0.1
+		research_speed_factor = 0.1
+		production_speed_buildings_factor = 0.1
+		industrial_capacity_factory = 0.1
+		compliance_gain = 0.15
+		stability_factor = 0.3
+		war_support_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	thttz = {
+		random = no
+		political_power_gain = 0.5
+		political_power_cost = -0.5
+		stability_factor = 0.15
+		war_support_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bytxla = {
+		random = no
+		army_attack_factor = 0.15
+		army_defence_factor = -0.1
+		army_speed_factor = 0.3
+		army_morale_factor = 0.3
+		supply_consumption_factor = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	zds = {
+		random = no
+		army_attack_factor = 0.3
+		army_speed_factor = 0.3
+		experience_gain_army_unit_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ddzb = {
+		random = no
+		army_defence_factor = 0.2
+		breakthrough_factor = 0.2
+		terrain_penalty_reduction = 0.25
+		resistance_growth = -0.8
+		conscription = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yhnw = {
+		random = no
+		stability_factor = 0.3
+		research_speed_factor = 0.15
+		army_core_attack_factor = 0.2
+		army_core_defence_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yzmj = {
+		random = no
+		consumer_goods_factor = -0.2
+		communism_acceptance = 50
+		research_time_factor = 0.1
+		political_power_gain = 0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	zxsslfxx = {
+		random = no
+		stability_factor = 0.75
+		industrial_capacity_factory = 0.25
+		production_speed_buildings_factor = 0.25
+		political_power_gain = 0.75
+		compliance_gain = 0.25
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	xzztj = {
+		random = no
+		research_speed_factor = -0.1
+		experience_gain_army_factor = -0.1
+		experience_gain_navy_factor = -0.1
+		experience_gain_air_factor = -0.1
+		political_power_factor = -0.1
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	czdxr = {
+		random = no
+		production_speed_buildings_factor = 0.15
+		industrial_capacity_factory = 0.15
+		conscription = 0.015
+		stability_factor = 0.15
+		compliance_gain = 0.15
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ltw = {
+		random = no
+		research_speed_factor = 0.15
+		political_power_factor = 0.15
+		political_power_gain = 0.15
+		stability_weekly = 0.015
+		war_support_weekly = 0.015
+		army_attack_factor = 0.15
+		army_defence_factor = 0.15
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	chbh = {
+		random = no
+		army_attack_factor = 0.2
+		army_speed_factor = 0.2
+		breakthrough_factor = 0.3
+		terrain_penalty_reduction = 1
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	power0 = {
+		random = no
+		army_attack_factor = 0.2
+		army_defence_factor = 0.2
+		breakthrough_factor = 0.2
+		army_speed_factor = 0.2
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	muda = {
+		random = no
+		army_defence_factor = 0.2
+		army_strength_factor = 0.2
+		army_speed_factor = 0.2
+		land_night_attack = 0.75
+		attrition = -0.25
+		supply_consumption_factor = -0.5
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	erdjsz = {
+		random = no
+		fascism_acceptance = 100
+		war_support_factor = 0.2
+		justify_war_goal_time = -0.75
+		opinion_gain_monthly_factor = 0.5
+		puppet_cost_factor = -0.25
+		compliance_gain = 0.25
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	###内阁
+	xueyuan = {
+		random = no
+		research_speed_factor = 0.15
+		political_power_factor = 0.15
+		experience_gain_army_factor = 0.25
+		experience_gain_navy_factor = 0.25
+		experience_gain_air_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gongyequ = {
+		random = no
+		industrial_capacity_factory = 0.2
+		global_building_slots_factor = 0.2
+		local_resources_factor = 0.2
+		consumer_goods_factor = -0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gongyequ1 = {
+		random = no
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		production_speed_buildings_factor = 0.1
+		industry_research = 0.15
+		electronics_research = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	shequ = {
+		random = no
+		stability_factor = 0.1
+		weekly_manpower = 1000
+		production_factory_efficiency_gain_factor = 0.1
+		production_factory_max_efficiency_factor = 0.1
+		mobilization_speed = 0.15
+		monthly_population = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	junying = {
+		random = no
+		conscription = 0.01
+		land_doctrine_cost_factor = -0.15
+		air_doctrine_cost_factor = -0.15
+		naval_doctrine_cost_factor = -0.15
+		experience_gain_army = 0.1
+		experience_gain_air = 0.1
+		experience_gain_navy = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dddyr = {
+		random = no
+		stability_factor = 0.2
+		war_support_factor = 0.2
+		research_speed_factor = 0.2
+		political_power_gain = 0.35
+		political_power_factor = 0.25
+		army_core_attack_factor = 0.2
+		army_core_defence_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jddsjp = {
+		random = no
+		stability_factor = 0.15
+		political_power_factor = 0.15
+		industrial_capacity_factory = 0.15
+		production_factory_max_efficiency_factor = 0.15
+		production_factory_efficiency_gain_factor = 0.15
+		army_defence_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jddwxp = {
+		random = no
+		war_support_factor = 0.15
+		political_power_factor = 0.15
+		research_speed_factor = 0.15
+		production_speed_buildings_factor = 0.15
+		army_attack_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jjgw = {
+		random = no
+		conscription = 0.078
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+		consumer_goods_factor = -0.4
+		industrial_capacity_factory = 0.2
+		production_speed_buildings_factor = 0.2
+		research_speed_factor = 0.1
+		war_support_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ccc = {
+		random = no
+		army_attack_factor = 0.15
+		army_defence_factor = 0.1
+		breakthrough_factor = 0.1
+		army_speed_factor = 0.15
+		experience_loss_factor = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gushen = {
+		random = no
+		army_defence_factor = 0.66
+		army_attack_factor = 0.66
+		experience_gain_army = 0.66
+		experience_gain_air = 0.66
+		experience_gain_navy = 0.66
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gczl = {
+		random = no
+		army_attack_factor = 0.2
+		army_speed_factor = 0.15
+		experience_gain_army = 0.4
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ts1 = {
+		random = no
+		experience_gain_army = 0.4
+		army_attack_speed_factor = 0.15
+		army_attack_factor = 0.25
+		army_speed_factor = 0.25
+		army_org_factor = 0.25
+		max_planning = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	flw = {
+		random = no
+		political_power_factor = 0.25
+		stability_factor = 0.15
+		stability_weekly = 0.005
+		research_speed_factor = 0.15
+		army_core_attack_factor = 0.2
+		army_core_defence_factor = 0.2
+		production_speed_buildings_factor = 0.15
+		global_building_slots_factor = 0.2
+		global_building_slots = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yctf = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = 0.15
+		research_speed_factor = 0.2
+		army_org_factor = 0.25
+		production_speed_buildings_factor = 0.2
+		industrial_capacity_factory = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yctf2 = {
+		random = no
+		stability_factor = 0.15
+		conscription = 0.036
+		weekly_manpower = 1000
+		mobilization_speed = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dwjsl = {
+		random = no
+		fascism_drift = 0.5
+		max_command_power = 50
+		conscription_factor = 0.15
+		army_org_factor = 0.15
+		war_support_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jdjgzyz = {
+		random = no
+		ai_focus_aggressive_factor = 3
+		ai_focus_military_equipment_factor = 2
+		ai_desired_divisions_factor = 2
+		production_speed_arms_factory_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lhy = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = 0.15
+		research_speed_factor = 0.2
+		production_speed_buildings_factor = 0.2
+		industrial_capacity_factory = 0.2
+		industrial_capacity_dockyard = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ysjzm = {
+		random = no
+		army_attack_factor = 0.24
+		land_reinforce_rate = 0.18
+		experience_gain_army = 0.4
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jtyx = {
+		random = no
+		army_attack_factor = 0.15
+		army_defence_factor = 0.15
+		experience_gain_army = 0.15
+		experience_gain_air = 0.15
+		experience_gain_navy = 0.15
+		stability_factor = 0.1
+		army_morale_factor = 0.15
+		weekly_manpower = 2500
+		production_speed_buildings_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.15
+		production_factory_max_efficiency_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	sjza = {
+		random = no
+		political_power_factor = -0.1
+		max_command_power = -10
+		justify_war_goal_time = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	xtygst = {
+		random = no
+		army_attack_factor = 0.2
+		army_defence_factor = 0.15
+		breakthrough_factor = 0.15
+		army_speed_factor = 0.1
+		war_support_factor = 0.2
+		mobilization_speed = 0.5
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		justify_war_goal_time = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	xtygst2 = {
+		random = no
+		army_attack_factor = 0.35
+		army_defence_factor = 0.2
+		breakthrough_factor = 0.2
+		army_speed_factor = 0.15
+		war_support_factor = 0.3
+		mobilization_speed = 0.5
+		industrial_capacity_factory = 0.2
+		industrial_capacity_dockyard = 0.2
+		justify_war_goal_time = -0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	sjxh = {
+		random = no
+		political_power_factor = -0.05
+		experience_gain_army_factor = -0.15
+		experience_gain_navy_factor = -0.15
+		experience_gain_air_factor = -0.15
+		equipment_capture_factor = 0.3
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	nszw = {
+		random = no
+		improve_relations_maintain_cost_factor = -1
+		opinion_gain_monthly_same_ideology = 10
+		stability_factor = 0.1
+		stability_weekly = 0.003
+		compliance_gain = 0.15
+		army_core_attack_factor = 0.15
+		army_core_defence_factor = 0.15
+		political_power_factor = 0.25
+		political_power_gain = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	xbzdts = {
+		random = no
+		political_power_gain = 0.25
+		stability_weekly_factor = 0.005
+		war_support_weekly = 0.005
+		experience_loss_factor = -0.75
+		army_strength_factor = 0.15
+		production_factory_efficiency_gain_factor = 0.25
+		production_factory_max_efficiency_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ygklgqlx = {
+		random = no
+		local_building_slots = 1
+		production_speed_buildings_factor = 0.2
+		weekly_manpower = 2000
+		conscription = 0.07
+		conscription_total_factor = 15
+		mobilization_speed = 0.25
+		industrial_capacity_factory = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	cqnqw = {
+		random = no
+		consumer_goods_factor = -0.8
+		out_of_supply_factor = -0.8
+		supply_consumption_factor = -0.25
+		economy_cost_factor = -1
+		land_reinforce_rate = 0.1
+		army_speed_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	cqssdzd = {
+		random = no
+		stability_factor = -0.1
+		consumer_goods_factor = -0.4
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
+		production_speed_buildings_factor = 0.15
+		army_org_regain = -0.1
+		army_speed_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	say0 = {
+		random = no
+		stability_factor = 0.2
+		consumer_goods_factor = 0.2
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
+		production_speed_buildings_factor = 0.15
+		army_org_regain = 0.2
+		army_speed_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	sxsymm = {
+		random = no
+		max_planning = -0.1
+		planning_speed = 2
+		max_dig_in_factor = -0.1
+		dig_in_speed = 10
+		army_org_factor = -0.1
+		army_org_regain = 0.5
+		training_time_army_factor = -0.15
+		justify_war_goal_time = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	pdylsyr = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = 0.15
+		army_attack_factor = 0.15
+		army_speed_factor = 0.1
+		experience_gain_army = 0.4
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mm0 = {
+		random = no
+		conscription = 0.1
+		conscription_total_factor = 25
+		mobilization_speed = 0.5
+		compliance_gain = 0.15
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
+		production_speed_buildings_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	486ds = {
+		random = no
+		stability_factor = 0.15
+		consumer_goods_factor = -0.4
+		political_power_factor = 0.2
+		production_speed_buildings_factor = 0.15
+		max_planning = 0.35
+		planning_speed = 0.75
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	wddxg = {
+		random = no
+		stability_factor = 0.25
+		political_power_gain = 0.15
+		army_org_factor = 0.15
+		industrial_capacity_factory = 0.2
+		industrial_capacity_dockyard = 0.2
+		production_speed_buildings_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	qdzqnm = {
+		random = no
+		stability_factor = 0.15
+		army_org_regain = 0.25
+		supply_node_range = 0.55
+		army_strength_factor = 0.15
+		supply_consumption_factor = -0.25
+		land_reinforce_rate = 0.1
+		experience_loss_factor = -0.55
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ajhzsc = {
+		random = no
+		war_support_factor = 0.1
+		army_attack_factor = 0.15
+		army_speed_factor = 0.15
+		army_defence_factor = -0.1
+		experience_gain_army = 0.4
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	zlly = {
+		random = no
+		stability_factor = 0.2
+		war_support_factor = 0.15
+		production_speed_buildings_factor = 0.15
+		industrial_capacity_factory = 0.15
+		research_speed_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	saygl = {
+		random = no
+		stability_factor = 0.3
+		mobilization_speed = 0.25
+		conscription_factor = 0.15
+		research_speed_factor = 0.2
+		production_speed_buildings_factor = 0.2
+		industrial_capacity_factory = 0.2
+		political_power_gain = 0.25
+		army_attack_factor = 0.4
+		army_defence_factor = 0.4
+		army_speed_factor = 0.2
+		army_org_factor = 0.15
+		weekly_manpower = 20000
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gqrrdwyjsl = {
+		random = no
+		army_attack_factor = 0.5
+		army_defence_factor = 0.35
+		army_strength_factor = 0.15
+		breakthrough_factor = 0.25
+		production_speed_buildings_factor = 0.2
+		industrial_capacity_factory = 0.2
+		production_lack_of_resource_penalty_factor = -0.25
+		ai_focus_aggressive_factor = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	rrdwyjsl = {
+		random = no
+		army_attack_factor = 0.5
+		army_defence_factor = 0.35
+		army_strength_factor = 0.15
+		breakthrough_factor = 0.25
+		production_speed_buildings_factor = 0.2
+		industrial_capacity_factory = 0.2
+		production_lack_of_resource_penalty_factor = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jxwmutou = {
+		random = no
+		army_morale_factor = 0.5
+		army_org_factor = 0.25
+		max_planning = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	qgyd = {
+		random = no
+		production_speed_buildings_factor = 0.3
+		industrial_capacity_factory = 0.2
+		production_factory_start_efficiency_factor = 0.4		#基础生产效率
+		line_change_production_efficiency_factor = 0.4		#生产效率保持
+		production_factory_efficiency_gain_factor = 0.4
+		local_building_slots = 1
+		stability_factor = 0.2
+		war_support_factor = 0.3
+		political_power_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lhbh = {
+		random = no
+		justify_war_goal_time = -0.5
+		annex_cost_factor = -0.25
+		army_attack_factor = 0.2
+		army_defence_factor = 0.2
+		army_strength_factor = 0.15
+		army_speed_factor = 0.15
+		breakthrough_factor = 0.15
+		army_org_regain = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	cnxr = {
+		random = no
+		industrial_capacity_factory = -0.2
+		production_speed_buildings_factor = -0.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yddg = {
+		random = no
+		stability_factor = 0.4
+		autonomy_gain_warscore_factor = -1
+		autonomy_gain_trade_factor = -1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	zzzyz = {
+		random = no
+		army_core_attack_factor = 0.15
+		army_core_defence_factor = 0.15
+		communism_drift = -0.1
+		political_power_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kszl = {
+		random = no
+		army_core_attack_factor = 0.15
+		army_core_defence_factor = 0.15
+		communism_drift = -0.1
+		political_power_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	fxsgmj = {
+		random = no
+		army_attack_factor = 0.1
+		army_speed_factor = 0.1
+		production_speed_arms_factory_factor = 0.2
+		war_support_factor = 0.15
+		communism_drift = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	grjjgmz = {
+		random = no
+		army_attack_factor = 0.1
+		army_speed_factor = 0.1
+		production_speed_buildings_factor = 0.2
+		production_factory_max_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+		war_support_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yuanshou = {
+		random = no
+		war_support_factor = 0.1
+		weekly_casualties_war_support = 0.001
+		ai_desired_divisions_factor = 0.20
+		political_power_factor = 0.25
+		party_popularity_stability_factor = 0.1
+		compliance_growth = 0.25
+		resistance_target = 0.05
+
+		# From von Neurath
+		justify_war_goal_time = -0.1
+		experience_gain_army_factor = 0.1
+		experience_gain_air_factor = 0.1
+		experience_gain_navy_factor = 0.1
+	}
+	yuanshou2 = {
+		random = no
+		war_support_factor = 0.25
+		weekly_casualties_war_support = 0.005
+		ai_desired_divisions_factor = 0.20
+		political_power_factor = 0.25
+		party_popularity_stability_factor = 0.1
+		compliance_growth = 0.25
+		resistance_target = 0.05
+		justify_war_goal_time = -0.35
+		army_attack_factor = 0.25
+		army_defence_factor = 0.25
+	}
+	dyzdwr = {
+		random = no
+		war_support_factor = 0.1
+		war_support_weekly = 0.005
+		political_power_factor = 0.25
+		party_popularity_stability_factor = 0.2
+		compliance_growth = 0.25
+		resistance_target = 0.05
+		training_time_army_factor = -0.15
+		justify_war_goal_time = -0.15
+		experience_gain_army_factor = 0.1
+		experience_gain_air_factor = 0.1
+		experience_gain_navy_factor = 0.1
+	}
+	tiantang = {
+		random = no
+			weekly_manpower = 14000
+			justify_war_goal_time = -1
+			generate_wargoal_tension = -1
+			army_attack_factor = 0.66
+			army_attack_speed_factor = 0.66
+			army_defence_factor = 0.66
+			army_speed_factor = 0.66
+			army_strength_factor = 0.66
+			breakthrough_factor = 0.66
+
+	}
+	dbw = {
+		random = no
+		war_support_factor = 0.15
+		stability_factor = 0.15
+		political_power_factor = 0.2
+		party_popularity_stability_factor = 0.15
+		compliance_growth = 0.15
+		army_attack_factor = 0.1
+		army_defence_factor = 0.1
+	}
+	jmdj = {
+		random = no
+		war_support_factor = 0.5
+		stability_factor = 0.5
+		political_power_factor = 0.5
+		compliance_gain = 0.5
+		army_attack_factor = 0.35
+		army_defence_factor = 0.3
+		army_speed_factor = 0.2
+		breakthrough_factor = 0.3
+		army_morale_factor = 0.2
+		ai_focus_aggressive_factor = 3
+		ai_focus_military_equipment_factor = 3
+		ai_desired_divisions_factor = 3
+	}
+	dzt = {
+		random = no
+		war_support_factor = 0.25
+		stability_factor = 0.3
+		political_power_factor = 0.25
+		party_popularity_stability_factor = 0.2
+		compliance_growth = 0.15
+		compliance_gain = 0.15
+		army_attack_factor = 0.2
+		army_defence_factor = 0.2
+	}
+	ashc = {
+		random = no
+		production_speed_rail_way_factor = 0.5
+		production_speed_supply_node_factor = 0.5
+		supply_node_range = 0.2
+	}
+	xiemo = {
+		random = no
+		war_support_factor = 0.4
+		justify_war_goal_time = -1
+		generate_wargoal_tension = -1
+		army_speed_factor = 0.2
+		army_defence_factor = 0.25
+		resistance_growth = -0.5
+		compliance_gain = 0.5
+	}
+	kousu = {
+		random = no
+		MODIFIER_PARADROP_ATTACK_FACTOR = 0.25
+		MODIFIER_PARADROP_AGILITY_FACTOR = 0.25
+		MODIFIER_PARADROP_DEFENCE_FACTOR = 0.25
+		modifier_army_sub_unit_paratrooper_attack_factor = 0.25
+		modifier_army_sub_unit_paratrooper_defence_factor = 0.25
+		modifier_army_sub_unit_paratrooper_speed_factor = 0.25
+		resistance_growth = -0.5
+	}
+	gjzyz = {
+		random = no
+		party_popularity_stability_factor = 0.2
+		compliance_growth = 0.25
+		resistance_target = -0.25
+		communism_drift = 0.15
+		political_power_factor = 0.15
+		war_support_factor = 0.2
+		send_volunteer_size = 24
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	sjgm = {
+		random = no
+		war_support_weekly = 0.005
+		conscription_factor = 0.25
+		army_attack_factor = 0.2
+		army_defence_factor = 0.2
+		war_support_factor = 0.2
+		justify_war_goal_time = -0.5
+		party_popularity_stability_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gmzdcf = {
+		random = no
+		stability_weekly = 0.01
+		compliance_gain = 0.15
+		justify_war_goal_when_in_major_war_time = -0.5
+		conscription = 0.02
+		political_power_factor = 0.25
+		subjects_autonomy_gain = -0.5
+		compliance_growth = 0.15
+		army_attack_factor = 0.15
+		army_defence_factor = 0.15
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lzlz = {
+		random = no
+		production_speed_buildings_factor = 0.3
+		production_factory_efficiency_gain_factor = 0.6
+		production_factory_max_efficiency_factor = 0.2
+		industrial_capacity_factory = 0.4
+		industrial_capacity_dockyard = 0.4
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kjnwbngg = {
+		random = no
+		research_speed_factor = 0.25
+		political_power_factor = 0.25
+		stability_factor = 0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	wleyl = {
+		random = no
+		army_speed_factor = 0.2
+		army_attack_factor = 0.25
+		breakthrough_factor = 0.2
+		recon_factor = 0.25
+		army_morale_factor = 0.25
+		acclimatization_cold_climate_gain_factor = 0.5
+		justify_war_goal_time = -0.5
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	wdyz = {
+		random = no
+		army_attack_factor = 0.25
+		army_defence_factor = 0.25
+		army_strength_factor = 0.25
+		war_support_factor = 0.4
+		stability_factor = 0.4
+		political_power_gain = 1
+		compliance_gain = 0.75
+		justify_war_goal_time = -0.75
+		conscription = 0.1
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tianwang = {
+		random = no
+		political_power_factor = 0.25
+		stability_factor = 0.3
+		war_support_factor = 0.3
+		army_attack_factor = 0.2
+		army_defence_factor = 0.2
+		army_speed_factor = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tfsdlf = {
+		random = no
+		political_power_factor = 0.4
+		stability_factor = 0.5
+		war_support_factor = 0.5
+		army_attack_factor = 0.35
+		army_defence_factor = 0.35
+		army_speed_factor = 0.35
+		production_speed_buildings_factor = 0.25
+		production_factory_efficiency_gain_factor = 0.15
+		production_factory_max_efficiency_factor = 0.15
+		industrial_capacity_factory = 0.25
+		industrial_capacity_dockyard = 0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+##lbwnb
+	lbwnb1 = {
+		name = lbwnb
+		random = no
+		production_speed_buildings_factor = 0.05
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		political_power_factor = 0.05
+		research_speed_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+		war_support_factor = 0.05
+		stability_factor = 0.05
+		compliance_gain = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lbwnb2 = {
+		name = lbwnb
+		random = no
+		production_speed_buildings_factor = 0.1
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		political_power_factor = 0.1
+		research_speed_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+		production_factory_max_efficiency_factor = 0.1
+		army_attack_factor = 0.1
+		army_defence_factor = 0.1
+		war_support_factor = 0.1
+		stability_factor = 0.1
+		compliance_gain = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lbwnb3 = {
+		name = lbwnb
+		random = no
+		production_speed_buildings_factor = 0.15
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
+		political_power_factor = 0.15
+		research_speed_factor = 0.15
+		production_factory_efficiency_gain_factor = 0.15
+		production_factory_max_efficiency_factor = 0.15
+		army_attack_factor = 0.15
+		army_defence_factor = 0.15
+		war_support_factor = 0.15
+		stability_factor = 0.15
+		compliance_gain = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lbwnb4 = {
+		name = lbwnb
+		random = no
+		production_speed_buildings_factor = 0.2
+		industrial_capacity_factory = 0.2
+		industrial_capacity_dockyard = 0.2
+		political_power_factor = 0.2
+		research_speed_factor = 0.2
+		production_factory_efficiency_gain_factor = 0.2
+		production_factory_max_efficiency_factor = 0.2
+		army_attack_factor = 0.2
+		army_defence_factor = 0.2
+		war_support_factor = 0.2
+		stability_factor = 0.2
+		compliance_gain = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lbwnb5 = {
+		name = lbwnb
+		random = no
+		production_speed_buildings_factor = 0.25
+		industrial_capacity_factory = 0.25
+		industrial_capacity_dockyard = 0.25
+		political_power_factor = 0.25
+		research_speed_factor = 0.25
+		production_factory_efficiency_gain_factor = 0.25
+		production_factory_max_efficiency_factor = 0.25
+		army_attack_factor = 0.25
+		army_defence_factor = 0.25
+		war_support_factor = 0.25
+		stability_factor = 0.25
+		compliance_gain = 0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lbwnb6 = {
+		name = lbwnb
+		random = no
+		production_speed_buildings_factor = 0.3
+		industrial_capacity_factory = 0.3
+		industrial_capacity_dockyard = 0.3
+		political_power_factor = 0.3
+		research_speed_factor = 0.3
+		production_factory_efficiency_gain_factor = 0.3
+		production_factory_max_efficiency_factor = 0.3
+		army_attack_factor = 0.3
+		army_defence_factor = 0.3
+		war_support_factor = 0.3
+		stability_factor = 0.3
+		compliance_gain = 0.3
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lbwnb7 = {
+		name = lbwnb
+		random = no
+		production_speed_buildings_factor = 0.35
+		industrial_capacity_factory = 0.35
+		industrial_capacity_dockyard = 0.35
+		political_power_factor = 0.35
+		research_speed_factor = 0.35
+		production_factory_efficiency_gain_factor = 0.35
+		production_factory_max_efficiency_factor = 0.35
+		army_attack_factor = 0.35
+		army_defence_factor = 0.35
+		war_support_factor = 0.35
+		stability_factor = 0.35
+		compliance_gain = 0.35
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lbwnb8 = {
+		name = lbwnb
+		random = no
+		production_speed_buildings_factor = 0.4
+		industrial_capacity_factory = 0.4
+		industrial_capacity_dockyard = 0.4
+		political_power_factor = 0.4
+		research_speed_factor = 0.4
+		production_factory_efficiency_gain_factor = 0.4
+		production_factory_max_efficiency_factor = 0.4
+		army_attack_factor = 0.4
+		army_defence_factor = 0.4
+		war_support_factor = 0.4
+		stability_factor = 0.4
+		compliance_gain = 0.4
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lbwnb9 = {
+		name = lbwnb
+		random = no
+		production_speed_buildings_factor = 0.45
+		industrial_capacity_factory = 0.45
+		industrial_capacity_dockyard = 0.45
+		political_power_factor = 0.45
+		research_speed_factor = 0.45
+		production_factory_efficiency_gain_factor = 0.45
+		production_factory_max_efficiency_factor = 0.45
+		army_attack_factor = 0.45
+		army_defence_factor = 0.45
+		war_support_factor = 0.45
+		stability_factor = 0.45
+		compliance_gain = 0.45
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lbwnb10 = {
+		name = lbwnb
+		random = no
+		production_speed_buildings_factor = 0.5
+		industrial_capacity_factory = 0.5
+		industrial_capacity_dockyard = 0.5
+		political_power_factor = 0.5
+		research_speed_factor = 0.5
+		production_factory_efficiency_gain_factor = 0.5
+		production_factory_max_efficiency_factor = 0.5
+		army_attack_factor = 0.5
+		army_defence_factor = 0.5
+		war_support_factor = 0.5
+		stability_factor = 0.5
+		compliance_gain = 0.5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lbwnb11 = {
+		name = lbwnb
+		random = no
+		production_speed_buildings_factor = 0.55
+		industrial_capacity_factory = 0.55
+		industrial_capacity_dockyard = 0.55
+		political_power_factor = 0.55
+		research_speed_factor = 0.55
+		production_factory_efficiency_gain_factor = 0.55
+		production_factory_max_efficiency_factor = 0.55
+		army_attack_factor = 0.55
+		army_defence_factor = 0.55
+		war_support_factor = 0.55
+		stability_factor = 0.55
+		compliance_gain = 0.55
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#####
+	sbyh = {
+		random = no
+		army_sub_unit_paratrooper_attack_factor = 0.55
+ 		army_sub_unit_paratrooper_defence_factor = 0.55
+ 		army_sub_unit_paratrooper_speed_factor = 0.55
+ 		army_sub_unit_paratrooper_max_org_factor = 0.55
+		SPECIAL_FORCES_TRAINING_TIME_FACTOR = -0.55
+		SPECIAL_FORCES_CAP = 0.55
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	npldjyz = {
+		random = no
+		war_support_factor = 0.25
+		army_attack_factor = 0.15
+		army_defence_factor = 0.15
+		army_artillery_attack_factor = 0.2
+		justify_war_goal_time = -0.5
+		breakthrough_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	clmdjyz = {
+		random = no
+		stability_factor = 0.2
+		political_power_factor = 0.25
+		production_speed_buildings_factor = 0.15
+		production_factory_efficiency_gain_factor = 0.15
+		production_factory_max_efficiency_factor = 0.15
+		army_attack_factor = 0.15
+		army_defence_factor = 0.15
+		army_morale_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

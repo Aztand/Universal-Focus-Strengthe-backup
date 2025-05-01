@@ -1,0 +1,7 @@
+style = {
+	name = tygc_biaotilan
+	unavailable = GFX_focus_tygc_biaotilan_no	###不可点状态
+	completed = GFX_focus_tygc_biaotilan_ok	###完成时状态
+	available = GFX_focus_tygc_biaotilan_yes	###未完成可点状态
+	current = GFX_focus_tygc_biaotilan_ing	###进行中状态
+}

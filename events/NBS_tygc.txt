@@ -1,0 +1,4198 @@
+add_namespace = NSB_sovcd
+add_namespace = NSB_sfgj
+add_namespace = NSB_dingzhen
+add_namespace = NSB_mchjz
+add_namespace = NSB_eygcd
+add_namespace = NSB_polcd
+add_namespace = NSB_qshcd
+add_namespace = NSB_algcd
+add_namespace = NSB_yinshang
+add_namespace = NSB_qita
+add_namespace = NSB_klees
+add_namespace = NSB_belcd
+add_namespace = NSB_itacd
+add_namespace = NSB_chicd
+add_namespace = NSB_japcd
+add_namespace = NSB_bhucd
+add_namespace = NSB_fercd
+add_namespace = NSB_mancd
+add_namespace = NSB_gercd
+add_namespace = NSB_samicd
+add_namespace = NSB_gxccd
+add_namespace = NSB_lbwcd
+add_namespace = NSB_cogcd
+country_event = {
+	id = NSB_qita.1
+	title = NSB_qita.1.t
+	desc = NSB_qita.1.desc
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_qita.1.a
+		declare_war_on = {
+
+			target = FROM
+			
+			type = take_state
+			
+		}
+			ai_chance = {
+				base = 500
+			}
+	}
+	option = {
+		name = NSB_qita.1.b
+		ai_chance = {
+			base = -500
+		}
+			
+	}
+}
+country_event = {
+	id = NSB_qita.2
+	title = NSB_qita.2.t
+	desc = NSB_qita.2.desc
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_qita.2.a
+		ai_chance = {
+			base = 500
+		}
+		YEM = {
+			transfer_state = 659
+			transfer_state = 906
+			transfer_state = 992
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.3
+	title = NSB_qita.3.t
+	desc = NSB_qita.3.desc
+	picture = GFX_report_event_kaihui
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_qita.3.a
+		ai_chance = {
+			base = 500
+		}
+		SWE = {
+			create_country_leader = {
+				name = "Paradox Interactive"
+				desc = "POLITICS_p_DESC"
+				picture = GFX_portrait_ps
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					cnxr
+					yddg
+				}
+			}
+			create_country_leader = {
+				name = "Paradox Interactive"
+				desc = "POLITICS_p_DESC"
+				picture = GFX_portrait_ps
+				expire = "1965.1.1"
+				ideology = 	nazism
+				traits = {
+					cnxr
+					yddg
+				}
+			}
+			create_country_leader = {
+				name = "Paradox Interactive"
+				desc = "POLITICS_p_DESC"
+				picture = GFX_portrait_ps
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					cnxr
+					yddg
+				}
+			}
+			create_country_leader = {
+				name = "Paradox Interactive"
+				desc = "POLITICS_p_DESC"
+				picture = GFX_portrait_ps
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					cnxr
+					yddg
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.4
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		SWE = {
+			if = {
+				limit = { arms_factory > 0 }
+				random_owned_controlled_state = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+				RAJ = {
+					add_offsite_building = { type = arms_factory level = 1 }
+				}
+			}
+			if = {
+				limit = { industrial_complex > 0 }
+				random_owned_controlled_state = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				RAJ = {
+					add_offsite_building = { type = industrial_complex level = 1 }
+				}
+			}
+		}
+		country_event = {
+			id = NSB_qita.4
+			days = 14
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.5
+	title = NSB_qita.5.t
+	desc = NSB_qita.5.desc
+	picture = GFX_report_event_kaihui
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_qita.5.a
+		ai_chance = {
+			base = 100
+		}
+		AUS = {
+			set_autonomy = {
+				target = ROOT
+				autonomous_state = autonomy_dominion 
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.6
+	title = NSB_qita.6.t
+	desc = NSB_qita.6.desc
+	picture = GFX_report_event_kaihui
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_qita.6.a
+		ai_chance = {
+			base = 100
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.4
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+			name = GRN_communism_party_1
+			long_name = GRN_communism_party_1
+		}
+		create_country_leader = {
+			name = "圣诞老人"
+			desc = "POLITICS_sdlr_DESC"
+			picture = GFX_portrait_Leon_Trotsky_sdlr
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				gjzyz
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.7
+	hidden = yes
+	trigger = {
+		tag = GRN
+		date > 1936.12.24
+		not = { has_country_flag = GRNsdzf1 }
+	}
+
+	immediate = {
+		GRN = {
+			add_to_variable = { 
+				GRN_sdzf = 0.1
+			}
+			set_country_flag = GRNsdzf1
+			country_event = {
+				id = NSB_qita.9
+				days = 365
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.8
+	title = NSB_qita.8.t
+	desc = NSB_qita.8.desc
+	picture = GFX_report_event_kaihui
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_qita.8.a
+		ai_chance = {
+			base = 100
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.2
+		}
+		set_cosmetic_tag = NOR_trotsky
+		create_country_leader = {
+			name = "列夫·托洛茨基"
+			desc = "POLITICS_tlcj_DESC"
+			picture = GFX_portrait_Leon_Trotsky_sdlr
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				gjzyz
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.9
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		GRN = {
+			add_to_variable = { 
+				GRN_sdzf = 0.1
+			}
+			country_event = {
+				id = NSB_qita.9
+				days = 365
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_sfgj.1
+	title = NSB_sfgj.1.t
+	desc = NSB_sfgj.1.desc
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_sfgj.1.a
+		AMN = {
+			transfer_state = 406
+			transfer_state = 236
+			transfer_state = 407
+			transfer_state = 402
+			transfer_state = 584
+			transfer_state = 587
+			transfer_state = 823
+			transfer_state = 831
+			transfer_state = 832
+			add_state_core = 406
+			add_state_core = 407
+			add_state_core = 402
+			add_state_core = 584
+			add_state_core = 587
+			add_state_core = 823
+			add_state_core = 831
+			add_state_core = 832
+			add_state_core = 236
+			add_state_core = 416
+			add_state_core = 417
+			add_state_core = 418
+			add_state_core = 419
+			add_state_core = 420
+			add_state_core = 421
+			add_state_core = 266
+			add_state_core = 229
+			add_state_core = 230
+			add_state_core = 231
+			add_state_core = 826
+			add_state_core = 354
+			add_state_core = 800
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		hidden_effect = {
+		set_victory_points = {
+			province = 7563
+			value = 30
+		}
+		set_province_name = { id = 7563 name = "布津"}
+		584 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes 
+			}
+			add_building_construction = {
+				type = arms_factory 
+				level = 2
+				instant_build = yes 
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			set_state_category = metropolis
+			add_manpower = 1600000
+		}
+		AMN = {
+			add_country_leader_role = {
+				character = "SOV_supreme_soviet"
+				country_leader = {
+					ideology = marxism
+					traits = { 
+						lmdyz2
+					}
+					expire = "1965.3.1.1"
+				}
+				promote_leader = yes 
+			}
+			every_owned_state = {
+				add_manpower = 1000000
+			}
+			add_political_power = 50
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 5000  }
+		}
+		}
+		AMN = { change_tag_from = ROOT } 
+		hidden_effect = {
+			SOV = {
+				transfer_units_fraction = {
+					target = AMN
+					size = 0.1
+				}
+			}
+			every_state = {
+				limit = {
+					or = {
+					is_core_of = TAJ
+					is_core_of = KYR
+					}
+				}
+				add_core_of = UZB
+			}
+		every_state = {
+			limit = {
+				is_owned_by = SOV
+				is_core_of = KAZ
+			}
+			transfer_state_to = KAZ
+		}
+		every_state = {
+			limit = {
+				is_owned_by = SOV
+				or = {
+				is_core_of = UZB
+				is_core_of = TAJ
+				is_core_of = KYR
+				}
+			}
+			transfer_state_to = UZB
+		}
+		}
+		ai_chance = {
+			base = -50
+		}
+	}
+	option = {
+		name = NSB_sfgj.1.b
+		ai_chance = {
+			base = 500
+		}
+			
+	}
+}
+country_event = {
+	id = NSB_dingzhen.1
+	title = NSB_dingzhen.1.t
+	desc = NSB_dingzhen.1.desc 
+	picture = GFX_report_event_dingzhen
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_dingzhen.1.a 
+		ai_chance = {  
+			base = 100
+		} 
+
+		create_country_leader = {
+			name = "丁真"
+			desc = "POLITICS_dz_DESC"
+			picture = GFX_portrait_dingzhen
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				czdxr
+				xzztj
+						
+			}
+		}
+		create_country_leader = {
+			name = "丁真"
+			desc = "POLITICS_dz_DESC"
+			picture = GFX_portrait_dingzhen
+			expire = "1965.1.1"
+			ideology = anti_revisionism
+			traits = {
+				czdxr
+				xzztj
+						
+			}
+		}
+		create_country_leader = {
+			name = "丁真"
+			desc = "POLITICS_dz_DESC"
+			picture = GFX_portrait_dingzhen
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+				czdxr
+				xzztj
+						
+			}
+		}
+		create_country_leader = {
+			name = "丁真"
+			desc = "POLITICS_dz_DESC"
+			picture = GFX_portrait_dingzhen
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				czdxr
+				xzztj
+						
+			}
+		}
+		set_party_name = {
+			ideology = despotism
+			long_name = dz_party_long
+			name = dz_party
+		}
+		hidden_effect = {
+			recruit_character = wangyuan
+		}
+	}    
+}
+country_event = {
+	id = NSB_mchjz.1
+	title = NSB_mchjz.1.t
+	desc = NSB_mchjz.1.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_mchjz.1.a 
+		ai_chance = {  
+			base = 100
+		}
+		create_country_leader = {
+			name = "朱·忌炎"
+			desc = "POLITICS_jy_DESC"
+			picture = GFX_portrait_jy
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+				chbh
+			}
+		}
+		create_country_leader = {
+			name = "朱·忌炎"
+			desc = "POLITICS_jy_DESC"
+			picture = GFX_portrait_jy
+			expire = "1965.1.1"
+			ideology = anti_revisionism
+			traits = {
+				chbh
+			}
+		}
+		create_country_leader = {
+			name = "朱·忌炎"
+			desc = "POLITICS_jy_DESC"
+			picture = GFX_portrait_jy
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				chbh
+			}
+		}
+		create_country_leader = {
+			name = "朱·忌炎"
+			desc = "POLITICS_jy_DESC"
+			picture = GFX_portrait_jy
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				chbh
+			}
+		}
+		hidden_effect = {
+		set_party_name = {
+			ideology = anti_revisionism
+			long_name = jy3_party_long
+			name = jy3_party
+		}
+		}
+	}    
+}
+country_event = {
+	id = NSB_eygcd.1
+	title = NSB_eygcd.1.t
+	desc = NSB_eygcd.1.desc 
+	picture = GFX_report_event_dio1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_eygcd.1.a 
+		ai_chance = {  
+			base = 100
+		}
+		create_country_leader = {
+			name = "DIO"
+			desc = "POLITICS_DIO_DESC"
+			picture = GFX_portrait_dio1
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+				muda
+				erdjsz
+			}
+		}
+		create_country_leader = {
+			name = "DIO"
+			desc = "POLITICS_DIO_DESC"
+			picture = GFX_portrait_dio1
+			expire = "1965.1.1"
+			ideology = anti_revisionism
+			traits = {
+				muda
+				erdjsz
+			}
+		}
+		create_country_leader = {
+			name = "DIO"
+			desc = "POLITICS_DIO_DESC"
+			picture = GFX_portrait_dio1
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				muda
+				erdjsz
+			}
+		}
+		create_country_leader = {
+			name = "DIO"
+			desc = "POLITICS_DIO_DESC"
+			picture = GFX_portrait_dio1
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				muda
+				erdjsz
+			}
+		}
+		hidden_effect = {
+			recruit_character = theworld
+		}
+	}    
+}
+country_event = {
+	id = NSB_polcd.1
+	title = NSB_polcd.1.t
+	desc = NSB_polcd.1.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_polcd.1.a 
+		ai_chance = {  
+			base = -500
+		}
+		DNZ = {
+			transfer_state = 85
+			add_state_core = 85
+		}
+		DNZ = { change_tag_from = ROOT } 
+		hidden_effect = {
+			DNZ = {
+			add_offsite_building = { type = industrial_complex level = 4 }
+			add_offsite_building = { type = arms_factory level = 4 }
+			}
+		}
+	}
+	option = {
+		name = NSB_polcd.1.b
+		ai_chance = {  
+			base = 500
+		}
+		
+	}
+}
+country_event = {
+	id = NSB_qshcd.1
+	title = NSB_qshcd.1.t
+	desc = NSB_qshcd.1.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_qshcd.1.a 
+		ai_chance = {  
+			base = -200
+		}
+	}
+	option = {
+		name = NSB_qshcd.1.b
+		ai_chance = {  
+			base = 200
+		}
+		custom_effect_tooltip = NSB_qshcd.1.b.tt
+		set_country_flag = xxdbnr
+		
+	}
+}
+country_event = {
+	id = NSB_qshcd.2
+	title = NSB_qshcd.2.t
+	desc = NSB_qshcd.2.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_qshcd.2.a 
+		ai_chance = {  
+			base = 200
+		}
+		division_template = {
+			name = "秦军"
+			priority = 8
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+				artillery_brigade = { x = 2 y = 0 }	
+				artillery_brigade = { x = 2 y = 1 }					
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = " division_template = \"秦军\" start_experience_factor = 0.35"
+				owner = SHX
+				count = 16
+			}
+		}
+		add_ideas = qshdkz
+		set_country_flag = qshgl
+
+	}
+}
+country_event = {
+	id = NSB_qshcd.4
+	title = NSB_qshcd.4.t
+	desc = NSB_qshcd.4.desc 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_qshcd.4.a
+		ai_chance = {  
+			base = 100
+		}
+		set_cosmetic_tag = SPQR_UNIFIED
+	}
+	option = {
+		name = NSB_qshcd.4.b
+		ai_chance = {  
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = NSB_qshcd.3
+	title = NSB_qshcd.3.t
+	desc = NSB_qshcd.3.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_qshcd.3.a
+		ai_chance = {  
+			base = 20
+		}
+		remove_ideas = yxjf
+		add_ideas = xqf1
+	}
+	option = {
+		name = NSB_qshcd.3.b
+		ai_chance = {  
+			base = 20
+		}
+		remove_ideas = yxjf
+		add_ideas = xqf2
+	}
+	option = {
+		name = NSB_qshcd.3.c
+		ai_chance = {  
+			base = 20
+		}
+		remove_ideas = yxjf
+		add_ideas = xqf3
+	}
+	option = {
+		name = NSB_qshcd.3.d
+		ai_chance = {  
+			base = 30
+		}
+		remove_ideas = yxjf
+	}
+}
+country_event = {
+	id = NSB_klees.1
+	title = NSB_klees.1.t
+	desc = NSB_klees.1.desc 
+	picture = GFX_report_event_ROM_mistress
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_klees.1.a 
+		ai_chance = {  
+			base = 500
+		}
+		remove_ideas = ROM_king_carol_ii_hedonist
+		add_ideas = kleesdcc
+	}
+}
+country_event = {
+	id = NSB_klees.2
+	title = NSB_klees.2.t
+	desc = NSB_klees.2.desc 
+	picture = GFX_report_event_ROM_mistress
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_klees.2.a 
+		ai_chance = {  
+			base = 500
+		}
+		remove_ideas = ROM_king_carol_ii_hedonist
+		add_ideas = kleesdcc
+		add_ideas = naisuai
+	}
+}
+country_event = {
+	id = NSB_klees.3
+	title = NSB_klees.3.t
+	desc = NSB_klees.3.desc 
+	picture = GFX_report_event_ROM_mistress
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_klees.3.a 
+		ai_chance = {  
+			base = 500
+		}
+		remove_ideas = ROM_king_carol_ii_hedonist
+		add_ideas = kleesdcc
+	}
+}
+country_event = {
+	id = NSB_algcd.1
+	title = NSB_algcd.1.t
+	desc = NSB_algcd.1.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_algcd.1.a
+		ai_chance = {  
+			base = -100
+		}
+		every_state = {
+			limit = {
+				or = {
+				is_core_of = ALG
+				}
+			}
+			add_core_of = FRA
+		}
+		FRA = {
+			annex_country = {
+				target = ALG
+			}
+		}
+	}
+	option = {
+		name = NSB_algcd.1.b
+		ai_chance = {  
+			base = 50
+		}
+		set_country_flag = fsbfta2
+	}
+}
+country_event = {
+	id = NSB_yinshang.1
+	title = NSB_yinshang.1.t
+	desc = NSB_yinshang.1.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_yinshang.1.a
+		ai_chance = {  
+			base = 100
+		}
+		set_country_flag = fpysxc
+		unlock_decision_category_tooltip = fpysxc
+		hidden_effect = {
+			set_variable = { xccs = 0 }
+			set_variable = { xccs_rate = 0 }
+			set_variable = { xccs_max = 15 }
+		}
+	}
+}
+country_event = {
+	id = NSB_belcd.1
+	title = NSB_belcd.1.t
+	desc = NSB_belcd.1.desc 
+	picture = GFX_report_event_bgd
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_belcd.1.a
+		ai_chance = {  
+			base = 100
+		}
+		complete_national_focus = ayzg
+		add_popularity = {
+			ideology = fascism
+			popularity = 50
+		}
+		hidden_effect = {
+			set_global_flag = dwjdq
+		}
+	}
+}
+country_event = {
+	id = NSB_belcd.2
+	title = NSB_belcd.2.t
+	desc = NSB_belcd.2.desc 
+	picture = GFX_report_event_bgd
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_belcd.2.a
+		ai_chance = {  
+			base = 100
+		}
+		every_state = {
+			limit = {
+				is_owned_by = FRA
+				or = {
+					state = 17
+					state = 18
+					state = 28
+					state = 29
+					state = 785
+					is_on_continent = africa
+				}
+			}
+			transfer_state_to = ROOT
+		}
+		white_peace = FRA
+		hidden_effect = {
+			white_peace = ENG
+			white_peace = USA
+		}
+		add_offsite_building = { type = industrial_complex level = 8 }
+		add_offsite_building = { type = arms_factory level = 12 }
+		add_ideas = zhfggy
+		FRA = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.5
+			}
+			set_politics = {
+				ruling_party = neutrality	
+				election_frequency = 48			
+				elections_allowed = no
+			}
+			set_cosmetic_tag = FRA_VICHY
+			add_ideas = blty
+			custom_effect_tooltip = belcda_tt
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = {
+						industrial_complex > 1
+						is_core_of = ROOT
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						industrial_complex > 1
+						is_core_of = ROOT
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						industrial_complex > 1
+						is_core_of = ROOT
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						industrial_complex > 1
+						is_core_of = ROOT
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						arms_factory > 1
+						is_core_of = ROOT
+					}
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						arms_factory > 1
+						is_core_of = ROOT
+					}
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						arms_factory > 1
+						is_core_of = ROOT
+					}
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						arms_factory > 1
+						is_core_of = ROOT
+					}
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						arms_factory > 1
+						is_core_of = ROOT
+					}
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						arms_factory > 1
+						is_core_of = ROOT
+					}
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = NSB_belcd.2.b
+		ai_chance = {  
+			base = -100
+		}
+		custom_effect_tooltip = belcdb_tt
+		add_stability = -0.1
+		add_political_power = -50
+		ENG = { add_to_faction = "FRA" }
+		ENG = { add_ideas = jbtx }
+		FRA = { add_ideas = jbtx }
+	}
+}
+country_event = {
+	id = NSB_itacd.1
+	title = NSB_itacd.1.t
+	desc = NSB_itacd.1.desc 
+	picture = GFX_report_event_SRI1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_itacd.1.a
+		ai_chance = {  
+			base = 100
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.3
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.2
+		}
+		create_country_leader = {
+			name = " 贝尼托·墨索里尼 "
+			desc = "POLITICS_msln_DESC"
+			picture = GFX_portrait_msln
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				fxsgmj
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_itacd.2
+	title = NSB_itacd.2.t
+	desc = NSB_itacd.2.desc 
+	picture = GFX_report_event_ITA_air_crash
+	fire_only_once = yes
+	trigger = {
+		tag = ITA
+		date > 1940.6.28
+		or = {
+			has_government = communism
+			has_government = fascism
+		}
+	}
+
+	option = {
+		name = NSB_itacd.2.a
+		ai_chance = {  
+			base = 100
+		}
+		retire_character = ITA_italo_balbo
+		add_ideas = naisuai
+	}
+}
+country_event = {
+	id = NSB_itacd.3
+	title = NSB_itacd.3.t
+	desc = NSB_itacd.3.desc 
+	picture = GFX_report_event_SRI1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_itacd.3.a
+		ai_chance = {  
+			base = 100
+		}
+		add_stability = 0.025
+	}
+}
+news_event = {
+	id = NSB_itacd.4
+	title = NSB_itacd.4.t
+	desc = NSB_itacd.4.desc 
+	picture = GFX_news_event_msln
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_itacd.4.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { tag = ITA }
+			add_manpower = -60000
+			AOI ={ add_manpower = 60000 }
+		}
+	}
+}
+news_event = {
+	id = NSB_itacd.10
+	title = NSB_itacd.11.t
+	desc = NSB_itacd.10.desc 
+	picture = GFX_news_event_msln
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_itacd.11.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { tag = ITA }
+			add_stability = 0.05
+		}
+	}
+}
+news_event = {
+	id = NSB_itacd.11
+	title = NSB_itacd.11.t
+	desc = NSB_itacd.11.desc 
+	picture = GFX_news_event_msln
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_itacd.11.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { tag = ITA }
+			add_stability = 0.05
+		}
+	}
+}
+news_event = {
+	id = NSB_itacd.12
+	title = NSB_itacd.11.t
+	desc = NSB_itacd.12.desc 
+	picture = GFX_news_event_msln
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_itacd.11.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { tag = ITA }
+			add_stability = 0.05
+		}
+	}
+}
+news_event = {
+	id = NSB_itacd.13
+	title = NSB_itacd.11.t
+	desc = NSB_itacd.13.desc 
+	picture = GFX_news_event_msln
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_itacd.11.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { tag = ITA }
+			add_stability = 0.05
+		}
+	}
+}
+news_event = {
+	id = NSB_itacd.14
+	title = NSB_itacd.11.t
+	desc = NSB_itacd.14.desc 
+	picture = GFX_news_event_msln
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_itacd.11.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { tag = ITA }
+			add_stability = 0.05
+		}
+	}
+}
+news_event = {
+	id = NSB_itacd.15
+	title = NSB_itacd.11.t
+	desc = NSB_itacd.15.desc 
+	picture = GFX_news_event_msln
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_itacd.11.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { tag = ITA }
+			add_stability = 0.05
+		}
+	}
+}
+news_event = {
+	id = NSB_itacd.16
+	title = NSB_itacd.11.t
+	desc = NSB_itacd.16.desc 
+	picture = GFX_news_event_msln
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_itacd.11.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { tag = ITA }
+			add_stability = 0.05
+		}
+	}
+}
+news_event = {
+	id = NSB_itacd.17
+	title = NSB_itacd.11.t
+	desc = NSB_itacd.17.desc 
+	picture = GFX_news_event_msln
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_itacd.11.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { tag = ITA }
+			add_stability = 0.05
+		}
+	}
+}
+news_event = {
+	id = NSB_itacd.18
+	title = NSB_itacd.11.t
+	desc = NSB_itacd.18.desc 
+	picture = GFX_news_event_msln
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_itacd.11.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { tag = ITA }
+			add_stability = 0.05
+		}
+	}
+}
+news_event = {
+	id = NSB_itacd.19
+	title = NSB_itacd.11.t
+	desc = NSB_itacd.19.desc 
+	picture = GFX_news_event_msln
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_itacd.11.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { tag = ITA }
+			add_stability = 0.05
+		}
+	}
+}
+country_event = {
+	id = NSB_chicd.1
+	title = NSB_chicd.1.t
+	desc = NSB_chicd.1.desc 
+	picture = GFX_report_event_yun1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_chicd.1.a
+		ai_chance = {  
+			base = 100
+		}
+		hidden_effect = {
+			CHI = { add_ideas = tno_chi }
+			PRC = { add_ideas = tno_chi }
+			SHX = { add_ideas = tno_chi }
+			JAP = {
+				add_ideas = tno_jap
+				add_country_leader_trait = jdjgzyz
+			}
+			set_global_flag = tnoyun
+			set_variable = { ztd = 20 }
+			set_variable = { ztd_rate = 0 }
+			set_variable = { ztd_max = 100 }
+			set_variable = { sq = 40 }
+			set_variable = { sq_rate = 0 }
+			set_variable = { sq_max = 100 }
+			create_country_leader = {
+				name = " 龙云 "
+				desc = "POLITICS_longyun_DESC"
+				picture = GFX_portrait_longyun
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					yunnanwang
+				}
+			}
+			create_country_leader = {
+				name = " 龙云 "
+				desc = "POLITICS_longyun_DESC"
+				picture = GFX_portrait_longyun
+				expire = "1965.1.1"
+				ideology = 	nazism
+				traits = {
+					yunnanwang
+				}
+			}
+			create_country_leader = {
+				name = " 龙云 "
+				desc = "POLITICS_longyun_DESC"
+				picture = GFX_portrait_longyun
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					yunnanwang
+				}
+			}
+			create_country_leader = {
+				name = " 龙云 "
+				desc = "POLITICS_longyun_DESC"
+				picture = GFX_portrait_longyun
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					yunnanwang
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_chicd.2
+	title = NSB_chicd.2.t
+	desc = NSB_chicd.2.desc 
+	picture = GFX_report_event_yun1
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date > 1937.1.1
+		has_global_flag = tnoyun
+	}
+
+	option = {
+		name = NSB_chicd.2.a
+		ai_chance = {  
+			base = 100
+		}
+		hidden_effect = {
+			JAP = {
+				complete_national_focus = JAP_purge_the_kodoha_faction
+				complete_national_focus = JAP_liaison_conference
+				complete_national_focus = JAP_greater_east_asian_co_prosperity_sphere
+				complete_national_focus = JAP_guide_the_zaibatsus
+				complete_national_focus = JAP_national_mobilization_law
+				complete_national_focus = JAP_nationalize_war_industry
+				division_template = {
+					name = "步兵师3"
+					priority = 8
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade = { x = 3 y = 0 }	
+						artillery_brigade = { x = 3 y = 1 }					
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 } 
+					}
+				}
+				609 = {
+					create_unit = {
+						division = " division_template = \"步兵师3\" start_experience_factor = 0.35"
+						owner = JAP
+						count = 8
+					}
+				}
+			}
+			declare_war_on = {
+
+				target = CHI
+				
+				type = take_state
+				
+			}
+			declare_war_on = {
+
+				target = SHX
+				
+				type = take_state
+				
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_chicd.3
+	title = NSB_chicd.3.t
+	desc = NSB_chicd.3.desc 
+	picture = GFX_report_event_yun1
+	fire_only_once = yes
+	trigger = {
+		tag = YUN
+		date > 1936.3.1
+		has_global_flag = tnoyun
+	}
+
+	option = {
+		name = NSB_chicd.3.a
+		ai_chance = {  
+			base = 100
+		}
+		hidden_effect = {
+			set_country_flag = tnoyun1
+			create_faction = mzjfzx
+		}
+	}
+}
+country_event = {
+	id = NSB_chicd.4
+	title = NSB_chicd.4.t
+	desc = NSB_chicd.4.desc 
+	picture = GFX_report_event_yun1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_chicd.4.a
+		ai_chance = {  
+			base = 100
+		}
+		JAP = {
+			white_peace = CHI
+			white_peace = PRC
+			add_ideas = fjgzyqxgz
+		}
+		PRC = {
+			if = {
+				limit = { MAN = { is_ai = yes } }
+				annex_country = {
+					target = MAN
+					transfer_troops = yes
+				}
+			}
+			annex_country = {
+				target = MEN
+				transfer_troops = yes
+			}
+			transfer_state = 745
+			set_country_flag = krzzsl
+		}
+		CHI = {
+			transfer_state = 609
+			transfer_state = 524
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+			}
+			transfer_state_to = KOR
+		}
+		hidden_effect = {
+			JAP = {
+				white_peace = XSM
+				white_peace = SIK
+				white_peace = YUN
+				white_peace = GXC
+				white_peace = SHX
+				country_event = {
+					id = NSB_chicd.5
+					days = 30
+					random_days = 2
+				}
+				remove_ideas = zhlhkr
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_chicd.5
+	title = NSB_chicd.5.t
+	desc = NSB_chicd.5.desc 
+	picture = GFX_report_event_SRI1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_chicd.5.a
+		ai_chance = {  
+			base = 100
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 5
+		}
+		set_politics = {
+			ruling_party = democratic	
+			election_frequency = 48			
+			elections_allowed = no
+		}
+		create_faction = tpyfyty
+		swap_ideas = {
+			remove_idea = fjgzyqxgz
+			add_idea = dymzdt
+		}
+		give_guarantee = KOR
+		add_stability = 0.2
+		set_global_flag = mzrb
+	}
+}
+country_event = {
+	id = NSB_chicd.6
+	title = NSB_chicd.6.t
+	desc = NSB_chicd.6.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_chicd.6.a
+		ai_chance = {  
+			base = 100
+		}
+		declare_war_on = {
+
+			target = SOV
+			
+			type = take_state
+			
+		}
+		set_global_flag = prcsssd
+	}
+}
+country_event = {
+	id = NSB_chicd.7
+	title = NSB_chicd.7.t
+	desc = NSB_chicd.7.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_chicd.7.a
+		ai_chance = {  
+			base = 0
+		}
+		SOV = {
+			white_peace = PRC
+		}
+		PRC = {
+			every_state = {
+				limit = {
+					is_owned_by = SOV
+					or = {
+						is_core_of = PRC
+					}
+				}
+				transfer_state_to = PRC
+			}
+		}
+	}
+	option = {
+		name = NSB_chicd.7.b
+		ai_chance = {  
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = NSB_chicd.8
+	title = NSB_chicd.8.t
+	desc = NSB_chicd.8.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_chicd.8.a
+		ai_chance = {  
+			base = 0
+		}
+		SOV = {
+			white_peace = PRC
+		}
+		PRC = {
+			every_state = {
+				limit = {
+					is_owned_by = SOV
+					or = {
+					is_core_of = UZB
+					is_core_of = TAJ
+					is_core_of = KYR
+					is_core_of = FER
+					is_core_of = TMS
+					is_core_of = KAZ
+					is_core_of = PRC
+					}
+				}
+				transfer_state_to = PRC
+			}
+		}
+	}
+	option = {
+		name = NSB_chicd.8.b
+		ai_chance = {  
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = NSB_chicd.9
+	title = NSB_chicd.9.t
+	desc = NSB_chicd.9.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_chicd.9.a
+		ai_chance = {  
+			base = 200
+		}
+		SOV = {
+			white_peace = PRC
+			add_ideas = zzpk
+		}
+		PRC = {
+			add_ideas = zzpksyz
+			puppet = SOV
+			every_state = {
+				limit = {
+					NOT = {
+						is_core_of = GEO
+						is_core_of = ARM
+						is_core_of = AZR
+						state = 351
+						state = 880
+						state = 236
+					}
+					is_owned_by = SOV
+					is_on_continent = asia
+				}
+				transfer_state_to = PRC
+			}
+		}
+	}
+	option = {
+		name = NSB_chicd.9.b
+		ai_chance = {  
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = NSB_chicd.10
+	title = NSB_chicd.10.t
+	desc = NSB_chicd.10.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_chicd.10.a
+		ai_chance = {  
+			base = 100
+		}
+		JAP = {
+			add_ideas = mzzy
+		}
+		KOR = {
+			add_ideas = mzzy
+		}
+	}
+}
+country_event = {
+	id = NSB_chicd.11
+	title = NSB_chicd.11.t
+	desc = NSB_chicd.11.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_chicd.11.a
+		ai_chance = {  
+			base = 100
+		}
+		hidden_effect = {
+			JAP = {
+				declare_war_on = {
+		
+					target = PRC
+					
+					type = take_state
+					
+				}
+			}
+			declare_war_on = {
+
+				target = KOR
+				
+				type = take_state
+				
+			}
+			country_event = {
+				id = NSB_chicd.10
+				days = 1
+			}
+			
+		}
+	}
+}
+#Volkskommissariats
+
+country_event = { #Germany makes us a volkskommissariat
+	id = NSB_chicd.12
+	title = NSB_chicd.12.t
+	desc = wuw_GER_diplomacy.12.desc
+	picture = GFX_report_event_generic_communist_congress
+
+	is_triggered_only = yes
+
+	option = { #For the workers we will!
+		name = wuw_GER_diplomacy.12.a
+		ai_chance = {
+			base = 1000
+		}
+
+		PRC = {
+			set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_volkskommissariat_2
+				end_wars = no 
+			}
+		}
+
+	}
+}
+country_event = {
+	id = NSB_chicd.13
+	title = NSB_chicd.13.t
+	desc = NSB_chicd.13.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_chicd.13.a
+		ai_chance = {  
+			base = 100
+		}
+		hidden_effect = {
+			PRC = {
+				country_event = {
+					id = NSB_chicd.14
+					days = 180
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_chicd.14
+	title = NSB_chicd.14.t
+	desc = NSB_chicd.14.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_chicd.14.a
+		add_ideas = gc156_1
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 3
+				bonus = 3
+				uses = 6
+				category = artillery
+			}
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 50000  }
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 3
+				bonus = 3
+				uses = 6
+				category = infantry_weapons
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 400000  }
+			add_tech_bonus = {
+				name = armor_bonus
+				ahead_reduction = 3
+				bonus = 3
+				uses = 6
+				category = armor
+			}
+			add_equipment_to_stockpile = { type =medium_tank_chassis amount = 3000  }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			every_owned_state = {
+				limit = {
+					free_building_slots = {
+					building = infrastructure
+					size > 0
+					include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+	}
+}
+country_event = {
+	id = NSB_chicd.15
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_state = {
+			limit = {
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+			add_core_of = ROOT
+		}
+		country_event = {
+			id = NSB_chicd.15
+			days = 5
+		}
+	}
+}
+country_event = {
+	id = NSB_chicd.16
+	title = NSB_chicd.16.t
+	desc = NSB_chicd.16.desc 
+	picture = GFX_report_event_prccd1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_chicd.16.a
+		ai_chance = {  
+			base = 100
+		}
+		set_country_flag = accept_the_long_march
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = {
+	id = NSB_japcd.1
+	title = NSB_japcd.1.t
+	desc = NSB_japcd.1.desc 
+	picture = GFX_report_event_kaihui
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_japcd.1.a
+		ai_chance = {  
+			base = 100
+		}
+		every_state = {
+			limit = {
+				is_core_of = CHI
+				or = {
+					is_owned_by = MEN
+					is_owned_by = JAP
+				}
+			}
+			add_core_of = MAN
+			transfer_state_to = MAN
+		}
+		MAN = {
+			add_ideas = dglt
+		}
+		if = {
+			limit = { not = { has_completed_focus = qhwz } }
+			MAN = {
+				create_country_leader = {
+					name = "孙笑川"
+					desc = "POLITICS_sxc_DESC"
+					picture = GFX_portrait_sxc
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						rysh
+					}
+				}
+				create_country_leader = {
+					name = "孙笑川"
+					desc = "POLITICS_sxc_DESC"
+					picture = GFX_portrait_sxc
+					expire = "1965.1.1"
+					ideology = 	nazism
+					traits = {
+						rysh
+					}
+				}
+				create_country_leader = {
+					name = "孙笑川"
+					desc = "POLITICS_sxc_DESC"
+					picture = GFX_portrait_sxc
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						rysh
+					}
+				}
+				create_country_leader = {
+					name = "孙笑川"
+					desc = "POLITICS_sxc_DESC"
+					picture = GFX_portrait_sxc
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						rysh
+					}
+				}
+			}
+		}
+		if = {
+			limit = { has_completed_focus = qhwz }
+			MAN = {
+				create_country_leader = {
+					name = "東雪蓮"
+					desc = "POLITICS_dxl_DESC"
+					picture = GFX_portrait_dxl
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						xlnh
+						hjd
+					}
+				}
+				create_country_leader = {
+					name = "東雪蓮"
+					desc = "POLITICS_dxl_DESC"
+					picture = GFX_portrait_dxl
+					expire = "1965.1.1"
+					ideology = 	nazism
+					traits = {
+						xlnh
+						hjd
+					}
+				}
+				create_country_leader = {
+					name = "東雪蓮"
+					desc = "POLITICS_dxl_DESC"
+					picture = GFX_portrait_dxl
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						xlnh
+						hjd
+					}
+				}
+				create_country_leader = {
+					name = "東雪蓮"
+					desc = "POLITICS_dxl_DESC"
+					picture = GFX_portrait_dxl
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						xlnh
+						hjd
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_japcd.2
+	title = NSB_japcd.2.t
+	desc = NSB_japcd.2.desc 
+	picture = GFX_report_event_kaihui
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_japcd.2.a
+		ai_chance = {  
+			base = 100
+		}
+		complete_national_focus = dxlnhdj
+	}
+}
+country_event = {
+	id = NSB_bhucd.1
+	title = NSB_bhucd.1.t
+	desc = NSB_bhucd.1.desc 
+	picture = GFX_report_event_tiantang
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_bhucd.1.a
+		ai_chance = {  
+			base = 100
+		}
+		set_cosmetic_tag = tiantang
+		create_country_leader = {
+			name = "Level 14"
+			desc = "POLITICS_tiantang_DESC"
+			picture = GFX_portrait_tiantang
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				tiantang
+			}
+		}
+		create_country_leader = {
+			name = "Level 14"
+			desc = "POLITICS_tiantang_DESC"
+			picture = GFX_portrait_tiantang
+			expire = "1965.1.1"
+			ideology = 	nazism
+			traits = {
+				tiantang
+			}
+		}
+		create_country_leader = {
+			name = "Level 14"
+			desc = "POLITICS_tiantang_DESC"
+			picture = GFX_portrait_tiantang
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				tiantang
+			}
+		}
+		create_country_leader = {
+			name = "Level 14"
+			desc = "POLITICS_tiantang_DESC"
+			picture = GFX_portrait_tiantang
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				tiantang
+			}
+		}
+		unlock_decision_category_tooltip = rtmjl
+	}
+}
+country_event = {
+	id = NSB_fercd.1
+	title = NSB_fercd.1.t
+	desc = NSB_fercd.1.desc 
+	picture = GFX_report_event_tiantang
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_fercd.1.a
+		ai_chance = {  
+			base = 100
+		}
+		SOV = {
+			release = UKR
+			release = BLR
+			release = GEO
+			release = AZR
+			release = ARM
+			release = UZB
+			release = TAJ
+			release = KYR
+			release = TMS
+			release = KAZ
+			# retire_country_leader = yes
+			set_cosmetic_tag = SOV_russia
+			set_global_flag = SOV_became_russia
+			hidden_effect = {
+				UKR = {
+					set_technology = {
+						artillery1 = 1
+					}
+					add_offsite_building = { type = industrial_complex level = 12 }
+					add_offsite_building = { type = arms_factory level = 12 }
+					division_template = {
+						name = "步兵师6"
+						priority = 8
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }			
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+						}
+					}
+					random_owned_state = {
+						limit = { is_core_of = UKR }
+						create_unit = {
+							division = " division_template = \"步兵师6\" start_experience_factor = 0.35"
+							owner = UKR
+							count = 12
+						}
+					}
+					random_owned_state = {
+						limit = { is_core_of = UKR }
+						create_unit = {
+							division = " division_template = \"步兵师6\" start_experience_factor = 0.35"
+							owner = UKR
+							count = 12
+						}
+					}
+					declare_war_on = {
+
+						target = SOV
+						
+						type = take_state
+						
+					}
+				}
+			}
+		}
+		unlock_decision_category_tooltip = rtmjl
+	}
+}
+country_event = {
+	id = NSB_mancd.1
+	title = NSB_mancd.1.t
+	desc = NSB_mancd.1.desc 
+	picture = GFX_report_event_xqlc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_mancd.1.a
+		ai_chance = {  
+			base = 100
+		}
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+country_event = {
+	id = NSB_mancd.2
+	title = NSB_mancd.2.t
+	desc = NSB_mancd.2.desc 
+	picture = GFX_report_event_xqlc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_mancd.2.a
+		ai_chance = {  
+			base = 100
+		}
+		set_country_flag = xhwj
+		set_country_flag = xhwj2
+		unlock_decision_tooltip = xhbf
+	}
+}
+country_event = {
+	id = NSB_mancd.4
+	title = NSB_mancd.4.t
+	desc = NSB_mancd.4.desc 
+	picture = GFX_report_event_kaihui
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_mancd.4.a
+		ai_chance = {  
+			base = 100
+		}
+		JAP = {
+			set_autonomy = {
+				target = MAN
+				autonomous_state = autonomy_dominion 
+			}
+		}
+	}
+	option = {
+		name = NSB_mancd.4.b
+		ai_chance = {  
+			base = 100
+		}
+		custom_effect_tooltip = 1937_t
+		set_global_flag = fnggl
+	}
+}
+country_event = {
+	id = NSB_mancd.3
+	title = NSB_mancd.3.t
+	desc = NSB_mancd.3.desc 
+	picture = GFX_report_event_xqlc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_mancd.3.a
+		ai_chance = {  
+			base = 100
+		}
+		hidden_effect = {
+			every_country = {
+				add_ideas = jbht
+				add_ideas = bjzy
+			}
+			random_list = {
+				25 = {
+					KYU = {
+						transfer_state = 218
+					}
+				}
+				25 = {
+					KYU = {
+						transfer_state = 195
+					}
+				}
+				25 = {
+					KYU = {
+						transfer_state = 797
+					}
+				}
+				25 = {
+					KYU = {
+						transfer_state = 10
+					}
+				}
+			}
+			KYU = {
+				set_technology = {
+
+					# Infantry
+					interwar_artillery = 1
+					interwar_antitank = 1
+					infantry_weapons2 = 1
+					improved_infantry_weapons = 1
+					support_weapons = 1
+					support_weapons2 = 1
+					paratroopers = 1
+			
+					# Doctrines
+					delay = 1
+					elastic_defence = 1
+					armored_spearhead = 1
+					schwerpunk = 1
+					blitzkrieg = 1
+					convoy_interdiction_ti = 1
+					unrestricted_submarine_warfare = 1
+					raider_patrols = 1
+			
+					# Air
+					formation_flying = 1		
+					dive_bombing = 1
+					direct_ground_support = 1
+			
+					# Electronics
+					electronic_mechanical_engineering = 1
+					radio = 1
+					cavity_magnatron = 1
+					mechanical_computing = 1
+					computing_machine = 1
+					basic_encryption = 1
+					basic_decryption = 1
+			
+					# Industry
+					basic_machine_tools = 1
+					improved_machine_tools = 1
+					advanced_machine_tools = 1
+					oil_processing = 1
+					fuel_refining2 = 1
+					construction1 = 1
+					construction2 = 1
+					construction3 = 1
+					construction4 = 1
+					dispersed_industry = 1
+					dispersed_industry2 = 1
+					dispersed_industry3 = 1
+					dispersed_industry4 = 1
+					basic_fortification_tech = 1
+			
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "No Step Back"
+						}
+					}
+					set_technology = {
+						basic_medium_tank = 1 
+					}
+					set_oob = "GER_1939"
+				}
+				if = {
+					limit = {
+						has_dlc = "No Step Back"
+					}
+					set_technology = {
+						basic_medium_tank_chassis = 1 
+					}
+					set_oob = "GER_1939_nsb"
+				}
+			
+				if = {
+					limit = {
+						not = {
+							has_dlc = "Man the Guns"
+						}
+					}
+					set_technology = {
+						basic_heavy_cruiser = 1
+						improved_heavy_cruiser = 1
+						improved_battleship = 1
+						early_carrier = 1
+						basic_carrier = 1
+						improved_carrier = 1
+					}
+					set_naval_oob = "GER_1939_naval_legacy"
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					set_technology = {
+						improved_ship_hull_cruiser = 1
+						basic_ship_hull_heavy = 1
+						early_ship_hull_carrier = 1
+						basic_ship_hull_carrier = 1
+						improved_heavy_battery = 1
+						basic_heavy_armor_scheme = 1
+					}
+					set_naval_oob = "GER_1939_naval_mtg"
+				}
+			
+				if = {
+					limit = { has_dlc = "By Blood Alone" }
+						set_air_oob = "GER_1939_air_bba"
+					else = {
+						set_air_oob = "GER_1939_air_legacy"
+						set_technology = {
+							CAS2 = 1
+							heavy_fighter1 = 1
+						}
+					}
+				}
+				if = {
+					limit = { has_dlc = "By Blood Alone" }
+						set_air_oob = "GER_1936_air_bba"
+						set_technology = {
+							aa_lmg = 1
+							aa_cannon_1 = 1
+							engines_1 = 1
+							engines_2 = 1
+							early_bombs = 1
+							aircraft_construction = 1
+							iw_small_airframe = 1
+							basic_small_airframe = 1
+							iw_medium_airframe = 1
+							basic_medium_airframe = 1
+							iw_large_airframe = 1
+							air_torpedoe_1 = 1
+							photo_reconnaisance = 1
+							bba_early_transport_plane = 1
+						}
+					else = {
+						set_air_oob = "GER_1936_air_legacy"
+						set_technology = {
+							early_fighter = 1
+							fighter1 = 1
+							early_bomber = 1
+							tactical_bomber1 = 1
+							strategic_bomber1 = 1
+							CAS1 = 1
+							naval_bomber1 = 1
+							early_transport_plane = 1
+						}
+					}
+				}
+				set_technology = {
+					infantry_weapons = 1
+					infantry_weapons1 = 1
+					tech_recon = 1
+					tech_support = 1		
+					tech_engineers = 1
+					tech_mountaineers = 1
+					tech_trucks = 1
+					motorised_infantry = 1
+					gw_artillery = 1
+					interwar_antiair = 1
+					basic_train = 1
+					mobile_warfare = 1
+					trade_interdiction = 1
+					formation_flying = 1
+					synth_oil_experiments = 1
+					fuel_silos = 1
+					fuel_refining = 1
+				}
+				if = {
+					limit = {
+						NOT = { has_dlc = "No Step Back" }
+					}
+					set_technology = {
+						gwtank = 1
+						basic_light_tank = 1
+						improved_light_tank = 1
+						basic_heavy_tank = 1
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "No Step Back"
+					}
+					set_technology = {
+						gwtank_chassis = 1
+						basic_light_tank_chassis = 1
+						improved_light_tank_chassis = 1
+						basic_heavy_tank_chassis = 1
+						engine_tech_1 = 1
+					}
+				}
+				if = {
+					limit = {
+						not = { has_dlc = "Man the Guns" }
+					}
+					set_technology = {
+						early_submarine = 1
+						basic_submarine = 1
+						early_destroyer = 1
+						basic_destroyer = 1
+						early_light_cruiser = 1
+						basic_light_cruiser = 1
+						early_heavy_cruiser = 1
+						basic_heavy_cruiser = 1
+						early_battleship = 1
+						basic_battleship = 1
+						early_battlecruiser = 1
+						transport = 1
+					}
+					set_naval_oob = "GER_1936_naval"
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					set_technology = {
+						basic_naval_mines = 1
+						submarine_mine_laying = 1
+						early_ship_hull_light = 1
+						basic_ship_hull_light = 1
+						early_ship_hull_cruiser = 1
+						basic_ship_hull_cruiser = 1
+						early_ship_hull_heavy = 1
+						basic_ship_hull_heavy = 1
+						panzerschiffe = 1
+						pre_dreadnoughts = 1
+						early_ship_hull_submarine = 1
+						basic_ship_hull_submarine = 1
+						mtg_transport = 1
+						basic_torpedo = 1
+						improved_ship_torpedo_launcher = 1
+						basic_battery = 1
+						basic_light_battery = 1
+						basic_medium_battery = 1
+						basic_heavy_battery = 1
+						basic_depth_charges = 1
+						sonar = 1
+						basic_cruiser_armor_scheme = 1
+					}
+					set_naval_oob = "GER_1936_naval_mtg"
+				}
+				if = {
+					limit = {
+						has_dlc = "La Resistance"
+					}
+					set_technology = {
+						armored_car1 = 1
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_dlc = "Man the Guns" }
+					}
+					# Submarines #
+					create_equipment_variant = {
+						name = "Type VIIA"
+						type = submarine_2
+						parent_version = 0
+						upgrades = {
+							ship_reliability_upgrade = 1
+							sub_engine_upgrade = 1
+							sub_stealth_upgrade = 1
+							sub_torpedo_upgrade = 1
+						}
+					}
+					# Destroyer #
+					create_equipment_variant = {
+						name = "Zerstörer 1936"
+						type = destroyer_2
+						parent_version = 0
+						upgrades = {
+							ship_torpedo_upgrade = 2
+							destroyer_engine_upgrade = 2
+							ship_ASW_upgrade = 2
+							ship_anti_air_upgrade = 2
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					create_equipment_variant = {
+						name = "Zerstörer 1936"
+						type = ship_hull_light_2
+						name_group = GER_DD_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_2
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = light_ship_engine_2
+							fixed_ship_torpedo_slot = ship_torpedo_1
+							rear_1_custom_slot = ship_depth_charge_1
+						}
+					}
+					create_equipment_variant = {
+						name = "Bismarck"
+						type = ship_hull_heavy_2
+						name_group = GER_BB_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_heavy_battery_3
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = heavy_ship_engine_2
+							fixed_ship_secondaries_slot = ship_secondaries_2
+							fixed_ship_armor_slot = ship_armor_bb_2
+							front_1_custom_slot = ship_anti_air_1
+							mid_1_custom_slot = ship_airplane_launcher_1
+							mid_2_custom_slot = ship_secondaries_2
+							rear_1_custom_slot = ship_heavy_battery_3
+						}
+					}
+					create_equipment_variant = {
+						name = "Graf Zeppelin"
+						type = ship_hull_carrier_1
+						name_group = GER_CV_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_2
+							fixed_ship_secondaries_slot = ship_secondaries_1
+							front_1_custom_slot = ship_deck_space
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "No Step Back"
+					}
+					create_equipment_variant = {
+						name = "Panzer III Ausf. F"
+						type = medium_tank_chassis_1
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_small_cannon_2
+							turret_type_slot = tank_medium_three_man_tank_turret
+							suspension_type_slot = tank_torsion_bar_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = smoke_launchers
+							special_type_slot_3 = empty
+							special_type_slot_4 = empty
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 6
+							tank_nsb_armor_upgrade = 3
+						}
+						icon = "GFX_GER_basic_medium_tank_medium"
+					}
+					create_equipment_variant = {
+						name = "Panzer IV Ausf. C"
+						type = medium_tank_chassis_1
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_close_support_gun
+							turret_type_slot = tank_medium_three_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = smoke_launchers
+							special_type_slot_3 = empty
+							special_type_slot_4 = empty
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 6
+							tank_nsb_armor_upgrade = 3
+						}
+						icon = "GFX_GER_improved_medium_tank_medium"
+					}
+					create_equipment_variant = {
+						name = "Panzer 35(t)"
+						type = light_tank_chassis_1
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_high_velocity_cannon
+							turret_type_slot = tank_light_two_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_riveted_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = empty
+							special_type_slot_3 = empty
+							special_type_slot_4 = empty
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 3
+							tank_nsb_armor_upgrade = 2
+						}
+						obsolete = yes
+						icon = "GFX_CZE_basic_light_tank_medium"
+					}
+					create_equipment_variant = {
+						name = "Panzer 38(t)"
+						type = light_tank_chassis_2
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_high_velocity_cannon
+							turret_type_slot = tank_light_two_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_riveted_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = smoke_launchers
+							special_type_slot_3 = empty
+							special_type_slot_4 = empty
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 3
+							tank_nsb_armor_upgrade = 3
+						}
+						
+						icon = "GFX_CZE_improved_light_tank_medium"
+					}
+				}
+			
+				if = {
+					limit = { NOT = { has_dlc = "By Blood Alone" } }
+					create_equipment_variant = {
+						name = "He 112"
+						type = fighter_equipment_1
+						upgrades = {
+							plane_gun_upgrade = 1
+							plane_range_upgrade = 1  
+							plane_engine_upgrade = 0
+							plane_reliability_upgrade = 2
+						}
+					}
+					create_equipment_variant = {
+						name = "Bf 109 E"
+						type = fighter_equipment_1
+						upgrades = {
+							plane_gun_upgrade = 2
+							plane_range_upgrade = 1  
+							plane_engine_upgrade = 2
+							plane_reliability_upgrade = 4
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					create_equipment_variant = {
+						name = "Bf 109 E"
+						type = small_plane_airframe_1
+						design_team = mio:GER_messerschmitt_organization
+						modules = {
+							fixed_main_weapon_slot = light_mg_2x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = empty
+						}
+						icon = "GFX_GER_fighter1_medium"
+					}
+					create_equipment_variant = {
+						name = "Bf 110 C"
+						type = small_plane_airframe_1
+						design_team = mio:GER_messerschmitt_organization
+						modules = {
+							fixed_main_weapon_slot = light_mg_4x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+							engine_type_slot = engine_2_2x
+							special_type_slot_1 = empty
+						}
+						icon = "GFX_GER_heavy_fighter1_medium"
+					}
+					create_equipment_variant = {
+						name = "He 112"
+						type = small_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = light_mg_2x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = empty
+						}
+						icon = "GFX_GER_light_plane_1_medium"
+					}
+				}
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 80000  }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 40000  }
+				add_equipment_to_stockpile = { type = support_equipment amount = 30000  }
+				add_equipment_to_stockpile = { type =medium_tank_chassis amount = 20000  }
+			}
+			KYU = {
+				add_ideas = xhwj_kyu
+				add_ideas = fwzjt
+				set_cosmetic_tag = huimie
+				add_manpower = 10000000
+				add_offsite_building = { type = industrial_complex level = 200 }
+				add_offsite_building = { type = arms_factory level = 400 }
+				set_politics = {						#政党设置
+					ruling_party = fascism			#执政党，如此，瑞士不再是中立，瑞士变为“瑞士皇家邦联”
+					election_frequency = 48			#选举周期
+					elections_allowed = no		#无选举，可改为“yes”
+				}
+				create_country_leader = {
+					name = "纳努克"
+					desc = "POLITICS_nanuke_DESC"
+					picture = GFX_portrait_nanuke
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+						jmdj
+					}
+				}
+				division_template = {
+					name = "毁灭军团1"
+					priority = 2
+					is_locked = yes
+					force_allow_recruiting = yes
+					regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 0 y = 3 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+						motorized = { x = 1 y = 3 }
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 2 y = 3 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 } 
+					}
+				}
+				division_template = {
+					name = "毁灭军团2"
+					priority = 2
+					is_locked = yes
+					force_allow_recruiting = yes
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade = { x = 3 y = 0 }	
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }				
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 } 
+					}
+				}
+				random_owned_controlled_state = {
+					add_resource = {
+						type = oil
+						amount = 80
+					}
+					create_unit = {
+						division = " division_template = \"毁灭军团1\" start_experience_factor = 0.4"
+						owner = KYU
+						count = 72
+					}
+					create_unit = {
+						division = " division_template = \"毁灭军团2\" start_experience_factor = 0.4"
+						owner = KYU
+						count = 144
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = yes
+					}
+					declare_war_on = {
+
+						target = KYU
+						
+						type = take_state
+						
+					}
+				}
+				declare_war_on = {
+
+					target = MAN
+					
+					type = take_state
+					
+				}
+			}
+			set_country_flag = hmjtrq
+			set_global_flag = hmjtrq
+		}
+	}
+}
+country_event = {
+	id = NSB_gercd.1
+	title = NSB_gercd.1.t
+	desc = NSB_gercd.1.desc 
+	picture = GFX_report_event_gercd1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_gercd.1.a
+		ai_chance = {  
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = NSB_gercd.2
+	title = NSB_gercd.2.t
+	desc = NSB_gercd.2.desc 
+	picture = GFX_report_event_gercd1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_gercd.2.a
+		ai_chance = {  
+			base = 100
+		}
+		add_ideas = bsjt
+	}
+}
+country_event = {
+	id = NSB_gercd.3
+	title = NSB_gercd.3.t
+	desc = NSB_gercd.3.desc 
+	picture = GFX_report_event_gercd2
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_gercd.3.a
+		ai_chance = {  
+			base = 100
+		}
+		add_ideas = kjdbf
+		
+		add_tech_bonus = {
+			name = infantry_artillery_bonus
+			ahead_reduction = 5
+			bonus = 5
+			uses = 8
+			category = artillery
+		}
+		add_tech_bonus = {
+			name = infantry_artillery_bonus
+			ahead_reduction = 5
+			bonus = 5
+			uses = 8
+			category = infantry_weapons
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			ahead_reduction = 5
+			bonus = 5
+			uses = 8
+			category = armor
+		}
+	}
+}
+country_event = {
+	id = NSB_samicd.1
+	title = NSB_samicd.1.t
+	desc = NSB_samicd.1.desc 
+	picture = GFX_report_event_samicd1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_samicd.1.a
+		ai_chance = {  
+			base = 100
+		}
+		hidden_effect = {
+			country_event = {
+				id = NSB_samicd.2
+				days = 14
+				random_days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_samicd.2
+	title = NSB_samicd.2.t
+	desc = NSB_samicd.2.desc 
+	picture = GFX_report_event_samicd2
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_samicd.2.a
+		ai_chance = {  
+			base = 100
+		}
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = {
+				id = NSB_samicd.3
+				days = 14
+				random_days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_samicd.3
+	title = NSB_samicd.3.t
+	desc = NSB_samicd.3.desc 
+	picture = GFX_report_event_samicd2
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_samicd.3.a
+		ai_chance = {  
+			base = 100
+		}
+		add_stability = -0.1
+		add_war_support = -0.1
+		hidden_effect = {
+			country_event = {
+				id = NSB_samicd.4
+				days = 14
+				random_days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_samicd.4
+	title = NSB_samicd.4.t
+	desc = NSB_samicd.4.desc 
+	picture = GFX_report_event_samicd2
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		add_stability = -0.2
+		add_war_support = -0.1
+		name = NSB_samicd.4.a
+		ai_chance = {  
+			base = 100
+		}
+		set_global_flag = samicd4
+	}
+}
+country_event = {
+	id = NSB_samicd.11
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		remove_ideas = zxbn1
+		add_ideas = zxbn2
+		country_event = {
+			id = NSB_samicd.12
+			days = 180
+		}
+	}
+}
+country_event = {
+	id = NSB_samicd.12
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		remove_ideas = zxbn2
+		add_ideas = zxbn3
+		country_event = {
+			id = NSB_samicd.13
+			days = 180
+		}
+	}
+}
+country_event = {
+	id = NSB_samicd.13
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		remove_ideas = zxbn3
+		add_ideas = zxbn4
+		country_event = {
+			id = NSB_samicd.14
+			days = 180
+		}
+	}
+}
+country_event = {
+	id = NSB_samicd.14
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		remove_ideas = zxbn4
+		add_ideas = zxbn5
+		country_event = {
+			id = NSB_samicd.15
+			days = 180
+		}
+	}
+}
+country_event = {
+	id = NSB_samicd.15
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		remove_ideas = zxbn5
+		add_ideas = zxbn6
+	}
+}
+country_event = {
+	id = NSB_qita.11
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_war = yes }
+			remove_ideas = ymyzd
+			add_ideas = ymyzd1
+			country_event = {
+				id = NSB_qita.12
+				days = 90
+			}
+		}
+		if = {
+			limit = { has_war = no }
+			country_event = {
+				id = NSB_qita.11
+				days = 7
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.12
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_war = yes }
+			remove_ideas = ymyzd1
+			add_ideas = ymyzd2
+			country_event = {
+				id = NSB_qita.13
+				days = 90
+			}
+		}
+		if = {
+			limit = { has_war = no }
+			country_event = {
+				id = NSB_qita.12
+				days = 7
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.13
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_war = yes }
+			remove_ideas = ymyzd2
+			add_ideas = ymyzd3
+			country_event = {
+				id = NSB_qita.14
+				days = 90
+			}
+		}
+		if = {
+			limit = { has_war = no }
+			country_event = {
+				id = NSB_qita.13
+				days = 7
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.14
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_war = yes }
+			remove_ideas = ymyzd3
+			add_ideas = ymyzd4
+			country_event = {
+				id = NSB_qita.15
+				days = 90
+			}
+		}
+		if = {
+			limit = { has_war = no }
+			country_event = {
+				id = NSB_qita.14
+				days = 7
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.15
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_war = yes }
+			remove_ideas = ymyzd4
+			add_ideas = ymyzd5
+			country_event = {
+				id = NSB_qita.16
+				days = 90
+			}
+		}
+		if = {
+			limit = { has_war = no }
+			country_event = {
+				id = NSB_qita.15
+				days = 7
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.16
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_war = yes }
+			remove_ideas = ymyzd5
+			add_ideas = ymyzd6
+		}
+		if = {
+			limit = { has_war = no }
+			country_event = {
+				id = NSB_qita.16
+				days = 7
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.17
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		every_controlled_state = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = gxtp_dynamic_modifier
+						scope = GXC
+					}
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = gxtp_dynamic_modifier
+				scope = GXC
+			}
+		}
+		country_event = {
+			id = NSB_qita.17
+			days = 7
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.18
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_country_flag = lbwnb10  }
+			swap_ruler_traits = {
+				remove = lbwnb10
+				add = lbwnb11
+			}
+			clr_country_flag = lbwnb10
+		}
+		if = {
+			limit = { has_country_flag = lbwnb9  }
+			swap_ruler_traits = {
+				remove = lbwnb9
+				add = lbwnb10
+			}
+			set_country_flag = lbwnb10
+			clr_country_flag = lbwnb9
+		}
+		if = {
+			limit = { has_country_flag = lbwnb8  }
+			swap_ruler_traits = {
+				remove = lbwnb8
+				add = lbwnb9
+			}
+			set_country_flag = lbwnb9
+			clr_country_flag = lbwnb8
+		}
+		if = {
+			limit = { has_country_flag = lbwnb7  }
+			swap_ruler_traits = {
+				remove = lbwnb7
+				add = lbwnb8
+			}
+			set_country_flag = lbwnb8
+			clr_country_flag = lbwnb7
+		}
+		if = {
+			limit = { has_country_flag = lbwnb6  }
+			swap_ruler_traits = {
+				remove = lbwnb6
+				add = lbwnb7
+			}
+			set_country_flag = lbwnb7
+			clr_country_flag = lbwnb6
+		}
+		if = {
+			limit = { has_country_flag = lbwnb5  }
+			swap_ruler_traits = {
+				remove = lbwnb5
+				add = lbwnb6
+			}
+			set_country_flag = lbwnb6
+			clr_country_flag = lbwnb5
+		}
+		if = {
+			limit = { has_country_flag = lbwnb4  }
+			swap_ruler_traits = {
+				remove = lbwnb4
+				add = lbwnb5
+			}
+			set_country_flag = lbwnb5
+			clr_country_flag = lbwnb4
+		}
+		if = {
+			limit = { has_country_flag = lbwnb3  }
+			swap_ruler_traits = {
+				remove = lbwnb3
+				add = lbwnb4
+			}
+			set_country_flag = lbwnb4
+			clr_country_flag = lbwnb3
+		}
+		if = {
+			limit = { has_country_flag = lbwnb2  }
+			swap_ruler_traits = {
+				remove = lbwnb2
+				add = lbwnb3
+			}
+			set_country_flag = lbwnb3
+			clr_country_flag = lbwnb2
+		}
+		if = {
+			limit = { has_country_flag = lbwnb1  }
+			swap_ruler_traits = {
+				remove = lbwnb1
+				add = lbwnb2
+			}
+			set_country_flag = lbwnb2
+			clr_country_flag = lbwnb1
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.19
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		set_variable = { lbw55k_v1 = has_army_manpower }
+		set_variable = { lbw55k_v2 = num_of_factories }
+		if = {
+			limit = { has_global_flag = lbw55k }
+			every_country = {
+				limit = {
+					not = {
+						is_in_faction_with = ROOT
+						original_tag = LBW
+					}
+					strength_ratio = {
+						tag = LBW
+						ratio > 0.95
+					}
+				}
+				add_ideas = qx55k1
+			}
+			every_country = {
+				limit = {
+					not = {
+						is_in_faction_with = ROOT
+						original_tag = LBW
+					}
+					strength_ratio = {
+						tag = LBW
+						ratio < 0.95
+					}
+				}
+				remove_ideas = qx55k1
+			}
+			every_country = {
+				limit = {
+					not = {
+						is_in_faction_with = ROOT
+						original_tag = LBW
+					}
+					num_of_factories > LBW.num_of_factories
+				}
+				add_ideas = qx55k2
+			}
+			every_country = {
+				limit = {
+					not = {
+						is_in_faction_with = ROOT
+						original_tag = LBW
+					}
+					num_of_factories < LBW.num_of_factories
+				}
+				remove_ideas = qx55k2
+			}
+		}
+		country_event = {
+			id = NSB_qita.19
+			days = 7
+		}
+	}
+}
+country_event = {
+	id = NSB_sovcd.1
+	title = NSB_sovcd.1.t
+	desc = NSB_sovcd.1.desc 
+	picture = GFX_report_event_sovcd1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_sovcd.1.a
+		ai_chance = {  
+			base = 100
+		}
+		set_country_flag = sovcd1
+		set_cosmetic_tag = SOV_YLG
+		create_country_leader = {
+			name = "尤里"
+			desc = "POLITICS_yl_DESC"
+			picture = GFX_portrait_youli
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				wdyz
+			}
+		}
+		create_country_leader = {
+			name = "尤里"
+			desc = "POLITICS_yl_DESC"
+			picture = GFX_portrait_youli
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				wdyz
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_sovcd.2
+	title = NSB_sovcd.2.t
+	desc = NSB_sovcd.2.desc 
+	picture = GFX_report_event_sovcd2
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_sovcd.2.a
+		ai_chance = {  
+			base = 100
+		}
+		set_country_flag = sovcd2
+		set_cosmetic_tag = SOV_BH3
+		create_country_leader = {
+			name = "布洛妮娅·扎伊切克"
+			desc = "POLITICS_blny_DESC"
+			picture = GFX_portrait_blny
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				kjnwbngg
+				wleyl
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_gxccd.1
+	title = NSB_gxccd.1.t
+	desc = NSB_gxccd.1.desc 
+	picture = GFX_report_event_gxccd1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_gxccd.1.a
+		ai_chance = {  
+			base = 100
+		}
+		set_country_flag = twgl
+		unlock_decision_category_tooltip = tptgqy
+	}
+}
+country_event = {
+	id = NSB_gxccd.2
+	title = NSB_gxccd.2.t
+	desc = NSB_gxccd.2.desc 
+	picture = GFX_report_event_gxccd1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_gxccd.2.a
+		ai_chance = {  
+			base = 100
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = {
+	id = NSB_lbwcd.1
+	title = NSB_lbwcd.1.t
+	desc = NSB_lbwcd.1.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_lbwcd.1.a
+		ai_chance = {  
+			base = 100
+		}
+		country_event = {
+			id = NSB_lbwcd.2
+			days = 14
+		}
+	}
+	option = {
+		name = NSB_lbwcd.1.b
+		ai_chance = {  
+			base = 100
+		}
+		GXC = { add_ideas = lbw1 }
+	}
+}
+country_event = {
+	id = NSB_lbwcd.2
+	title = NSB_lbwcd.2.t
+	desc = NSB_lbwcd.2.desc 
+	picture = GFX_report_event_lbwcd1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_lbwcd.2.a
+		ai_chance = {  
+			base = 100
+		}
+		hidden_effect = {
+			set_victory_points = {
+				province = 10062
+				value = 30
+			}
+			set_province_name = { id = 10062 name = "卢本伟广场"}
+		}
+		LBW = {
+			add_state_core = 326
+			transfer_state = 326
+			hidden_effect = {
+				set_country_flag = lbwnb1
+				add_offsite_building = { type = industrial_complex level = 5 }
+				add_offsite_building = { type = arms_factory level = 5 }
+				create_country_leader = {
+					name = "卢本伟"
+					desc = "POLITICS_lbw_DESC"
+					picture = GFX_portrait_lbwtx2
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						lbwnb1
+					}
+				}
+				create_country_leader = {
+					name = "卢本伟"
+					desc = "POLITICS_lbw_DESC"
+					picture = GFX_portrait_lbwtx2
+					expire = "1965.1.1"
+					ideology = 	nazism
+					traits = {
+						lbwnb1
+					}
+				}
+				create_country_leader = {
+					name = "卢本伟"
+					desc = "POLITICS_lbw_DESC"
+					picture = GFX_portrait_lbwtx2
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						lbwnb1
+					}
+				}
+				create_country_leader = {
+					name = "卢本伟"
+					desc = "POLITICS_lbw_DESC"
+					picture = GFX_portrait_lbwtx2
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						lbwnb1
+					}
+				}
+				division_template = {
+					name = "步兵师55型"
+					priority = 2
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade = { x = 3 y = 0 }	
+						artillery_brigade = { x = 3 y = 1 }					
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 } 
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { is_core_of = 	LBW }
+					create_unit = {
+						division = " division_template = \"步兵师55型\" start_experience_factor = 0.5"
+						owner = LBW
+						count = 2
+					}
+				}
+			}
+			change_tag_from = ROOT
+		}
+	}
+}
+country_event = {
+	id = NSB_lbwcd.3
+	title = NSB_lbwcd.3.t
+	desc = NSB_lbwcd.3.desc 
+	picture = GFX_report_event_lbwcd2
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_lbwcd.3.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { not = { has_country_flag = cjjb } }
+			add_timed_idea = {
+				idea = duguai
+				days = 30
+			}
+			add_political_power = 578
+		}
+		if = {
+			limit = { has_country_flag = cjjb }
+			add_timed_idea = {
+				idea = duguai
+				days = 120
+			}
+			add_political_power = 2000
+		}
+		if = {
+			limit = { has_country_flag = duguai2 }
+			set_country_flag = duguai3
+		}
+		if = {
+			limit = { has_country_flag = duguai1 }
+			set_country_flag = duguai2
+		}
+		set_country_flag = duguai1
+	}
+}
+country_event = {
+	id = NSB_lbwcd.4
+	title = NSB_lbwcd.4.t
+	desc = NSB_lbwcd.4.desc 
+	picture = GFX_report_event_lbwcd2
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_lbwcd.4.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { not = { has_country_flag = cjjb } }
+			add_political_power = 20
+		}
+		if = {
+			limit = { has_country_flag = cjjb }
+			add_political_power = 80
+		}
+	}
+}
+country_event = {
+	id = NSB_lbwcd.5
+	title = NSB_lbwcd.5.t
+	desc = NSB_lbwcd.5.desc 
+	picture = GFX_report_event_lbwcd2
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_lbwcd.5.a
+		ai_chance = {  
+			base = 100
+		}
+		if = {
+			limit = { not = { has_country_flag = cjjb } }
+			add_political_power = -20
+		}
+		if = {
+			limit = { has_country_flag = cjjb }
+			add_political_power = -80
+		}
+	}
+}
+country_event = {
+	id = NSB_lbwcd.6
+	title = NSB_lbwcd.6.t
+	desc = NSB_lbwcd.6.desc 
+	picture = GFX_report_event_lbwcd2
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_lbwcd.6.a
+		ai_chance = {  
+			base = 100
+		}
+		add_stability = 0.1
+		add_political_power = 100
+	}
+	option = {
+		name = NSB_lbwcd.6.b
+		ai_chance = {  
+			base = 100
+		}
+		add_stability = -0.2
+		add_political_power = -100
+		custom_effect_tooltip = kaigua_tt
+		set_global_flag = lbwkaigua1
+	}
+}
+country_event = {
+	id = NSB_cogcd.1
+	title = NSB_cogcd.1.t
+	desc = NSB_cogcd.1.desc 
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_cogcd.1.a
+		ai_chance = {  
+			base = 100
+		}
+		create_country_leader = {
+			name = "让-贝德尔·博卡萨"
+			desc = "POLITICS_bks_DESC"
+			picture = GFX_portrait_bks1
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+		create_country_leader = {
+			name = "让-贝德尔·博卡萨"
+			desc = "POLITICS_bks_DESC"
+			picture = GFX_portrait_bks1
+			expire = "1965.1.1"
+			ideology = 	nazism
+			traits = {
+			}
+		}
+	}
+}

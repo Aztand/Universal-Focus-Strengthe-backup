@@ -1,0 +1,36 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_decision_fdg"
+		texturefile = "gfx/interface/decisions/fdg.png"
+	}
+	spriteType = {
+		name = "GFX_decision_lhg"
+		texturefile = "gfx/interface/decisions/lhg.png"
+	}
+	spriteType = {
+		name = "GFX_decision_tptg"
+		texturefile = "gfx/interface/decisions/tptg.png"
+	}
+	spriteType = {
+		name = "GFX_decision_jsyd1"
+		texturefile = "gfx/interface/decisions/jsyd1.png"
+	}
+	spriteType = {
+		name = "GFX_decision_wcyc1"
+		texturefile = "gfx/interface/decisions/wcyc.png"
+	}
+	spriteType = {
+		name = "GFX_decision_mygo1"
+		texturefile = "gfx/interface/decisions/mygo.png"
+	}
+	spriteType = {
+		name = "GFX_bop_ydyxl_d"
+		texturefile = "gfx/interface/ydyxld_side.png"
+	}
+	spriteType = {
+		name = "GFX_bop_ydyxl_g"
+		texturefile = "gfx/interface/ydyxlg_side.png"
+	}
+
+}

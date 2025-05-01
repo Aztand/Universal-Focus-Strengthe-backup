@@ -1,0 +1,482 @@
+sub_units = {
+	fsyyt = {
+		sprite = infantry
+		map_icon_category = infantry
+		active = no
+        cavalry = no 
+        special_forces = no 
+        marines = no 
+        mountaineers = no 
+        can_be_parachuted = no 
+        affects_speed = no
+
+		priority = 0
+		ai_priority = 0
+
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		categories = {
+			category_support_battalions
+			category_army
+			category_front_line
+			category_all_infantry
+			category_light_infantry
+		}
+		
+		max_strength = 25 
+		max_organisation = 60
+		default_morale = 0.5
+		manpower = 50
+
+		#Misc Abilities
+		training_time = 25
+		suppression = 5.0
+		weight = 0.5
+
+		movement = 0.15
+		experience_loss_factor = -0.35
+		recon = 2 
+		casualty_trickleback = 0.35
+		supply_consumption_factor = -0.35
+		supply_consumption = 0
+	
+		battalion_mult = {
+			category = category_front_line
+			soft_attack = 0.15 
+		}
+		battalion_mult = {
+			category = category_front_line
+			hard_attack = 0.15 
+		}
+
+		need = {
+			support_equipment = 50
+		}
+
+		defense = 0.1
+		breakthrough = 0.2 
+		soft_attack = 0.2
+		hard_attack = 0.15 
+		air_attack = 0.1
+	
+		mountain = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		hills = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		river = {
+			attack = 0.25 
+			defence = 0.25
+			movement = 0.25
+		}
+
+		amphibious = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		forest = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		urban = {
+			attack = 0.25 
+			defence = 0.25
+			movement = 0.25
+		}
+
+		fort = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		marsh = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		jungle = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+	}
+	jxgwrj = {
+		sprite = infantry
+		map_icon_category = infantry
+		active = no
+        cavalry = no 
+        special_forces = no 
+        marines = no 
+        mountaineers = no 
+        can_be_parachuted = no 
+        affects_speed = no
+
+		priority = 0
+		ai_priority = 0
+
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		categories = {
+			category_support_battalions
+			category_army
+			category_front_line
+			category_all_infantry
+			category_light_infantry
+			category_anti_air
+		}
+		
+		max_strength = 50
+		max_organisation = 50
+		default_morale = 0.75
+		manpower = 5
+
+		#Misc Abilities
+		training_time = 5
+		suppression = 5.0
+		weight = 0.5
+
+		movement = 0.2
+		experience_loss_factor = -0.35
+		recon = 10
+		casualty_trickleback = 0.35
+		supply_consumption_factor = -0.2
+		supply_consumption = 0
+	
+		battalion_mult = {
+			category = category_front_line
+			soft_attack = 0.25
+		}
+		battalion_mult = {
+			category = category_front_line
+			hard_attack = 0.2
+		}
+
+		need = {
+			support_equipment = 20
+			anti_air_equipment = 2
+			artillery_equipment = 2
+		}
+
+		defense = 0.15
+		breakthrough = 0.2 
+		soft_attack = 0.25
+		hard_attack = 0.2
+		air_attack = 0.5
+	
+		mountain = {
+			attack = 0.2
+			defence = 0.15
+			movement = 0.15
+		}
+
+		hills = {
+			attack = 0.2
+			defence = 0.15
+			movement = 0.15
+		}
+
+		river = {
+			attack = 0.25 
+			defence = 0.25
+			movement = 0.25
+		}
+
+		amphibious = {
+			attack = 0.2
+			defence = 0.15
+			movement = 0.15
+		}
+
+		forest = {
+			attack = 0.2
+			defence = 0.15
+			movement = 0.15
+		}
+
+		urban = {
+			attack = 0.25 
+			defence = 0.25
+			movement = 0.25
+		}
+
+		fort = {
+			attack = 0.2
+			defence = 0.15
+			movement = 0.15
+		}
+
+		marsh = {
+			attack = 0.2
+			defence = 0.15
+			movement = 0.15
+		}
+
+		jungle = {
+			attack = 0.2
+			defence = 0.15
+			movement = 0.15
+		}
+	}
+	xlzyl = {
+		sprite = infantry
+		map_icon_category = infantry
+		active = no
+        cavalry = no 
+        special_forces = no 
+        marines = no 
+        mountaineers = no 
+        can_be_parachuted = no 
+        affects_speed = no
+
+		priority = 0
+		ai_priority = 0
+
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		categories = {
+			category_support_battalions
+			category_army
+			category_front_line
+			category_all_infantry
+			category_light_infantry
+			category_anti_air
+		}
+		
+		max_strength = 50
+		max_organisation = 50
+		default_morale = 0.75
+		manpower = 25
+
+		#Misc Abilities
+		training_time = 5
+		suppression = 5.0
+		weight = 0.5
+
+		movement = 0.2
+		experience_loss_factor = -0.35
+		recon = 10
+		casualty_trickleback = 0.35
+		supply_consumption_factor = -0.2
+		supply_consumption = 0
+	
+		battalion_mult = {
+			category = category_front_line
+			soft_attack = 0.2
+		}
+		battalion_mult = {
+			category = category_front_line
+			hard_attack = 0.15
+		}
+
+		need = {
+			support_equipment = 25
+			anti_air_equipment = 5
+			artillery_equipment = 5
+		}
+
+		defense = 0.15
+		breakthrough = 0.15
+		soft_attack = 0.2
+		hard_attack = 0.15
+		air_attack = 0.25
+	
+		mountain = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		hills = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		river = {
+			attack = 0.25 
+			defence = 0.25
+			movement = 0.25
+		}
+
+		amphibious = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		forest = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		urban = {
+			attack = 0.25 
+			defence = 0.25
+			movement = 0.25
+		}
+
+		fort = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		marsh = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		jungle = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+	}
+	xilahuo = {
+		sprite = infantry
+		map_icon_category = infantry
+		active = no
+        cavalry = no 
+        special_forces = no 
+        marines = no 
+        mountaineers = no 
+        can_be_parachuted = no 
+        affects_speed = no
+
+		priority = 0
+		ai_priority = 0
+
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		categories = {
+			category_support_battalions
+			category_army
+			category_front_line
+			category_all_infantry
+			category_light_infantry
+		}
+		
+		max_strength = 20
+		max_organisation = 60
+		default_morale = 0.5
+		manpower = 100
+
+		#Misc Abilities
+		training_time = 20
+		suppression = 5.0
+		weight = 0.5
+
+		movement = 0.15
+		recon = 2 
+		casualty_trickleback = 0.35
+		supply_consumption = 0
+	
+		battalion_mult = {
+			category = category_front_line
+			soft_attack = 0.2
+		}
+		battalion_mult = {
+			category = category_front_line
+			hard_attack = 0.1
+		}
+
+		need = {
+			support_equipment = 25
+			artillery_equipment = 5
+		}
+
+		defense = 0.1
+		breakthrough = 0.1
+		soft_attack = 0.2
+		hard_attack = 0.1
+	
+		mountain = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		hills = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		river = {
+			attack = 0.25 
+			defence = 0.25
+			movement = 0.25
+		}
+
+		amphibious = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		forest = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		urban = {
+			attack = 0.25 
+			defence = 0.25
+			movement = 0.25
+		}
+
+		fort = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		marsh = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+
+		jungle = {
+			attack = 0.15 
+			defence = 0.15
+			movement = 0.15
+		}
+	}
+}

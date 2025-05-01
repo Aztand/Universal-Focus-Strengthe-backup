@@ -1,0 +1,1076 @@
+#少女乐队彩蛋
+ydhd1 = {
+	gbqjhgxx = {
+		priority = 10
+		visible = {
+			has_completed_focus = focus_ydj1
+		}
+		visible = {
+			has_country_flag = xrldr_gudu
+			not = { has_country_flag = gbqjhgxx }
+		}
+		complete_effect = {
+			set_country_flag = gbqjhgxx
+			create_country_leader = {
+				name = " 后藤一里 "
+				desc = "POLITICS_gudu_DESC"
+				picture = GFX_portrait_gudu2
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					jtyx
+				}
+			}
+			create_country_leader = {
+				name = " 后藤一里 "
+				desc = "POLITICS_gudu_DESC"
+				picture = GFX_portrait_gudu2
+				expire = "1965.1.1"
+				ideology = 	nazism
+				traits = {
+					jtyx
+				}
+			}
+			create_country_leader = {
+				name = " 后藤一里 "
+				desc = "POLITICS_gudu_DESC"
+				picture = GFX_portrait_gudu2
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					jtyx
+				}
+			}
+			create_country_leader = {
+				name = " 后藤一里 "
+				desc = "POLITICS_gudu_DESC"
+				picture = GFX_portrait_gudu2
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					jtyx
+				}
+			}
+		}
+	}
+	ghydldr1 = {
+		priority = 10
+		cost = 5
+		visible = {
+			has_completed_focus = focus_ydj1
+		}
+		days_remove = 15
+		complete_effect = {
+			set_country_flag = zzghldr
+		}
+	}
+	gudu = {
+		priority = 9
+		visible = {
+			has_country_flag = zzghldr
+			not = {
+				has_country_flag = xrldr_gudu
+			}
+		}
+		complete_effect = {
+			clr_country_flag = xrldr_gudu
+			clr_country_flag = xrldr_ydzhx
+			clr_country_flag = xrldr_xdyd
+			clr_country_flag = xrldr_stl
+			clr_country_flag = gbqjhgxx
+			clr_country_flag = zzghldr
+			set_country_flag = xrldr_gudu
+			create_country_leader = {
+				name = "后藤一里"
+				desc = "POLITICS_gudu_DESC"
+				picture = GFX_portrait_gudu1
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					jtyx
+				}
+			}
+			create_country_leader = {
+				name = "后藤一里"
+				desc = "POLITICS_gudu_DESC"
+				picture = GFX_portrait_gudu1
+				expire = "1965.1.1"
+				ideology = 	nazism
+				traits = {
+					jtyx
+				}
+			}
+			create_country_leader = {
+				name = "后藤一里"
+				desc = "POLITICS_gudu_DESC"
+				picture = GFX_portrait_gudu1
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					jtyx
+				}
+			}
+			create_country_leader = {
+				name = "后藤一里"
+				desc = "POLITICS_gudu_DESC"
+				picture = GFX_portrait_gudu1
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					jtyx
+				}
+			}
+		}
+	}
+	ydzhx = {
+		priority = 9
+		visible = {
+			has_country_flag = zzghldr
+			not = {
+				has_country_flag = xrldr_ydzhx
+			}
+		}
+		complete_effect = {
+			clr_country_flag = xrldr_gudu
+			clr_country_flag = xrldr_ydzhx
+			clr_country_flag = xrldr_xdyd
+			clr_country_flag = xrldr_stl
+			clr_country_flag = zzghldr
+			set_country_flag = xrldr_ydzhx
+			create_country_leader = {
+				name = " 伊地知虹夏 "
+				desc = "POLITICS_ydzhx_DESC"
+				picture = GFX_portrait_ydzhx1
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					xbzdts
+				}
+			}
+			create_country_leader = {
+				name = " 伊地知虹夏 "
+				desc = "POLITICS_ydzhx_DESC"
+				picture = GFX_portrait_ydzhx1
+				expire = "1965.1.1"
+				ideology = 	nazism
+				traits = {
+					xbzdts
+				}
+			}
+			create_country_leader = {
+				name = " 伊地知虹夏 "
+				desc = "POLITICS_ydzhx_DESC"
+				picture = GFX_portrait_ydzhx1
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					xbzdts
+				}
+			}
+			create_country_leader = {
+				name = " 伊地知虹夏 "
+				desc = "POLITICS_ydzhx_DESC"
+				picture = GFX_portrait_ydzhx1
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					xbzdts
+				}
+			}
+		}
+	}
+	stl = {
+		priority = 9
+		visible = {
+			has_country_flag = zzghldr
+			not = {
+				has_country_flag = xrldr_stl
+			}
+		}
+		complete_effect = {
+			clr_country_flag = xrldr_gudu
+			clr_country_flag = xrldr_ydzhx
+			clr_country_flag = xrldr_xdyd
+			clr_country_flag = xrldr_stl
+			clr_country_flag = zzghldr
+			set_country_flag = xrldr_stl
+			create_country_leader = {
+				name = " 山田凉 "
+				desc = "POLITICS_stl_DESC"
+				picture = GFX_portrait_stl1
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					cqnqw
+				}
+			}
+			create_country_leader = {
+				name = " 山田凉 "
+				desc = "POLITICS_stl_DESC"
+				picture = GFX_portrait_stl1
+				expire = "1965.1.1"
+				ideology = 	nazism
+				traits = {
+					cqnqw
+				}
+			}
+			create_country_leader = {
+				name = " 山田凉 "
+				desc = "POLITICS_stl_DESC"
+				picture = GFX_portrait_stl1
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					cqnqw
+				}
+			}
+			create_country_leader = {
+				name = " 山田凉 "
+				desc = "POLITICS_stl_DESC"
+				picture = GFX_portrait_stl1
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					cqnqw
+				}
+			}
+		}
+	}
+	xdyd = {
+		priority = 9
+		visible = {
+			has_country_flag = zzghldr
+			not = {
+				has_country_flag = xrldr_xdyd
+			}
+		}
+		complete_effect = {
+			clr_country_flag = xrldr_gudu
+			clr_country_flag = xrldr_ydzhx
+			clr_country_flag = xrldr_xdyd
+			clr_country_flag = xrldr_stl
+			clr_country_flag = zzghldr
+			set_country_flag = xrldr_xdyd
+			create_country_leader = {
+				name = " 喜多郁代 "
+				desc = "POLITICS_xdyd_DESC"
+				picture = GFX_portrait_xdyd1
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					ygklgqlx
+				}
+			}
+			create_country_leader = {
+				name = " 喜多郁代 "
+				desc = "POLITICS_xdyd_DESC"
+				picture = GFX_portrait_xdyd1
+				expire = "1965.1.1"
+				ideology = 	nazism
+				traits = {
+					ygklgqlx
+				}
+			}
+			create_country_leader = {
+				name = " 喜多郁代 "
+				desc = "POLITICS_xdyd_DESC"
+				picture = GFX_portrait_xdyd1
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					ygklgqlx
+				}
+			}
+			create_country_leader = {
+				name = " 喜多郁代 "
+				desc = "POLITICS_xdyd_DESC"
+				picture = GFX_portrait_xdyd1
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					ygklgqlx
+				}
+			}
+		}
+	}
+    klive1 = {
+        icon = generic_formable_nations
+		priority = 3
+        target_array = controlled_states
+        state_target = yes 
+        on_map_mode = map_and_decisions_view
+		cost = 10
+		days_remove = 7
+		visible ={    
+			has_completed_focus = band
+		}
+		available = {
+			not = { has_country_flag = klivezzjx }
+		}
+        target_trigger = {
+            FROM = {
+				FROM = {
+					not = {
+						has_dynamic_modifier = {
+							modifier = yygw_dynamic_modifier
+							scope = YDJ
+						}
+					}
+				}
+			}
+        }
+        target_root_trigger = {
+			FROM = { 
+			}
+        }
+        complete_effect = {
+			set_country_flag = klivezzjx
+		}
+        remove_effect = {
+			add_manpower = 20000
+			clr_country_flag = klivezzjx
+			FROM = {
+				force_update_dynamic_modifier = yes
+				add_dynamic_modifier = {
+					modifier = yygw_dynamic_modifier
+					scope = YDJ
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { not = { has_country_flag = kglive } }
+					set_country_flag = kglive
+				}
+			}
+        }
+    }
+	duiband1 = {
+		priority = 5
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		visible ={    
+			has_completed_focus = duiband
+		}
+		available = {
+			power_balance_value = {
+				id = ydyxl_balance
+				value > 0.1
+			}
+		}
+		remove_effect = {
+			add_ideas = duiband4
+			create_wargoal = {
+				type = annex_everything
+				target = YDM
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YDW
+				expire = 0
+			}
+		}
+	}
+	hezuo1 = {
+		priority = 5
+		cost = 50
+		fire_only_once = yes
+		days_remove = 25
+		visible ={    
+			has_completed_focus = hezuo
+		}
+		available = {
+			power_balance_value = {
+				id = ydyxl_balance
+				value > 0.8
+			}
+		}
+		remove_effect = {
+			annex_country = {
+				target = YDM
+			}
+			annex_country = {
+				target = YDW
+			}
+		}
+	}
+	yylhsj1 = {
+			icon = generic_formable_nations
+			priority =2
+			target_array = controlled_states
+			state_target = yes 
+			on_map_mode = map_and_decisions_view
+			cost = 15
+			days_remove = 15
+			visible ={    
+				has_completed_focus = yyylhlsxq
+			}
+			target_trigger = {
+				FROM = {
+					is_fully_controlled_by = ROOT
+					NOT = { 
+						is_core_of = ROOT
+					}
+				}
+			}
+			target_root_trigger = {
+				FROM = { 
+					NOT = { 
+						is_core_of = ROOT 
+					}
+				}
+			}
+			remove_effect = {
+				FROM = {
+					add_core_of = ROOT
+					add_extra_state_shared_building_slots = 1
+				}
+		}
+	}
+}
+ydhd2 = {
+    klive2 = {
+        icon = generic_formable_nations
+		priority = 3
+        target_array = controlled_states
+        state_target = yes 
+        on_map_mode = map_and_decisions_view
+		cost = 10
+		days_remove = 7
+		visible ={    
+			has_completed_focus = band
+		}
+		available = {
+			not = { has_country_flag = klivezzjx }
+		}
+        target_trigger = {
+            FROM = {
+				not = {
+					has_dynamic_modifier = {
+						modifier = yygw_dynamic_modifier
+						scope = YDM
+					}
+				}
+			}
+        }
+        target_root_trigger = {
+			FROM = { 
+			}
+        }
+        complete_effect = {
+			set_country_flag = klivezzjx
+		}
+        remove_effect = {
+			add_manpower = 20000
+			clr_country_flag = klivezzjx
+			FROM = {
+				force_update_dynamic_modifier = yes
+				add_dynamic_modifier = {
+					modifier = yygw_dynamic_modifier
+					scope = YDM
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { not = { has_country_flag = kglive } }
+					set_country_flag = kglive
+					complete_national_focus = yzcry
+				}
+			}
+        }
+    }
+	duiband2 = {
+		priority = 5
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		visible ={    
+			has_completed_focus = duiband
+		}
+		available = {
+			power_balance_value = {
+				id = ydyxl_balance
+				value > 0.1
+			}
+		}
+		remove_effect = {
+			add_ideas = duiband4
+			create_wargoal = {
+				type = annex_everything
+				target = YDJ
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YDW
+				expire = 0
+			}
+		}
+	}
+	hezuo2 = {
+		priority = 5
+		cost = 50
+		fire_only_once = yes
+		days_remove = 25
+		visible ={    
+			has_completed_focus = hezuo
+		}
+		available = {
+			power_balance_value = {
+				id = ydyxl_balance
+				value > 0.8
+			}
+		}
+		remove_effect = {
+			annex_country = {
+				target = YDJ
+			}
+			annex_country = {
+				target = YDW
+			}
+		}
+	}
+	yylhsj2 = {
+		icon = generic_formable_nations
+		priority =2
+		target_array = controlled_states
+		state_target = yes 
+		on_map_mode = map_and_decisions_view
+		cost = 15
+		days_remove = 15
+		visible ={    
+			has_completed_focus = yyylhlsxq
+		}
+		target_trigger = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+				NOT = { 
+					is_core_of = ROOT
+				}
+			}
+		}
+		target_root_trigger = {
+			FROM = { 
+				NOT = { 
+					is_core_of = ROOT 
+				}
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+}
+ydhd3 = {
+    klive3 = {
+        icon = generic_formable_nations
+		priority = 3
+        target_array = controlled_states
+        state_target = yes 
+        on_map_mode = map_and_decisions_view
+		cost = 10
+		days_remove = 7
+		visible ={    
+			has_completed_focus = band
+		}
+		available = {
+			not = { has_country_flag = klivezzjx }
+		}
+        target_trigger = {
+            FROM = {
+				FROM = {
+					not = {
+						has_dynamic_modifier = {
+							modifier = yygw_dynamic_modifier
+							scope = YDW
+						}
+					}
+				}
+			}
+        }
+        target_root_trigger = {
+			FROM = { 
+			}
+        }
+		complete_effect = {
+			set_country_flag = klivezzjx
+		}
+        remove_effect = {
+			add_manpower = 20000
+			clr_country_flag = klivezzjx
+			FROM = {
+				force_update_dynamic_modifier = yes
+				add_dynamic_modifier = {
+					modifier = yygw_dynamic_modifier
+					scope = YDW
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { not = { has_country_flag = kglive } }
+					set_country_flag = kglive
+				}
+			}
+        }
+    }
+	duiband3 = {
+		priority = 5
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		visible ={    
+			has_completed_focus = duiband
+		}
+		available = {
+			power_balance_value = {
+				id = ydyxl_balance
+				value > 0.1
+			}
+		}
+		remove_effect = {
+			add_ideas = duiband4
+			create_wargoal = {
+				type = annex_everything
+				target = YDM
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YDJ
+				expire = 0
+			}
+		}
+	}
+	hezuo3 = {
+		priority = 5
+		cost = 50
+		fire_only_once = yes
+		days_remove = 25
+		visible ={    
+			has_completed_focus = hezuo
+		}
+		available = {
+			power_balance_value = {
+				id = ydyxl_balance
+				value > 0.8
+			}
+		}
+		remove_effect = {
+			annex_country = {
+				target = YDJ
+			}
+			annex_country = {
+				target = YDM
+			}
+		}
+	}
+	yylhsj3 = {
+		icon = generic_formable_nations
+		priority =2
+		target_array = controlled_states
+		state_target = yes 
+		on_map_mode = map_and_decisions_view
+		cost = 15
+		days_remove = 15
+		visible ={    
+			has_completed_focus = yyylhlsxq
+		}
+		target_trigger = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+				NOT = { 
+					is_core_of = ROOT
+				}
+			}
+		}
+		target_root_trigger = {
+			FROM = { 
+				NOT = { 
+					is_core_of = ROOT 
+				}
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+}
+ydhd4 = {
+    klive4 = {
+        icon = generic_formable_nations
+		priority = 3
+        target_array = controlled_states
+        state_target = yes 
+        on_map_mode = map_and_decisions_view
+		cost = 10
+		days_remove = 7
+		visible ={    
+			has_completed_focus = band
+		}
+		available = {
+			not = { has_country_flag = klivezzjx }
+		}
+        target_trigger = {
+            FROM = {
+			}
+        }
+        target_root_trigger = {
+			FROM = { 
+			}
+        }
+        complete_effect = {
+			set_country_flag = klivezzjx
+		}
+        remove_effect = {
+			add_manpower = 20000
+			clr_country_flag = klivezzjx
+			FROM = {
+				force_update_dynamic_modifier = yes
+				add_dynamic_modifier = {
+					modifier = yygw_dynamic_modifier
+					scope = ROOT
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { not = { has_country_flag = kglive } }
+					set_country_flag = kglive
+				}
+			}
+        }
+    }
+	duiband4 = {
+		priority = 5
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		visible ={    
+			has_completed_focus = duiband
+		}
+		available = {
+			power_balance_value = {
+				id = ydyxl_balance
+				value > 0.1
+			}
+		}
+		remove_effect = {
+			add_ideas = duiband4
+			create_wargoal = {
+				type = annex_everything
+				target = YDJ
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YDM
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YDW
+				expire = 0
+			}
+		}
+	}
+	hezuo4 = {
+		priority = 5
+		cost = 50
+		fire_only_once = yes
+		days_remove = 25
+		visible ={    
+			has_completed_focus = hezuo
+		}
+		available = {
+			power_balance_value = {
+				id = ydyxl_balance
+				value > 0.8
+			}
+		}
+		remove_effect = {
+			annex_country = {
+				target = YDJ
+			}
+			annex_country = {
+				target = YDM
+			}
+			annex_country = {
+				target = YDW
+			}
+		}
+	}
+	yylhsj4 = {
+			icon = generic_formable_nations
+			priority =2
+			target_array = controlled_states
+			state_target = yes 
+			on_map_mode = map_and_decisions_view
+			cost = 15
+			days_remove = 15
+			visible ={    
+				has_completed_focus = yyylhlsxq
+			}
+			target_trigger = {
+				FROM = {
+					is_fully_controlled_by = ROOT
+					NOT = { 
+						is_core_of = ROOT
+					}
+				}
+			}
+			target_root_trigger = {
+				FROM = { 
+					NOT = { 
+						is_core_of = ROOT 
+					}
+				}
+			}
+			remove_effect = {
+				FROM = {
+					add_core_of = ROOT
+					add_extra_state_shared_building_slots = 1
+				}
+		}
+	}
+}
+ydyxl_balance_decisions = {
+	ydyxl_kdxc = {
+        icon = generic_political_discourse
+
+        cost = 10
+        days_remove = 5
+
+        complete_effect = {
+            
+        }
+		modifier = {
+			consumer_goods_factor = 0.05
+			political_power_cost = 0.05
+		}
+        remove_effect = {
+            add_power_balance_value = {
+				id = ydyxl_balance
+				value = 0.02
+			}
+        }
+    }
+	ydyxl_fszj = {
+        icon = generic_political_discourse
+
+        cost = 15
+        days_remove = 15
+
+        complete_effect = {
+            
+        }
+		modifier = {
+			consumer_goods_factor = 0.1
+			political_power_cost = 0.05
+		}
+        remove_effect = {
+            add_power_balance_value = {
+				id = ydyxl_balance
+				value = 0.05
+			}
+        }
+    }
+	ydyxl_fszb = {
+        icon = generic_political_discourse
+
+        cost = 20
+        days_remove = 25
+
+        complete_effect = {
+            
+        }
+		modifier = {
+			consumer_goods_factor = 0.15
+			political_power_cost = 0.1
+		}
+        remove_effect = {
+            add_power_balance_value = {
+				id = ydyxl_balance
+				value = 0.08
+			}
+        }
+    }
+	ydyxl_nbtj = {
+        available = {                           # 这里的Available和goal中的一样，因为:
+			has_stability > 0.75
+        }
+        activation = {                          # 在这种情况下，任务被激活并开始倒计时：
+            has_country_flag = nbwd                       # 与德国交战
+        }
+        is_good = no                        # 这个任务的颜色编码是有益事情（非危机）
+        selectable_mission = no              # 这个任务将在玩家点选任务时完成，而非自动完成
+        days_mission_timeout = 30              # 距离任务失败前有多少天？
+        timeout_effect = {                      # 当任务失败时会发生什么？
+		add_power_balance_value = {
+			id = ydyxl_balance
+			value = -0.04
+		}
+        }
+        complete_effect = {                    # 当我们激活任务时，即任务成功时会发生什么？
+        	clr_country_flag = nbwd
+        }
+     }
+}
+snyd_ai = {
+	ksdbDMD = {
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			base = 500
+		}
+		visible = {
+			tag = JAP
+			has_global_flag = snyd101
+		}
+		available = {
+			date > 1937.2.13
+		}
+		complete_effect = {
+			YDW = {
+				country_event = {
+					id = NSB_snyd.102
+					days = 0
+					random_days = 0
+				}
+			}
+		}
+	}
+	chufaydw10 = {
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			base = 500
+		}
+		visible = {
+			tag = DMD
+			has_global_flag = snyd101
+		}
+		available = {
+			has_global_flag = DMDcl
+			YDW = {
+				custom_trigger_tooltip = {
+					tooltip = qxxueyedd50
+					check_variable =  { qxxueye > 49 }
+				}
+			}
+		}
+		complete_effect = {
+			YDW = {
+				complete_national_focus = focus_ydw10
+			}
+		}
+	}
+	zsxcdb = {
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			base = 500
+		}
+		visible = {
+			tag = DMD
+			has_global_flag = snyd101
+		}
+		available = {
+			YDW = {
+				has_war_with = DMD
+				surrender_progress > 0.3
+			}
+		}
+		complete_effect = {
+			white_peace = YDW
+			remove_ideas = DMD_qh3
+			set_global_flag = DMDcl
+			transfer_state = 530
+			if = {
+				limit = { has_global_flag = qydtxh }
+				transfer_state = 1032
+			}
+		}
+	}
+}
+bydjz = {
+	jccssl = {
+		fire_only_once = yes
+		cost = 25
+		available = {
+			if = {
+				limit = { has_completed_focus = focus_ydw3 }
+				custom_trigger_tooltip = {
+					tooltip = qxxueyedy25
+					check_variable =  { qxxueye > 25 }
+				}
+			}
+			if = {
+				limit = { has_completed_focus = focus_ydw2 }
+				custom_trigger_tooltip = {
+					tooltip = qxyueduidy25
+					check_variable =  { qxyuedui > 25 }
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = { has_completed_focus = focus_ydw3 }
+				swap_ideas = {
+					remove_idea = bdx2
+					add_idea = bdx4
+				}
+			}
+			if = {
+				limit = { has_completed_focus = focus_ydw2 }
+				swap_ideas = {
+					remove_idea = bdx1
+					add_idea = bdx3
+				}
+			}
+		}
+	}
+	cjydhd = {
+		cost = 10
+		days_remove = 15
+		available = {
+			not = { has_country_flag = zzjxqthd }
+		}
+		complete_effect = {
+			set_country_flag = zzjxqthd
+		}
+		modifier = {
+			stability_weekly = 0.005
+			war_support_weekly = 0.005
+		}
+		remove_effect = {
+			clr_country_flag = zzjxqthd
+			custom_effect_tooltip = add_qxyuedui_5
+			add_to_variable = { qxyuedui = 5 }
+		}
+	}
+	cjbxkc = {
+		cost = 10
+		days_remove = 15
+		available = {
+			has_completed_focus = focus_ydw3
+			not = { has_country_flag = zzjxqthd }
+		}
+		complete_effect = {
+			set_country_flag = zzjxqthd
+		}
+		modifier = {
+			research_speed_factor = 0.1
+		}
+		remove_effect = {
+			clr_country_flag = zzjxqthd
+			custom_effect_tooltip = add_qxxueye_5
+			add_to_variable = { qxxueye = 5 }
+		}
+	}
+}

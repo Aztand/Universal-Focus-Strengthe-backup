@@ -1,0 +1,323 @@
+leader_traits = {
+	star_5 = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	star_5_2 = { 
+		type = navy
+		trait_type = personality_trait
+		modifier = {
+			
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_jianniang = { 
+		type = navy
+		trait_type = personality_trait
+		attack_skill = 2
+		defense_skill = 2
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_att = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 2
+		modifier = {
+			army_attack_factor = 0.15
+			army_defence_factor = 0.1
+			army_speed_factor = 0.05
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_att2 = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 2
+		modifier = {
+			army_attack_factor = 0.1
+			army_morale_factor = 0.2
+			army_speed_factor = 0.1
+			org_loss_when_moving = -0.2
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_att3 = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 2
+		modifier = {
+			army_attack_factor = 0.1
+			army_defence_factor = 0.05
+			breakthrough_factor = 0.1
+			army_speed_factor = 0.1
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_att4 = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 2
+		modifier = {
+			army_attack_factor = 0.1
+			breakthrough_factor = 0.05
+			cavalry_attack_factor = 0.2
+			army_speed_factor = 0.15
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	shaoshuai = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 2
+		modifier = {
+			army_attack_factor = 0.1
+			army_morale_factor = 0.2
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	dashuai = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 2
+		modifier = {
+			army_attack_factor = 0.1
+			army_defence_factor = 0.1
+			army_morale_factor = 0.2
+			org_loss_when_moving = -0.2
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_def = { 
+		type = land
+		trait_type = personality_trait
+		defense_skill = 2
+		modifier = {
+			army_defence_factor = 0.15
+			attrition = -0.15
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_xxg = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 2
+		modifier = {
+			army_attack_factor = -0.15
+			land_night_attack = 0.95
+			terrain_penalty_reduction = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_wxr = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 2
+		modifier = {
+			army_attack_factor = 0.1
+			army_speed_factor = 0.5
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_wcnmm = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 5
+		modifier = {
+			army_attack_factor = 0.15
+			breakthrough_factor = 0.15
+			army_speed_factor = 0.1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_qsfd = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 3
+		modifier = {
+			army_attack_factor = 0.2
+			breakthrough_factor = 0.1
+			army_speed_factor = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_rsxx = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 2
+		defense_skill = 1
+		modifier = {
+			army_attack_factor = 0.2
+			breakthrough_factor = 0.2
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_sgzd = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 3
+		modifier = {
+			army_attack_factor = 0.34
+			breakthrough_factor = 0.15
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_fxms = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 4
+		modifier = {
+			army_attack_factor = 0.15
+			breakthrough_factor = 0.15
+			army_speed_factor = 0.5
+			terrain_penalty_reduction = 0.9
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_manba = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 3
+		modifier = {
+			army_attack_factor = 0.24
+			army_speed_factor = 0.24
+			breakthrough_factor = 0.24
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	traits_wmxsdnp = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 3
+		modifier = {
+			army_attack_factor = 0.2
+			army_speed_factor = 0.4
+			breakthrough_factor = 0.1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	clzs = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 3
+		modifier = {
+			army_attack_factor = 0.25
+			army_speed_factor = 0.15
+			breakthrough_factor = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	xinghejing = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 2
+		modifier = {
+			army_attack_factor = 0.15
+			army_defence_factor = 0.15
+			army_speed_factor = 0.15
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	ljhsds = { 
+		type = land
+		trait_type = personality_trait
+		logistics_skill = 2
+		modifier = {
+			equipment_capture_factor = 0.3
+			experience_gain_factor = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	yszw = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			experience_gain_factor = -2.5
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	ysddz = { 
+		type = land
+		trait_type = personality_trait
+		logistics_skill = 1
+		modifier = {
+			supply_consumption_factor = -0.25
+			army_speed_factor = 0.15
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	dwxx = { 
+		type = land
+		trait_type = personality_trait
+		logistics_skill = 1
+		modifier = {
+			supply_consumption_factor = -0.25
+			army_morale_factor = 0.4
+			army_defence_factor = 0.25
+			army_strength_factor = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+}

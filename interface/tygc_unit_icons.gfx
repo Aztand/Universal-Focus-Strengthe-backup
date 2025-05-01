@@ -1,0 +1,49 @@
+spriteTypes = {	
+########################## Custom Units - Large #####################################
+	spriteType = { name = "GFX_unit_gangtiehongliu_motorized_icon_medium"				
+	texturefile = "gfx/interface/counters/divisions_large/unit_gangtiehongliu_motorized_icon.png" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_gangtiehongliu_mechanized_icon_medium"				
+	texturefile = "gfx/interface/counters/divisions_large/unit_gangtiehongliu_mechanized_icon.png" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_gangtiehongliu_medium_icon_medium"					
+	texturefile = "gfx/interface/counters/divisions_large/unit_gangtiehongliu_medium_tank_icon.png" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_gangtiehongliu_jwj_icon_medium"					
+	texturefile = "gfx/interface/counters/divisions_large/unit_gangtiehongliu_jwj_tank_icon.png" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_gangtiehongliu_heavy_icon_medium"					
+	texturefile = "gfx/interface/counters/divisions_large/unit_gangtiehongliu_heavy_armor_icon.png" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_greqibing_icon_medium"					
+	texturefile = "gfx/interface/counters/divisions_large/unit_greqibing_icon.png" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_taipingjun_icon_medium"					
+	texturefile = "gfx/interface/counters/divisions_large/unit_taipingjun_icon.png" noOfFrames = 2 }
+########################## custom Units - small ##########################
+	spriteType = { name = "GFX_unit_gangtiehongliu_motorized_icon_medium_white"			
+	texturefile = "gfx/interface/counters/divisions_small/onmap_unit_motorized_icon.dds"   noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_gangtiehongliu_mechanized_icon_medium_white"	
+	texturefile = "gfx/interface/counters/divisions_small/onmap_unit_mechanized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_gangtiehongliu_medium_icon_medium_white"		
+	texturefile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_gangtiehongliu_jwj_icon_medium_white"			
+	texturefile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_gangtiehongliu_heavy_icon_medium_white"				
+	texturefile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_greqibing_icon_medium_white"				
+	texturefile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_taipingjun_icon_medium_white"				
+	texturefile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
+########################## text icons - NATO #########################
+    spriteType = { name = "GFX_unit_gangtiehongliu_motorized_icon_small"				  
+	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_motorized_icon.dds" legacy_lazy_load = no noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_gangtiehongliu_mechanized_icon_small"			
+	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mechanized_icon.dds" legacy_lazy_load = no noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_gangtiehongliu_medium_icon_small"				 
+	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" legacy_lazy_load = no noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_gangtiehongliu_jwj_icon_small"				 
+	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" legacy_lazy_load = no noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_gangtiehongliu_heavy_icon_small"					  
+	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" legacy_lazy_load = no noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_greqibing_icon_small"					  
+	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" legacy_lazy_load = no noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_taipingjun_icon_small"					  
+	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" legacy_lazy_load = no noOfFrames = 2 }
+########################## text icons - RTS ##########################
+
+}

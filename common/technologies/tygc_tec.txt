@@ -1,0 +1,118 @@
+technologies = {
+
+	fsyyt_tech = {  
+
+		research_cost = 1
+
+		allow = {
+			always = no
+		}
+
+		enable_subunits  = {
+			fsyyt
+		}
+	}
+	jxgwrj_tech = {  
+
+		research_cost = 1
+
+		allow = {
+			always = no
+		}
+
+		enable_subunits  = {
+			jxgwrj
+		}
+	}
+	xlzyl_tech = {  
+
+		research_cost = 1
+
+		allow = {
+			always = no
+		}
+
+		enable_subunits  = {
+			xlzyl
+		}
+	}
+	ufo_tech = {
+
+		enable_equipments = {
+			ufo_2
+		}
+		enable_equipment_modules = {
+			ufo_jiguang
+			ufo_jiasuqi
+		}
+
+		research_cost = 2
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
+		}
+		
+	}
+	gangtiehongliu = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1992
+
+		enable_subunits = {
+			gangtiehongliu_motorized
+			gangtiehongliu_mechanized
+			gangtiehongliu_medium
+			gangtiehongliu_heavy
+		}
+		enable_equipment_modules = {
+			gangtiehongliu_tank_medium_howitzer
+			gangtiehongliu_tank_heavy_howitzer
+		}
+	}
+	gangtiehongliu_jwj = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 9999
+
+		enable_subunits = {
+			gangtiehongliu_jwj
+		}
+	}
+	greqibing = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+
+		enable_subunits = {
+			greqibing
+		}
+	}
+	taipingjun = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+
+		enable_subunits = {
+			taipingjun
+		}
+	}
+	xilahuo = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+
+		enable_subunits = {
+			xilahuo
+		}
+	}
+}

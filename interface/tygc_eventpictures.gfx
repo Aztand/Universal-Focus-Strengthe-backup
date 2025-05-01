@@ -1,0 +1,163 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_report_event_dingzhen"
+		texturefile = "gfx/event_pictures/dingzhen.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_snyd"
+		texturefile = "gfx/event_pictures/snyd.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_rbzj"
+		texturefile = "gfx/event_pictures/rbzj.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_wsmyyz"
+		texturefile = "gfx/event_pictures/wsmyyz.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_wsmdhzd"
+		texturefile = "gfx/event_pictures/wsmdhzd.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_ylnout"
+		texturefile = "gfx/event_pictures/ylnout.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_cqssout"
+		texturefile = "gfx/event_pictures/cqssout.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_qzayout"
+		texturefile = "gfx/event_pictures/qzayout.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_yqmsb1"
+		texturefile = "gfx/event_pictures/yqmsb1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_mujica"
+		texturefile = "gfx/event_pictures/mujica.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_sayyc"
+		texturefile = "gfx/event_pictures/sayyc.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_baihe"
+		texturefile = "gfx/event_pictures/baihe.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_fhct"
+		texturefile = "gfx/event_pictures/fhct.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_dio1"
+		texturefile = "gfx/event_pictures/dio1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_bgd"
+		texturefile = "gfx/event_pictures/bgd.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_SRI1"
+		texturefile = "gfx/event_pictures/SRI1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_yun1"
+		texturefile = "gfx/event_pictures/yun1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_kaihui"
+		texturefile = "gfx/event_pictures/kaihui.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_tiantang"
+		texturefile = "gfx/event_pictures/tiantang.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_xqlc"
+		texturefile = "gfx/event_pictures/xqlc.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_gercd1"
+		texturefile = "gfx/event_pictures/gercd1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_gercd2"
+		texturefile = "gfx/event_pictures/gercd2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_ydw_1"
+		texturefile = "gfx/event_pictures/ydw_1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_ydw_2"
+		texturefile = "gfx/event_pictures/ydw_2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_ydw_3"
+		texturefile = "gfx/event_pictures/ydw_3.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_ydw_4"
+		texturefile = "gfx/event_pictures/ydw_4.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_ydw_5"
+		texturefile = "gfx/event_pictures/ydw_5.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_ydw_6"
+		texturefile = "gfx/event_pictures/ydw_6.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_ydw_7"
+		texturefile = "gfx/event_pictures/ydw_7.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_ydw_8"
+		texturefile = "gfx/event_pictures/ydw_8.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_samicd1"
+		texturefile = "gfx/event_pictures/samicd1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_samicd2"
+		texturefile = "gfx/event_pictures/samicd2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_sovcd1"
+		texturefile = "gfx/event_pictures/sovcd1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_sovcd2"
+		texturefile = "gfx/event_pictures/sovcd2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_gxccd1"
+		texturefile = "gfx/event_pictures/gxccd1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_lbwcd1"
+		texturefile = "gfx/event_pictures/lbwcd1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_lbwcd2"
+		texturefile = "gfx/event_pictures/lbwcd2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_prccd1"
+		texturefile = "gfx/event_pictures/prccd1.png"
+	}
+
+
+	##news
+	spriteType = {
+		name = "GFX_news_event_msln"
+		texturefile = "gfx/event_pictures/msln.png"
+	}
+
+}

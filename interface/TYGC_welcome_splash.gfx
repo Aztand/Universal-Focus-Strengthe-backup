@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_TYGC_splash_intro"
+		textureFile = "gfx/splash/TYGC_splash.png"
+	}
+	spriteType = {
+		name = "GFX_TYGC_logo"
+		textureFile = "gfx/interface/TYGC_logo.png"
+	}
+}
+

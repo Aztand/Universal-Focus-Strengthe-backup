@@ -1,0 +1,422 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_CAIDAN"
+		textureFile = "gfx/interface/focusview/filter/caidan_icon.png"
+	}
+	spriteType = {
+		name = "GFX_focus_tygc_biaotilan_no"		###不可点
+		textureFile = "gfx/interface/focusview/titlebar/tygc_biaotilan_no.png"
+	}
+	spriteType = {
+		name = "GFX_focus_tygc_biaotilan_yes"		###可点
+		textureFile = "gfx/interface/focusview/titlebar/tygc_biaotilan_yes.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_tygc_biaotilan_ing"		###进行中
+		texturefile = "gfx/interface/focusview/titlebar/tygc_biaotilan_yes.png"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		#		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask2.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds"			# <- the animated file
+			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 20			# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "rotating"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+			#			animationframes = {1 2 3 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask4.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds"
+			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 15			# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "rotating_ccw"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+			#			animationframes = {1 2 3 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_tygc_biaotilan_ok"		#完成
+		texturefile = "gfx/interface/focusview/titlebar/tygc_biaotilan_ok.png"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		#		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_completed_mask.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"			# <- the animated file
+			animationrotation = 0			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+			#			animationframes = {1 2 3 }
+		}
+		legacy_lazy_load = no
+	}
+	 SpriteType = {
+	    name = "GFX_manba1"
+	    texturefile = "gfx/interface/goals/manba_a.dds"	
+	 }
+	 SpriteType = {
+		name = "GFX_canisay1"
+		texturefile = "gfx/interface/goals/canisay_a.dds"	
+	 }
+	 SpriteType = {
+		name = "GFX_zouji1"
+		texturefile = "gfx/interface/goals/zouji_a.dds"	
+	 }
+	 SpriteType = {
+		name = "GFX_naisuai1"
+		texturefile = "gfx/interface/goals/naisuai_a.dds"	
+	 }
+	 SpriteType = {
+		name = "GFX_gold"
+		texturefile = "gfx/interface/goals/gold_a.png"	
+	 }
+	 SpriteType = {
+		name = "GFX_xianfeng"
+		texturefile = "gfx/interface/goals/xianfeng_a.png"	
+	 }
+	 SpriteType = {
+		name = "GFX_otto"
+		texturefile = "gfx/interface/goals/otto_a.png"	
+	 }
+	 SpriteType = {
+		name = "GFX_lbd"
+		texturefile = "gfx/interface/goals/lbd_a.png"	
+	 }
+	 SpriteType = {
+		name = "GFX_hldh"
+		texturefile = "gfx/interface/goals/hldh_a.png"	
+	 }
+	 SpriteType = {
+		name = "GFX_hxx"
+		texturefile = "gfx/interface/goals/hxx_a.png"	
+	 }
+	 SpriteType = {
+		name = "GFX_gdjs"
+		texturefile = "gfx/interface/goals/gdjs_a.png"	
+	 }
+	 SpriteType = {
+		name = "GFX_amns1"
+		texturefile = "gfx/interface/goals/amns1.png"	
+	 }
+	 SpriteType = {
+		name = "GFX_amns2"
+		texturefile = "gfx/interface/goals/amns2.png"	
+	 }
+	 SpriteType = {
+		name = "GFX_amns3"
+		texturefile = "gfx/interface/goals/amns3.png"	
+	 }
+	 SpriteType = {
+		name = "GFX_ltl"
+		texturefile = "gfx/interface/goals/ltl.png"	
+	 }
+	 SpriteType = {
+		name = "GFX_wmlh"
+		texturefile = "gfx/interface/goals/wmlh.png"	
+	 }
+	 SpriteType = {
+		name = "GFX_ltw"
+		texturefile = "gfx/interface/goals/ltw.png"	
+	 }
+	 SpriteType = {
+		name = "GFX_band0"
+		texturefile = "gfx/interface/goals/band0.png"
+	 }
+	 SpriteType = {
+		name = "GFX_duiband"
+		texturefile = "gfx/interface/goals/duiband.png"
+	 }
+	 SpriteType = {
+		name = "GFX_lsxq"
+		texturefile = "gfx/interface/goals/lsxq.png"
+	 }
+	 SpriteType = {
+		name = "GFX_yml"
+		texturefile = "gfx/interface/goals/yml.png"
+	 }
+	 SpriteType = {
+		name = "GFX_yzcry"
+		texturefile = "gfx/interface/goals/yzcry.png"
+	 }
+	 SpriteType = {
+		name = "GFX_yln"
+		texturefile = "gfx/interface/goals/yln.png"
+	 }
+	 SpriteType = {
+		name = "GFX_cqss"
+		texturefile = "gfx/interface/goals/cqss.png"
+	 }
+	 SpriteType = {
+		name = "GFX_qzay"
+		texturefile = "gfx/interface/goals/qzay.png"
+	 }
+	 SpriteType = {
+		name = "GFX_yqmsb"
+		texturefile = "gfx/interface/goals/yqmsb.png"
+	 }
+	 SpriteType = {
+		name = "GFX_mygo"
+		texturefile = "gfx/interface/goals/mygo.png"
+	 }
+	 SpriteType = {
+		name = "GFX_fhct"
+		texturefile = "gfx/interface/goals/fhct.png"
+	 }
+	 SpriteType = {
+		name = "GFX_saygc"
+		texturefile = "gfx/interface/goals/saygc.png"
+	 }
+	 SpriteType = {
+		name = "GFX_hzqh"
+		texturefile = "gfx/interface/goals/hzqh.png"
+	 }
+	 SpriteType = {
+		name = "GFX_dygjq"
+		texturefile = "gfx/interface/goals/dygjq.png"
+	 }
+	 SpriteType = {
+		name = "GFX_ldg1"
+		texturefile = "gfx/interface/goals/ldg1.png"
+	 }
+	 SpriteType = {
+		name = "GFX_cjmwe"
+		texturefile = "gfx/interface/goals/cjmwe.png"
+	 }
+	 SpriteType = {
+		name = "GFX_dgfc"
+		texturefile = "gfx/interface/goals/dgfc.png"
+	 }
+	 SpriteType = {
+		name = "GFX_dio2"
+		texturefile = "gfx/interface/goals/dio2.png"
+	 }
+	 SpriteType = {
+		name = "GFX_jzt"
+		texturefile = "gfx/interface/goals/jzt.png"
+	 }
+	 SpriteType = {
+		name = "GFX_flwgl"
+		texturefile = "gfx/interface/goals/flwgl.png"
+	 }
+	 SpriteType = {
+		name = "GFX_zds"
+		texturefile = "gfx/interface/goals/zds.png"
+	 }
+	 SpriteType = {
+		name = "GFX_tafei"
+		texturefile = "gfx/interface/goals/tafei.png"
+	 }
+	 SpriteType = {
+		name = "GFX_SRI_msln"
+		texturefile = "gfx/interface/goals/SRI_msln.png"
+	 }
+	 SpriteType = {
+		name = "GFX_SRI_fascism"
+		texturefile = "gfx/interface/goals/SRI_fascism.png"
+	 }
+	 SpriteType = {
+		name = "GFX_SRI_shgm"
+		texturefile = "gfx/interface/goals/SRI_shgm.png"
+	 }
+	 SpriteType = {
+		name = "GFX_JAP_gr"
+		texturefile = "gfx/interface/goals/JAP_gr.png"
+	 }
+	 SpriteType = {
+		name = "GFX_JAP_xcthdj"
+		texturefile = "gfx/interface/goals/JAP_xcthdj.png"
+	 }
+	 SpriteType = {
+		name = "GFX_JAP_xlnhdj"
+		texturefile = "gfx/interface/goals/JAP_xlnhdj.png"
+	 }
+	 SpriteType = {
+		name = "GFX_qing1"
+		texturefile = "gfx/interface/goals/qing1.png"
+	 }
+	 SpriteType = {
+		name = "GFX_zhzj"
+		texturefile = "gfx/interface/goals/zhzj.png"
+	 }
+	 SpriteType = {
+		name = "GFX_lczzy"
+		texturefile = "gfx/interface/goals/lczzy.png"
+	 }
+	 SpriteType = {
+		name = "GFX_ydwfocus1"
+		texturefile = "gfx/interface/goals/ydwfocus1.png"
+	 }
+	 SpriteType = {
+		name = "GFX_ydwfocus2"
+		texturefile = "gfx/interface/goals/ydwfocus2.png"
+	 }
+	 SpriteType = {
+		name = "GFX_ydwfocus3"
+		texturefile = "gfx/interface/goals/ydwfocus3.png"
+	 }
+	 SpriteType = {
+		name = "GFX_ydwfocus4"
+		texturefile = "gfx/interface/goals/ydwfocus4.png"
+	 }
+	 SpriteType = {
+		name = "GFX_ydwfocus5"
+		texturefile = "gfx/interface/goals/ydwfocus5.png"
+	 }
+	 SpriteType = {
+		name = "GFX_ydwfocus6"
+		texturefile = "gfx/interface/goals/ydwfocus6.png"
+	 }
+	 SpriteType = {
+		name = "GFX_ydwfocus7"
+		texturefile = "gfx/interface/goals/ydwfocus7.png"
+	 }
+	 SpriteType = {
+		name = "GFX_wh"
+		texturefile = "gfx/interface/goals/GFX_wh.png"
+	 }
+	 SpriteType = {
+		name = "GFX_ydjfocus1"
+		texturefile = "gfx/interface/goals/ydjfocus1.png"
+	 }
+	 SpriteType = {
+		name = "GFX_sami_1"
+		texturefile = "gfx/interface/goals/sami_1.png"
+	 }
+	 SpriteType = {
+		name = "GFX_sami_2"
+		texturefile = "gfx/interface/goals/sami_2.png"
+	 }
+	 SpriteType = {
+		name = "GFX_sami_3"
+		texturefile = "gfx/interface/goals/sami_3.png"
+	 }
+	 SpriteType = {
+		name = "GFX_YEM_Army"
+		texturefile = "gfx/interface/goals/YEM_Army.png"
+	 }
+	 SpriteType = {
+		name = "GFX_rajswe1"
+		texturefile = "gfx/interface/goals/rajswe1.png"
+	 }
+	 SpriteType = {
+		name = "GFX_ydxzzccb"
+		texturefile = "gfx/interface/goals/ydxzzccb.png"
+	 }
+	 SpriteType = {
+		name = "GFX_sovblny"
+		texturefile = "gfx/interface/goals/sovblny.png"
+	 }
+	 SpriteType = {
+		name = "GFX_sovyouli"
+		texturefile = "gfx/interface/goals/sovyouli.png"
+	 }
+	 SpriteType = {
+		name = "GFX_tianguo1"
+		texturefile = "gfx/interface/goals/tianguo1.png"
+	 }
+	 SpriteType = {
+		name = "GFX_tianguo2"
+		texturefile = "gfx/interface/goals/tianguo2.png"
+	 }
+	 SpriteType = {
+		name = "GFX_tianguo3"
+		texturefile = "gfx/interface/goals/tianguo3.png"
+	 }
+	 SpriteType = {
+		name = "GFX_tianguo4"
+		texturefile = "gfx/interface/goals/tianguo4.png"
+	 }
+	 SpriteType = {
+		name = "GFX_qtql"
+		texturefile = "gfx/interface/goals/qtql.png"
+	 }
+	 SpriteType = {
+		name = "GFX_cog1"
+		texturefile = "gfx/interface/goals/cog1.png"
+	 }
+	 SpriteType = {
+		name = "GFX_prc1"
+		texturefile = "gfx/interface/goals/prc1.png"
+	 }
+	 SpriteType = {
+		name = "GFX_prc3"
+		texturefile = "gfx/interface/goals/prc3.png"
+	 }
+
+
+	 
+	###dds
+	 SpriteType = {
+		name = "GFX_chi1"
+		texturefile = "gfx/interface/goals/goal_generic_focus_on_china.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_nanmei"
+		texturefile = "gfx/interface/goals/nanmei.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ss1"
+		texturefile = "gfx/interface/goals/FIN_recruit_ss_div.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ayzg"
+		texturefile = "gfx/interface/goals/BRG_ayzg.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_dremyw"
+		texturefile = "gfx/interface/goals/BRG_dremyw.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_flxzd"
+		texturefile = "gfx/interface/goals/BRG_flxzd.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ozmr"
+		texturefile = "gfx/interface/goals/BRG_ozmr.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_YUN_country"
+		texturefile = "gfx/interface/goals/YUN_country.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_YUN_xinan"
+		texturefile = "gfx/interface/goals/YUN_xinan.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_ENG_vic"
+		texturefile = "gfx/interface/goals/ENG_vic.dds"
+	 }
+
+}

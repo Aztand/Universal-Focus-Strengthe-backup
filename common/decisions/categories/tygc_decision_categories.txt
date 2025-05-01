@@ -1,0 +1,579 @@
+yly = {
+	priority = 13
+    visible ={
+        has_completed_focus = qsytr
+    }
+    available ={
+        is_ai = no
+    }
+}
+mryy = {
+	priority = 100
+    visible ={
+        has_completed_focus = yzdzx
+    }
+}
+jjjqzl = {
+	priority = 100
+    visible ={
+        has_completed_focus = kkdxdhzl
+    }
+}
+csdg = {
+	priority = 24
+    visible ={
+        has_completed_focus = dgfc
+    }
+}
+xymjsx = {
+	priority = 24
+    visible ={
+        has_completed_focus = xymjsx
+    }
+}
+dzjqzl = {
+	priority = 24
+    visible ={
+        has_completed_focus = dzzys
+    }
+}
+qshlkc = {
+	priority = 24
+    visible ={
+        has_completed_focus = qshlkkd
+    }
+}
+zhtyzx = {
+	priority = 200
+    visible ={
+        tag = YUN
+    }
+}
+fpysxc = {
+	priority = 24
+    visible ={
+        has_country_flag = fpysxc
+    }
+}
+zxzt = {
+	priority = 23
+    visible ={
+        has_completed_focus = zxzt
+    }
+}
+qiandu = {
+    priority = 100
+    visible = {
+        or = {
+            original_tag = CHI
+            original_tag = PRC
+            original_tag = MAN
+            original_tag = YUN
+            original_tag = GXC
+            original_tag = XSM
+            original_tag = SIK
+            original_tag = TIB
+            original_tag = PHI
+        }
+    }
+}
+qiandu_1 = {
+    priority = 100
+    visible = {
+        original_tag = FER
+        has_completed_focus = cxtyels
+    }
+}
+qiandu_2 = {
+    priority = 100
+    visible = {
+        original_tag = COG
+        has_completed_focus = jfflx
+    }
+}
+zzsw = {
+	priority = 22
+    visible ={
+        has_completed_focus = zzsw
+    }
+}
+tsll = {
+	priority = 28
+    visible ={
+        has_completed_focus = tsll
+    }
+}
+zahz = {
+	priority = 28
+    visible ={
+        has_completed_focus = zayycc
+    }
+}
+mcgjsd = {
+	priority = 30
+    visible ={
+        has_completed_focus = fpmc
+    }
+}
+lhgsw = {
+    picture = GFX_decision_lhg
+	priority = 30
+    visible ={
+        has_idea = lhg
+    }
+}
+sinianjihua = {
+    priority = 50
+    visible = {
+        has_completed_focus = gsjj
+    }
+}
+xgq = {
+	priority = 24
+    visible ={
+        has_completed_focus = wh
+    }
+}
+lbwkaigua = {
+	priority = 120
+    visible ={
+        has_completed_focus = wzsy
+    }
+}
+jtxwyyz = {
+	priority = 24
+    visible ={
+        has_completed_focus = jtxwyyz
+    }
+}
+yqgjzz = {
+	priority = 24
+    visible ={
+        has_completed_focus = yqgjzz
+    }
+}
+ljxstp = {
+	priority = 15
+    visible ={
+        has_completed_focus = ljxs3
+    }
+    available ={
+        is_ai = no
+    }
+}
+hjxstp = {
+	priority = 15
+    visible ={
+        has_completed_focus = hjxs2
+    }
+    available ={
+        is_ai = no
+    }
+}
+kjxstp = {
+	priority = 15
+    visible ={
+        has_completed_focus = kjxs2
+    }
+    available ={
+        is_ai = no
+    }
+}
+cgyh = {
+	priority = 15
+    visible ={
+        has_completed_focus = cgyh
+    }
+    available ={
+        is_ai = no
+    }
+}
+yxsjjzd = {
+	priority = 15
+    visible ={
+        has_completed_focus = dwzc2
+    }
+    available ={
+        is_ai = no
+    }
+}
+qqqcsh = {
+	priority = 14
+    picture = GFX_decision_cat_generic_mefo_bills
+    visible ={    
+        has_completed_focus = qqqcsh
+    }
+    available ={
+        is_ai = no
+    }
+}
+tysj = {
+	priority = 35
+    visible ={    
+        has_completed_focus = ptzxmfwt
+    }
+    available ={
+        is_ai = no
+    }
+}
+fahzxd = {
+	priority = 30
+    visible ={    
+        has_completed_focus = qjfg
+    }
+    available = {
+        is_ai = no
+        not = {
+            has_war_with = FRA
+        }
+    }
+}
+geminzz = {
+	priority = 14
+    visible ={    
+        has_completed_focus = quanqiufywyh
+    }
+}
+yuanzidang111 = {
+	priority = 25
+    visible ={  
+        tag = RAJ
+    }
+}
+sxjfsj = {
+	priority = 14
+    picture = GFX_decision_fdg
+    visible ={    
+        has_completed_focus = sxjfsj
+    }
+    available ={
+        is_ai = no
+    }
+}
+ksts1 = {
+	priority = 50
+    visible ={    
+        has_completed_focus = ksts2
+    }
+}
+jlgmgjd = {
+	priority = 16
+    icon = GFX_decision_category_generic_communism
+    picture = GFX_decision_cat_generic_mefo_bills
+    visible ={    
+        has_completed_focus = xxzhkyly
+    }
+}
+ICE_improve_the_viking_spirit_1 = { 
+	priority = 100
+	icon = GFX_decision_category_ICE_the_viking_spirit
+	visible = {
+		has_completed_focus = ICE_the_viking_spirit_1
+	}
+}
+dgys = {
+    priority = 666
+    visible = {
+        has_completed_focus = dgys
+    }
+}
+dygdhxlt = { 
+	priority = 35
+	visible = {
+		has_completed_focus = dygdhxlt
+	}
+}
+qqdwjbh = { 
+	priority = 40
+	visible = {
+		has_completed_focus = jcdwj
+	}
+}
+zccg = { 
+	priority = 40
+	visible = {
+		has_completed_focus = zccg
+	}
+}
+sovprctx = { 
+	priority = 40
+	visible = {
+		original_tag = SOV
+        has_global_flag = prcsssd
+	}
+}
+hrzl = { 
+	priority = 25
+	visible = {
+		has_completed_focus = hrzl
+	}
+}
+kybd = { 
+	priority = 50
+	visible = {
+		has_completed_focus = qqjsyz
+	}
+}
+tggmxfzz = { 
+	priority = 25
+	visible = {
+		has_completed_focus = zsgmxf
+	}
+}
+rtmjl = { 
+	priority = 50
+	visible = {
+		has_completed_focus = ljzzdtt
+	}
+}
+xbynz = {
+    priority = 50
+    visible = {
+        has_completed_focus = nzzb
+    }
+}
+ymyzd_dec = { 
+	priority = 50
+	visible = {
+		has_completed_focus = ymyzd
+	}
+}
+zhlt = { 
+	priority = 50
+	visible = {
+		tag = KYU
+        has_global_flag = hmjtrq
+	}
+}
+aijqjyz = { 
+	priority = 50
+	visible = {
+		is_ai = yes
+	}
+}
+xclthxh = { 
+	priority = 50
+	visible = {
+		has_completed_focus = tyoydq
+	}
+}
+xhwj = { 
+	priority = 80
+	visible = {
+		has_country_flag = xhwj
+	}
+}
+tptgqy = { 
+	priority = 150
+    picture = GFX_decision_tptg
+	visible = {
+        original_tag = GXC
+		has_country_flag = twgl
+	}
+}
+tptgqy2 = { 
+	priority = 100
+    picture = GFX_decision_tptg
+	visible = {
+        original_tag = GXC
+		has_completed_focus = tyytgzx
+	}
+}
+mingtu = { 
+	priority = 50
+	visible = {
+		has_completed_focus = lyxh
+	}
+}
+ghs = { 
+	priority = 25
+	visible = {
+		has_completed_focus = ghs
+	}
+}
+fzjj = { 
+	priority = 30
+	visible = {
+		has_completed_focus = zsjjfz
+	}
+}
+tddx = { 
+	priority = 30
+	visible = {
+        or = {
+		    has_completed_focus = kaitou
+            has_completed_focus = kaitou2
+        }
+	}
+}
+eng_ghldr = {
+    priority = 100
+    visible = {
+        original_tag = ENG
+    }
+}
+zdlmldq = { 
+	priority = 40
+	visible = {
+		has_completed_focus = zdlmldq
+        SOV = {
+            exists = yes
+		}
+	}
+}
+ddyzgx = {
+    priority = 70
+    visible = {
+        has_completed_focus = jjlyl
+    }
+}
+yldyzmz = {
+    priority = 70
+    visible = {
+        has_completed_focus = yldyzmz
+        GER = { exists = yes }
+    }
+}
+lysqzc = {
+    priority = 71
+    visible = {
+        has_completed_focus = lysqzc
+    }
+}
+lhfz = {
+    priority = 71
+    visible = {
+        has_completed_focus = mqhz
+    }
+}
+slzs = {
+    priority = 80
+    visible = {
+        has_completed_focus = slzs
+    }
+}
+doudizhu = {
+    priority = 100
+    visible = {
+       original_tag = LBW
+       has_completed_focus = duguai
+       not = { has_idea = zzdduguai }
+    }
+}
+hbsbtm = {
+    priority = 72
+    visible = {
+        has_completed_focus = hbsbtm
+    }
+}
+zjzyxq = {
+    priority = 99
+    visible = {
+        has_completed_focus = zjzyxq
+    }
+}
+gcgjyth = {
+    priority = 99
+    visible = {
+        has_completed_focus = gcgjyth
+    }
+}
+tyztjh = {
+    priority = 99
+    visible = {
+        has_completed_focus = tyztjh
+    }
+}
+yzgjm = {
+    priority = 69
+    visible = {
+        has_completed_focus = wdhbsl
+    }
+}
+focus_114514 = {
+	
+	priority = 1
+
+}
+zdzcl_114514 = {
+	
+	priority = 1
+
+}
+#少女乐队
+ydhd1 = {
+    priority = 30
+    picture = GFX_decision_jsyd1
+    visible ={    
+        has_completed_focus = band
+        tag = YDJ
+    }
+}
+ydhd2 = {
+    priority = 30
+    picture = GFX_decision_mygo1
+    visible ={    
+        has_completed_focus = band
+        tag = YDM
+    }
+}
+ydhd3 = {
+    priority = 30
+    picture = GFX_decision_wcyc1
+    visible ={    
+        has_completed_focus = band
+        tag = YDW
+    }
+}
+ydhd4 = {
+    priority = 30
+    picture = GFX_decision_wcyc1
+    visible ={ 
+        not = {
+            tag = YDJ
+        }
+        not = {
+            tag = YDM
+        }
+        not = {
+            tag = YDW
+        }
+        has_completed_focus = band
+    }
+}
+ydyxl_balance_decisions = {
+	priority = 29
+
+	visible = {
+		OR = {
+			has_completed_focus = band
+			has_country_flag = ydyxl
+            tag = YDJ
+            tag = YDM
+            tag = YDW
+		}
+	}
+}
+snyd_ai = {
+    priority = 0
+}
+bydjz = {
+    priority = 35
+    visible = {
+        has_completed_focus = focus_ydw1
+    }
+}
+tyaijueyizu = {
+    visible = {
+        is_ai = yes
+    }
+}
+#debug
+focus_csjueyi = {
+	
+	priority = 1
+    visible = {
+        is_debug = yes
+    }
+
+}

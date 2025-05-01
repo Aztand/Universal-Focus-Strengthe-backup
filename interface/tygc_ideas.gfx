@@ -1,0 +1,53 @@
+spriteTypes = {
+	#mod
+	SpriteType = {
+		name = "GFX_idea_generic_bureaucracy_purged"
+		texturefile = "gfx/interface/ideas/idea_generic_bureaucracy_purged.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_generic_weapons_production"
+		texturefile = "gfx/interface/ideas/idea_generic_weapons_production.dds"
+	}
+	#tygc
+	spriteType = {
+		name = "GFX_idea_jita"
+		texturefile = "gfx/interface/ideas/jita.png"
+	}
+	spriteType = {
+		name = "GFX_idea_wcyc"
+		texturefile = "gfx/interface/ideas/wcyc.png"
+	}
+	spriteType = {
+		name = "GFX_idea_jsyd"
+		texturefile = "gfx/interface/ideas/jsyd.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ctyc"
+		texturefile = "gfx/interface/ideas/ctyc.png"
+	}
+	spriteType = {
+		name = "GFX_idea_zzyd"
+		texturefile = "gfx/interface/ideas/zzyd.png"
+	}
+	spriteType = {
+		name = "GFX_idea_mygo2"
+		texturefile = "gfx/interface/ideas/mygo2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_tsfs1"
+		texturefile = "gfx/interface/ideas/tsfs1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_gongyequ1"
+		texturefile = "gfx/interface/ideas/gongyequ1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_lbw1"
+		texturefile = "gfx/interface/ideas/lbw1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_changzheng"
+		texturefile = "gfx/interface/ideas/changzheng.png"
+	}
+
+}

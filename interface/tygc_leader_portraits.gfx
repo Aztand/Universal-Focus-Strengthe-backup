@@ -1,0 +1,349 @@
+spriteTypes = {
+
+##领袖
+	spriteType = {
+		name = "GFX_portrait_aln"
+		texturefile = "gfx/leaders/TYGC/portrait_aln.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_brbt"
+		texturefile = "gfx/leaders/TYGC/portrait_brbt.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_oej"
+		texturefile = "gfx/leaders/TYGC/portrait_oej.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_hldh"
+		texturefile = "gfx/leaders/TYGC/portrait_hldh.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_yw"
+		texturefile = "gfx/leaders/TYGC/portrait_yw.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_ps"
+		texturefile = "gfx/leaders/TYGC/portrait_ps.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_bsds"
+		texturefile = "gfx/leaders/TYGC/portrait_bsds.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_jq"
+		texturefile = "gfx/leaders/TYGC/portrait_jq.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_dingzhen"
+		texturefile = "gfx/leaders/TYGC/portrait_dingzhen.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_jy"
+		texturefile = "gfx/leaders/TYGC/jy.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_gudu1"
+		texturefile = "gfx/leaders/TYGC/gudu1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_xdyd1"
+		texturefile = "gfx/leaders/TYGC/xdyd1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_ydzhx1"
+		texturefile = "gfx/leaders/TYGC/ydzhx1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_stl1"
+		texturefile = "gfx/leaders/TYGC/stl1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_gudu2"
+		texturefile = "gfx/leaders/TYGC/gudu2.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_deng1"
+		texturefile = "gfx/leaders/TYGC/deng1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_nina1"
+		texturefile = "gfx/leaders/TYGC/nina1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_hina1"
+		texturefile = "gfx/leaders/TYGC/hina1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_nina2"
+		texturefile = "gfx/leaders/TYGC/nina2.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_nina3"
+		texturefile = "gfx/leaders/TYGC/nina3.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_4861"
+		texturefile = "gfx/leaders/TYGC/4861.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_fcxz1"
+		texturefile = "gfx/leaders/TYGC/fcxz1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_wje"
+		texturefile = "gfx/leaders/TYGC/wje.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Anon"
+		texturefile = "gfx/leaders/TYGC/Anon1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_cqss2"
+		texturefile = "gfx/leaders/TYGC/cqss2.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_ldg"
+		texturefile = "gfx/leaders/TYGC/ldg.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_otto1"
+		texturefile = "gfx/leaders/TYGC/otto1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_dio1"
+		texturefile = "gfx/leaders/TYGC/portrait_dio1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_dio2"
+		texturefile = "gfx/leaders/TYGC/portrait_dio2.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_qsh"
+		texturefile = "gfx/leaders/TYGC/qsh.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_shang"
+		texturefile = "gfx/leaders/TYGC/shang.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_tafei"
+		texturefile = "gfx/leaders/TYGC/tafei.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_pzx"
+		texturefile = "gfx/leaders/TYGC/pzx.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_qdh"
+		texturefile = "gfx/leaders/TYGC/qdh.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_jrc"
+		texturefile = "gfx/leaders/TYGC/jrc.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_msln"
+		texturefile = "gfx/leaders/TYGC/msln.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_dxl"
+		texturefile = "gfx/leaders/TYGC/dxl.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_sxc"
+		texturefile = "gfx/leaders/TYGC/sxc.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_tiantang"
+		texturefile = "gfx/leaders/TYGC/tiantang.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_longyun"
+		texturefile = "gfx/leaders/TYGC/longyun.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_zhang"
+		texturefile = "gfx/leaders/TYGC/Zhang_Zuolin.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_nanuke"
+		texturefile = "gfx/leaders/TYGC/nanuke.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_dht"
+		texturefile = "gfx/leaders/TYGC/dht.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_ssqk"
+		texturefile = "gfx/leaders/TYGC/ssqk.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_qinjiu"
+		texturefile = "gfx/leaders/TYGC/qinjiu.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_huanghun"
+		texturefile = "gfx/leaders/TYGC/huanghun.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Mother_Russia"
+		texturefile = "gfx/leaders/TYGC/Mother_Russia.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Queen_Victoria"
+		texturefile = "gfx/leaders/TYGC/Queen_Victoria.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wuyinhuidang"
+		texturefile = "gfx/leaders/TYGC/wuyinhuidang.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Leon_Trotsky_sdlr"
+		texturefile = "gfx/leaders/TYGC/Portrait_Leon_Trotsky_sdlr.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_blny"
+		texturefile = "gfx/leaders/TYGC/blny.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_youli"
+		texturefile = "gfx/leaders/TYGC/youli.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_hongtianwang"
+		texturefile = "gfx/leaders/TYGC/hongtianwang.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_lbwtx1"
+		texturefile = "gfx/leaders/TYGC/lbwtx1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_lbwtx2"
+		texturefile = "gfx/leaders/TYGC/lbwtx2.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_lbwtx3"
+		texturefile = "gfx/leaders/TYGC/lbwtx3.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_bks1"
+		texturefile = "gfx/leaders/TYGC/bks1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_bks2"
+		texturefile = "gfx/leaders/TYGC/bks2.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_bks0"
+		texturefile = "gfx/leaders/TYGC/bks0.png"
+	}
+
+
+##将领
+	spriteType = {
+		name = "GFX_jy"
+		texturefile = "gfx/leaders/JL/jy.png"
+	}
+	spriteType = {
+		name = "GFX_BALP_ABDS_SHIROKO"
+		texturefile = "gfx/leaders/JL/SHIROKO.png"
+	}
+	spriteType = {
+		name = "GFX_amy"
+		texturefile = "gfx/leaders/JL/amy.png"
+	}
+	spriteType = {
+		name = "GFX_dingzhen2"
+		texturefile = "gfx/leaders/JL/dingzhen2.png"
+	}
+	spriteType = {
+		name = "GFX_syq"
+		texturefile = "gfx/leaders/JL/syq.png"
+	}
+	spriteType = {
+		name = "GFX_sshs"
+		texturefile = "gfx/leaders/JL/sshs.png"
+	}
+	spriteType = {
+		name = "GFX_lxylm"
+		texturefile = "gfx/leaders/JL/lxylm.png"
+	}
+	spriteType = {
+		name = "GFX_qyn"
+		texturefile = "gfx/leaders/JL/qyn.png"
+	}
+	spriteType = {
+		name = "GFX_fldl"
+		texturefile = "gfx/leaders/JL/fldl.png"
+	}
+	spriteType = {
+		name = "GFX_lmly"
+		texturefile = "gfx/leaders/JL/lmly.png"
+	}
+	spriteType = {
+		name = "GFX_005"
+		texturefile = "gfx/leaders/JL/005.png"
+	}
+	spriteType = {
+		name = "GFX_cmwx"
+		texturefile = "gfx/leaders/JL/cmwx.png"
+	}
+	spriteType = {
+		name = "GFX_axlt"
+		texturefile = "gfx/leaders/JL/axlt.png"
+	}
+	spriteType = {
+		name = "GFX_pepe"
+		texturefile = "gfx/leaders/JL/pepe.png"
+	}
+	spriteType = {
+		name = "GFX_slyxy"
+		texturefile = "gfx/leaders/JL/slyxy.png"
+	}
+	spriteType = {
+		name = "GFX_syg"
+		texturefile = "gfx/leaders/JL/syg.png"
+	}
+	spriteType = {
+		name = "GFX_manba2"
+		texturefile = "gfx/leaders/JL/manba2.png"
+	}
+	spriteType = {
+		name = "GFX_dangheng"
+		texturefile = "gfx/leaders/JL/dangheng.png"
+	}
+	spriteType = {
+		name = "GFX_kaituozhe"
+		texturefile = "gfx/leaders/JL/kaituozhe.png"
+	}
+	spriteType = {
+		name = "GFX_sltj"
+		texturefile = "gfx/leaders/JL/sltj.png"
+	}
+	spriteType = {
+		name = "GFX_lkxd"
+		texturefile = "gfx/leaders/JL/lkxd.png"
+	}
+	spriteType = {
+		name = "GFX_hxzc"
+		texturefile = "gfx/leaders/JL/hxzc.png"
+	}
+	spriteType = {
+		name = "GFX_anbi"
+		texturefile = "gfx/leaders/JL/anbi.png"
+	}
+	spriteType = {
+		name = "GFX_lifu"
+		texturefile = "gfx/leaders/JL/lifu.png"
+	}
+	spriteType = {
+		name = "GFX_tebiezhou"
+		texturefile = "gfx/leaders/JL/tebiezhou.png"
+	}
+	spriteType = {
+		name = "GFX_jiguang"
+		texturefile = "gfx/leaders/JL/jiguang.png"
+	}
+
+
+}

@@ -1,0 +1,81 @@
+every_possible_country = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	generate_character = {
+		name = xueyuan
+		token_base = tyrw1
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/xueyuan.png"
+			}
+		}
+		advisor = {
+			visible = {
+				has_country_flag = 66pp
+			}
+			slot = political_advisor
+			cost = 125
+			traits = {
+				xueyuan
+			}
+		}
+	}
+	generate_character = {
+		name = gongyequ
+		token_base = tyrw2
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/gongyequ.png"
+			}
+		}
+		advisor = {
+			visible = {
+				has_country_flag = 66pp
+			}
+			slot = political_advisor
+			cost = 125
+			traits = {
+				gongyequ
+			}
+		}
+	}
+	generate_character = {
+		name = shequ
+		token_base = tyrw3
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/shequ.png"
+			}
+		}
+		advisor = {
+			visible = {
+				has_country_flag = 66pp
+			}
+			slot = political_advisor
+			cost = 125
+			traits = {
+				shequ
+			}
+		}
+	}
+	generate_character = {
+		name = junying
+		token_base = tyrw4
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/junying.png"
+			}
+		}
+		advisor = {
+			visible = {
+				has_country_flag = 66pp
+			}
+			slot = theorist
+			cost = 100
+			traits = {
+				junying
+			}
+		}
+	}
+}

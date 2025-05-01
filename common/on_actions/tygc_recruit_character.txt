@@ -1,0 +1,19 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			KYU = {
+				recruit_character = dht111
+				recruit_character = ssqk
+			}
+			EGY = {
+				recruit_character = theworld
+				recruit_character = haimao
+			}
+			MAN = {
+				recruit_character = jizi
+				recruit_character = wety
+			}
+		}
+	}
+}
+#####

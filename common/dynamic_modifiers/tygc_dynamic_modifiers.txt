@@ -1,0 +1,235 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#       attacker_modifier = no  # if yes this modifier will also be read in combat for 
+#                               # people engaging in the combat even if not in the state
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+gmgjd_dynamic_modifier = {
+	icon = GFX_modifiers_SOV_defend_moscow
+	enable = { 
+		ROOT = {
+			is_controlled_by = 	PRC
+		}
+	}
+	remove_trigger = { 
+		always = no
+	}
+    resistance_garrison_penetration_chance = -0.8 #驻军渗透概率
+    resistance_growth = -0.5 #抵抗
+	compliance_growth = 0.5 #顺从
+	recruitable_population_factor = 0.25 #人力
+	local_building_slots_factor = 0.4 #建筑位
+	local_org_regain = 0.2 #组织度
+	local_supplies_for_controller = 0.5 #补给
+	state_resources_factor = 0.3 #资源
+	state_production_speed_buildings_factor = 0.2 #建造速度
+	attrition_for_controller = -0.35 #损耗
+	enemy_operative_detection_chance_factor_over_occupied_tag = 0.5 #敌方特工
+
+}
+
+tdgm_dynamic_modifier = {
+	icon = GFX_modifiers_SOV_defend_moscow
+	enable = { 
+		ROOT = {
+			#OR = {
+				is_controlled_by = 	PRC
+				#controller = {	
+				#}
+			#}
+		}
+	}
+	remove_trigger = { 
+		ROOT = {
+			#OR = {
+				NOT = { 
+					is_controlled_by = PRC
+				}
+				#controller = {	
+				#}
+			#}
+		}
+	}
+	recruitable_population_factor = -0.15
+	attrition_for_controller = 0.1
+
+}
+
+yygw_dynamic_modifier = {
+	icon = GFX_modifiers_SOV_defend_moscow
+	remove_trigger = { 
+		always = no
+	}
+    resistance_garrison_penetration_chance = -0.5 #驻军渗透概率
+	recruitable_population_factor = 0.25 #人力
+	local_building_slots_factor = 0.4 #建筑位
+	local_org_regain = 0.25 #组织度
+	local_supplies_for_controller = 0.35 #补给
+	state_resources_factor = 0.3 #资源
+	local_factories = 0.2
+	state_production_speed_buildings_factor = 0.2 #建造速度
+	enemy_operative_detection_chance_factor_over_occupied_tag = 0.5 #敌方特工
+}
+gxtp_dynamic_modifier = {
+	icon = GFX_idea_SOV_second_five_year_plan_ccp_2d_sov_compatibility
+	remove_trigger = { 
+		always = no
+	}
+    resistance_garrison_penetration_chance = -0.5 #驻军渗透概率
+	recruitable_population_factor = 0.25 #人力
+	local_building_slots_factor = 0.4 #建筑位
+	local_org_regain = 0.25 #组织度
+	local_supplies_for_controller = 0.5 #补给
+	state_resources_factor = 0.25 #资源
+	local_factories = 0.25
+	state_production_speed_buildings_factor = 0.25 #建造速度
+}
+tansuo_dynamic_modifier = {
+	icon = GFX_modifiers_SOV_defend_moscow
+	enable = { 
+		ROOT = {
+			is_controlled_by = 	SMI
+		}
+	}
+	remove_trigger = { 
+		always = no
+	}
+	compliance_growth = 0.5
+	local_building_slots_factor = 0.4 #建筑位
+	local_supplies_for_controller = 2 #补给
+	state_resources_factor = 0.4 #资源
+	state_production_speed_buildings_factor = 0.4 #建造速度
+
+}
+lldyq_v0 = {
+	icon = GFX_modifiers_SPR_anarchist_society
+	enable = {
+		is_ai =no
+	}
+	production_speed_buildings_factor = lldyq_v2
+	production_factory_max_efficiency_factor = lldyq_v2
+	production_factory_efficiency_gain_factor = lldyq_v2
+	industrial_capacity_factory = lldyq_v2
+	industrial_capacity_dockyard = lldyq_v2
+	global_building_slots_factor = lldyq_v2
+	conscription_factor = lldyq_v2
+	local_resources_factor = lldyq_v2
+	army_attack_factor = lldyq_v2
+	army_defence_factor = lldyq_v2
+	breakthrough_factor = lldyq_v2
+	army_strength_factor =  lldyq_v2
+	navy_submarine_attack_factor = lldyq_v2					#潜艇攻击
+	navy_submarine_defence_factor = lldyq_v2					#潜艇防御
+	navy_capital_ship_attack_factor = lldyq_v2					#主力舰攻击
+	navy_capital_ship_defence_factor = lldyq_v2				#主力舰装甲
+	navy_screen_attack_factor = lldyq_v2						#屏卫舰攻击
+	navy_screen_defence_factor = lldyq_v2						#屏卫舰防御
+	air_attack_factor = lldyq_v2								#对空攻击
+	air_defence_factor = lldyq_v2								#空中防御
+	air_agility_factor = lldyq_v2								#机动
+	army_bonus_air_superiority_factor = lldyq_v2				#空优
+	political_power_gain = lldyq_v2
+	research_speed_factor = lldyq_v2
+	compliance_gain = lldyq_v2
+}
+cgxs = {
+	icon = GFX_modifiers_SPR_anarchist_society
+	enable = {
+		is_ai =no
+	}
+	production_speed_buildings_factor = cgxs_v2
+	production_factory_max_efficiency_factor = cgxs_v2
+	production_factory_efficiency_gain_factor = cgxs_v2
+	industrial_capacity_factory = cgxs_v2
+	industrial_capacity_dockyard = cgxs_v2
+	global_building_slots_factor = cgxs_v2
+	conscription_factor = cgxs_v2
+	local_resources_factor = cgxs_v2
+	army_attack_factor = cgxs_v2
+	army_defence_factor = cgxs_v2
+	breakthrough_factor = cgxs_v2
+	army_strength_factor =  cgxs_v2
+	navy_submarine_attack_factor = cgxs_v2					#潜艇攻击
+	navy_submarine_defence_factor = cgxs_v2					#潜艇防御
+	navy_capital_ship_attack_factor = cgxs_v2					#主力舰攻击
+	navy_capital_ship_defence_factor = cgxs_v2				#主力舰装甲
+	navy_screen_attack_factor = cgxs_v2						#屏卫舰攻击
+	navy_screen_defence_factor = cgxs_v2						#屏卫舰防御
+	air_attack_factor = cgxs_v2								#对空攻击
+	air_defence_factor = cgxs_v2								#空中防御
+	air_agility_factor = cgxs_v2								#机动
+	army_bonus_air_superiority_factor = cgxs_v2				#空优
+	political_power_gain = cgxs_v2
+	research_speed_factor = cgxs_v2
+	compliance_gain = cgxs_v2
+}
+AUS_lhfz = {
+	enable = { always = yes}
+	icon = GFX_idea_AUS_austromarxism
+	consumer_goods_factor  = -0.2
+	political_power_gain = 0.2
+	production_speed_buildings_factor = AUS_lhfz_v1
+	industrial_capacity_factory = AUS_lhfz_v1
+	industrial_capacity_dockyard = AUS_lhfz_v1
+	research_speed_factor = AUS_lhfz_v1
+	local_resources_factor = AUS_lhfz_v1
+}
+GRN_sdzf_modifier = {
+	icon = GFX_modifiers_SOV_defend_moscow
+	enable = { always = yes}
+	production_speed_buildings_factor = GRN_sdzf
+	production_factory_max_efficiency_factor = GRN_sdzf
+	production_factory_efficiency_gain_factor = GRN_sdzf
+	industrial_capacity_factory = GRN_sdzf
+	industrial_capacity_dockyard = GRN_sdzf
+	global_building_slots_factor = GRN_sdzf
+	conscription_factor = GRN_sdzf
+	local_resources_factor = GRN_sdzf
+	army_attack_factor = GRN_sdzf
+	army_defence_factor = GRN_sdzf
+	army_strength_factor =  GRN_sdzf
+	political_power_gain = GRN_sdzf
+	research_speed_factor = GRN_sdzf
+	compliance_gain = GRN_sdzf
+
+}
+tygc_SOV_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+	#INITIAL
+	production_factory_efficiency_gain_factor = SOV_fyp_production_factory_efficiency_gain_factor #-0.15
+	production_factory_max_efficiency_factor = SOV_fyp_production_factory_max_efficiency_factor #0.05
+	consumer_goods_factor = SOV_fyp_consumer_goods_factor #0.05
+	production_speed_buildings_factor = tygc_fyp_production_speed_buildings_factor
+	production_speed_industrial_complex_factor = SOV_fyp_production_speed_industrial_complex_factor #0.05
+	production_speed_arms_factory_factor = tygc_fyp_production_speed_arms_factory_factor
+	industrial_capacity_factory = tygc_fyp_industrial_capacity_factory
+	industrial_capacity_dockyard = tygc_fyp_industrial_capacity_dockyard
+	global_building_slots_factor = tygc_fyp_global_building_slots_factor
+	local_resources_factor = tygc_fyp_local_resources_factor
+	research_speed_factor = tygc_fyp_research_speed_factor
+
+}

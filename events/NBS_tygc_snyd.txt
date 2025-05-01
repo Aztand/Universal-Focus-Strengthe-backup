@@ -1,0 +1,1864 @@
+add_namespace = NSB_snyd
+#少女乐队彩蛋凸（^▽^）凸
+#一起，看一辈子文案。即使迷茫，也要前进！
+country_event = {
+	id = NSB_snyd.1
+	title = NSB_snyd.1.t
+	desc = NSB_snyd.1.desc 
+	picture = GFX_report_event_snyd
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.1.a 
+		ai_chance = {  
+			base = 100
+		}
+		add_ideas = snydyx
+		add_popularity = { ideology = neutrality popularity = 0.05 }
+		add_popularity = { ideology = communism popularity = 0.05 }
+		add_popularity = { ideology = democratic popularity = 0.05 }
+		hidden_effect = {
+		country_event = {
+			id = NSB_snyd.2
+			days = 14
+			random_days = 2
+		}
+		set_victory_points = {
+			province = 7169
+			value = 30
+		}
+		set_victory_points = {
+			province = 6994
+			value = 15
+		}
+		set_victory_points = {
+			province = 1117
+			value = 20
+		}
+		set_victory_points = {
+			province = 1025
+			value = 15
+		}
+		set_victory_points = {
+			province = 9950
+			value = 30
+		}
+		set_victory_points = {
+			province = 11925
+			value = 20
+		}
+		set_province_name = { id = 11925 name = "熊本"}
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.2
+	title = NSB_snyd.2.t
+	desc = NSB_snyd.2.desc 
+	picture = GFX_report_event_snyd
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.2.a 
+		ai_chance = {  
+			base = 100
+		}
+		add_popularity = { ideology = fascism popularity = -0.15 }
+		hidden_effect = {
+		country_event = {
+			id = NSB_snyd.3
+			days = 14
+			random_days = 2
+		}
+		every_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_resource = {
+				type = steel 
+				amount = 3
+			}
+		}
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.3
+	title = NSB_snyd.3.t
+	desc = NSB_snyd.3.desc 
+	picture = GFX_report_event_rbzj
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.3.a
+		ai_chance = {  
+			base = 100
+		}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = JAP
+					}
+				}
+				add_core_of = YDJ
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = JAP
+					}
+				}
+				add_core_of = YDM
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = JAP
+					}
+				}
+				add_core_of = YDW
+			}
+			YDJ = {
+			transfer_state = 531
+			transfer_state = 532
+			transfer_state = 535
+			transfer_state = 282
+			if = {
+				limit = { has_global_flag = qydtxh }
+				transfer_state = 1033
+				transfer_state = 1036
+				transfer_state = 1035
+				transfer_state = 1040
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 10000  }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 500  }
+			add_equipment_to_stockpile = { type = support_equipment amount = 250  }
+			set_technology = {
+				fsyyt_tech = 1
+			}
+			}
+			YDM = {
+			transfer_state = 533
+			transfer_state = 534
+			transfer_state = 536
+			transfer_state = 555
+			if = {
+				limit = { has_global_flag = qydtxh }
+				transfer_state = 1034
+				transfer_state = 1041
+				transfer_state = 1042
+				transfer_state = 1043
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 5000  }
+			}
+			YDW = {
+			transfer_state = 526
+			transfer_state = 528
+			transfer_state = 529
+			transfer_state = 530
+			if = {
+				limit = { has_global_flag = qydtxh }
+				transfer_state = 1032
+				transfer_state = 1037
+				transfer_state = 1038
+				transfer_state = 1039
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 5000  }
+			}
+		}
+		YDJ = { change_tag_from = ROOT } 
+		hidden_effect = {
+			YDJ = {
+				division_template = {
+					name = "应援部队"
+					priority = 2
+					division_names_group = YDJ_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						artillery_brigade = { x = 2 y = 0 }	
+						artillery_brigade = { x = 2 y = 1 }					
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+						artillery = { x = 0 y = 1 }
+						fsyyt = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+						count = 6
+					}
+				}
+			}
+			YDM = {
+				division_template = {
+					name = "应援部队"
+					priority = 2
+					is_locked = yes
+					force_allow_recruiting = yes
+					division_names_group = YDM_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						artillery_brigade = { x = 2 y = 0 }	
+						artillery_brigade = { x = 2 y = 1 }					
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+						artillery = { x = 0 y = 1 }
+						fsyyt = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+						count = 3
+					}
+				}
+			}
+			YDW = {
+				division_template = {
+					name = "应援部队"
+					priority = 2
+					is_locked = yes
+					force_allow_recruiting = yes
+					division_names_group = YDW_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						artillery_brigade = { x = 2 y = 0 }	
+						artillery_brigade = { x = 2 y = 1 }					
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+						artillery = { x = 0 y = 1 }
+						fsyyt = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					
+					
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+						count = 3
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { not = { has_global_flag = snydtjgc } }
+				YDJ = {
+					add_offsite_building = { type = industrial_complex level = 4 }
+					add_offsite_building = { type = arms_factory level = 4 }
+				}
+				YDM = {
+					add_offsite_building = { type = industrial_complex level = 8 }
+					add_offsite_building = { type = arms_factory level = 8 }
+				}
+				YDW = {
+					add_offsite_building = { type = industrial_complex level = 6 }
+					add_offsite_building = { type = arms_factory level = 6 }
+				}
+				set_global_flag = snydtjgc
+			}
+		}
+	}
+	option = {
+		name = NSB_snyd.3.b
+		ai_chance = {  
+			base = 100
+		}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = JAP
+					}
+				}
+				add_core_of = YDJ
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = JAP
+					}
+				}
+				add_core_of = YDM
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = JAP
+					}
+				}
+				add_core_of = YDW
+			}
+			YDJ = {
+			transfer_state = 531
+			transfer_state = 532
+			transfer_state = 535
+			if = {
+				limit = { has_global_flag = qydtxh }
+				transfer_state = 1033
+				transfer_state = 1036
+				transfer_state = 1035
+				transfer_state = 1040
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 5000  }
+			}
+			YDM = {
+			transfer_state = 533
+			transfer_state = 534
+			transfer_state = 536
+			transfer_state = 555
+			transfer_state = 282
+			if = {
+				limit = { has_global_flag = qydtxh }
+				transfer_state = 1034
+				transfer_state = 1041
+				transfer_state = 1042
+				transfer_state = 1043
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 10000  }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 500  }
+			add_equipment_to_stockpile = { type = support_equipment amount = 250  }
+			set_technology = {
+				fsyyt_tech = 1
+			}
+			}
+			YDW = {
+			transfer_state = 526
+			transfer_state = 528
+			transfer_state = 529
+			transfer_state = 530
+			if = {
+				limit = { has_global_flag = qydtxh }
+				transfer_state = 1032
+				transfer_state = 1037
+				transfer_state = 1038
+				transfer_state = 1039
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 5000  }
+			}
+		}
+		YDM = { change_tag_from = ROOT } 
+		hidden_effect = {
+			YDJ = {
+				division_template = {
+					name = "应援部队"
+					priority = 2
+					is_locked = yes
+					force_allow_recruiting = yes
+					division_names_group = YDJ_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						artillery_brigade = { x = 2 y = 0 }	
+						artillery_brigade = { x = 2 y = 1 }					
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+						artillery = { x = 0 y = 1 }
+						fsyyt = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					
+					
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+						count = 3
+					}
+				}
+			}
+			YDM = {
+				division_template = {
+					name = "应援部队"
+					priority = 2
+					division_names_group = YDM_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						artillery_brigade = { x = 2 y = 0 }	
+						artillery_brigade = { x = 2 y = 1 }					
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+						artillery = { x = 0 y = 1 }
+						fsyyt = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					
+					
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+						count = 6
+					}
+				}
+			}
+			YDW = {
+				division_template = {
+					name = "应援部队"
+					priority = 2
+					is_locked = yes
+					force_allow_recruiting = yes
+					division_names_group = YDW_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						artillery_brigade = { x = 2 y = 0 }	
+						artillery_brigade = { x = 2 y = 1 }					
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+						artillery = { x = 0 y = 1 }
+						fsyyt = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					
+					
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+						count = 3
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { not = { has_global_flag = snydtjgc } }
+				YDJ = {
+					add_offsite_building = { type = industrial_complex level = 4 }
+					add_offsite_building = { type = arms_factory level = 4 }
+				}
+				YDM = {
+					add_offsite_building = { type = industrial_complex level = 8 }
+					add_offsite_building = { type = arms_factory level = 8 }
+				}
+				YDW = {
+					add_offsite_building = { type = industrial_complex level = 6 }
+					add_offsite_building = { type = arms_factory level = 6 }
+				}
+				set_global_flag = snydtjgc
+			}
+		}
+	}
+	option = {
+		name = NSB_snyd.3.c
+		ai_chance = {  
+			base = 100
+		}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = JAP
+					}
+				}
+				add_core_of = YDJ
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = JAP
+					}
+				}
+				add_core_of = YDM
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = JAP
+					}
+				}
+				add_core_of = YDW
+			}
+			YDJ = {
+			transfer_state = 531
+			transfer_state = 532
+			transfer_state = 535
+			transfer_state = 282
+			if = {
+				limit = { has_global_flag = qydtxh }
+				transfer_state = 1033
+				transfer_state = 1036
+				transfer_state = 1035
+				transfer_state = 1040
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 5000  }
+			}
+			YDM = {
+			transfer_state = 533
+			transfer_state = 534
+			transfer_state = 536
+			transfer_state = 555
+			if = {
+				limit = { has_global_flag = qydtxh }
+				transfer_state = 1034
+				transfer_state = 1041
+				transfer_state = 1042
+				transfer_state = 1043
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 5000  }
+			}
+			YDW = {
+			transfer_state = 526
+			transfer_state = 528
+			transfer_state = 529
+			transfer_state = 530
+			if = {
+				limit = { has_global_flag = qydtxh }
+				transfer_state = 1032
+				transfer_state = 1037
+				transfer_state = 1038
+				transfer_state = 1039
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 10000  }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 500  }
+			add_equipment_to_stockpile = { type = support_equipment amount = 250  }
+			set_technology = {
+				fsyyt_tech = 1
+			}
+			}
+		}
+		YDW = { change_tag_from = ROOT } 
+		hidden_effect = {
+			YDJ = {
+				division_template = {
+					name = "应援部队"
+					priority = 2
+					is_locked = yes
+					force_allow_recruiting = yes
+					division_names_group = YDJ_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						artillery_brigade = { x = 2 y = 0 }	
+						artillery_brigade = { x = 2 y = 1 }					
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+						artillery = { x = 0 y = 1 }
+						fsyyt = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					
+					
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDJ
+						count = 3
+					}
+				}
+			}
+			YDM = {
+				division_template = {
+					name = "应援部队"
+					priority = 2
+					is_locked = yes
+					force_allow_recruiting = yes
+					division_names_group = YDM_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						artillery_brigade = { x = 2 y = 0 }	
+						artillery_brigade = { x = 2 y = 1 }					
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+						artillery = { x = 0 y = 1 }
+						fsyyt = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					
+					
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDM
+						count = 3
+					}
+				}
+			}
+			YDW = {
+				division_template = {
+					name = "应援部队"
+					priority = 2
+					division_names_group = YDW_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						artillery_brigade = { x = 2 y = 0 }	
+						artillery_brigade = { x = 2 y = 1 }					
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+						artillery = { x = 0 y = 1 }
+						fsyyt = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					
+					
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+					}
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.4" 
+						owner = YDW
+						count = 6
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { not = { has_global_flag = snydtjgc } }
+				YDJ = {
+					add_offsite_building = { type = industrial_complex level = 4 }
+					add_offsite_building = { type = arms_factory level = 4 }
+				}
+				YDM = {
+					add_offsite_building = { type = industrial_complex level = 8 }
+					add_offsite_building = { type = arms_factory level = 8 }
+				}
+				YDW = {
+					add_offsite_building = { type = industrial_complex level = 6 }
+					add_offsite_building = { type = arms_factory level = 6 }
+				}
+				set_global_flag = snydtjgc
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_snyd.4
+	title = NSB_snyd.4.t
+	desc = NSB_snyd.4.desc
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = NSB_zswalm.1.4
+		if = {
+			limit = { 
+				YDJ = { is_ai = no }
+			}
+			YDJ = {
+				annex_country = {
+					target = JAP
+					transfer_troops = yes
+				}
+			}
+			JAP = {
+				every_unit_leader = {
+					set_nationality = YDJ
+				}
+			}
+		}
+		if = {
+			limit = { 
+				YDM = { is_ai = no }
+			}
+			YDM = {
+				annex_country = {
+					target = JAP
+					transfer_troops = yes
+				}
+			}
+			JAP = {
+				every_unit_leader = {
+					set_nationality = YDM
+				}
+			}
+		}
+		if = {
+			limit = { 
+				YDW = { is_ai = no }
+			}
+			YDW = {
+				annex_country = {
+					target = JAP
+					transfer_troops = yes
+				}
+			}
+			JAP = {
+				every_unit_leader = {
+					set_nationality = YDW
+				}
+			}
+		}
+		ai_chance = {
+			base = 500
+		}
+	}
+}
+country_event = {
+	id = NSB_snyd.5
+	title = NSB_snyd.5.t
+	desc = NSB_snyd.5.desc 
+	picture = GFX_report_event_wsmyyz #为什么要演奏
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.5.a 
+		ai_chance = {  
+			base = 100
+		}
+		swap_ideas = {
+			remove_idea = ctyc
+			add_idea = ctyc2
+		}
+		if = {
+			limit = { has_global_flag = qyyyb }
+			play_song = "Harruhikage_mygo"
+		}
+		hidden_effect = {
+		country_event = {
+			id = NSB_snyd.6
+			days = 7
+			random_days = 1
+		}
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.6
+	title = NSB_snyd.6.t
+	desc = NSB_snyd.6.desc 
+	picture = GFX_report_event_ylnout #乐奈out
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.6.a 
+		ai_chance = {  
+			base = 100
+		}
+		add_stability = -0.1
+		complete_national_focus = wldns
+		hidden_effect = {
+		country_event = {
+			id = NSB_snyd.10
+			days = 7
+			random_days = 1
+		}
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.7
+	title = NSB_snyd.7.t
+	desc = NSB_snyd.7.desc 
+	picture = GFX_report_event_cqssout #素食out
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.7.a 
+		ai_chance = {  
+			base = 100
+		}
+		add_stability = -0.1
+		complete_national_focus = ndsprd
+		hidden_effect = {
+		country_event = {
+			id = NSB_snyd.8
+			days = 7
+			random_days = 1
+		}
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.8
+	title = NSB_snyd.8.t
+	desc = NSB_snyd.8.desc 
+	picture = GFX_report_event_qzayout #爱音out
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.8.a 
+		ai_chance = {  
+			base = 100
+		}
+		add_stability = -0.15
+		complete_national_focus = bxywdb
+	}
+	option = {
+		name = NSB_snyd.8.b
+		ai_chance = {  
+			base = 0
+		}
+		add_stability = -0.2
+		complete_national_focus = bxywdb
+		set_country_flag = aysz
+	} 
+}
+country_event = {
+	id = NSB_snyd.9
+	title = NSB_snyd.9.t
+	desc = NSB_snyd.9.desc 
+	picture = GFX_report_event_yqmsb1 #一起迷失吧
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.9.a 
+		ai_chance = {  
+			base = 100
+		}
+		add_stability = 0.1
+		play_song = "shichaoban"
+	}    
+}
+country_event = {
+	id = NSB_snyd.10
+	title = NSB_snyd.10.t
+	desc = NSB_snyd.10.desc 
+	picture = GFX_report_event_wsmdhzd #我什么都会做的
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.10.a 
+		ai_chance = {  
+			base = 100
+		}
+		hidden_effect = {
+		country_event = {
+			id = NSB_snyd.7
+			days = 7
+			random_days = 1
+		}
+		}
+	}
+	option = {
+		name = NSB_snyd.10.b 
+		ai_chance = {  
+			base = 0
+		}
+		hidden_effect = {
+			set_country_flag = cqssyxfhct
+			country_event = {
+				id = NSB_snyd.11
+				days = 28
+				random_days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_snyd.11
+	title = NSB_snyd.11.t
+	desc = NSB_snyd.11.desc 
+	picture = GFX_report_event_mujica #mujica
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.11.a 
+		ai_chance = {  
+			base = 100
+		}
+		complete_national_focus = ndsprd
+		hidden_effect = {
+			set_country_flag = qygsd
+			create_country_leader = {
+				name = " 长崎素世 "
+				desc = "cqss_desc"
+				picture = GFX_portrait_cqss2
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					cqssdzd
+				}
+			}
+			create_country_leader = {
+				name = " 长崎素世 "
+				desc = "cqss_desc"
+				picture = GFX_portrait_cqss2
+				expire = "1965.1.1"
+				ideology = 	nazism
+				traits = {
+					cqssdzd
+				}
+			}
+			create_country_leader = {
+				name = " 长崎素世 "
+				desc = "cqss_desc"
+				picture = GFX_portrait_cqss2
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					cqssdzd
+				}
+			}
+			create_country_leader = {
+				name = " 长崎素世 "
+				desc = "cqss_desc"
+				picture = GFX_portrait_cqss2
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					cqssdzd
+				}
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = JAP
+					}
+				}
+				add_core_of = MJK
+			}
+			MJK = {
+			transfer_state = 282
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 50000  }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 5000  }
+			add_equipment_to_stockpile = { type = support_equipment amount = 5000  }
+			add_offsite_building = { type = industrial_complex level = 16 }
+			add_offsite_building = { type = arms_factory level = 16 }
+			set_technology = {
+				fsyyt_tech = 1
+			}
+			}
+			MJK = {
+				division_template = {
+					name = "应援部队"
+					priority = 2
+					is_locked = yes
+					force_allow_recruiting = yes
+					division_names_group = YDM_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						artillery_brigade = { x = 3 y = 0 }	
+						artillery_brigade = { x = 3 y = 1 }					
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+						artillery = { x = 0 y = 1 }
+						fsyyt = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = " division_template = \"应援部队\" start_experience_factor = 0.5" 
+						owner = MJK
+						count = 24
+					}
+				}
+				declare_war_on = {
+
+					target = YDM
+					
+					type = take_state
+					
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_snyd.12
+	title = NSB_snyd.12.t
+	desc = NSB_snyd.12.desc 
+	picture = GFX_report_event_sayyc #圣爱音永存
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.12.a 
+		ai_chance = {  
+			base = 100
+		}
+		set_cosmetic_tag = saytg
+		add_state_core = 126
+		remove_ideas = ctyc2
+		create_country_leader = {
+			name = " 千早爱音 "
+			desc = "qzay_desc"
+			picture = GFX_portrait_Anon
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				say0
+				saygl
+			}
+		}
+		create_country_leader = {
+			name = " 千早爱音 "
+			desc = "qzay_desc"
+			picture = GFX_portrait_Anon
+			expire = "1965.1.1"
+			ideology = 	nazism
+			traits = {
+				say0
+				saygl
+			}
+		}
+		create_country_leader = {
+			name = " 千早爱音 "
+			desc = "qzay_desc"
+			picture = GFX_portrait_Anon
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				say0
+				saygl
+			}
+		}
+		create_country_leader = {
+			name = " 千早爱音 "
+			desc = "qzay_desc"
+			picture = GFX_portrait_Anon
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				say0
+				saygl
+			}
+		}
+		hidden_effect = {
+			set_country_flag = qygsd
+			country_event = {
+				id = NSB_snyd.13
+				days = 10
+				random_days = 2
+			}
+		}
+		play_song = "haowuhuoli" 
+	}    
+}
+country_event = {
+	id = NSB_snyd.13
+	title = NSB_snyd.13.t
+	desc = NSB_snyd.13.desc 
+	picture = GFX_report_event_baihe #啊？
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.13.a 
+		ai_chance = {  
+			base = 100
+		}
+		custom_effect_tooltip = baihe1_tt
+		set_country_flag = aysyqysd
+	}    
+}
+country_event = {
+	id = NSB_snyd.14
+	title = NSB_snyd.14.t
+	desc = NSB_snyd.14.desc 
+	picture = GFX_report_event_fhct #复活
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.14.a 
+		ai_chance = {  
+			base = 100
+		}
+		swap_ideas = {
+			remove_idea = ctyc2
+			add_idea = ctyc3
+		}
+		play_song = "Harruhikage_crychic"
+	}    
+}
+country_event = {
+	id = NSB_snyd.15
+	title = NSB_snyd.15.t
+	desc = NSB_snyd.15.desc 
+	picture = GFX_report_event_snyd #刻意回避那身影
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.15.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.16
+	title = NSB_snyd.16.t
+	desc = NSB_snyd.16.desc 
+	picture = GFX_report_event_snyd #孤独的灰与吉他为伴
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.16.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.17
+	title = NSB_snyd.17.t
+	desc = NSB_snyd.17.desc 
+	picture = GFX_report_event_snyd #圣爱音对邦赢过母鸡卡
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.17.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.18
+	title = NSB_snyd.18.t
+	desc = NSB_snyd.18.desc 
+	picture = GFX_report_event_snyd #再相遇
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.18.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.19
+	title = NSB_snyd.19.t
+	desc = NSB_snyd.19.desc 
+	picture = GFX_report_event_snyd #难以放下的
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.19.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.20
+	title = NSB_snyd.20.t
+	desc = NSB_snyd.20.desc 
+	picture = GFX_report_event_snyd #永不忘却的
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.20.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.21
+	title = NSB_snyd.21.t
+	desc = NSB_snyd.21.desc 
+	picture = GFX_report_event_snyd #最初的crychic？
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.21.a 
+		ai_chance = {  
+			base = 100
+		}
+		play_song = "Harruhikage_crychic" #歌曲名
+	}   
+}
+country_event = {
+	id = NSB_snyd.22
+	title = NSB_snyd.22.t
+	desc = NSB_snyd.22.desc 
+	picture = GFX_report_event_snyd #粉色的身影（爱灯篇）
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.22.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.23
+	title = NSB_snyd.23.t
+	desc = NSB_snyd.23.desc 
+	picture = GFX_report_event_snyd #粉色的身影（爱素篇）
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.23.a 
+		ai_chance = {  
+			base = 100
+		}
+		hidden_effect = {
+			set_country_flag = qygsd
+			country_event = {
+				id = NSB_snyd.23
+				days = 10
+				random_days = 2
+			}
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.24
+	title = NSB_snyd.24.t
+	desc = NSB_snyd.24.desc 
+	picture = GFX_report_event_snyd #【灯祥】灯领导go团与母鸡卡对赢后
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.24.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.25
+	title = NSB_snyd.25.t
+	desc = NSB_snyd.25.desc 
+	picture = GFX_report_event_snyd #有趣的女孩子
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.25.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.26
+	title = NSB_snyd.26.t
+	desc = NSB_snyd.26.desc 
+	picture = GFX_report_event_snyd #猫想要，猫得到
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.26.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.27
+	title = NSB_snyd.27.t
+	desc = NSB_snyd.27.desc 
+	picture = GFX_report_event_snyd #羽丘天台心比心
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.27.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.28
+	title = NSB_snyd.28.t
+	desc = NSB_snyd.28.desc 
+	picture = GFX_report_event_snyd #复式高层激素世
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.28.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.29
+	title = NSB_snyd.29.t
+	desc = NSB_snyd.29.desc 
+	picture = GFX_report_event_snyd #灯神重力捉素世
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.29.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.30
+	title = NSB_snyd.30.t
+	desc = NSB_snyd.30.desc 
+	picture = GFX_report_event_snyd #急急忙忙的演出前
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.30.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.31
+	title = NSB_snyd.31.t
+	desc = NSB_snyd.31.desc 
+	picture = GFX_report_event_snyd #剪切线
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.31.a 
+		ai_chance = {  
+			base = 100
+		}
+		play_song = "jianqiexian" 
+	}  
+}
+country_event = {
+	id = NSB_snyd.32
+	title = NSB_snyd.32.t
+	desc = NSB_snyd.32.desc 
+	picture = GFX_report_event_snyd #祝你幸福
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.32.a 
+		ai_chance = {  
+			base = 100
+		}
+	}    
+}
+country_event = {
+	id = NSB_snyd.33
+	title = NSB_snyd.33.t
+	desc = NSB_snyd.33.desc 
+	picture = GFX_report_event_snyd #忘记一切
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.33.a 
+		ai_chance = {  
+			base = 100
+		}
+        play_song = "Heretheworld"
+	}   
+	 
+}
+country_event = {
+	id = NSB_snyd.101
+	title = NSB_snyd.101.t
+	desc = NSB_snyd.101.desc 
+	picture = GFX_report_event_ydw_8 #必要的抉择
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.101.a
+		ai_chance = {  
+			base = 65
+		}
+		hidden_effect = {
+			set_variable = { qxyuedui = 0 }
+			set_variable = { qxyuedui_rate = 0 }
+			set_variable = { qxyuedui_max = 50 }
+			set_variable = { qxxueye = 0 }
+			set_variable = { qxxueye_rate = 0 }
+			set_variable = { qxxueye_max = 50 }
+		}
+		set_global_flag = snyd101
+		set_country_flag = snyd101_a
+		complete_national_focus = focus_ydw2
+	}
+	option = {
+		name = NSB_snyd.101.b
+		ai_chance = {  
+			base = 35
+		}
+		hidden_effect = {
+			set_variable = { qxyuedui = 0 }
+			set_variable = { qxyuedui_rate = 0 }
+			set_variable = { qxyuedui_max = 50 }
+			set_variable = { qxxueye = 0 }
+			set_variable = { qxxueye_rate = 0 }
+			set_variable = { qxxueye_max = 50 }
+		}
+		set_global_flag = snyd101
+		set_country_flag = snyd101_b
+		complete_national_focus = focus_ydw3
+	}
+}
+country_event = {
+	id = NSB_snyd.102
+	title = NSB_snyd.102.t
+	desc = NSB_snyd.102.desc 
+	picture = GFX_report_event_ydw_3 #对帮钻石星尘
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = NSB_snyd.102.a
+		ai_chance = {  
+			base = 100
+		}
+		complete_national_focus = focus_ydw4
+	}
+}
+country_event = {
+	id = NSB_snyd.103
+	title = NSB_snyd.103.t
+	desc = NSB_snyd.103.desc 
+	picture = GFX_report_event_ydw_4 #对帮赢
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.103.a
+		ai_chance = {  
+			base = 100
+		}
+		add_ideas = wcycdsl
+	}
+}
+country_event = {
+	id = NSB_snyd.104
+	title = NSB_snyd.104.t
+	desc = NSB_snyd.104.desc 
+	picture = GFX_report_event_ydw_1 #熙熙攘攘
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.104.a
+		ai_chance = {  
+			base = 100
+		}
+		remove_country_leader_trait = sjxh
+		effect_tooltip = {
+			add_country_leader_trait = xtygst2
+		}
+		hidden_effect = {
+			swap_ruler_traits = {
+				remove = xtygst
+				add = xtygst2
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_snyd.105
+	title = NSB_snyd.105.t
+	desc = NSB_snyd.105.desc 
+	picture = GFX_report_event_ydw_2 #输
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.105.a
+		ai_chance = {  
+			base = 100
+		}
+		add_stability = -0.1
+	}
+}
+country_event = {
+	id = NSB_snyd.106
+	title = NSB_snyd.106.t
+	desc = NSB_snyd.106.desc 
+	picture = GFX_report_event_ydw_7 #486救一下
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.106.a
+		ai_chance = {  
+			base = 100
+		}
+		custom_effect_tooltip = ydw8_tt
+		create_country_leader = {
+			name = " 安和昴 "
+			desc = "486_desc"
+			picture = GFX_portrait_4861
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				486ds
+				wddxg
+			}
+		}
+		create_country_leader = {
+			name = " 安和昴 "
+			desc = "486_desc"
+			picture = GFX_portrait_4861
+			expire = "1965.1.1"
+			ideology = 	nazism
+			traits = {
+				486ds
+				wddxg
+			}
+		}
+		create_country_leader = {
+			name = " 安和昴 "
+			desc = "486_desc"
+			picture = GFX_portrait_4861
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				486ds
+				wddxg
+			}
+		}
+		create_country_leader = {
+			name = " 安和昴 "
+			desc = "486_desc"
+			picture = GFX_portrait_4861
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				486ds
+				wddxg
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_snyd.107
+	title = NSB_snyd.107.t
+	desc = NSB_snyd.107.desc 
+	picture = GFX_report_event_ydw_5 #奋斗
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_snyd.107.a
+		ai_chance = {  
+			base = 100
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.75
+		}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = " 井芹仁菜 "
+			desc = "POLITICS_nina_DESC"
+			picture = GFX_portrait_nina2
+			expire = "1965.1.1"
+			ideology = 	nazism
+			traits = {
+				xtygst
+				yuanshou2
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_snyd.108
+	title = NSB_snyd.108.t
+	desc = NSB_snyd.108.desc 
+	picture = GFX_report_event_ydw_6 #该醒了
+	fire_only_once = yes
+	trigger = {
+        has_global_flag = DMDcl
+		custom_trigger_tooltip = {
+			tooltip = qxxueyedd50
+			check_variable =  { qxxueye > 49 }
+		}
+		tag = YDW
+    }
+
+	option = {
+		name = NSB_snyd.108.a
+		ai_chance = {  
+			base = 100
+		}
+		every_state = {
+			limit = {
+				is_controlled_by = YDW
+			}
+			transfer_state_to = DMD
+		}
+	}
+}

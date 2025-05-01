@@ -1,0 +1,123 @@
+﻿YDJ_INF_01 = 
+{
+	name = "应援部队"
+
+	for_countries = { YDJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { YDJ_INF_01 }
+
+	fallback_name = "%d. 应援部队"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. 应援部队" }
+		2 = { "%d. 应援部队" }
+		3 = { "%d. 应援部队" }
+		4 = { "%d. 应援部队" }
+		5 = { "%d. 应援部队" }
+		6 = { "%d. 应援部队" }
+		7 = { "%d. 应援部队" }
+		8 = { "%d. 应援部队" }
+		9 = { "%d. 应援部队" }
+		10 = { "%d. 应援部队" }
+		11 = { "%d. 应援部队" }
+		12 = { "%d. 应援部队" }
+		13 = { "%d. 应援部队" }
+		14 = { "%d. 应援部队" }
+		15 = { "%d. 应援部队" }
+		16 = { "%d. 应援部队" }
+		17 = { "%d. 应援部队" }
+		18 = { "%d. 应援部队" }
+		19 = { "%d. 应援部队" }
+		20 = { "%d. 应援部队" }
+	}
+}
+YDM_INF_01 = 
+{
+	name = "应援部队"
+
+	for_countries = { YDM }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { YDJ_INF_01 }
+
+	fallback_name = "%d. 应援部队"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. 应援部队" }
+		2 = { "%d. 应援部队" }
+		3 = { "%d. 应援部队" }
+		4 = { "%d. 应援部队" }
+		5 = { "%d. 应援部队" }
+		6 = { "%d. 应援部队" }
+		7 = { "%d. 应援部队" }
+		8 = { "%d. 应援部队" }
+		9 = { "%d. 应援部队" }
+		10 = { "%d. 应援部队" }
+		11 = { "%d. 应援部队" }
+		12 = { "%d. 应援部队" }
+		13 = { "%d. 应援部队" }
+		14 = { "%d. 应援部队" }
+		15 = { "%d. 应援部队" }
+		16 = { "%d. 应援部队" }
+		17 = { "%d. 应援部队" }
+		18 = { "%d. 应援部队" }
+		19 = { "%d. 应援部队" }
+		20 = { "%d. 应援部队" }
+	}
+}
+YDW_INF_01 = 
+{
+	name = "应援部队"
+
+	for_countries = { YDW }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { YDJ_INF_01 }
+
+	fallback_name = "%d. 应援部队"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. 应援部队" }
+		2 = { "%d. 应援部队" }
+		3 = { "%d. 应援部队" }
+		4 = { "%d. 应援部队" }
+		5 = { "%d. 应援部队" }
+		6 = { "%d. 应援部队" }
+		7 = { "%d. 应援部队" }
+		8 = { "%d. 应援部队" }
+		9 = { "%d. 应援部队" }
+		10 = { "%d. 应援部队" }
+		11 = { "%d. 应援部队" }
+		12 = { "%d. 应援部队" }
+		13 = { "%d. 应援部队" }
+		14 = { "%d. 应援部队" }
+		15 = { "%d. 应援部队" }
+		16 = { "%d. 应援部队" }
+		17 = { "%d. 应援部队" }
+		18 = { "%d. 应援部队" }
+		19 = { "%d. 应援部队" }
+		20 = { "%d. 应援部队" }
+	}
+}

@@ -1,0 +1,563 @@
+add_namespace = TYGC_cs
+add_namespace = wuw_GER_releasable_111
+add_namespace = NSB_cesi
+add_namespace = lottery_system
+country_event = {
+	id = TYGC_cs.1
+	title = TYGC_cs.1.t
+	desc = TYGC_cs.1.desc
+	picture = picture = GFX_report_event_xxx #事件图片
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = TYGC_cs.1.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = 114
+	}
+	option = {
+		name = TYGC_cs.1.b
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = 514
+	}
+	option = {
+		name = TYGC_cs.1.c
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = 1919
+	}
+}
+country_event = {  
+	id = wuw_GER_releasable_111.1
+	title = wuw_GER_releasable_111.1.t
+	desc = wuw_GER_releasable_111.1.desc 
+	picture = GFX_report_event_SWI_parliament_members
+
+	is_triggered_only = yes
+
+	option = { # It should be Berlin!
+		name = wuw_GER_releasable_111.1.a
+		trigger = {
+			owns_state = 64
+			NOT = {
+				capital_scope = {
+					state = 64
+				}
+			}
+		}
+		ai_chance = {
+			base = 25
+		}
+		
+		set_capital = {
+		 	state = 64
+		 	remember_old_capital = no
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		64 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}	
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_stability = 0.02
+		
+	}
+	option = { # It should be Munich!
+		name = wuw_GER_releasable_111.1.b
+		trigger = {
+			owns_state = 52
+			NOT = {
+				capital_scope = {
+					state = 52
+				}
+			}
+		}
+		ai_chance = {
+			base = 25
+		}
+		
+		set_capital = {
+		 	state = 52
+		 	remember_old_capital = no
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		52 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}	
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_stability = 0.02
+		
+	}
+	option = { # It should be Frankfurt!
+		name = wuw_GER_releasable_111.1.c
+		trigger = {
+			owns_state = 55
+			NOT = {
+				capital_scope = {
+					state = 55
+				}
+			}
+		}
+		ai_chance = {
+			base = 20
+		}
+		
+		set_capital = {
+		 	state = 55
+		 	remember_old_capital = no
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		55 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}	
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_stability = 0.02
+		
+	}
+	option = { # Our capital is fine as it is
+		name = wuw_GER_releasable_111.1.d
+		trigger = {
+		}
+		ai_chance = {
+			base = 30
+		}
+		
+		add_stability = 0.05
+		add_war_support = 0.03
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		capital_scope = {
+			add_extra_state_shared_building_slots = 4
+		}
+		
+	}
+}
+country_event = {
+	id = wuw_GER_releasable_111.2
+	title = wuw_GER_releasable_111.2.t
+	desc = wuw_GER_releasable_111.2.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Pierre Dupong takes the helm
+		name = wuw_GER_releasable_111.2.a
+		ai_chance = {
+			base = 100
+		}
+		every_state = {
+			limit = {
+				is_core_of = SOV
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = SOV
+			transfer_troops = yes
+		}
+	}
+}
+country_event = {
+    id = NSB_LFG.1
+    title = NSB_LFG.1.t
+    desc = NSB_LFG.1.desc
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = HOL  # 荷属东印度（原版标签HOL）
+    }
+
+    option = {
+        name = NSB_LFG.1.a
+        ai_chance = { base = 50 }
+
+        # 添加负面精神
+        add_ideas = nsb_lfg_borno_unrest
+
+        # 2天后触发起义事件（通过HOL自身触发）
+        hidden_effect = {
+            HOL = {
+                country_event = { 
+                    id = NSB_LFG.2 
+                    days = 2 
+                }
+            }
+        }
+    }
+
+    option = {
+        name = NSB_LFG.1.b
+        ai_chance = { base = 50 }
+
+        # 直接降低20%稳定度（正确命令）
+        add_stability = -0.20  # 修正为 add_stability
+    }
+}
+country_event = {
+    id = NSB_LFG.2
+    title = NSB_LFG.2.t
+    desc = NSB_LFG.2.desc
+    picture = GFX_report_event_generic_guerrillas
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = HOL
+    }
+
+    # 选项A：转换为LFG并宣战
+option = {
+    name = NSB_LFG.2.a
+    ai_chance = { base = 60 }
+
+    # 转移婆罗洲控制权
+    LFG = {
+        transfer_state = 1000
+        transfer_state = 1001
+        transfer_state = 1002
+        transfer_state = 1003
+    }
+
+    # 移除HOL核心
+    every_state = {
+        limit = { 
+            OR = { 
+                state = 1000 
+                state = 1001 
+                state = 1002 
+                state = 1003 
+            } 
+        }
+        remove_core_of = HOL
+    }
+
+    # 转换为LFG
+    LFG = { change_tag_from = ROOT }
+
+    # 添加增益精神
+    LFG = { add_ideas = nsb_lfg_uprising_buff }
+
+    # 仅在HOL存在时宣战
+    if = {
+        limit = { HOL = { exists = yes } }  # 正确语法
+        HOL = { declare_war_on = { target = LFG type = annex } }
+    }
+}
+
+# 选项B：不转换国家但宣战
+option = {
+    name = NSB_LFG.2.b
+    ai_chance = { base = 40 }
+
+    # 转移婆罗洲控制权
+    LFG = {
+        transfer_state = 1000
+        transfer_state = 1001
+        transfer_state = 1002
+        transfer_state = 1003
+    }
+
+    # 移除HOL核心
+    every_state = {
+        limit = { 
+            OR = { 
+                state = 1000 
+                state = 1001 
+                state = 1002 
+                state = 1003 
+            } 
+        }
+        remove_core_of = HOL
+    }
+
+    # 添加LFG核心
+    every_state = {
+        limit = { 
+            OR = { 
+                state = 1000 
+                state = 1001 
+                state = 1002 
+                state = 1003 
+            } 
+        }
+        add_core_of = LFG
+    }
+
+    # 仅在HOL存在时宣战
+    if = {
+        limit = { HOL = { exists = yes } }  # 正确语法
+        HOL = { declare_war_on = { target = LFG type = annex } }
+    }
+
+    # 给LFG添加增益精神
+    LFG = { add_ideas = nsb_lfg_uprising_buff }
+}
+}
+country_event = {
+	id = NSB_cesi.001
+	title = NSB_cesi.001.t
+	desc = NSB_cesi.001.desc 
+	picture = GFX_report_event_ldh 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_cesi.001.a 
+		ai_chance = {  
+			base = 100
+		}
+		play_song = "gongxifacai" 
+	}   
+}
+country_event = {
+	id = NSB_cesi.002
+	title = NSB_cesi.002.t
+	desc = NSB_cesi.002.desc 
+	picture = GFX_report_event_ldh 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_cesi.002.a 
+		ai_chance = {  
+			base = 100
+		}
+		play_song = "NeverGonnaGiveYouUp" 
+	}   
+}
+country_event = {
+	id = NSB_cesi.003
+	title = NSB_cesi.003.t
+	desc = NSB_cesi.003.desc 
+	picture = GFX_report_event_ldh 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+        hidden_effect = {
+            # 定义五种抽奖结果及其权重
+            random_list = {
+                5 = {
+                    country_event = { id = lottery_system.2 }
+                }
+                19 = {
+                    country_event = { id = lottery_system.3 }
+                }
+                50 = {
+                    country_event = { id = lottery_system.4 }
+                }
+                15 = {
+                    country_event = { id = lottery_system.5 }
+                }
+                1 = {
+                    country_event = { id = lottery_system.6 }
+                }
+            }
+        }
+    }
+	option = {
+		add_political_power = -100
+		name = NSB_cesi.003.a 
+		play_song = "amp" 
+	}   
+	option = {
+		add_political_power = -100
+		name = NSB_cesi.003.b 
+		play_song = "amp" 
+	}   
+	option = {
+		add_political_power = -100
+		name = NSB_cesi.003.c 
+		play_song = "amp" 
+	}   
+	option = {
+		add_political_power = -100
+		name = NSB_cesi.003.d 
+		play_song = "amp" 
+	}   			
+}
+country_event = {
+	id = NSB_cesi.004
+	title = NSB_cesi.004.t
+	desc = NSB_cesi.004.desc 
+	picture = GFX_report_event_ldh 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_cesi.004.a 
+		ai_chance = {  
+			base = 100
+		}
+		play_song = "Temple" 
+	}   
+}
+country_event = {
+	id = NSB_cesi.005
+	title = NSB_cesi.005.t
+	desc = NSB_cesi.005.desc 
+	picture = GFX_report_event_ldh 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_cesi.005.a 
+		ai_chance = {  
+			base = 100
+		} 
+	}   
+}
+country_event = {
+	id = NSB_cesi.006
+	title = NSB_cesi.006.t
+	desc = NSB_cesi.006.desc 
+	picture = GFX_report_event_ldh 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_cesi.006.a 
+		ai_chance = {  
+			base = 100
+		} 
+	}   
+}
+country_event = {
+    id = lottery_system.2
+    title = "一等奖"
+    desc = "啊哈哈哈哈，恭喜恭喜，要不放首恭喜发财？"
+    picture = GFX_idea_generic_research
+	is_triggered_only = yes
+    
+    option = {
+        name = "一等奖"  
+        add_timed_idea = {
+			idea = frist_prize
+			days = 180
+		}
+    }
+}
+country_event = {
+    id = lottery_system.3
+    title = "二等奖"
+    desc = "不赖，真的"
+    picture = GFX_report_event_generic_soldiers
+	is_triggered_only = yes
+    
+    option = {
+        name = "二等奖"
+        add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 5000
+			add_political_power = 100
+		
+        }
+    }
+}
+country_event = {
+    id = lottery_system.4
+    title = "三等奖"
+    desc = "下次努力"
+    picture = GFX_idea_generic_industry
+	is_triggered_only = yes
+    
+    option = {
+        name = "三等奖"
+		add_political_power = 0
+    }
+}
+country_event = {
+    id = lottery_system.5
+    title = "额"
+    desc = "额"
+    picture = GFX_report_event_generic_bombing
+	is_triggered_only = yes
+    
+    option = {
+        name = "负面奖"
+        add_political_power = -200
+    }
+}
+country_event = {
+    id = lottery_system.6
+    title = "隐藏奖励"
+    desc = "我来押注、我来博弈、我来赢取。我任命运拨转轮盘，孤注一掷，遍历死地而后生。一切献给——琥珀王"
+    picture = GFX_leaders_JL_dingzhen2
+	is_triggered_only = yes
+    
+    option = {
+        name = "ohhhhhhhhhhhhhhhh!!!"
+        create_corps_commander = {
+            name = "砂金"
+            traits = { trickster commando }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 7
+        }
+    }
+}
+country_event = {
+	id = NSB_cesi.007
+	title = NSB_cesi.007.t
+	desc = NSB_cesi.007.desc 
+	picture = GFX_report_event_ldh 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_cesi.007.a 
+		ai_chance = {  
+			base = 100
+		} 
+	}   
+}
+country_event = {
+	id = NSB_cesi.008
+	title = NSB_cesi.008.t
+	desc = NSB_cesi.008.desc 
+	picture = GFX_report_event_ldh 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NSB_cesi.008.a 
+		ai_chance = {  
+			base = 100
+		} 
+	}   
+}

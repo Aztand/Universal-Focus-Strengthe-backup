@@ -1,0 +1,32 @@
+sub_units = {
+	ufo_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { ufo = 1 }
+		categories = { category_fighter }
+		land_air_wing_size = 100
+		mega_carrier_air_wing_size = 10
+	}
+	ufo_cas = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = cas
+		need = { ufo = 1 }
+		categories = { category_cas }
+		land_air_wing_size = 100
+		mega_carrier_air_wing_size = 10
+	}
+	ufo_naval_bomber = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = naval_bomber
+		need = { ufo = 1 }
+		categories = { category_naval_bomber }
+		land_air_wing_size = 100
+		mega_carrier_air_wing_size = 10
+	}
+}

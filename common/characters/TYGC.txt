@@ -1,0 +1,713 @@
+characters = {
+	xueyuan = {
+		name = xueyuan
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/xueyuan.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = tjng1
+			cost = 125
+			traits = {
+				xueyuan
+			}
+		}
+	}
+	gongyequ = {
+		name = gongyequ
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/gongyequ.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = tjng2
+			cost = 125
+			traits = {
+				gongyequ
+			}
+		}
+	}
+	shequ = {
+		name = shequ
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/shequ.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = tjng3
+			cost = 125
+			traits = {
+				shequ
+			}
+		}
+	}
+	junying = {
+		name = junying
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/junying.png"
+			}
+		}
+
+		advisor = {
+			slot = theorist
+			idea_token = tjng4
+			cost = 100
+			traits = {
+				junying
+			}
+		}
+	}
+	dht111 = {
+		name = dht111
+		portraits = {
+			army = {
+				large = "gfx/leaders/TYGC/dht.png"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_gifted_engineer scientist_trait_brilliant_theorist scientist_trait_bright scientist_trait_fast_learner scientist_trait_resourceful }
+			skills = {
+				specialization_nuclear = 4
+			}
+		}
+	}
+	ssqk = {
+		name = ssqk
+		portraits = {
+			army = {
+				large = "gfx/leaders/TYGC/ssqk.png"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_gifted_engineer scientist_trait_brilliant_theorist scientist_trait_bright scientist_trait_fast_learner scientist_trait_resourceful }
+			skills = {
+				specialization_land = 5
+			}
+		}
+	}
+	baoan = {
+		name = baoan
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/baoan.png"
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = amns1
+			allowed = {
+			}
+			visible = {
+			}
+			cost = 75
+			traits = {
+				gczl
+			}
+		}
+	}
+	wangyuan = {
+		name = wangyuan
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/wangyuan.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = lt1
+			visible = {
+				has_country_flag = kfbr
+			}
+			cost = 15
+			traits = {
+				jddsjp
+			}
+		}
+	}
+	hamu = {
+		name = hamu
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/hamu.png"
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = otto1
+			allowed = {
+			}
+			visible = {
+				has_completed_focus = otto
+			}
+			cost = 666
+			traits = {
+				gushen
+			}
+		}
+	}
+	theworld = {
+		name = theworld
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/theworld.png"
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = eyg1
+			allowed = {
+			}
+			visible = {
+				has_completed_focus = tsll
+			}
+			cost = 21
+			traits = {
+				ts1
+			}
+		}
+	}
+	haimao = {
+		name = haimao
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/haimao.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = eyg2
+			allowed = {
+			}
+			visible = {
+				has_completed_focus = flwgl
+			}
+			cost = 200
+			traits = {
+				flw
+			}
+		}
+	}
+	xiaofei = {
+		name = xiaofei
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/xiaofei.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = tan1
+			visible = {
+				has_completed_focus = qst
+			}
+			cost = 150
+			traits = {
+				yctf
+			}
+		}
+	}
+	jizi = {
+		name = jizi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/jizi.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = jizi
+			visible = {
+				has_completed_focus = lczzy
+			}
+			cost = 150
+			traits = {
+				lhy
+			}
+		}
+	}
+	wety = {
+		name = wety
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/wety.png"
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = wety
+			visible = {
+				has_completed_focus = lczzy
+			}
+			cost = 150
+			traits = {
+				ysjzm
+			}
+		}
+	}
+
+
+
+
+#少女乐队彩蛋
+	YD_rj1 = {
+		name = YD_rj1
+		portraits={
+			army={
+				small="GFX_idea_sanzo_nosaka"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = YD_rj1
+			cost = 1
+			visible = {
+				always = no
+			}
+			traits = {
+				communist_revolutionary 
+				fascist_demagogue
+				democratic_reformer
+				head_of_intelligence
+			}
+		}
+	}
+	YD_rj2 = {
+		name = YD_rj2
+		portraits={
+			army={
+				small="GFX_idea_sanzo_nosaka"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = YD_rj2
+			cost = 1
+			visible = {
+				always = no
+			}
+			traits = {
+				communist_revolutionary 
+				fascist_demagogue
+				democratic_reformer
+				head_of_intelligence
+			}
+		}
+	}
+	YD_rj3 = {
+		name = YD_rj3
+		portraits={
+			army={
+				small="GFX_idea_sanzo_nosaka"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = YD_rj3
+			cost = 1
+			visible = {
+				always = no
+			}
+			traits = {
+				communist_revolutionary 
+				fascist_demagogue
+				democratic_reformer
+				head_of_intelligence
+			}
+		}
+	}
+
+	
+	gudu = {
+		name = gudu
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/gudu.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = snyd23232
+			visible = {
+				is_ai = no
+				not = { has_country_flag = xrldr_gudu }
+			}
+			available = {
+				not = { has_country_flag = xrldr_gudu }
+			}
+			cost = 75
+			traits = {
+				jtyx
+			}
+		}
+	}
+	stl = {
+		name = stl
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/stl.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = snyd1
+			visible = {
+				is_ai = no
+				not = { has_country_flag = xrldr_stl }
+			}
+			available = {
+				not = { has_country_flag = xrldr_stl }
+			}
+			cost = 75
+			traits = {
+				cqnqw
+			}
+		}
+	}
+	xdyd = {
+		name = xdyd
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/xdyd.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = snyd2
+			visible = {
+				is_ai = no
+				not = { has_country_flag = xrldr_xdyd }
+			}
+			available = {
+				not = { has_country_flag = xrldr_xdyd }
+			}
+			cost = 75
+			traits = {
+				ygklgqlx
+			}
+		}
+	}
+	ydzhx = {
+		name = ydzhx
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ydzhx.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = snyd3
+			visible = {
+				is_ai = no
+				not = { has_country_flag = xrldr_ydzhx }
+			}
+			available = {
+				not = { has_country_flag = xrldr_ydzhx }
+			}
+			cost = 75
+			traits = {
+				xbzdts
+			}
+		}
+	}
+	qzay = {
+		name = qzay
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/qzay.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = snyd4
+			visible = {
+				is_ai = no
+			}
+			available = {
+				OR = {
+					NOT = {
+						has_completed_focus = bxywdb
+					}
+					has_completed_focus = dscj
+				}
+				NOT = {
+					has_completed_focus = cjct
+				}
+			}
+			cost = 75
+			traits = {
+				say0
+			}
+		}
+	}
+	gsd = {
+		name = gsd
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/gsd.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = snydts1
+			visible = {
+				has_country_flag = qygsd
+			}
+			cost = 25
+			traits = {
+				nszw
+			}
+		}
+	}
+	kfxx = {
+		name = kfxx
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/kfxx.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = snydts2
+			visible = {
+				OR = {
+					has_completed_focus = cjct
+					has_country_flag = cjct
+				}
+			}
+			cost = 25
+			traits = {
+				rrdwyjsl
+			}
+		}
+	}
+	nym = {
+		name = nym
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/nym.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = snydts3
+			visible = {
+				OR = {
+					has_completed_focus = cjct
+					has_country_flag = cjct
+				}
+			}
+			cost = 25
+			traits = {
+				jxwmutou
+			}
+		}
+	}
+	cqss = {
+		name = cqss
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/cqss.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = snyd5
+			visible = {
+				is_ai = no
+			}
+			available = {
+				OR = {
+					NOT = {
+						has_completed_focus = ndsprd
+					}
+					has_completed_focus = dscj
+					has_country_flag = aysyqysd
+				}
+			}
+			cost = 75
+			traits = {
+				cqssdzd
+			}
+		}
+	}
+	yln = {
+		name = yln
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/yln.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = snyd6
+			visible = {
+				is_ai = no
+			}
+			available = {
+				OR = {
+					NOT = {
+						has_completed_focus = wldns
+					}
+					has_completed_focus = dscj
+				}
+			}
+			cost = 75
+			traits = {
+				sxsymm
+			}
+		}
+	}
+	zmlx = {
+		name = zmlx
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/zmlx.png"
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = snyd7
+			allowed = {
+			}
+			visible = {
+			}
+			cost = 75
+			traits = {
+				pdylsyr
+			}
+		}
+	}
+	nina = {
+		name = nina
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/nina.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = nina
+			visible = {
+				has_completed_focus = focus_ydw8
+			}
+			cost = 0
+			traits = {
+				xtygst
+			}
+		}
+	}
+	hymtx = {
+		name = hymtx
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/hymtx.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = snyd8
+			visible = {
+				is_ai = no
+			}
+			cost = 75
+			traits = {
+				mm0
+			}
+		}
+	}
+	aha = {
+		name = aha
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/aha.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = snyd9
+			visible = {
+				is_ai = no
+			}
+			available = {
+				not = { has_completed_focus = focus_ydw8 }
+			}
+			cost = 75
+			traits = {
+				486ds
+			}
+		}
+	}
+	rupa = {
+		name = rupa
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/rupa.png"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = snyd10
+			visible = {
+				is_ai = no
+			}
+			cost = 75
+			traits = {
+				qdzqnm
+			}
+		}
+	}
+	hlzz = {
+		name = hlzz
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/hlzz.png"
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = snyd7
+			allowed = {
+			}
+			visible = {
+			}
+			cost = 75
+			traits = {
+				ajhzsc
+			}
+		}
+	}
+}

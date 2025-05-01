@@ -1,0 +1,30 @@
+on_actions = {
+	on_weekly = {
+		effect = {
+			every_country = {
+              	limit = {
+					has_country_flag = lldyq_flag
+				}
+				set_variable = { lldyq_v1 = num_core_states }
+				set_variable = { lldyq_v2 = lldyq_v1 }
+				multiply_variable = {
+					var = lldyq_v2
+					value = 0.01
+				}
+			}
+		}
+		effect = {
+			every_country = {
+              	limit = {
+					has_country_flag = cgxs_flag
+				}
+				set_variable = { cgxs_v1 = num_core_states }
+				set_variable = { cgxs_v2 = cgxs_v1 }
+				multiply_variable = {
+					var = cgxs_v2
+					value = 0.01
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,76 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_gongyequ"
+		texturefile = "gfx/interface/ideas/gongyequ.png"
+	}
+	spriteType = {
+		name = "GFX_junying"
+		texturefile = "gfx/interface/ideas/junying.png"
+	}
+	spriteType = {
+		name = "GFX_shequ"
+		texturefile = "gfx/interface/ideas/shequ.png"
+	}
+	spriteType = {
+		name = "GFX_xueyuan"
+		texturefile = "gfx/interface/ideas/xueyuan.png"
+	}
+	spriteType = {
+		name = "GFX_baoan"
+		texturefile = "gfx/interface/ideas/baoan.png"
+	}
+	spriteType = {
+		name = "GFX_stl"
+		texturefile = "gfx/interface/ideas/stl.png"
+	}
+	spriteType = {
+		name = "GFX_xdyd"
+		texturefile = "gfx/interface/ideas/xdyd.png"
+	}
+	spriteType = {
+		name = "GFX_ydzhx"
+		texturefile = "gfx/interface/ideas/ydzhx.png"
+	}
+	spriteType = {
+		name = "GFX_gsd"
+		texturefile = "gfx/interface/ideas/gsd.png"
+	}
+	spriteType = {
+		name = "GFX_kfxx"
+		texturefile = "gfx/interface/ideas/kfxx.png"
+	}
+	spriteType = {
+		name = "GFX_nym"
+		texturefile = "gfx/interface/ideas/nym.png"
+	}
+	spriteType = {
+		name = "GFX_hamu"
+		texturefile = "gfx/interface/ideas/hamu.png"
+	}
+	spriteType = {
+		name = "GFX_wangyuan"
+		texturefile = "gfx/interface/ideas/wangyuan.png"
+	}
+	spriteType = {
+		name = "GFX_theworld"
+		texturefile = "gfx/interface/ideas/theworld.png"
+	}
+	spriteType = {
+		name = "GFX_haimao"
+		texturefile = "gfx/interface/ideas/haimao.png"
+	}
+	spriteType = {
+		name = "GFX_xiaofei"
+		texturefile = "gfx/interface/ideas/xiaofei.png"
+	}
+	spriteType = {
+		name = "GFX_wety"
+		texturefile = "gfx/interface/ideas/wety.png"
+	}
+	spriteType = {
+		name = "GFX_jizi"
+		texturefile = "gfx/interface/ideas/jizi.png"
+	}
+
+}

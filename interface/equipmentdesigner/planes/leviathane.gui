@@ -1,0 +1,38 @@
+guiTypes = {
+	containerWindowType = {
+		name = "equipment_designer_ufo"
+		#命名规则为equipment_designer_装备标识名
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_ufo_0"
+		#命名规则为equipment_designer_装备标识名
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_ufo_2"
+		#命名规则为equipment_designer_装备标识名
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+}

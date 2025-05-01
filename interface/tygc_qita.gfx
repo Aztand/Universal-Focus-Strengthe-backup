@@ -1,0 +1,149 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_unit_fsyyt_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/support_unit_signal_company_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_fsyyt_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_large/support_unit_signal_company_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_fsyyt_icon_small"
+		texturefile = "gfx/texticons/support_signal_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_jxgwrj_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/support_unit_signal_company_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_jxgwrj_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_large/support_unit_signal_company_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_jxgwrj_icon_small"
+		texturefile = "gfx/texticons/support_signal_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_xlzyl_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/support_unit_xlzyl_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_xlzyl_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_large/support_unit_xlzyl_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_xlzyl_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/support_unit_xlzyl_small.png"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_xilahuo_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/support_unit_xilahuo_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_xilahuo_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_large/support_unit_xilahuo_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_xilahuo_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/support_unit_xilahuo_small.png"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_EMI_ufo_jiguang"
+		textureFile = "gfx/interface/equipmentdesigner/ship_part_energy_lance_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_ufo_jiasuqi"
+		textureFile = "gfx/interface/equipmentdesigner/ship_part_mass_accelerator_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_gangtiehongliu_tank_medium_howitzer"
+		textureFile = "gfx/interface/equipmentdesigner/tank_module_modern_turret.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_gangtiehongliu_tank_heavy_howitzer"
+		textureFile = "gfx/interface/equipmentdesigner/tank_module_modern_turret.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { 
+	    name = "GFX_ufo_2"
+	    textureFile = "gfx/interface/technologies/ufo2.png"
+	    noOfFrames = 1 
+	}
+	spriteType = { 
+	    name = "GFX_ufo_2_medium"
+	    textureFile = "gfx/interface/technologies/ufo2.png"
+	    noOfFrames = 1 
+	}
+	SpriteType = {
+		name = "GFX_ufo_2"
+		texturefile = "gfx/interface/technologies/ufo2.png"
+	}
+	spriteType = {
+		name = "GFX_autonomy_volkskommissariat_2_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_volkskommissariat_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_autonomy_tygc_ger_volkskommissariat_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_satellite.dds"
+	}
+	SpriteType = {
+		name = "GFX_trait_traits_att"
+		texturefile = "gfx/interface/traits/trait_offensive_doctrine.dds"
+	}
+	SpriteType = {
+		name = "GFX_trait_traits_att2"
+		texturefile = "gfx/interface/traits/trait_offensive_doctrine.dds"
+	}
+	SpriteType = {
+		name = "GFX_trait_traits_att3"
+		texturefile = "gfx/interface/traits/trait_offensive_doctrine.dds"
+	}
+	SpriteType = {
+		name = "GFX_trait_traits_att4"
+		texturefile = "gfx/interface/traits/trait_offensive_doctrine.dds"
+	}
+	SpriteType = {
+		name = "GFX_trait_star_5"
+		texturefile = "gfx/interface/traits/trait_trickster.dds"
+	}
+	SpriteType = {
+		name = "GFX_trait_star_5_2"
+		texturefile = "gfx/interface/traits/trait_trickster.dds"
+	}
+	SpriteType = {
+		name = "GFX_trait_traits_jianniang"
+		texturefile = "gfx/interface/traits/trait_offensive_doctrine.dds"
+	}
+	SpriteType = {
+		name = "GFX_trait_traits_def"
+		texturefile = "gfx/interface/traits/trait_defensive_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_totaler_krieg_economy_tygc"
+		texturefile = "gfx/interface/ideas/idea_totaler_krieg_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_SPR_anarchist_society"
+		texturefile = "gfx/interface/ideas/SPR_anarchist_society.dds"
+	}
+}
