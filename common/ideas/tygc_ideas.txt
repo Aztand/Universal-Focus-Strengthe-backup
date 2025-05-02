@@ -4468,10 +4468,25 @@ ideas = {
 				defense_bonus_against = 0.2
 			}
 			modifier = {
-				weekly_manpower = 10000
+				weekly_manpower = 5000
 				army_attack_factor = 0.1
 				army_defence_factor = 0.1
 
+			}
+		}
+		cfdg3 = {
+			
+			removal_cost = -1	
+			picture = trotskyite_plot
+			targeted_modifier = { 
+				tag = GER
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			modifier = {
+				weekly_manpower = 1000
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
 			}
 		}
 		miaosa = {
@@ -11310,6 +11325,239 @@ ideas = {
 				military_factory_donations = 999
 			}
 			
+		}
+		ggxdg = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = hol_the_foundations_of_defense
+			modifier = {
+				stability_weekly = 0.003
+				political_power_gain = 0.15
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+		wdzcfd0 = {
+			name = wdzcfd
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				war_support_weekly = 0.005
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+				justify_war_goal_time = -0.2
+				fascism_drift = 0.15
+				conscription_factor = 0.1
+			}
+		}
+		wdzcfd1 = {
+			name = wdzcfd
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				war_support_weekly = 0.005
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_speed_factor = 0.1
+				justify_war_goal_time = -0.3
+				fascism_drift = 0.15
+				conscription_factor = 0.15
+				army_org_factor = 0.1
+			}
+		}
+		wdzcfd2 = {
+			name = wdzcfd
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				war_support_weekly = 0.005
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				army_speed_factor = 0.15
+				justify_war_goal_time = -0.4
+				fascism_drift = 0.15
+				conscription_factor = 0.2
+				army_org_factor = 0.15
+			}
+		}
+		mzzl0 = {
+			name = mzzl
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				weekly_manpower = 1000
+				supply_node_range = 0.15
+				supply_consumption_factor = -0.15
+				terrain_penalty_reduction = 0.2
+			}
+		}
+		mzzl01 = {
+			name = mzzl
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				weekly_manpower = 1000
+				supply_node_range = 0.15
+				supply_consumption_factor = -0.15
+				terrain_penalty_reduction = 0.2
+			}
+			targeted_modifier = { 
+				tag = BRA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = { 
+				tag = CHL
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		mzzl02 = {
+			name = mzzl
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				weekly_manpower = 1000
+				supply_node_range = 0.15
+				supply_consumption_factor = -0.15
+				terrain_penalty_reduction = 0.2
+			}
+			targeted_modifier = { 
+				tag = USA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = { 
+				tag = MEX
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = { 
+				tag = CAN
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		mzzl012 = {
+			name = mzzl
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				weekly_manpower = 1000
+				supply_node_range = 0.15
+				supply_consumption_factor = -0.15
+				terrain_penalty_reduction = 0.2
+			}
+			targeted_modifier = { 
+				tag = BRA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = { 
+				tag = CHL
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = { 
+				tag = USA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = { 
+				tag = MEX
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = { 
+				tag = CAN
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		xdlzz = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1	
+			picture = generic_morale_bonus
+			modifier = {
+				war_stability_factor = 0.15
+				war_support_factor = 0.15
+				political_power_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.2
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				conscription_factor = 0.15
+				annex_cost_factor = -0.25
+			}
+		}
+		ozzl = {
+			picture = air_support_focus
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+	
+			modifier = {
+				air_attack_factor = 0.2
+				air_mission_efficiency = 0.2
+				air_range_factor = 0.2
+				air_defence_factor = 0.2
+				air_agility_factor = 0.2
+				air_maximum_speed_factor = 0.2
+				air_detection = 0.2
+				naval_speed_factor = 0.15
+				navy_max_range_factor = 0.15
+				navy_visibility = -0.15
+				spotting_chance = 0.2
+				naval_detection = 0.2
+				naval_strike = 0.15
+				naval_hit_chance = 0.15
+			}
 		}
 
 

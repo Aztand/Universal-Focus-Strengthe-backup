@@ -31849,6 +31849,471 @@ focus_tree = {
 			add_ideas = zxzt
 		}
 	}
+	focus = {
+		id = msdfk
+		icon = GFX_goal_generic_attack_allies
+		cost = 1
+		allow_branch = {
+			tag = ARG
+		}
+		available = {
+			fascism > 0.25
+			GER = {
+				not = {
+					has_government = fascism
+				}
+				has_civil_war = no
+			}
+		}
+		x = 8
+		y = 5
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			country_event = {
+				id = ARG_political_events.120
+				days = 2
+				random_days = 1
+			}
+		}
+	}
+	focus = {
+		id = dscdml
+		icon = GFX_goal_generic_attack_allies
+		cost = 3
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = msdfk
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+		}
+		x = 8
+		y = 6
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			set_cosmetic_tag = ARG_fourth_reich_fascism
+			create_faction = xingzx
+			add_political_power = 100
+			add_dynamic_modifier = {
+  				modifier = ARG_growing_nationalism_modifier
+  			}
+		}
+	}
+	focus = {
+		id = ggxdg
+		icon = GFX_goal_generic_attack_allies
+		cost = 5
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = dscdml
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+		}
+		x = 7
+		y = 7
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = ggxdg
+		}
+	}
+	focus = {
+		id = czdwj
+		icon = GFX_goal_generic_attack_allies
+		cost = 5
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = dscdml
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+		}
+		x = 9
+		y = 7
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = dyzlj
+			division_template = {
+				name = "党卫军步兵师"
+				priority = 8
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					artillery_brigade = { x = 3 y = 0 }	
+					artillery_brigade = { x = 3 y = 1 }					
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 } 
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				create_unit = {
+					division = " division_template = \"党卫军步兵师\" start_experience_factor = 0.35"
+					owner = ROOT
+					count = 6
+				}
+			}
+		}
+	}
+	focus = {
+		id = wdzcfd
+		icon = GFX_goal_generic_attack_allies
+		cost = 6
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = ggxdg
+		}
+		prerequisite = {
+			focus = czdwj
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+		}
+		x = 8
+		y = 8
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_country_leader_trait = yuanshou3
+			add_ideas = wdzcfd0
+		}
+	}
+	focus = {
+		id = mzzl
+		icon = GFX_goal_generic_attack_allies
+		cost = 6
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = wdzcfd
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+		}
+		x = 6
+		y = 9
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			if = {
+				limit = { has_idea = wdzcfd1 }
+				swap_ideas = {
+					remove_idea = wdzcfd1
+					add_idea = wdzcfd2
+				}
+			}
+			if = {
+				limit = { not = { has_idea = wdzcfd1 } }
+				swap_ideas = {
+					remove_idea = wdzcfd0
+					add_idea = wdzcfd1
+				}
+			}
+			add_ideas = mzzl0
+			every_state = {
+				limit = {
+					or = {
+						is_on_continent = south_america
+						is_on_continent = north_america
+					}
+				}
+				add_claim_by = ROOT
+			}
+		}
+	}
+	focus = {
+		id = sjnm
+		icon = GFX_goal_generic_attack_allies
+		cost = 4
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = mzzl
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+		}
+		x = 5
+		y = 10
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = mzzl0
+					add_idea = mzzl01
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_idea = mzzl0 }
+					swap_ideas = {
+						remove_idea = mzzl0
+						add_idea = mzzl01
+					}
+				}
+				if = {
+					limit = { has_idea = mzzl02 }
+					swap_ideas = {
+						remove_idea = mzzl02
+						add_idea = mzzl012
+					}
+				}
+			}
+			add_war_support = 0.1
+			every_country = {
+				limit = {
+					capital_scope = {
+						is_on_continent = south_america
+					}
+				}
+				ARG = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					} 
+				}
+			}
+		}
+	}
+	focus = {
+		id = bsbm
+		icon = GFX_goal_generic_attack_allies
+		cost = 4
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = mzzl
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+			has_completed_focus = sjnm
+		}
+		x = 7
+		y = 10
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = mzzl0
+					add_idea = mzzl02
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_idea = mzzl0 }
+					swap_ideas = {
+						remove_idea = mzzl0
+						add_idea = mzzl02
+					}
+				}
+				if = {
+					limit = { has_idea = mzzl01 }
+					swap_ideas = {
+						remove_idea = mzzl01
+						add_idea = mzzl012
+					}
+				}
+			}
+			add_war_support = 0.1
+			every_country = {
+				limit = {
+					capital_scope = {
+						is_on_continent = north_america
+					}
+				}
+				ARG = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					} 
+				}
+			}
+		}
+	}
+	focus = {
+		id = thxdl
+		icon = GFX_goal_generic_attack_allies
+		cost = 20
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = sjnm
+		}
+		prerequisite = {
+			focus = bsbm
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+		}
+		x = 6
+		y = 11
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = xdlzz
+			every_state = {
+				limit = {
+					or = {
+						is_on_continent = south_america
+						is_on_continent = north_america
+					}
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+	focus = {
+		id = ozzl
+		icon = GFX_goal_generic_attack_allies
+		cost = 6
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = wdzcfd
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+		}
+		x = 10
+		y = 9
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			if = {
+				limit = { has_idea = wdzcfd1 }
+				swap_ideas = {
+					remove_idea = wdzcfd1
+					add_idea = wdzcfd2
+				}
+			}
+			if = {
+				limit = { not = { has_idea = wdzcfd1 } }
+				swap_ideas = {
+					remove_idea = wdzcfd0
+					add_idea = wdzcfd1
+				}
+			}
+			add_ideas = ozzl
+			custom_effect_tooltip = ozzl_tt
+			every_country = {
+				limit = {
+					capital_scope = {
+						is_on_continent = south_america
+					}
+					has_government = fascism
+					is_in_faction = no
+				}
+				ARG = {
+					add_to_faction = PREV
+				}
+			}
+		}
+	}
+	focus = {
+		id = cfdg3
+		icon = GFX_goal_generic_attack_allies
+		cost = 6
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = ozzl
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+		}
+		x = 10
+		y = 10
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = cfdg3
+			every_state = {
+				limit = {
+					or = {
+						is_core_of = GER
+					}
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
 
 
 	

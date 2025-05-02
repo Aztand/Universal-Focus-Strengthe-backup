@@ -124,6 +124,9 @@ focus_114514 = {
 			remove_ideas = GRE_political_instability_communist
 			remove_ideas = GRE_political_instability_metaxas
 			remove_ideas = GRE_political_instability_fascism
+			remove_ideas = SMB_MTG_naval_arms_race_legacy
+			remove_ideas = ARG_infamous_decade_idea
+			remove_ideas = ARG_roca_runciman_treaty_idea
 			remove_dynamic_modifier = {
 				modifier = idea_RAJ_agrarian_society
 			}
@@ -135,6 +138,9 @@ focus_114514 = {
 			}
 			remove_dynamic_modifier = {
 				modifier = BEL_scars_of_ww1_dynamic_modifier
+			}
+			remove_dynamic_modifier = {
+				modifier = ARG_political_corruption_modifier
 			}
 		}
 
@@ -2559,9 +2565,6 @@ zccg = {
 		ai_will_do = {
 			factor = 0
 		}
-		visible = {
-			has_country_flag = zjyd
-		}
 		available = {
 			has_country_flag = zjyd
 		}
@@ -2807,21 +2810,24 @@ zccg = {
 			factor = 0
 		}
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = zkzy_tt
-				NOT = {
-					any_state = {
-						is_core_of = SOV
-						OR = {
-						is_core_of = UZB
-						is_core_of = TAJ
-						is_core_of = KYR
-						is_core_of = TMS
-						is_core_of = KAZ
+			or = {
+				custom_trigger_tooltip = {
+					tooltip = zkzy_tt
+					NOT = {
+						any_state = {
+							is_core_of = SOV
+							OR = {
+							is_core_of = UZB
+							is_core_of = TAJ
+							is_core_of = KYR
+							is_core_of = TMS
+							is_core_of = KAZ
+							}
+							NOT = { is_controlled_by = ROOT }
 						}
-						NOT = { is_controlled_by = ROOT }
 					}
 				}
+				SOV = { is_subject_of = ROOT }
 			}
 		}
 		complete_effect = {
@@ -2899,7 +2905,7 @@ zccg = {
 						}
 					}
 				}
-
+				SOV = { is_subject_of = ROOT }
 			}
 		}
 		complete_effect = {
@@ -2998,36 +3004,39 @@ zccg = {
 			factor = 0
 		}
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = zkwleyx_tt
-				NOT = {
-					any_state = {
-						OR = {
-							state = 249
-							state = 400
-							state = 398
-							state = 399
-							state = 252
-							state = 833
-							state = 573
-							state = 651
-							state = 582
-							state = 652
-							state = 251
-							state = 250
-							state = 401
-							state = 829
-							state = 239
-							state = 255
-							state = 256
-							state = 825
-							state = 262
-							state = 581
-							state = 397
+			or = {
+				custom_trigger_tooltip = {
+					tooltip = zkwleyx_tt
+					NOT = {
+						any_state = {
+							OR = {
+								state = 249
+								state = 400
+								state = 398
+								state = 399
+								state = 252
+								state = 833
+								state = 573
+								state = 651
+								state = 582
+								state = 652
+								state = 251
+								state = 250
+								state = 401
+								state = 829
+								state = 239
+								state = 255
+								state = 256
+								state = 825
+								state = 262
+								state = 581
+								state = 397
+							}
+							NOT = { is_controlled_by = ROOT }
 						}
-						NOT = { is_controlled_by = ROOT }
 					}
 				}
+				SOV = { is_subject_of = ROOT }
 			}
 		}
 		complete_effect = {
@@ -10912,6 +10921,7 @@ tyaijueyizu = {
 		}
 		visible = {
 			original_tag = KOR
+			is_ai = yes
 		}
 		available = {
 			CHI = { has_country_flag = achievement_JAP_sue_for_peace_CHI_completed }
@@ -10922,6 +10932,60 @@ tyaijueyizu = {
 		complete_effect = {
 			every_core_state = {
 				transfer_state_to = ROOT
+			}
+		}
+	}
+	JAP_sue_for_peace_CHI2 = {
+
+		available = {
+			FROM = { 
+				surrender_progress < 0.2 # if they are losing, lets not allow it
+			}
+			NOT = {
+				# South Korea
+				controls_state = 525
+				# North Korea
+				controls_state = 527
+			}
+			NOT = {
+				any_state = {
+					NOT = { is_core_of = CHI }
+					state = 524
+					is_controlled_by = ROOT
+				}
+			}
+			MAN = {
+				OR = {
+					exists = no
+					NOT = {
+						is_subject_of = JAP
+					}
+					has_capitulated = yes
+				}
+			}
+		}
+
+		visible = {
+			original_tag = JAP
+			has_global_flag = krzz
+			is_subject = no
+			has_war_with = PRC
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 400
+		}
+
+		complete_effect = {
+			PRC = { 
+				country_event = { 
+					id = NSB_chicd.4
+					days = 1 
+				} 
 			}
 		}
 	}

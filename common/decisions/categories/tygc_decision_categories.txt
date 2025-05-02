@@ -564,9 +564,7 @@ bydjz = {
     }
 }
 tyaijueyizu = {
-    visible = {
-        is_ai = yes
-    }
+    priority = 0
 }
 #debug
 focus_csjueyi = {
