@@ -466,10 +466,19 @@ hbsbtm = {
         has_completed_focus = hbsbtm
     }
 }
+dpjf = {
+    priority = 75
+    visible = {
+        has_completed_focus = jfzz
+    }
+}
 zjzyxq = {
     priority = 99
     visible = {
-        has_completed_focus = zjzyxq
+        or = {
+            has_completed_focus = zjzyxq
+            has_completed_focus = zjzyxq_1
+        }
     }
 }
 gcgjyth = {

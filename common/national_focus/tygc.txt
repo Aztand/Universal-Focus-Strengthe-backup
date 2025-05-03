@@ -4463,7 +4463,7 @@ focus_tree = {
 		prerequisite = {
 			focus = qmzz
 		}
-				available = {
+		available = {
 			custom_trigger_tooltip = {
 				tooltip = GER_improve_national_spirit_tooltip
 				OR = {
@@ -9702,7 +9702,7 @@ focus_tree = {
 		icon = GFX_focus_GER_ascension_of_himmler
 		x = 11
 		y = 7
-		cost = 10
+		cost = 8
 		
 		allow_branch = {tag = GER}
 		prerequisite = {
@@ -12690,7 +12690,12 @@ focus_tree = {
 		x = 6
 		y = 4
 		prerequisite = { focus = zggngmj }
-		available = { has_country_flag = krzzsl }
+		available = {
+			or = {
+				has_country_flag = krzzsl
+				JAP = { exists = no }
+			}
+		}
 		ai_will_do = {
 			factor = 30
 		}
@@ -12702,39 +12707,11 @@ focus_tree = {
 			}
 			CHI = {
 				declare_war_on = {
-
 					target = PRC
-					
-					type = take_state
-					
+					type = annex_everything
 				}
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = SHX
-				expire = 0
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = XSM
-				expire = 0
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = SIK
-				expire = 0
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = YUN
-				expire = 0
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = GXC
-				expire = 0
-			}
-			
+			unlock_decision_category_tooltip = dpjf
 		}
 	}
 	focus = {
@@ -12767,6 +12744,7 @@ focus_tree = {
 			add_ideas = hpfz1
 			set_cosmetic_tag = PRC_proclaimed
 			add_country_leader_trait = wdlx
+			add_research_slot = 1
 			hidden_effect = {
 				news_event = { id = wtt_news.37 days = 3 random_days = 3 }
 			}
@@ -31058,10 +31036,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_CAIDAN }
 		text_icon = tygc_biaotilan
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 75
 			add_stability = 0.05
+			JAP = {
+				set_autonomy = {
+					target = MEN
+					autonomous_state = autonomy_wtt_imperial_associate 
+				}
+			}
 			add_autonomy_score = {
-				value = 1300
+				value = 200
 				localization = zqrbxr
 			}
 			JAP = { 
@@ -31851,7 +31835,7 @@ focus_tree = {
 	}
 	focus = {
 		id = msdfk
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_wh
 		cost = 1
 		allow_branch = {
 			tag = ARG
@@ -31887,7 +31871,7 @@ focus_tree = {
 	}
 	focus = {
 		id = dscdml
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_ARG_accept_german_advisors
 		cost = 3
 		allow_branch = {
 			tag = ARG
@@ -31917,7 +31901,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ggxdg
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_ARG_march_to_la_casa_rosada
 		cost = 5
 		allow_branch = {
 			tag = ARG
@@ -31942,7 +31926,7 @@ focus_tree = {
 	}
 	focus = {
 		id = czdwj
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_GER_ascension_of_himmler
 		cost = 5
 		allow_branch = {
 			tag = ARG
@@ -31996,7 +31980,7 @@ focus_tree = {
 	}
 	focus = {
 		id = wdzcfd
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_major_war
 		cost = 6
 		allow_branch = {
 			tag = ARG
@@ -32025,7 +32009,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mzzl
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_ARG_pan_american_cooperation
 		cost = 6
 		allow_branch = {
 			tag = ARG
@@ -32053,7 +32037,7 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { not = { has_idea = wdzcfd1 } }
+				limit = { has_idea = wdzcfd0 }
 				swap_ideas = {
 					remove_idea = wdzcfd0
 					add_idea = wdzcfd1
@@ -32073,7 +32057,7 @@ focus_tree = {
 	}
 	focus = {
 		id = sjnm
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_por_recover_latin_america
 		cost = 4
 		allow_branch = {
 			tag = ARG
@@ -32115,7 +32099,7 @@ focus_tree = {
 					}
 				}
 			}
-			add_war_support = 0.1
+			add_war_support = 0.05
 			every_country = {
 				limit = {
 					capital_scope = {
@@ -32133,7 +32117,7 @@ focus_tree = {
 	}
 	focus = {
 		id = bsbm
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_ARG_anti_american_propaganda
 		cost = 4
 		allow_branch = {
 			tag = ARG
@@ -32176,7 +32160,7 @@ focus_tree = {
 					}
 				}
 			}
-			add_war_support = 0.1
+			add_war_support = 0.05
 			every_country = {
 				limit = {
 					capital_scope = {
@@ -32194,7 +32178,7 @@ focus_tree = {
 	}
 	focus = {
 		id = thxdl
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_ARG_align_with_the_monroe_doctrine
 		cost = 20
 		allow_branch = {
 			tag = ARG
@@ -32231,7 +32215,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ozzl
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_generic_merchant_fleet
 		cost = 6
 		allow_branch = {
 			tag = ARG
@@ -32259,31 +32243,26 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { not = { has_idea = wdzcfd1 } }
+				limit = { has_idea = wdzcfd0 }
 				swap_ideas = {
 					remove_idea = wdzcfd0
 					add_idea = wdzcfd1
 				}
 			}
 			add_ideas = ozzl
-			custom_effect_tooltip = ozzl_tt
-			every_country = {
+			every_state = {
 				limit = {
-					capital_scope = {
-						is_on_continent = south_america
+					or = {
+						is_core_of = GER
 					}
-					has_government = fascism
-					is_in_faction = no
 				}
-				ARG = {
-					add_to_faction = PREV
-				}
+				add_claim_by = ROOT
 			}
 		}
 	}
 	focus = {
 		id = cfdg3
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_GER_remilitarize_the_rhineland_historical
 		cost = 6
 		allow_branch = {
 			tag = ARG
@@ -32294,7 +32273,7 @@ focus_tree = {
 		available = {
 			has_country_flag = ARG_worst_timeline_flag
 		}
-		x = 10
+		x = 9
 		y = 10
 		ai_will_do = {
 			base = 20
@@ -32304,6 +32283,10 @@ focus_tree = {
 		text_icon = tygc_biaotilan
 		completion_reward = {
 			add_ideas = cfdg3
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
 			every_state = {
 				limit = {
 					or = {
@@ -32311,6 +32294,411 @@ focus_tree = {
 					}
 				}
 				add_core_of = ROOT
+			}
+		}
+	}
+	focus = {
+		id = kdzxzy_1
+		icon = GFX_focus_GER_molotov_ribbentrop_pact
+		cost = 6
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = ozzl
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+		}
+		x = 11
+		y = 10
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = zxghzxd
+			custom_effect_tooltip = ozzl_tt
+			every_country = {
+				limit = {
+					capital_scope = {
+						is_on_continent = europe
+					}
+					has_government = fascism
+					is_in_faction = no
+				}
+				ARG = {
+					add_to_faction = PREV
+				}
+				add_ideas = zxghzxd
+			}
+		}
+	}
+	focus = {
+		id = nbzd
+		icon = GFX_focus_GER_anschluss_historical
+		cost = 6
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = cfdg3
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+			controls_state = 64
+			GER = { exists = no }
+		}
+		x = 10
+		y = 11
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ggxdg
+				add_idea = ggxdg2
+			}
+			every_state = {
+				limit = {
+					or = {
+						is_core_of = GER
+					}
+				}
+				remove_core_of = GER
+				add_core_of = ROOT
+			}
+			inherit_technology = GER
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = dgxzc
+		icon = GFX_focus_generic_spread_fascism
+		cost = 10
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = nbzd
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+		}
+		x = 8
+		y = 12
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = wldyz
+			5 = { add_core_of = ROOT }
+			42 = { add_core_of = ROOT }
+			50 = { add_core_of = ROOT }
+			51 = { add_core_of = ROOT }
+			52 = { add_core_of = ROOT }
+			53 = { add_core_of = ROOT }
+			54 = { add_core_of = ROOT }
+			55 = { add_core_of = ROOT }
+			56 = { add_core_of = ROOT }
+			57 = { add_core_of = ROOT }
+			58 = { add_core_of = ROOT }
+			59 = { add_core_of = ROOT }
+			60 = { add_core_of = ROOT }
+			61 = { add_core_of = ROOT }
+			62 = { add_core_of = ROOT }
+			63 = { add_core_of = ROOT }
+			64 = { add_core_of = ROOT }
+			65 = { add_core_of = ROOT }
+			66 = { add_core_of = ROOT }
+			67 = { add_core_of = ROOT }
+			763 = { add_core_of = ROOT }
+			68 = { add_core_of = ROOT }
+			909 = { add_core_of = ROOT }
+			978 = { add_core_of = ROOT }
+
+			4 = { add_core_of = ROOT }
+			152 = { add_core_of = ROOT }
+			153 = { add_core_of = ROOT }
+			848 = { add_core_of = ROOT }
+
+			975 = { add_core_of = ROOT }
+			976 = { add_core_of = ROOT }
+
+			85 = { add_core_of = ROOT }
+			86 = { add_core_of = ROOT }
+			69 = { add_core_of = ROOT }
+			74 = { add_core_of = ROOT }
+			762 = { add_core_of = ROOT }
+			807 = { add_core_of = ROOT }
+			188 = { add_core_of = ROOT }
+			972 = { add_core_of = ROOT }
+
+			912 = { add_core_of = ROOT }
+			9 = { add_core_of = ROOT }
+			75 = { add_core_of = ROOT }
+			39 = { add_core_of = ROOT }
+			28 = { add_core_of = ROOT }
+			8 = { add_core_of = ROOT }
+			39 = { add_core_of = ROOT }
+			850 = { add_core_of = ROOT }
+			852 = { add_core_of = ROOT }
+			853 = { add_core_of = ROOT }
+			102 = { add_core_of = ROOT }
+			736 = { add_core_of = ROOT }
+			972 = { add_core_of = ROOT }
+			create_wargoal = {
+				type = annex_everything
+				target = POL
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ENG
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BEL
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HOL
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = LUX
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = DEN
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NOR
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SWI
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = ztz
+		icon = GFX_focus_generic_total_war
+		cost = 5
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = dgxzc
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+		}
+		x = 7
+		y = 13
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_war_support = 0.05
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = GER_gain_totaler_krieg_remove_total_mob_tt
+			add_ideas = totaler_krieg_economy_tygc
+
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_completed_focus = GER_womens_rights_and_equality 
+							has_decision = women_in_the_workforce 
+						}
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				unlock_decision_tooltip = {
+					decision = women_in_the_workforce
+					show_effect_tooltip = yes # default is no
+					show_modifiers = yes # default is no
+				} 
+				activate_decision = women_in_the_workforce
+			}
+		}
+	}
+	focus = {
+		id = zjzyxq_1
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 5
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = dgxzc
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+		}
+		x = 9
+		y = 13
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			unlock_decision_category_tooltip = zjzyxq
+			custom_effect_tooltip = zjzyxq_tt
+			custom_effect_tooltip = zjzyxq_1_tt
+		}
+	}
+	focus = {
+		id = yzdsl_1
+		icon = GFX_focus_GER_the_supreme_leader
+		cost = 6
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = dgxzc
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+			custom_trigger_tooltip = {
+				tooltip = GER_improve_national_spirit_tooltip
+				OR = {
+					GER = { controls_state = 126 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 126
+					}
+				}
+				OR = {
+					GER = { controls_state = 16 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 16
+					}
+				}
+			}
+			64 = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+		x = 8
+		y = 14
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_country_leader_trait = dyzdwr
+			add_country_leader_trait = GER_supreme_leader
+			add_ideas = triumphant_will
+		}
+	}
+	focus = {
+		id = xzy_1
+		icon = GFX_focus_ger_revive_kaiserreich
+		cost = 8
+		allow_branch = {
+			tag = ARG
+		}
+		prerequisite = {
+			focus = dgxzc
+		}
+		available = {
+			has_country_flag = ARG_worst_timeline_flag
+			custom_trigger_tooltip = {
+				tooltip = xgsl_tt
+				NOT = {
+					any_state = {
+						OR = {
+						is_core_of = GER
+						}
+						NOT = { is_controlled_by = ROOT }
+					}
+				}
+			}
+			FRA = {
+				or = {
+					exists = no
+					is_subject_of = ROOT
+					has_capitulated = yes
+				}
+			}
+			ENG = {
+				or = {
+					exists = no
+					is_subject_of = ROOT
+					has_capitulated = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = xzx_tt
+				OR = {
+					GER = { controls_state = 195 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 195
+					}
+				}
+				OR = {
+					GER = { controls_state = 16 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 16
+					}
+				}
+			}
+		}
+		x = 8
+		y = 15
+		ai_will_do = {
+			base = 20
+		}
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_political_power = 500
+			add_ideas = tjxd
+			set_cosmetic_tag = GER_greater_german_reich
+			set_province_name = { id = 6521 name = "日尔曼尼亚" }
+			hidden_effect = {
+				set_global_flag = form_greater_german_reich_flag
 			}
 		}
 	}

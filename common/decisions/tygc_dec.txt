@@ -2565,6 +2565,12 @@ zccg = {
 		ai_will_do = {
 			factor = 0
 		}
+		visible = {
+			NEP = {
+				exists = yes
+				not = { is_subject_of = ROOT }
+			}
+		}
 		available = {
 			has_country_flag = zjyd
 		}
@@ -2609,6 +2615,12 @@ zccg = {
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
+		}
+		visible = {
+			AFG = {
+				exists = yes
+				not = { is_subject_of = ROOT }
+			}
 		}
 		days_remove = 5
 		remove_effect = {
@@ -3497,7 +3509,10 @@ zjzyxq = {
 			original_tag = GER
 		}
 		visible = {
-			has_completed_focus = zjzyxq
+			or = {
+				has_completed_focus = zjzyxq
+				has_completed_focus = zjzyxq_1
+			}
 		}
 		available = {
 			has_government = fascism
@@ -3519,7 +3534,10 @@ zjzyxq = {
 		fire_only_once = yes
 		icon = GFX_decision_generic_form_nation
 		visible = {
-			has_completed_focus = zhzyxq
+			or = {
+				has_completed_focus = zhzyxq
+				has_completed_focus = xzy_1
+			}
 		}
 		available = {
 			has_stability > 0.9
@@ -7025,6 +7043,78 @@ lhfz = {
 				AUS_lhfz_v1 = 0.025
 			}
 			custom_effect_tooltip = lhjjfz_tt
+		}
+	}
+}
+dpjf = {
+	jgshx = {
+		visible = {
+			SHX = { exists = yes }
+			not = { has_war_with = SHX }
+		}
+		cost = 10
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = SHX
+				type = annex_everything
+			}
+		}
+	}
+	jgxsm = {
+		visible = {
+			XSM = { exists = yes }
+			not = { has_war_with = XSM }
+		}
+		cost = 10
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = XSM
+				type = annex_everything
+			}
+		}
+	}
+	jgsik = {
+		visible = {
+			SIK = { exists = yes }
+			not = { has_war_with = SIK }
+		}
+		cost = 10
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = SIK
+				type = annex_everything
+			}
+		}
+	}
+	jggxc = {
+		visible = {
+			GXC = { exists = yes }
+			not = { has_war_with = GXC }
+		}
+		cost = 10
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = GXC
+				type = annex_everything
+			}
+		}
+	}
+	jgyun = {
+		visible = {
+			YUN = { exists = yes }
+			not = { has_war_with = YUN }
+		}
+		cost = 10
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = YUN
+				type = annex_everything
+			}
 		}
 	}
 }
