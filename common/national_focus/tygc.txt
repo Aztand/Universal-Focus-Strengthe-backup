@@ -4444,7 +4444,7 @@ focus_tree = {
 			add_ideas = tjxd
 			create_faction = tjxd
 			set_cosmetic_tag = GER_greater_german_reich
-			set_province_name = { id = 6521 name = "日尔曼尼亚" }
+			set_province_name = { id = 6521 name = "日耳曼尼亚" }
 			hidden_effect = {
 				set_global_flag = form_greater_german_reich_flag
 			}
@@ -31205,6 +31205,8 @@ focus_tree = {
 		completion_reward = {
 			transfer_state = 609
 			transfer_state = 745
+			609 = { add_core_of = ROOT }
+			745 = { add_core_of = ROOT }
 		}
 	}
 	focus = {
@@ -32113,6 +32115,12 @@ focus_tree = {
 					} 
 				}
 			}
+			BRA = {
+				if = {
+					limit = { is_in_faction = no }
+					create_faction = ldmztm
+				}
+			}
 		}
 	}
 	focus = {
@@ -32172,6 +32180,12 @@ focus_tree = {
 						type = annex_everything
 						target = PREV
 					} 
+				}
+			}
+			USA = {
+				if = {
+					limit = { is_in_faction = no }
+					create_faction = bmgy
 				}
 			}
 		}
@@ -32373,8 +32387,7 @@ focus_tree = {
 				remove_core_of = GER
 				add_core_of = ROOT
 			}
-			inherit_technology = GER
-			add_research_slot = 1
+			add_research_slot = 2
 		}
 	}
 	focus = {
@@ -32696,7 +32709,7 @@ focus_tree = {
 			add_political_power = 500
 			add_ideas = tjxd
 			set_cosmetic_tag = GER_greater_german_reich
-			set_province_name = { id = 6521 name = "日尔曼尼亚" }
+			set_province_name = { id = 6521 name = "日耳曼尼亚" }
 			hidden_effect = {
 				set_global_flag = form_greater_german_reich_flag
 			}
