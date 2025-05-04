@@ -181,7 +181,7 @@ ideas = {
 				has_country_flag = 66pp
 			}
 
-			cost = 125
+			cost = 100
 			research_bonus = {
 				industry = 0.15
 				electronics = 0.15

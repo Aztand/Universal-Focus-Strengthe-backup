@@ -1,0 +1,338 @@
+leader_traits = {
+	#政治顾问
+		#爱布拉娜（建设）
+		Leader_of_the_Dublinn = {
+			random = no
+			sprite = 10
+			production_speed_buildings_factor = 0.25
+			consumer_goods_factor = -0.25
+		}
+		#ALSTY（间谍）
+		Scam_genius = {
+			random = no
+			sprite = 15
+			opinion_gain_monthly_factor = 0.2
+			trade_opinion_factor = 0.3
+			operative_slot = 1
+			agency_upgrade_time = -0.2
+		}
+		#杰克（间谍）
+		Jack_the_Ripper = {
+			random = no
+			sprite = 15
+			operative_slot = 1
+			subversive_activites_upkeep = -0.4
+			intelligence_agency_defense = 0.2
+			diplomatic_pressure_mission_factor = 0.1
+		}
+		#约尔（间谍）
+		Princess_of_Thorns = {
+			random = no
+			sprite = 15
+			operative_slot = 1
+			agency_upgrade_time = -0.2
+			enemy_operative_detection_chance = 0.3
+			enemy_operative_capture_chance_factor = 0.2
+		}
+		#静谧（间谍）
+		Zabaniya_JM = {
+			random = no
+			sprite = 15
+			operative_slot = 1
+			intel_network_gain_factor = 0.2
+			subversive_activites_upkeep = -0.3
+			own_operative_detection_chance_factor = -0.1
+			intelligence_agency_defense = 0.15
+		}
+		#霜星（政治点 稳定度）
+		Icefield_Valkyrie = {
+			random = no
+			sprite = 13
+			political_power_factor = 0.3
+			stability_factor = 0.3
+			conscription = 0.04
+		}
+		#塔露拉（战争支持度）
+		Revolutionaries_in_fire = {
+			random = no
+			sprite = 13
+			war_support_factor = 0.2
+			command_power_gain_mult = 0.3
+			resistance_decay = 0.5
+			compliance_gain = 0.5
+			resistance_target_on_our_occupied_states = 0.3
+			resistance_growth_on_our_occupied_states = 0.3
+			surrender_limit = 0.3
+		}
+		#宫野志保（受损失士兵减少）
+		ACMD_Sherry = {
+			random = no
+			sprite = 13
+			monthly_population = 0.15
+			experience_loss_factor = -0.3
+			land_night_attack = 0.2
+		}
+		#碧翠斯（经验增加）
+		Great_Library = {
+			random = no
+			sprite = 13
+			political_power_factor = 0.1
+			command_power_gain_mult = 0.1
+			experience_gain_army = 0.1
+			experience_gain_air = 0.1
+			experience_gain_navy = 0.1
+		}
+		#夕（生产）
+		The_Great_Painter = {
+			random = no
+			sprite = 10
+			industrial_capacity_factory = 0.2
+			production_factory_efficiency_gain_factor = 0.4
+		}
+	#部长&理论家
+		#艾丽妮（陆军部长）
+		Thick_scrolls = {
+			random = no
+			sprite = 7
+			experience_gain_army = 0.3
+			army_attack_factor = 0.2
+			army_defence_factor = 0.2
+			army_org_factor = 0.15
+			army_speed_factor = 0.2
+		}
+		#艾斯德斯（陆军部长）
+		General_of_Ice = {
+			random = no
+			sprite = 7
+			experience_gain_army = 0.3
+			army_attack_factor = 0.6
+			training_time_army_factor = -0.2
+		}
+		#歌蕾蒂亚（海军部长）
+		Archon_of_Agor_Techno = {
+			random = no
+			sprite = 4
+			experience_gain_navy = 0.3
+			naval_speed_factor = 0.2
+			navy_submarine_attack_factor = 0.25
+			navy_submarine_defence_factor = 0.25
+			convoy_raiding_efficiency_factor = 0.25
+			amphibious_invasion = 0.2
+		}
+		#芙宁娜（海军部长）
+		Demon_God_of_Water = {
+			random = no
+			sprite = 3
+			experience_gain_navy = 0.3
+			navy_max_range_factor = 0.3
+			navy_capital_ship_attack_factor = 0.25
+			navy_capital_ship_defence_factor = 0.25
+			sortie_efficiency = 0.15
+		}
+		#谭雅（空军部长）
+		The_Devil_of_the_Rhine = {
+			random = no
+			sprite = 1
+			experience_gain_air = 0.3
+			air_superiority_efficiency = 0.2
+			air_cas_efficiency = 0.2
+			ground_attack_factor = 0.2
+		}
+		#芙莉莲（空军部长）
+		Buried_Frilyn = {
+			random = no
+			sprite = 1
+			experience_gain_air = 0.3
+			air_cas_present_factor = 0.3
+			air_strategic_bomber_bombing_factor = 0.2
+			enemy_army_bonus_air_superiority_factor = -0.2
+		}
+		#军姬（理论家）
+		Princess_military_uniform = {
+			random = no
+			sprite = 14
+			air_doctrine_cost_factor = -0.2
+			naval_doctrine_cost_factor = -0.2
+			land_doctrine_cost_factor = -0.2
+			navy_fuel_consumption_factor = -0.1
+			army_fuel_consumption_factor = -0.1
+			air_fuel_consumption_factor = -0.1
+		}
+		#牧濑红莉栖（理论家）
+		Genius_Science_Girl = {
+			random = no
+			sprite = 13
+			research_speed_factor = 0.18
+		}
+		#赤木律子（理论家）
+		Head_of_the_EVA_program = {
+			random = no
+			sprite = 14
+			land_doctrine_cost_factor = -0.1
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.05
+					hard_attack = 0.05
+					breakthrough = 0.05
+					build_cost_ic = -0.01
+					hardness = 0.1
+					reliability = 0.1
+					armor_value = 0.1
+					maximum_speed = 0.1
+				}
+			}
+		}
+		#克里斯滕（理论家）
+		General_Jurisdiction = {
+			random = no
+			sprite = 14
+			air_doctrine_cost_factor = -0.1
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.15
+					instant = yes
+					air_agility = 0.1
+					maximum_speed = 0.1
+					air_attack = 0.1
+					air_defence = 0.1
+				}
+				cv_small_plane_airframe = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				cv_small_plane_cas_airframe = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+		#明石（理论家）
+		ACMD_Port_logistics = {
+			random = no
+			sprite = 14
+			naval_doctrine_cost_factor = -0.1
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.15
+					reliability = 0.1
+				}
+				ship_hull_cruiser = {
+					max_organisation = 0.1
+					reliability = 0.1
+					build_cost_ic = -0.1
+				}
+				ship_hull_light = {
+					max_organisation = 0.1
+					maximum_speed = 0.1
+				}
+				ship_hull_submarine = {
+					max_organisation = 0.1
+					reliability = 0.1
+					surface_visibility = -0.1
+				}
+			}
+		}
+	#总司令
+		#黑岩射手（机械化）
+		Black_Rock_Shooter = {
+			random = no
+			sprite = 8
+			mechanized_attack_factor = 0.25
+			mechanized_defence_factor = 0.25
+			motorized_attack_factor = 0.25
+			motorized_defence_factor = 0.25
+		}
+		#雷电将军（装甲）
+		Raiden_Shogun = {
+			random = no
+			sprite = 8
+			army_armor_attack_factor = 0.25
+			army_armor_defence_factor = 0.25
+		}
+		#玛茵（炮兵）
+		Shooting_genius = {
+			random = no
+			sprite = 16
+			army_artillery_attack_factor = 0.3
+			army_artillery_defence_factor = 0.3
+			army_speed_factor = 0.2
+			army_core_defence_factor = 0.15
+			army_core_attack_factor = 0.15
+		}
+		#闪灵（特种部队）
+		ACMD_Apostle = {
+			random = no
+			sprite = 5
+			special_forces_attack_factor = 0.4
+			special_forces_defence_factor = 0.4
+			special_forces_cap_flat = 20
+		}
+		#无名（后勤）
+		ACMD_Kabaneri = {
+			random = no
+			sprite = 6
+			army_morale_factor = 0.25
+			attrition = -0.25
+			out_of_supply_factor = -0.25
+		}
+		#秦良玉（步兵）
+		Desireless_and_loyal = {
+			random = no
+			sprite = 5
+			army_infantry_attack_factor = 0.3
+			army_infantry_defence_factor = 0.3
+			dig_in_speed_factor = 0.3
+			army_core_defence_factor = 0.15
+			army_core_attack_factor = 0.15
+		}
+		#诗乃（空军舔地）
+		Ice_Sniper = {
+			random = no
+			sprite = 1
+			air_cas_efficiency = 0.2
+			air_cas_present_factor = 0.2
+			ground_attack_factor = 0.1
+			air_superiority_efficiency = 0.15
+		}
+		#鹿目圆（空军制空）
+		Principle_of_the_Ring = {
+			random = no
+			sprite = 1
+			air_ace_generation_chance_factor = 0.3
+			air_intercept_efficiency = 0.2
+			air_superiority_efficiency = 0.2
+		}
+		#天狼星（海军）
+		Royal_Maid = {
+			random = no
+			sprite = 3
+			navy_screen_attack_factor = 0.3
+			navy_screen_defence_factor = 0.3
+		}
+		#幽灵鲨（海军）
+		Two_selves = {
+			random = no
+			sprite = 4
+			navy_submarine_attack_factor = 0.25
+			navy_submarine_defence_factor = 0.25
+			navy_submarine_detection_factor = 0.2
+		}
+	
+	#工业企业
+	ACMD_LLC_traits = {
+		random = no
+	}
+	ACMD_BS_traits = {
+		random = no
+	}
+	ACMD_LSGY_traits = {
+		random = no
+	}
+	ACMD_TXGZ_traits = {
+		random = no
+	}
+}

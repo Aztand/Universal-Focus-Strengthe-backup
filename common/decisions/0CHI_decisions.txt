@@ -10,7 +10,7 @@ foreign_politics = {
 
 		available = {
 			not = {
-				has_global_flag = krzz
+				has_global_flag = krzz1
 			}
 			FROM = { 
 				surrender_progress < 0.2 # if they are losing, lets not allow it
@@ -68,7 +68,7 @@ foreign_politics = {
 		}
 		visible = {
 			not = {
-				has_global_flag = krzz
+				has_global_flag = krzz1
 			}
 			FROM = { 
 				exists = yes 

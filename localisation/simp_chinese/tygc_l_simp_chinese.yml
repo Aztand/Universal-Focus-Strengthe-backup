@@ -505,7 +505,10 @@
  traits_att3: "输出-3类"
  traits_att4: "输出-4类"
  traits_def: "防御-1类"
- cd_tjjl: "这是什么，点一下"
+ cd_tjjl: "§Y这是什么，点一下§!"
+ cd_tjjl_desc: "来点将领、顾问、工业企业和军工企业"
+ cd_tjjl_ACMD: "§Y这是什么，再点一下§!"
+ cd_tjjl_ACMD_desc: "由§7Phoebe§!制作的§Y动漫衍生mod包§!"
  qjdg: "亲近德国"
  ydghz: "与德国合作"
  zdyycc: "合作协定拓展"
@@ -2329,6 +2332,7 @@
  zxghzxd: "轴心国合作协定"
  bmgy: "北美公约"
  ldmztm: "拉丁美洲同盟"
+ krzz1: "抗日战争爆发"
  
  
  
@@ -2598,6 +2602,7 @@
 
 
  #####制造商#####
+ tyzzgw_tt: "启用政治顾问：学院区\n启用政治顾问：商业区\n启用政治顾问：社区"
  gyq_tt: "启用工业企业：工业区"
  bbzb_tt: "启用制造商：次次次次时代枪械"
  huopao_tt: "启用制造商：超电磁炮"

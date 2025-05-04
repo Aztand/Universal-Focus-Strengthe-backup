@@ -10,7 +10,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = tjng1
-			cost = 125
+			cost = 50
 			traits = {
 				xueyuan
 			}
@@ -27,7 +27,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = tjng2
-			cost = 125
+			cost = 50
 			traits = {
 				gongyequ
 			}
@@ -44,7 +44,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = tjng3
-			cost = 125
+			cost = 50
 			traits = {
 				shequ
 			}
@@ -61,7 +61,7 @@ characters = {
 		advisor = {
 			slot = theorist
 			idea_token = tjng4
-			cost = 100
+			cost = 50
 			traits = {
 				junying
 			}
@@ -216,7 +216,7 @@ characters = {
 			visible = {
 				has_completed_focus = qst
 			}
-			cost = 150
+			cost = 100
 			traits = {
 				yctf
 			}
@@ -236,7 +236,7 @@ characters = {
 			visible = {
 				has_completed_focus = lczzy
 			}
-			cost = 150
+			cost = 100
 			traits = {
 				lhy
 			}
@@ -256,7 +256,7 @@ characters = {
 			visible = {
 				has_completed_focus = lczzy
 			}
-			cost = 150
+			cost = 100
 			traits = {
 				ysjzm
 			}

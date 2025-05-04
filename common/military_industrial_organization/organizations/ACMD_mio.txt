@@ -1,0 +1,326 @@
+#铁血工造
+ACMD_tank_organization = {
+	icon = GFX_idea_ACMD_tank_organization
+	background = GFX_ACMD_tank_organization_mio_details_background
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		FROM = {
+			has_country_flag = flag_ACMD_on
+		}
+	}
+
+	#available = {}
+
+	equipment_type = {
+		mio_cat_eq_all_light_tank
+		mio_cat_eq_all_medium_tank
+		mio_cat_eq_all_heavy_tank
+	}
+	research_categories = {
+		mio_cat_tech_light_armor_and_modules
+		mio_cat_tech_medium_armor_and_modules
+		mio_cat_tech_heavy_armor_and_modules
+	}
+
+	tree_header_text = {
+		text = ACMD_light_tank
+		x = 1
+	}
+	tree_header_text = {
+		text = ACMD_medium_tank
+		x = 3
+	}
+	tree_header_text = {
+		text = ACMD_heavy_tank
+		x = 5
+	}
+
+	initial_trait = {
+		name = ACMD_tank_organization_mio
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.05
+			maximum_speed = 0.1
+			armor_value = 0.05
+			production_capacity_factor = 0.05
+		}
+		production_bonus = {
+			production_conversion_speed_factor = 0.15
+			production_cost_factor = -0.05
+		}
+	}
+
+	trait = {
+		token = ACMD_tank_organization_mio_light_tank_1
+		name = ACMD_tank_organization_mio_light_tank_1
+		icon = GFX_generic_mio_department_icon_tank_light_tank_armor
+
+		position = { x=1 y=0 }
+
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank }
+
+		equipment_bonus = {
+			defense = 0.1
+			armor_value = 0.05
+			soft_attack = 0.05
+		}
+		
+	}
+	trait = {
+		token = ACMD_tank_organization_mio_light_tank_2
+		name = ACMD_tank_organization_mio_light_tank_2
+		icon = GFX_generic_mio_department_icon_tank_light_tank_weapons
+
+		position = { x=0 y=2 }
+		relative_position_id = ACMD_tank_organization_mio_light_tank_1
+		any_parent = { ACMD_tank_organization_mio_light_tank_1 }
+
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank }
+
+		equipment_bonus = {
+			maximum_speed = 0.12
+			breakthrough = 0.15
+		}
+		
+	}
+	trait = {
+		token = ACMD_tank_organization_mio_light_tank_3
+		name = ACMD_tank_organization_mio_light_tank_3
+		icon = GFX_generic_mio_department_icon_tank_light_tank_production
+		position = { x=0 y=2 }
+		relative_position_id = ACMD_tank_organization_mio_light_tank_2
+		any_parent = { ACMD_tank_organization_mio_light_tank_2 }
+
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank }
+
+		equipment_bonus = {
+			reliability = 0.1
+			fuel_consumption = -0.05
+			build_cost_ic = -0.05
+		}
+		production_bonus = {
+			production_resource_penalty_factor = -0.1
+			production_efficiency_cap_factor = 0.05
+		}
+		
+	}
+
+	trait = {
+		token = ACMD_tank_organization_mio_medium_tank_1
+		name = ACMD_tank_organization_mio_medium_tank_1
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_armor
+
+		position = { x=3 y=0 }
+
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+
+		equipment_bonus = {
+			ap_attack = 0.1
+			armor_value = 0.05
+			defense = 0.05
+		}
+		
+	}
+	trait = {
+		token = ACMD_tank_organization_mio_medium_tank_2
+		name = ACMD_tank_organization_mio_medium_tank_2
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_weapons
+
+		position = { x=0 y=2 }
+		relative_position_id = ACMD_tank_organization_mio_medium_tank_1
+		any_parent = { ACMD_tank_organization_mio_medium_tank_1 }
+
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+
+		equipment_bonus = {
+			breakthrough = 0.15
+			hard_attack = 0.05
+			maximum_speed = 0.05
+		}
+		
+	}
+	trait = {
+		token = ACMD_tank_organization_mio_medium_tank_3
+		name = ACMD_tank_organization_mio_medium_tank_3
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_production
+		position = { x=0 y=2 }
+		relative_position_id = ACMD_tank_organization_mio_medium_tank_2
+		any_parent = { ACMD_tank_organization_mio_medium_tank_2 }
+
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+
+		equipment_bonus = {
+			reliability = 0.1
+		}
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+		
+	}
+
+	trait = {
+		token = ACMD_tank_organization_mio_heavy_tank_1
+		name = ACMD_tank_organization_mio_heavy_tank_1
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_armor
+
+		position = { x=5 y=0 }
+
+		limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
+
+		equipment_bonus = {
+			armor_value = 0.20
+			defense = 0.15
+			soft_attack = 0.05
+			ap_attack = 0.05
+		}
+		
+	}
+	trait = {
+		token = ACMD_tank_organization_mio_heavy_tank_2
+		name = ACMD_tank_organization_mio_heavy_tank_2
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_weapons
+
+		position = { x=0 y=2 }
+		relative_position_id = ACMD_tank_organization_mio_heavy_tank_1
+		any_parent = { ACMD_tank_organization_mio_heavy_tank_1 }
+
+		limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
+
+		equipment_bonus = {
+			breakthrough = 0.07
+			maximum_speed = 0.05
+			hard_attack = 0.08
+		}
+		
+	}
+	trait = {
+		token = ACMD_tank_organization_mio_heavy_tank_3
+		name = ACMD_tank_organization_mio_heavy_tank_3
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_production
+		position = { x=0 y=2 }
+		relative_position_id = ACMD_tank_organization_mio_heavy_tank_2
+		any_parent = { ACMD_tank_organization_mio_heavy_tank_2 }
+
+		limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
+
+		equipment_bonus = {
+			reliability = 0.1
+			fuel_consumption = -0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.1
+			production_efficiency_gain_factor = 0.1
+			production_resource_penalty_factor = -0.1
+		}
+		
+	}
+
+	trait = {
+		token = ACMD_tank_organization_mio_1
+		name = ACMD_tank_organization_mio_1
+		icon = GFX_generic_mio_department_icon_tank_general_weapons
+		special_trait_background = yes
+
+		position = { x=7 y=0 }
+
+		available = {
+			has_mio_size > 4
+		}
+
+		limit_to_equipment_type = { armor }
+
+		equipment_bonus = {
+			breakthrough = 0.1
+			reliability = 0.05
+			maximum_speed = 0.1
+			defense = 0.08
+			armor_value = 0.18
+			soft_attack = 0.2
+			hard_attack = 0.2
+			ap_attack = 0.15
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+			production_cost_factor = -0.1
+		}
+		
+	}
+
+	trait = {
+		token = ACMD_tank_organization_mio_2
+		name = ACMD_tank_organization_mio_2
+		icon = GFX_generic_mio_department_icon_tank_general_line_efficiency
+		special_trait_background = yes
+
+		position = { x=7 y=2 }
+
+		available = {
+			has_mio_size > 4
+		}
+
+		limit_to_equipment_type = { armor }
+
+		equipment_bonus = {
+			hardness = 0.06
+			maximum_speed = 0.2
+			breakthrough = 0.05
+			soft_attack = 0.05
+			reliability = 0.05
+			armor_value = 0.06
+		}
+		production_bonus = {
+			production_conversion_speed_factor = 0.15
+			production_cost_factor = -0.08
+			production_resource_need_factor = -0.2
+			production_capacity_factor = 0.15
+			production_efficiency_gain_factor = 0.13
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.06
+		}
+		
+	}
+
+	trait = {
+		token = ACMD_tank_organization_mio_3
+		name = ACMD_tank_organization_mio_3
+		icon = GFX_generic_mio_department_icon_tank_general_quality
+		special_trait_background = yes
+
+		position = { x=7 y=4 }
+
+		available = {
+			has_mio_size > 4
+		}
+
+		limit_to_equipment_type = { armor }
+
+		equipment_bonus = {
+			reliability = 0.1
+			maximum_speed = 0.07
+			defense = 0.14
+			breakthrough = 0.05
+			armor_value = 0.15
+			soft_attack = 0.07
+			ap_attack = 0.05
+			hard_attack = 0.1
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.25
+			production_resource_need_factor = -0.15
+			production_efficiency_cap_factor = 0.1
+			production_cost_factor = -0.07
+		}
+		
+	}
+
+}

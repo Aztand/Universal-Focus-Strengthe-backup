@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = GFX_idea_ACMD_tank_organization
+		texturefile = gfx/interface/mio/ACMD_TXGZ_ico.png
+	}
+	spriteType = {
+		name = GFX_ACMD_tank_organization_mio_details_background
+		texturefile = gfx/interface/mio/ACMD_TXGZ_background.png
+	}
+
+}

@@ -40,7 +40,7 @@ tygc_tank_organization = {
 		position = { x=1 y=0 }
 		
 		equipment_bonus = {
-			reliability = 0.05
+			reliability = 0.08
 		}
 	}
 	
@@ -53,8 +53,8 @@ tygc_tank_organization = {
 		relative_position_id = generic_mio_trait_simplified_suspension
 		
 		equipment_bonus = {
-			maximum_speed = 0.02
-			defense = 0.02
+			maximum_speed = 0.05
+			defense = 0.03
 		}
 	}
 	
@@ -86,7 +86,7 @@ tygc_tank_organization = {
 		any_parent = { generic_mio_trait_crew_ergonomics }
 
 		equipment_bonus = {
-			breakthrough = 0.05
+			breakthrough = 0.08
 		}
 	}
 	
@@ -166,8 +166,8 @@ tygc_tank_organization = {
 		relative_position_id = generic_mio_trait_crew_ergonomics
 		
 		equipment_bonus = {
-			soft_attack = 0.02
-			defense = 0.02
+			soft_attack = 0.05
+			defense = 0.05
 		}
 	}
 	trait = {
@@ -180,9 +180,11 @@ tygc_tank_organization = {
 		relative_position_id = generic_mio_trait_crew_ergonomics
 		
 		equipment_bonus = {
-			soft_attack = 0.15
-			ap_attack = 0.1
-			hard_attack = 0.15
+			soft_attack = 0.2
+			ap_attack = 0.15
+			hard_attack = 0.2
+			maximum_speed = 0.15
+			fuel_consumption = -0.15
 		}
 	}
 	trait = {
@@ -199,6 +201,7 @@ tygc_tank_organization = {
 			breakthrough = 0.2
 			hardness = 0.15
 			defense = 0.15
+			reliability = 0.05
 		}
 	}
 	trait = {
@@ -212,11 +215,16 @@ tygc_tank_organization = {
 		
 		equipment_bonus = {
 			reliability = 0.15
-			maximum_speed = 0.15
 			build_cost_ic = -0.1
 		}
 		production_bonus = {
 			production_resource_need_factor = -0.2
+			production_efficiency_gain_factor = 0.25
+			production_efficiency_cap_factor = 0.1
+			production_cost_factor = -0.08
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.08
 		}
 	}
 
@@ -271,7 +279,7 @@ tygc_tank_organization = {
 		}
 
 		production_bonus = {
-			production_cost_factor = -0.02
+			production_cost_factor = -0.05
 		}
 	}
 }
@@ -328,7 +336,7 @@ tygc_artillery_organization = {
 		#mutually_exclusive = { generic_mio_trait_stable_platforms }
 
 		equipment_bonus = {
-			breakthrough = 0.1
+			breakthrough = 0.12
 		}
 	}
 	trait = {
@@ -388,7 +396,7 @@ tygc_artillery_organization = {
 		#mutually_exclusive = { generic_mio_trait_mobile_limbers }
 
 		equipment_bonus = {
-			defense = 0.03
+			defense = 0.05
 		}
 	}
 
@@ -406,7 +414,7 @@ tygc_artillery_organization = {
 		}
 
 		equipment_bonus = {
-			reliability = 0.05
+			reliability = 0.08
 		}
 	}
 
@@ -502,7 +510,7 @@ tygc_artillery_organization = {
 		}
 
 		equipment_bonus = {
-			soft_attack = 0.03
+			soft_attack = 0.05
 			breakthrough = 0.03
 		}
 	}
@@ -536,7 +544,7 @@ tygc_artillery_organization = {
 		relative_position_id = generic_mio_trait_rapid_fire
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.1
 		}
 	}
 
@@ -555,7 +563,7 @@ tygc_artillery_organization = {
 
 		equipment_bonus = {
 			soft_attack = 0.02
-			build_cost_ic = 0.03
+			build_cost_ic = -0.03
 		}
 	}
 
@@ -681,7 +689,7 @@ tygc_infantry_equipment_organization = {
 		position = { x=1 y=0 }
 
 		equipment_bonus = {
-			defense = 0.05
+			defense = 0.06
 		}
 	}
 
@@ -711,6 +719,7 @@ tygc_infantry_equipment_organization = {
 			soft_attack = 0.15
 			hard_attack = 0.15
 			ap_attack = 0.1
+			maximum_speed = 0.1
 		}
 	}
 	trait = {
@@ -727,8 +736,12 @@ tygc_infantry_equipment_organization = {
 			breakthrough = 0.1
 			reliability = 0.1
 			build_cost_ic = -0.1
-
-
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.25
+			production_resource_need_factor = -0.15
+			production_efficiency_cap_factor = 0.1
+			production_cost_factor = -0.05
 		}
 	}
 
@@ -749,7 +762,7 @@ tygc_infantry_equipment_organization = {
 		}
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.1
 		}
 	}
 

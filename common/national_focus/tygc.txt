@@ -12618,7 +12618,7 @@ focus_tree = {
 					
 				}
 			}
-			set_global_flag = krzz
+			set_global_flag = krzz1
 		}
 	}
 	focus = {
@@ -12626,12 +12626,12 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right
 		x = 10
 		y = 5
-		cost = 6
+		cost = 5
 		prerequisite = {
 			focus = krzz
 		}
 		available = {
-			PRC = { has_war_with = JAP }
+			has_global_flag = krzz1
 		}
 		continue_if_invalid = yes
 		
@@ -12668,12 +12668,12 @@ focus_tree = {
 		icon = GFX_focus_prc_infiltration
 		x = 8
 		y = 5
-		cost = 6
+		cost = 5
 		prerequisite = {
 			focus = krzz
 		}
 		available = {
-			PRC = { has_war_with = JAP }
+			has_global_flag = krzz1
 		}
 		continue_if_invalid = yes
 		

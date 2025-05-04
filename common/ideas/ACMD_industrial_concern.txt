@@ -1,0 +1,90 @@
+ideas = {
+	industrial_concern = {
+		ACMD_LLC = {
+
+			name = ACMD_LLC
+
+			picture = ACMD_LLC_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+
+			cost = 50
+			traits = { ACMD_LLC_traits }
+			research_bonus = {
+				synth_resources = 0.15
+				electronics = 0.15
+			}
+			modifier = {
+				monthly_population = 0.15
+				experience_loss_factor = -0.15
+			}
+		}
+		ACMD_BS = {
+
+			name = ACMD_BS
+
+			picture = ACMD_BS_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+
+			cost = 50
+			traits = { ACMD_BS_traits }
+			research_bonus = {
+				industry = 0.25
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				local_resources_factor = 0.1
+			}
+		}
+		ACMD_LSGY = {
+
+			name = ACMD_LSGY
+
+			picture = ACMD_LSGY_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+
+			cost = 50
+			traits = { ACMD_LSGY_traits }
+			research_bonus = {
+				industry = 0.15
+				infantry_weapons = 0.15
+				artillery = 0.15
+				motorized_equipment = 0.15
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.20
+			}
+		}
+		ACMD_TXGZ = {
+
+			name = ACMD_TXGZ
+
+			picture = ACMD_TXGZ_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+
+			cost = 50
+			traits = { ACMD_TXGZ_traits }
+			research_bonus = {
+				armor = 0.15
+				air_equipment = 0.15
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.20
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.5
+			}
+		}
+	}
+}
