@@ -48,8 +48,14 @@ autonomy_state = {
 
 	allowed = {
 		OVERLORD = { 
-			original_tag = GER
-			has_completed_focus = zjzyxq
+			OR = {
+				original_tag = ARG
+				original_tag = GER
+			}
+			OR = {
+				has_completed_focus = zjzyxq
+				has_completed_focus = zjzyxq_1
+			}
 		}
 	}
 	

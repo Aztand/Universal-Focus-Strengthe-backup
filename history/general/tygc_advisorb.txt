@@ -3,6 +3,7 @@ every_possible_country = {
 		has_dlc = "La Resistance"
 	}
 	generate_character = {
+		priority = 6
 		name = xueyuan
 		token_base = tyrw1
 		portraits = {
@@ -15,13 +16,14 @@ every_possible_country = {
 				has_country_flag = 66pp
 			}
 			slot = political_advisor
-			cost = 125
+			cost = 50
 			traits = {
 				xueyuan
 			}
 		}
 	}
 	generate_character = {
+		priority = 6
 		name = gongyequ
 		token_base = tyrw2
 		portraits = {
@@ -34,13 +36,14 @@ every_possible_country = {
 				has_country_flag = 66pp
 			}
 			slot = political_advisor
-			cost = 125
+			cost = 50
 			traits = {
 				gongyequ
 			}
 		}
 	}
 	generate_character = {
+		priority = 6
 		name = shequ
 		token_base = tyrw3
 		portraits = {
@@ -53,13 +56,14 @@ every_possible_country = {
 				has_country_flag = 66pp
 			}
 			slot = political_advisor
-			cost = 125
+			cost = 50
 			traits = {
 				shequ
 			}
 		}
 	}
 	generate_character = {
+		priority = 6
 		name = junying
 		token_base = tyrw4
 		portraits = {
@@ -72,7 +76,7 @@ every_possible_country = {
 				has_country_flag = 66pp
 			}
 			slot = theorist
-			cost = 100
+			cost = 50
 			traits = {
 				junying
 			}

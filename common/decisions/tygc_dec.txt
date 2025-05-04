@@ -3695,7 +3695,7 @@ zjzyxq = {
 			}
 		}
 		target_root_trigger = { 
-			original_tag = GER
+			original_tag = ROOT
 		}
 		visible = {
 			or = {
@@ -3709,7 +3709,7 @@ zjzyxq = {
 
 		days_remove = 7
 		remove_effect = {
-			GER = {
+			ROOT = {
 				set_autonomy = {
 					target = FROM
 					autonomy_state = autonomy_tygc_ger_volkskommissariat
@@ -3725,6 +3725,10 @@ zjzyxq = {
 		visible = {
 			or = {
 				has_completed_focus = zhzyxq
+				has_completed_focus = zjzyxq_1
+			}
+			if = {
+				limit = { original_tag = ARG }
 				has_completed_focus = xzy_1
 			}
 		}
@@ -3738,34 +3742,11 @@ zjzyxq = {
 			}
 		}
 		target_root_trigger = { 
-			original_tag = GER
+			original_tag = ROOT
 		}
 		days_remove = 90
 		complete_effect = {
-			if = {
-				limit = { 
-					from = {
-						controls_state > 8
-					}
-				}
-				add_stability = -0.05
-			}
-			if = {
-				limit = { 
-					from = {
-						controls_state = 8
-					}
-				}
-				add_stability = -0.035
-			}
-			if = {
-				limit = { 
-					from = {
-					controls_state < 8
-					}
-				}
-				add_stability = -0.025
-			}
+			add_stability = -0.025
 		}
 		remove_effect = {
 			every_state = {
@@ -3773,9 +3754,9 @@ zjzyxq = {
 					is_core_of = FROM
 				}
 				add_manpower = -99999
-				add_core_of = GER
+				add_core_of = ROOT
 			}
-			GER = {
+			ROOT = {
 				annex_country = {
 					target = FROM
 					transfer_troops = yes
