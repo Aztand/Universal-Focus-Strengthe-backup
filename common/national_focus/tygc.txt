@@ -848,7 +848,7 @@ focus_tree = {
 			factor = 20
 		}
 		completion_reward={
-			add_political_power = 25
+			add_political_power = 30
 			add_ideas = msjh1
 		}
 	}
@@ -865,7 +865,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward={
-			add_political_power = 25
+			add_political_power = 40
 			swap_ideas = {
 				remove_idea = msjh1
 				add_idea = msjh3
@@ -1044,7 +1044,7 @@ focus_tree = {
 				remove_idea = jybt
 				add_idea = jybt1
 			}
-			add_political_power = 100
+			add_political_power = 75
 			add_research_slot = 1
 		}
 	}
@@ -1079,7 +1079,7 @@ focus_tree = {
 				remove_idea = jybt1
 				add_idea = jybt2
 			}
-			add_political_power = 150
+			add_political_power = 100
 			add_research_slot = 1
 		}
 	}
@@ -1112,7 +1112,7 @@ focus_tree = {
 				remove_idea = jybt2
 				add_idea = jybt3
 			}
-			add_political_power = 200
+			add_political_power = 125
 			add_research_slot = 1
 			add_tech_bonus = {
 				name = secret_bonus
@@ -12630,9 +12630,6 @@ focus_tree = {
 		prerequisite = {
 			focus = krzz
 		}
-		available = {
-			has_global_flag = krzz1
-		}
 		continue_if_invalid = yes
 		
 		search_filters = { FOCUS_FILTER_CAIDAN }
@@ -12671,9 +12668,6 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = krzz
-		}
-		available = {
-			has_global_flag = krzz1
 		}
 		continue_if_invalid = yes
 		
@@ -32610,16 +32604,16 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = GER_improve_national_spirit_tooltip
 				OR = {
-					GER = { controls_state = 126 }
+					ROOT = { controls_state = 126 }
 					any_other_country = {
-						is_in_faction_with = GER
+						is_in_faction_with = ROOT
 						controls_state = 126
 					}
 				}
 				OR = {
-					GER = { controls_state = 16 }
+					ROOT = { controls_state = 16 }
 					any_other_country = {
-						is_in_faction_with = GER
+						is_in_faction_with = ROOT
 						controls_state = 16
 					}
 				}
@@ -32654,17 +32648,6 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = ARG_worst_timeline_flag
-			custom_trigger_tooltip = {
-				tooltip = xgsl_tt
-				NOT = {
-					any_state = {
-						OR = {
-						is_core_of = GER
-						}
-						NOT = { is_controlled_by = ROOT }
-					}
-				}
-			}
 			FRA = {
 				or = {
 					exists = no
@@ -32682,16 +32665,16 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = xzx_tt
 				OR = {
-					GER = { controls_state = 195 }
+					ROOT = { controls_state = 195 }
 					any_other_country = {
-						is_in_faction_with = GER
+						is_in_faction_with = ROOT
 						controls_state = 195
 					}
 				}
 				OR = {
-					GER = { controls_state = 16 }
+					ROOT = { controls_state = 16 }
 					any_other_country = {
-						is_in_faction_with = GER
+						is_in_faction_with = ROOT
 						controls_state = 16
 					}
 				}
