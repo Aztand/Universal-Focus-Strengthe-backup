@@ -105,8 +105,9 @@ leader_traits = {
 			random = no
 			sprite = 7
 			experience_gain_army = 0.3
-			army_attack_factor = 0.6
-			training_time_army_factor = -0.2
+			army_attack_factor = 0.35
+			breakthrough_factor = 0.2
+			training_time_army_factor = -0.15
 		}
 		#歌蕾蒂亚（海军部长）
 		Archon_of_Agor_Techno = {
