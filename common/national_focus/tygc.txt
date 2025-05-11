@@ -1377,7 +1377,7 @@ focus_tree = {
 		x = 10
 		y = 2
 
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = xczc
 		}
@@ -1431,7 +1431,7 @@ focus_tree = {
 		x = 10
 		y = 3
 
-		cost = 3
+		cost = 1
 		prerequisite = {
 			focus = zzjh1
 		}
@@ -1550,7 +1550,7 @@ focus_tree = {
 	focus = {
 		id = dwzc3
 		icon = GFX_SOV_keep_commissars_organization_ccp_2d_sov_compatibility
-		cost = 5
+		cost = 1
 		prerequisite = {
 			focus = dwzc2
 		}
@@ -1614,7 +1614,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ljxl2
 		}
-		x = 16
+		x = 17
 		y = 3
 		ai_will_do = {
 			factor = 10
@@ -1629,7 +1629,7 @@ focus_tree = {
 	focus = {
 		id = ljxl4
 		icon = GFX_goal_generic_special_forces
-		cost = 8
+		cost = 6
 		prerequisite = {
 			focus = ljxl3
 		}
@@ -1648,7 +1648,7 @@ focus_tree = {
 	focus = {
 		id = ljxl5
 		icon = GFX_focus_generic_combined_arms
-		cost = 10
+		cost = 8
 		prerequisite = {
 			focus = ljxl4
 		}
@@ -1670,7 +1670,7 @@ focus_tree = {
 	focus = {
 		id = ljxl6
 		icon = GFX_focus_prc_infiltration
-		cost = 10
+		cost = 8
 		prerequisite = {
 			focus = ljxl4
 		}
@@ -1690,20 +1690,49 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = tzxl
-		icon = GFX_focus_generic_strike_at_democracy1
-		x = 17
-		y = 6
+		id = ljxl7
+		icon = GFX_focus_generic_full_social_mobilization
+		cost = 10
 		prerequisite = {
 			focus = ljxl5
-			focus = ljxl6 }
+			focus = ljxl6
+		}
+		x = 17
+		y = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward={
+			army_experience = 75
+			custom_effect_tooltip = ljxl7_t
+			if = {
+				limit = { has_completed_focus = ljxl5 }
+				swap_ideas = {
+					remove_idea = ljxl5
+					add_idea = ljxl5_1
+				}
+			}
+			if = {
+				limit = { has_completed_focus = ljxl6 }
+				swap_ideas = {
+					remove_idea = ljxl6
+					add_idea = ljxl6_1
+				}
+			}
+		}
+	}
+	focus = {
+		id = tzxl
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 19
+		y = 4
+		prerequisite = { focus = ljxl3 }
 		cost = 5
 		ai_will_do = { 
 			base = 1
 		}
-		completion_reward = {  
-		add_potential_special_forces_tree = yes                  			         
-		add_ideas = tzxl
+		completion_reward = {              			         
+			add_ideas = tzxl
 		}	
 	}
 	focus = {
@@ -1726,7 +1755,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
-				uses = 2
+				uses = 4
 				category = land_doctrine
 				
 			}
@@ -1734,41 +1763,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ljxs2
-		icon = GFX_goal_generic_army_doctrines
+		id = ljxs3
+		icon = GFX_focus_eng_special_air_service
 		prerequisite = { focus = ljxs1 }
 		x = 18
 		y = 2
-		cost = 4
-
-		ai_will_do = {
-			base = 10
-		}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 50
-			
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 3
-				category = land_doctrine
-				
-			}
-			swap_ideas = {
-				remove_idea = ljxs1
-				add_idea = ljxs2
-			}
-		}
-	}
-	focus = {
-		id = ljxs3
-		icon = GFX_focus_eng_special_air_service
-		prerequisite = { focus = ljxs2 }
-		x = 18
-		y = 3
 		cost = 5
 
 		ai_will_do = {
@@ -1785,6 +1784,10 @@ focus_tree = {
 				cost_reduction = 0.75
 				uses = 4
 				category = land_doctrine
+			}
+			swap_ideas = {
+				remove_idea = ljxs1
+				add_idea = ljxs2
 			}
 			unlock_decision_category_tooltip = ljxstp
 		}
@@ -2468,7 +2471,7 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 			add_ideas = ybzlm
-			add_political_power = 75
+			add_political_power = 50
 			set_major = yes
 		}
 	}
@@ -2478,14 +2481,14 @@ focus_tree = {
 		prerequisite = { focus = zz1 }
 		x = 26
 		y = 12
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			base = 0
 			
 		}
 		
 		available = {
-			is_puppet = yes
+			is_subject = yes
 			if = {
 				limit = { tag = JAP }
 				not = { has_completed_focus = mgdg }
@@ -2502,7 +2505,11 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = duli
-			add_political_power = 100
+			add_political_power = 75
+			if = {
+				limit = { is_subject = yes }
+				OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
+			}
 			if = {
 				limit = { has_global_flag = qyyyb }	
 				play_song = "yuanyangxi"
@@ -31256,7 +31263,10 @@ focus_tree = {
 			tag = MEN
 		}
 		available = {
-			controls_state = 613
+			or = {
+				controls_state = 613
+				JAP = { controls_state = 613 }
+			}
 		}
 		prerequisite = {
 			focus = zqrbxr

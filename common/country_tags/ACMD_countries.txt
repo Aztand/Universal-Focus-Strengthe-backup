@@ -1,1 +1,0 @@
-D76	= "countries/ACMD_D76.txt"

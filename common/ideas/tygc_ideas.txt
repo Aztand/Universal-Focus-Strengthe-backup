@@ -181,7 +181,7 @@ ideas = {
 				has_country_flag = 66pp
 			}
 
-			cost = 50
+			cost = 100
 			research_bonus = {
 				industry = 0.15
 				electronics = 0.15
@@ -1177,6 +1177,8 @@ ideas = {
 				experience_gain_army_factor = 0.1
 				minimum_training_level = -0.1
 				training_time_army_factor = -0.1
+				command_power_gain = 0.5
+				max_command_power = 20
 			}
 		}
 		ljxl2 = {
@@ -1199,8 +1201,10 @@ ideas = {
 				experience_gain_infantry_combat_factor = 0.25
 				combat_width_factor= -0.1
 				supply_consumption_factor = -0.1
-				max_command_power = 50
+				land_reinforce_rate = 0.15
 				max_command_power_mult = 0.5
+				command_power_gain = 1
+				max_command_power = 40
 			}
 		}
 		ljxl3 = {
@@ -1222,12 +1226,14 @@ ideas = {
 				training_time_army_factor = -0.2
 				experience_gain_infantry_combat_factor = 0.25
 				combat_width_factor= -0.2
-				max_command_power = 50
+				land_reinforce_rate = 0.15
 				max_command_power_mult = 0.5
 				supply_consumption_factor = -0.2
 				attrition_for_controller = -0.2
 				terrain_penalty_reduction = 0.25
 				land_night_attack = 0.25
+				command_power_gain = 1.5
+				max_command_power = 60
 			}
 		}
 		ljxl4 = {
@@ -1250,7 +1256,7 @@ ideas = {
 				training_time_army_factor = -0.2
 				experience_gain_infantry_combat_factor = 0.25
 				combat_width_factor= -0.2
-				max_command_power = 50
+				land_reinforce_rate = 0.15
 				max_command_power_mult = 0.5
 				supply_consumption_factor = -0.2
 				attrition_for_controller = -0.2
@@ -1262,11 +1268,15 @@ ideas = {
 				recon_factor = 0.1
 				breakthrough_factor = 0.1
 				pocket_penalty = -0.5
-				army_org = 2
+				army_org = 1
+				army_org_factor = 0.1
 				army_strength_factor = 0.1
+				command_power_gain = 2
+				max_command_power = 80
 			}
 		}
 		ljxl5 = {
+			name = ljxl5
 			picture = generic_infantry_bonus
 			
 			allowed = {
@@ -1286,7 +1296,7 @@ ideas = {
 				training_time_army_factor = -0.2
 				experience_gain_infantry_combat_factor = 0.25
 				combat_width_factor= -0.2
-				max_command_power = 50
+				land_reinforce_rate = 0.15
 				max_command_power_mult = 0.5
 				supply_consumption_factor = -0.2
 				attrition_for_controller = -0.2
@@ -1298,11 +1308,56 @@ ideas = {
 				recon_factor = 0.1
 				breakthrough_factor = 0.2
 				pocket_penalty = -0.5
-				army_org = 2
+				army_org = 1
+				army_org_factor = 0.1
 				army_strength_factor = 0.1
+				command_power_gain = 2.5
+				max_command_power = 100
+			}
+		}
+		ljxl5_1 = {
+			name = ljxl5
+			picture = generic_infantry_bonus
+			
+			allowed = {
+				always = no
+			}
+ 
+			removal_cost = -1
+	
+			modifier = {
+				army_attack_factor = 0.35
+				army_defence_factor = 0.15
+				army_speed_factor = 0.25
+				army_morale = 0.2
+				experience_gain_army_unit = 0.3
+				experience_gain_army_factor = 0.2
+				minimum_training_level = -0.2
+				training_time_army_factor = -0.25
+				experience_gain_infantry_combat_factor = 0.25
+				combat_width_factor= -0.25
+				land_reinforce_rate = 0.25
+				max_command_power_mult = 0.5
+				supply_consumption_factor = -0.2
+				attrition_for_controller = -0.2
+				terrain_penalty_reduction = 0.25
+				land_night_attack = 0.35
+				dig_in_speed = 2
+				max_planning = 0.15
+				planning_speed = 0.35
+				recon_factor = 0.2
+				breakthrough_factor = 0.25
+				pocket_penalty = -0.5
+				army_org = 1
+				army_org_factor = 0.15
+				army_strength_factor = 0.15
+				command_power_gain = 3
+				max_command_power = 120
+				attrition = -0.1
 			}
 		}
 		ljxl6 = {
+			name = ljxl6
 			picture = generic_infantry_bonus
 			
 			allowed = {
@@ -1314,6 +1369,8 @@ ideas = {
 			modifier = {
 				army_attack_factor = 0.15
 				army_defence_factor = 0.25
+				spotting_chance_factor = -0.1
+				recon_factor_while_entrenched = 0.1
 				army_speed_factor = 0.15
 				army_morale = 0.2
 				experience_gain_army_unit = 0.3
@@ -1322,7 +1379,7 @@ ideas = {
 				training_time_army_factor = -0.2
 				experience_gain_infantry_combat_factor = 0.25
 				combat_width_factor= -0.2
-				max_command_power = 50
+				land_reinforce_rate = 0.15
 				max_command_power_mult = 0.5
 				supply_consumption_factor = -0.2
 				attrition_for_controller = -0.2
@@ -1334,8 +1391,54 @@ ideas = {
 				recon_factor = 0.1
 				breakthrough_factor = 0.1
 				pocket_penalty = -0.75
+				army_org = 3
+				army_org_factor = 0.1
+				army_strength_factor = 0.15
+				command_power_gain = 2.5
+				max_command_power = 100
+			}
+		}
+		ljxl6_1 = {
+			name = ljxl6
+			picture = generic_infantry_bonus
+			
+			allowed = {
+				always = no
+			}
+ 
+			removal_cost = -1
+	
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.35
+				spotting_chance_factor = -0.2
+				recon_factor_while_entrenched = 0.25
+				army_speed_factor = 0.15
+				army_morale = 0.2
+				experience_gain_army_unit = 0.3
+				experience_gain_army_factor = 0.2
+				minimum_training_level = -0.2
+				training_time_army_factor = -0.2
+				experience_gain_infantry_combat_factor = 0.25
+				combat_width_factor= -0.2
+				land_reinforce_rate = 0.25
+				max_command_power_mult = 0.5
+				supply_consumption_factor = -0.2
+				attrition_for_controller = -0.2
+				terrain_penalty_reduction = 0.25
+				land_night_attack = 0.25
+				dig_in_speed = 3
+				max_planning = 0.35
+				planning_speed = 0.25
+				recon_factor = 0.1
+				breakthrough_factor = 0.1
+				pocket_penalty = -0.75
 				army_org = 4
-				army_strength_factor = 0.1
+				army_org_factor = 0.15
+				army_strength_factor = 0.2
+				command_power_gain = 3
+				max_command_power = 120
+				attrition = -0.1
 			}
 		}
 		tzxl = {

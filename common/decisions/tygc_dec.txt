@@ -1,7 +1,7 @@
 focus_114514 = {
 	
     tygc_114 = {
-		priority = 6
+		priority = 7
 		icon = generic_prospect_for_resources
 
 		cost = 0
@@ -15,7 +15,7 @@ focus_114514 = {
 
 	}
 	cd_tjjl = {
-		priority = 5
+		priority = 6
 		icon = generic_prospect_for_resources
 		cost = 66
 		fire_only_once = yes
@@ -155,194 +155,8 @@ focus_114514 = {
 			custom_effect_tooltip = feiji_tt
 		}
 	}
-	cd_tjjl_ACMD = {
-		priority = 5
-		icon = generic_prospect_for_resources
-		cost = 66
-		fire_only_once = yes
-		visible = {
-			has_country_flag = 66pp
-		}
-		available = {
-			is_ai = no
-		}
-		complete_effect = {
-			custom_effect_tooltip = ACMD_characters_land_tt
-			hidden_effect = {
-				every_possible_country = {
-					limit = {
-						has_character = ACMD_TLL
-						has_character = ACMD_ALN
-						has_character = ACMD_ABLN
-						has_character = ACMD_GLDY
-						has_character = ACMD_HYSS
-						has_character = ACMD_AETE
-						has_character = ACMD_MY
-						has_character = ACMD_SL
-						has_character = ACMD_SN
-						has_character = ACMD_SX
-						has_character = ACMD_WM
-						has_character = ACMD_X
-						has_character = ACMD_QLY
-						has_character = ACMD_ASDS
-						has_character = ACMD_TY
-						has_character = ACMD_MLHLQ
-						has_character = ACMD_GYZB
-						has_character = ACMD_BCS
-						has_character = ACMD_LMY
-						has_character = ACMD_TLX
-						has_character = ACMD_FNN
-						has_character = ACMD_FLL
-						has_character = ACMD_YLS
-						has_character = ACMD_CLST
-						has_character = ACMD_CMLZ
-						has_character = ACMD_MS
-						has_character = ACMD_LDJJ
-						has_character = ACMD_ALSTY
-						has_character = ACMD_JK
-						has_character = ACMD_YE
-						has_character = ACMD_JM
-						has_character = ACMD_MLHLQ_SC
-						has_character = ACMD_CLST_SC
-						has_character = ACMD_CMLZ_SC
-						has_character = ACMD_MS_SC
-					}
-					ACMD_TLL = {
-						set_nationality = ROOT
-					}
-					ACMD_ALN = {
-						set_nationality = ROOT
-					}
-					ACMD_ABLN = {
-						set_nationality = ROOT
-					}
-					ACMD_GLDY = {
-						set_nationality = ROOT
-					}
-					ACMD_HYSS = {
-						set_nationality = ROOT
-					}
-					ACMD_AETE = {
-						set_nationality = ROOT
-					}
-					ACMD_MY = {
-						set_nationality = ROOT
-					}
-					ACMD_SL = {
-						set_nationality = ROOT
-					}
-					ACMD_SN = {
-						set_nationality = ROOT
-					}
-					ACMD_SX = {
-						set_nationality = ROOT
-					}
-					ACMD_WM = {
-						set_nationality = ROOT
-					}
-					ACMD_X = {
-						set_nationality = ROOT
-					}
-					ACMD_QLY = {
-						set_nationality = ROOT
-					}
-					ACMD_ASDS = {
-						set_nationality = ROOT
-					}
-					ACMD_TY = {
-						set_nationality = ROOT
-					}
-					ACMD_MLHLQ = {
-						set_nationality = ROOT
-					}
-					ACMD_GYZB = {
-						set_nationality = ROOT
-					}
-					ACMD_BCS = {
-						set_nationality = ROOT
-					}
-					ACMD_LMY = {
-						set_nationality = ROOT
-					}
-					ACMD_TLX = {
-						set_nationality = ROOT
-					}
-					ACMD_FNN = {
-						set_nationality = ROOT
-					}
-					ACMD_FLL = {
-						set_nationality = ROOT
-					}
-					ACMD_YLS = {
-						set_nationality = ROOT
-					}
-					ACMD_CLST = {
-						set_nationality = ROOT
-					}
-					ACMD_CMLZ = {
-						set_nationality = ROOT
-					}
-					ACMD_MS = {
-						set_nationality = ROOT
-					}
-					ACMD_LDJJ = {
-						set_nationality = ROOT
-					}
-					ACMD_ALSTY = {
-						set_nationality = ROOT
-					}
-					ACMD_JK = {
-						set_nationality = ROOT
-					}
-					ACMD_YE = {
-						set_nationality = ROOT
-					}
-					ACMD_JM = {
-						set_nationality = ROOT
-					}
-					ACMD_MLHLQ_SC = {
-						set_nationality = ROOT
-					}
-					ACMD_CLST_SC = {
-						set_nationality = ROOT
-					}
-					ACMD_CMLZ_SC = {
-						set_nationality = ROOT
-					}
-					ACMD_MS_SC = {
-						set_nationality = ROOT
-					}
-				}
-				create_operative_leader = {
-					name = "Name_ACMD_ALSTY"
-					GFX = GFX_portrait_ACMD_ALSTY
-					traits = { operative_seducer operative_infiltrator operative_double_agent operative_well_groomed operative_natural_orator }
-					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
-				}
-				create_operative_leader = {
-					name = "Name_ACMD_JK"
-					GFX = GFX_portrait_ACMD_JK
-					traits = { operative_commando operative_master_interrogator operative_tough operative_safe_cracker operative_escape_artist }
-					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
-				}
-				create_operative_leader = {
-					name = "Name_ACMD_YE"
-					GFX = GFX_portrait_ACMD_YE
-					traits = { operative_commando operative_tough operative_safe_cracker operative_demolition_expert operative_escape_artist }
-					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
-				}
-				create_operative_leader = {
-					name = "Name_ACMD_JM"
-					GFX = GFX_portrait_ACMD_JM
-					traits = { operative_seducer operative_infiltrator operative_master_interrogator operative_linguist operative_well_groomed }
-					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
-				}
-				set_country_flag = flag_ACMD_on
-			}
-		}
-	}
 	tygc_514 = {
-		priority = 5
+		priority = 4
 		icon = generic_prospect_for_resources
 
 		cost = 88
@@ -474,7 +288,7 @@ focus_114514 = {
 
 	}
 	tygc_aitiaozheng0 = {
-		priority = 4
+		priority = 3
 		cost = 0
 		available = {
 			is_ai = no
@@ -487,7 +301,7 @@ focus_114514 = {
 		}
 	}
 	tygc_aitiaozheng1 = {
-		priority = 4
+		priority = 3
 		cost = 0
 		available = {
 			is_ai = no
@@ -500,7 +314,7 @@ focus_114514 = {
 		}
 	}
 	tygc_810 = {
-		priority = 4
+		priority = 3
 		icon = generic_prospect_for_resources
 
 		cost = 0
@@ -522,7 +336,7 @@ focus_114514 = {
 
 	}
 	tygc_1919 = {
-		priority = 4
+		priority = 3
 		icon = generic_prospect_for_resources
 
 		cost = 88
@@ -649,7 +463,7 @@ focus_114514 = {
 
 	}
 	tygc_jqai1 = {
-		priority = 4
+		priority = 3
 		icon = generic_prospect_for_resources
 
 		cost = 0
@@ -674,7 +488,7 @@ focus_114514 = {
 
 	}
 	tygc_jqai2 = {
-		priority = 4
+		priority = 3
 		icon = generic_prospect_for_resources
 
 		cost = 0
@@ -703,7 +517,7 @@ focus_114514 = {
 
 	}
 	tygc_jqai4 = {
-		priority = 4
+		priority = 3
 		icon = generic_prospect_for_resources
 
 		cost = 0
@@ -732,7 +546,7 @@ focus_114514 = {
 
 	}
 	tygc_jqai5 = {
-		priority = 4
+		priority = 3
 		icon = generic_prospect_for_resources
 
 		cost = 0
@@ -761,7 +575,7 @@ focus_114514 = {
 
 	}
 	tygc_jqai3 = {
-		priority = 4
+		priority = 3
 		icon = generic_prospect_for_resources
 
 		cost = 0

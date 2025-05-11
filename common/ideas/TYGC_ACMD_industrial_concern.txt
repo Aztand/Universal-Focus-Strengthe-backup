@@ -1,0 +1,281 @@
+ideas = {
+	industrial_concern = {
+		ACMD_LLC = {
+
+			name = ACMD_LLC
+
+			picture = ACMD_LLC_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+
+			cost = 100
+			traits = { ACMD_LLC_traits }
+			research_bonus = {
+				synth_resources = 0.2
+			}
+			modifier = {
+				monthly_population = 0.1
+				experience_loss_factor = -0.1
+				production_speed_synthetic_refinery_factor = 0.2
+			}
+		}
+		ACMD_SMZX = {
+
+			name = ACMD_SMZX
+		
+			picture = ACMD_SMZX_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+		
+			cost = 100
+			traits = { ACMD_SMZX_traits }
+			research_bonus = {
+				electronics = 0.2
+			}
+			modifier = {
+				monthly_population = 0.15
+				experience_loss_factor = -0.2
+			}
+		}
+		ACMD_LMBT = {
+
+			name = ACMD_LMBT
+
+			picture = ACMD_LMBT_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+
+			cost = 100
+			traits = { ACMD_LMBT_traits }
+			research_bonus = {
+				excavation_tech = 0.15
+				industry = 0.1
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+				local_resources_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+		}
+		ACMD_ZMD = {
+
+			name = ACMD_ZMD
+
+			picture = ACMD_ZMD_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+
+			cost = 100
+			traits = { ACMD_ZMD_traits }
+			research_bonus = {
+				excavation_tech = 0.2
+				industry = 0.2
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.2
+				production_lack_of_resource_penalty_factor = -0.15
+				local_resources_factor = 0.1
+			}
+		}
+		ACMD_JYKJ = {
+
+			name = ACMD_JYKJ
+
+			picture = ACMD_JYKJ_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+
+			cost = 100
+			traits = { ACMD_JYKJ_traits }
+			research_bonus = {
+				infantry_weapons = 0.1
+				artillery = 0.1
+				motorized_equipment = 0.1
+				armor = 0.1
+				air_equipment = 0.1
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.25
+			}
+		}
+		ACMD_YSJT = {
+
+			name = ACMD_YSJT
+		
+			picture = ACMD_YSJT_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+		
+			cost = 100
+			traits = { ACMD_YSJT_traits }
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				production_speed_rail_way_factor = 0.2
+				production_speed_supply_node_factor = 0.2
+				production_speed_bunker_factor = 0.2
+			}
+			research_bonus = {
+				construction_tech = 0.2
+			}
+		}
+		ACMD_Zetatech = {
+
+			name = ACMD_Zetatech
+		
+			picture = ACMD_Zetatech_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+		
+			cost = 100
+			traits = { ACMD_Zetatech_traits }
+			research_bonus = {
+				electronics = 0.3
+			}
+		}
+		ACMD_KLMY = {
+
+			name = ACMD_KLMY
+		
+			picture = ACMD_KLMY_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+		
+			cost = 100
+			traits = { ACMD_KLMY_traits }
+			modifier = {
+				trade_opinion_factor = 0.3
+				resource_trade_cost_bonus_per_factory = 2
+			}
+		}
+		ACMD_RLJS_1 = {
+
+			name = ACMD_RLJS
+		
+			picture = ACMD_RLJS_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+		
+			cost = 75
+			traits = { ACMD_RLJS_traits }
+			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_factor = 0.15
+				mobilization_speed = 0.15
+			}
+		}
+		ACMD_JSYD_1 = {
+
+			name = ACMD_JSYD
+		
+			picture = ACMD_JSYD_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+				OR = {
+					original_tag = YDJ
+					YDJ = { exists = no }
+				}
+			}
+		
+			cost = 75
+			traits = { ACMD_JSYD_traits }
+			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_factor = 0.15
+				mobilization_speed = 0.15
+			}
+		}
+		ACMD_MYGO_1 = {
+
+			name = ACMD_MYGO
+		
+			picture = ACMD_MYGO_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+				OR = {
+					original_tag = YDM
+					YDM = { exists = no }
+				}
+			}
+		
+			cost = 75
+			traits = { ACMD_MYGO_traits }
+			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_factor = 0.15
+				mobilization_speed = 0.15
+			}
+		}
+		ACMD_AVE_1 = {
+
+			name = ACMD_AVE
+		
+			picture = ACMD_AVE_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+				OR = {
+					original_tag = MJK
+					YDM = { exists = no }
+					MJK = { exists = no }
+				}
+			}
+		
+			cost = 75
+			traits = { ACMD_AVE_traits }
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.1
+				political_power_factor = 0.15
+				justify_war_goal_time = -0.35
+				mobilization_speed = 0.15
+			}
+		}
+		ACMD_XMJLY = {
+
+			name = ACMD_XMJLY
+		
+			picture = ACMD_XMJLY_ico
+			
+			visible = {
+				has_country_flag = flag_ACMD_on
+			}
+		
+			cost = 100
+			traits = { ACMD_XMJLY_traits }
+			research_bonus = {
+				synth_resources = 0.2
+			}
+		}
+
+	}
+}

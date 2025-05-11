@@ -16,7 +16,7 @@ every_possible_country = {
 				has_country_flag = 66pp
 			}
 			slot = political_advisor
-			cost = 50
+			cost = 100
 			traits = {
 				xueyuan
 			}
@@ -36,7 +36,7 @@ every_possible_country = {
 				has_country_flag = 66pp
 			}
 			slot = political_advisor
-			cost = 50
+			cost = 100
 			traits = {
 				gongyequ
 			}
@@ -56,7 +56,7 @@ every_possible_country = {
 				has_country_flag = 66pp
 			}
 			slot = political_advisor
-			cost = 50
+			cost = 100
 			traits = {
 				shequ
 			}
@@ -76,7 +76,7 @@ every_possible_country = {
 				has_country_flag = 66pp
 			}
 			slot = theorist
-			cost = 50
+			cost = 75
 			traits = {
 				junying
 			}

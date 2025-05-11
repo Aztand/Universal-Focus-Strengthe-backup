@@ -1,0 +1,1155 @@
+focus_114514 = {
+	cd_tjjl_ACMD = {
+		priority = 5
+		icon = generic_prospect_for_resources
+		cost = 66
+		fire_only_once = yes
+		visible = {
+			not = { has_global_flag = tjjl_ACMD_6 }
+			has_country_flag = 66pp
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			custom_effect_tooltip = ACMD_characters_land_tt
+			hidden_effect = {
+				if = {
+					limit = { has_global_flag = tjjl_ACMD_5 }
+					set_global_flag = tjjl_ACMD_6
+					T76 = {
+						ACMD_TLL_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_ALN_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_ABLN_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_GLDY_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_HYSS_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_AETE_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_MY_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_SL_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_SN_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_SX_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_WM_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_X_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_QLY_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_ASDS_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_TY_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLHLQ_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_GYZB_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_BCS_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_LMY_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLX_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_FNN_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_FLL_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_YLS_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_CLST_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_CMLZ_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_MS_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_LDJJ_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_ALSTY_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_JK_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_YE_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_JM_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_SLY_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_MQM_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_KLT_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_LYS_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_YQ_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_SND_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLJ_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_LNY_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_BLLM_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_QLN_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_MRX_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_LBL_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_ZTXZ_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_SNL_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_TYMT_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_HK_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_UMP_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLS_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_LMLYSKLT_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_SLYXY_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_PQL_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLHLQ_SC_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_CLST_SC_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_CMLZ_SC_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_MS_SC_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLS_SC_6 = {
+							set_nationality = ROOT
+						}
+						ACMD_PQL_SC_6 = {
+							set_nationality = ROOT
+						}
+					}
+				}
+				if = {
+					limit = { has_global_flag = tjjl_ACMD_4 }
+					set_global_flag = tjjl_ACMD_5
+					T76 = {
+						ACMD_TLL_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_ALN_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_ABLN_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_GLDY_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_HYSS_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_AETE_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_MY_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_SL_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_SN_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_SX_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_WM_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_X_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_QLY_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_ASDS_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_TY_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLHLQ_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_GYZB_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_BCS_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_LMY_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLX_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_FNN_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_FLL_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_YLS_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_CLST_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_CMLZ_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_MS_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_LDJJ_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_ALSTY_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_JK_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_YE_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_JM_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_SLY_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_MQM_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_KLT_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_LYS_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_YQ_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_SND_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLJ_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_LNY_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_BLLM_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_QLN_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_MRX_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_LBL_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_ZTXZ_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_SNL_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_TYMT_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_HK_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_UMP_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLS_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_LMLYSKLT_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_SLYXY_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_PQL_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLHLQ_SC_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_CLST_SC_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_CMLZ_SC_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_MS_SC_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLS_SC_5 = {
+							set_nationality = ROOT
+						}
+						ACMD_PQL_SC_5 = {
+							set_nationality = ROOT
+						}
+					}
+				}
+				if = {
+					limit = { has_global_flag = tjjl_ACMD_3 }
+					set_global_flag = tjjl_ACMD_4
+					T76 = {
+						ACMD_TLL_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_ALN_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_ABLN_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_GLDY_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_HYSS_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_AETE_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_MY_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_SL_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_SN_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_SX_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_WM_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_X_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_QLY_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_ASDS_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_TY_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLHLQ_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_GYZB_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_BCS_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_LMY_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLX_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_FNN_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_FLL_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_YLS_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_CLST_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_CMLZ_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_MS_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_LDJJ_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_ALSTY_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_JK_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_YE_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_JM_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_SLY_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_MQM_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_KLT_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_LYS_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_YQ_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_SND_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLJ_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_LNY_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_BLLM_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_QLN_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_MRX_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_LBL_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_ZTXZ_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_SNL_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_TYMT_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_HK_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_UMP_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLS_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_LMLYSKLT_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_SLYXY_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_PQL_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLHLQ_SC_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_CLST_SC_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_CMLZ_SC_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_MS_SC_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLS_SC_4 = {
+							set_nationality = ROOT
+						}
+						ACMD_PQL_SC_4 = {
+							set_nationality = ROOT
+						}
+					}
+				}
+				if = {
+					limit = { has_global_flag = tjjl_ACMD_2 }
+					set_global_flag = tjjl_ACMD_3
+					T76 = {
+						ACMD_TLL_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_ALN_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_ABLN_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_GLDY_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_HYSS_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_AETE_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_MY_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_SL_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_SN_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_SX_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_WM_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_X_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_QLY_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_ASDS_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_TY_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLHLQ_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_GYZB_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_BCS_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_LMY_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLX_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_FNN_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_FLL_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_YLS_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_CLST_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_CMLZ_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_MS_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_LDJJ_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_ALSTY_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_JK_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_YE_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_JM_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_SLY_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_MQM_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_KLT_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_LYS_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_YQ_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_SND_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLJ_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_LNY_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_BLLM_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_QLN_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_MRX_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_LBL_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_ZTXZ_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_SNL_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_TYMT_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_HK_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_UMP_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLS_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_LMLYSKLT_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_SLYXY_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_PQL_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLHLQ_SC_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_CLST_SC_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_CMLZ_SC_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_MS_SC_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLS_SC_3 = {
+							set_nationality = ROOT
+						}
+						ACMD_PQL_SC_3 = {
+							set_nationality = ROOT
+						}
+					}
+				}
+				if = {
+					limit = { has_global_flag = tjjl_ACMD_1 }
+					set_global_flag = tjjl_ACMD_2
+					T76 = {
+						ACMD_TLL_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_ALN_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_ABLN_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_GLDY_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_HYSS_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_AETE_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_MY_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_SL_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_SN_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_SX_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_WM_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_X_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_QLY_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_ASDS_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_TY_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLHLQ_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_GYZB_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_BCS_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_LMY_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLX_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_FNN_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_FLL_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_YLS_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_CLST_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_CMLZ_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_MS_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_LDJJ_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_ALSTY_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_JK_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_YE_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_JM_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_SLY_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_MQM_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_KLT_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_LYS_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_YQ_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_SND_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLJ_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_LNY_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_BLLM_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_QLN_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_MRX_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_LBL_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_ZTXZ_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_SNL_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_TYMT_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_HK_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_UMP_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLS_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_LMLYSKLT_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_SLYXY_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_PQL_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLHLQ_SC_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_CLST_SC_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_CMLZ_SC_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_MS_SC_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLS_SC_2 = {
+							set_nationality = ROOT
+						}
+						ACMD_PQL_SC_2 = {
+							set_nationality = ROOT
+						}
+					}
+				}
+				if = {
+					limit = { not = { has_global_flag = tjjl_ACMD_1 } }
+					set_global_flag = tjjl_ACMD_1
+					T76 = {
+						ACMD_TLL_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_ALN_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_ABLN_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_GLDY_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_HYSS_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_AETE_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_MY_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_SL_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_SN_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_SX_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_WM_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_X_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_QLY_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_ASDS_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_TY_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLHLQ_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_GYZB_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_BCS_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_LMY_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLX_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_FNN_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_FLL_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_YLS_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_CLST_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_CMLZ_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_MS_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_LDJJ_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_ALSTY_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_JK_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_YE_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_JM_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_SLY_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_MQM_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_KLT_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_LYS_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_YQ_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_SND_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLJ_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_LNY_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_BLLM_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_QLN_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_MRX_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_LBL_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_ZTXZ_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_SNL_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_TYMT_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_HK_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_UMP_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLS_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_LMLYSKLT_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_SLYXY_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_PQL_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_MLHLQ_SC_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_CLST_SC_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_CMLZ_SC_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_MS_SC_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_TLS_SC_1 = {
+							set_nationality = ROOT
+						}
+						ACMD_PQL_SC_1 = {
+							set_nationality = ROOT
+						}
+					}
+				}
+				create_operative_leader = {
+					name = "Name_ACMD_ALSTY"
+					GFX = GFX_portrait_ACMD_ALSTY
+					traits = { operative_seducer operative_double_agent operative_well_groomed operative_natural_orator }
+					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
+				}
+				create_operative_leader = {
+					name = "Name_ACMD_JK"
+					GFX = GFX_portrait_ACMD_JK
+					traits = { operative_commando operative_master_interrogator operative_tough operative_safe_cracker }
+					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
+				}
+				create_operative_leader = {
+					name = "Name_ACMD_YE"
+					GFX = GFX_portrait_ACMD_YE
+					traits = { operative_commando operative_tough operative_safe_cracker operative_escape_artist }
+					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
+				}
+				create_operative_leader = {
+					name = "Name_ACMD_JM"
+					GFX = GFX_portrait_ACMD_JM
+					traits = { operative_seducer operative_master_interrogator operative_linguist operative_well_groomed }
+					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
+				}
+				create_operative_leader = {
+					name = "Name_ACMD_LYS"
+					GFX = GFX_portrait_ACMD_LYS
+					traits = { operative_commando operative_tough operative_master_interrogator operative_safe_cracker }
+					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
+				}
+				create_operative_leader = {
+					name = "Name_ACMD_KLT"
+					GFX = GFX_portrait_ACMD_KLT
+					traits = { operative_commando operative_tough operative_safe_cracker operative_escape_artist }
+					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
+				}
+				create_operative_leader = {
+					name = "Name_ACMD_YQ"
+					GFX = GFX_portrait_ACMD_YQ
+					traits = { operative_seducer operative_double_agent operative_natural_orator operative_well_groomed }
+					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
+				}
+				create_operative_leader = {
+					name = "Name_ACMD_SND"
+					GFX = GFX_portrait_ACMD_SND
+					traits = { operative_seducer operative_infiltrator operative_natural_orator operative_well_groomed }
+					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
+				}
+				create_operative_leader = {
+					name = "Name_ACMD_SLYXY"
+					GFX = GFX_portrait_ACMD_SLYXY
+					traits = { operative_commando operative_tough operative_safe_cracker operative_escape_artist }
+					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
+				}
+				set_country_flag = flag_ACMD_on
+			}
+		}
+	}
+}

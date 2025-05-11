@@ -350,9 +350,6 @@ characters = {
 				is_ai = no
 				not = { has_country_flag = xrldr_gudu }
 			}
-			available = {
-				not = { has_country_flag = xrldr_gudu }
-			}
 			cost = 75
 			traits = {
 				jtyx
@@ -372,9 +369,6 @@ characters = {
 			idea_token = snyd1
 			visible = {
 				is_ai = no
-				not = { has_country_flag = xrldr_stl }
-			}
-			available = {
 				not = { has_country_flag = xrldr_stl }
 			}
 			cost = 75
@@ -398,9 +392,6 @@ characters = {
 				is_ai = no
 				not = { has_country_flag = xrldr_xdyd }
 			}
-			available = {
-				not = { has_country_flag = xrldr_xdyd }
-			}
 			cost = 75
 			traits = {
 				ygklgqlx
@@ -420,9 +411,6 @@ characters = {
 			idea_token = snyd3
 			visible = {
 				is_ai = no
-				not = { has_country_flag = xrldr_ydzhx }
-			}
-			available = {
 				not = { has_country_flag = xrldr_ydzhx }
 			}
 			cost = 75

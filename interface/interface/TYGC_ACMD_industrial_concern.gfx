@@ -1,0 +1,56 @@
+spriteTypes = {
+
+	spriteType = {
+		name = GFX_idea_ACMD_LLC_ico
+		texturefile = gfx/ideas/industrial_concern/ACMD_LLC_ico.png
+	}
+	spriteType = {
+		name = GFX_idea_ACMD_SMZX_ico
+		texturefile = gfx/ideas/industrial_concern/ACMD_SMZX_ico.png
+	}
+	spriteType = {
+		name = GFX_idea_ACMD_LMBT_ico
+		texturefile = gfx/ideas/industrial_concern/ACMD_LMBT_ico.png
+	}
+	spriteType = {
+		name = GFX_idea_ACMD_ZMD_ico
+		texturefile = gfx/ideas/industrial_concern/ACMD_ZMD_ico.png
+	}
+	spriteType = {
+		name = GFX_idea_ACMD_JYKJ_ico
+		texturefile = gfx/ideas/industrial_concern/ACMD_JYKJ_ico.png
+	}
+	spriteType = {
+		name = GFX_idea_ACMD_YSJT_ico
+		texturefile = gfx/ideas/industrial_concern/ACMD_YSJT_ico.png
+	}
+	spriteType = {
+		name = GFX_idea_ACMD_Zetatech_ico
+		texturefile = gfx/ideas/industrial_concern/ACMD_Zetatech_ico.png
+	}
+	spriteType = {
+		name = GFX_idea_ACMD_KLMY_ico
+		texturefile = gfx/ideas/industrial_concern/ACMD_KLMY_ico.png
+	}
+	spriteType = {
+		name = GFX_idea_ACMD_RLJS_ico
+		texturefile = gfx/ideas/industrial_concern/ACMD_RLJS_ico.png
+	}
+	spriteType = {
+		name = GFX_idea_ACMD_MYGO_ico
+		texturefile = gfx/ideas/industrial_concern/ACMD_MYGO_ico.png
+	}
+	spriteType = {
+		name = GFX_idea_ACMD_JSYD_ico
+		texturefile = gfx/ideas/industrial_concern/ACMD_JSYD_ico.png
+	}
+	spriteType = {
+		name = GFX_idea_ACMD_XMJLY_ico
+		texturefile = gfx/ideas/industrial_concern/ACMD_XMJLY_ico.png
+	}
+	spriteType = {
+		name = GFX_idea_ACMD_AVE_ico
+		texturefile = gfx/ideas/industrial_concern/ACMD_AVE_ico.png
+	}
+
+}
