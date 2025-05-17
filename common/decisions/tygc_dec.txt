@@ -284,6 +284,15 @@ focus_114514 = {
 			remove_dynamic_modifier = {
 				modifier = ARG_political_corruption_modifier
 			}
+			remove_dynamic_modifier = {
+				modifier = DEN_neglected_military_dynamic_modifier
+			}
+			remove_dynamic_modifier = {
+				modifier = DEN_economic_crisis_dynamic_modifier
+			}
+			remove_dynamic_modifier = {
+				modifier = DEN_industrial_capability_dynamic_modifier
+			}
 		}
 
 	}
@@ -2495,6 +2504,10 @@ zccg = {
 					not = { is_core_of = PRC }
 					or = {
 						is_core_of = RAJ
+						is_in_array = {
+							array = RAJ.owned_states_at_game_start
+							value = THIS
+						}
 					}
 				}
 				transfer_state_to = RAJ
@@ -3189,6 +3202,30 @@ zccg = {
 				}
 				transfer_state_to = BLR
 			}
+			every_state = {
+				limit = {
+					not = { is_core_of = PRC }
+					is_controlled_by = SOV
+					is_core_of = LIT
+				}
+				transfer_state_to = LIT
+			}
+			every_state = {
+				limit = {
+					not = { is_core_of = PRC }
+					is_controlled_by = SOV
+					is_core_of = LAT
+				}
+				transfer_state_to = LAT
+			}
+			every_state = {
+				limit = {
+					not = { is_core_of = PRC }
+					is_controlled_by = SOV
+					is_core_of = EST
+				}
+				transfer_state_to = EST
+			}
 			PRC = {
 				set_autonomy = {
 					target = GEO
@@ -3797,11 +3834,12 @@ ddyzgx = {
 qqqcsh = {
     qcsh = {
         icon = generic_formable_nations
-		priority =15
+		priority = 15
         target_array = controlled_states
         state_target = yes 
         on_map_mode = map_and_decisions_view
 		cost = 10
+		days_remove = 10
 		visible ={    
 			has_completed_focus = qqqcsh
 		}
@@ -3820,10 +3858,10 @@ qqqcsh = {
                 }
 			}
         }
-        complete_effect = {
+        remove_effect = {
             FROM = {
                 add_core_of = ROOT
-				add_manpower = -15000
+				add_manpower = -20000
                 remove_building = {
 					type = infrastructure
 					level = 1

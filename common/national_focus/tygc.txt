@@ -3827,7 +3827,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_CAIDAN }
 		text_icon = tygc_biaotilan
 		completion_reward = {
-			set_cosmetic_tag = ENG_2
+			set_cosmetic_tag = ENG_imperial_federation_unified
 			add_ideas = ribuluo
 			AST = {
 				every_unit_leader = {
@@ -3885,7 +3885,13 @@ focus_tree = {
 			}
 			every_state = {
 				limit = {
-					is_core_of = RAJ
+					or = {
+						is_core_of = RAJ
+						is_in_array = {
+							array = RAJ.owned_states_at_game_start
+							value = THIS
+						}
+					}
 				}
 				add_core_of = ENG
 			}
@@ -3980,12 +3986,20 @@ focus_tree = {
 		text_icon = tygc_biaotilan
 		completion_reward = {
 			add_ideas = zmdg
+			hidden_effect = {
+				country_event = {
+					id = NSB_qita.20
+					days = 7
+				}
+			}
 			every_country = {
 				limit = {
+					not = { has_idea = zcdzmd }
 					is_subject_of = ROOT
 				}
 				add_ideas = zcdzmd
 			}
+			custom_effect_tooltip = zmdgyw_tt
 		}
 	}
 	focus = {
@@ -4074,11 +4088,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = hsgm
+		id = hsgm1
 		icon = GFX_focus_ger_great_red_menace
 		x = 8
-		y = 6
-		cost = 15
+		y = 5
+		cost = 5
 		available = {
 			has_government = communism
 		}
@@ -4093,15 +4107,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_CAIDAN }
 		text_icon = tygc_biaotilan
 		completion_reward = {
-			add_ideas = qcsh
-			add_ideas = hgyjd
-			every_state = {
-				limit = {
-					is_core_of = LAO
-					is_core_of = SIA
-					is_core_of = VIN
+			set_cosmetic_tag = hsgm
+			create_country_leader = {
+				name = "波尔布特"
+				desc = "porput_desc"
+				picture = GFX_portrait_brbt
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					dictator
+					yjdlx
 				}
-				add_core_of = CAM
 			}
 			if = {
 				limit = { has_global_flag = qyyyb }	
@@ -11490,6 +11506,10 @@ focus_tree = {
 						is_core_of = MAL
 						is_core_of = NZL
 						is_core_of = SAF
+						is_in_array = {
+							array = RAJ.owned_states_at_game_start
+							value = THIS
+						}
 					}
 				}
 				add_core_of = ROOT
@@ -11687,9 +11707,9 @@ focus_tree = {
 		icon = GFX_focus_chi_reach_out_to_france
 		x = 6
 		y = 8
-		cost = 2
-		
+		cost = 3
 		allow_branch = {tag = ENG}
+		continue_if_invalid = yes
 		available = {
 			FRA = {surrender_progress > 0.5}
 			has_war = yes
@@ -12200,12 +12220,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = brbt
-		icon = GFX_focus_por_concordat
-		x = 10
-		y = 6
+		id = jqjskz
+		icon = GFX_focus_generic_limited_social_mobilization
+		x = 6
+		y = 7
 		cost = 5
 		allow_branch = {tag = CAM}
+		prerequisite = {
+			focus = hsgm1
+		}
 		available = {
 			has_government = communism
 		}
@@ -12219,18 +12242,119 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_CAIDAN }
 		text_icon = tygc_biaotilan
 		completion_reward = {
-			create_country_leader = {
-				name = "Por Put"
-				desc = "porput_desc"
-				picture = GFX_portrait_brbt
-				expire = "1965.1.1"
-				ideology = marxism
-				traits = {
-					dictator
-					jpykys
-					yjdlx
+			add_ideas = hgyjd
+			every_state = {
+				limit = {
+					is_core_of = LAO
+					is_core_of = VIN
 				}
+				add_core_of = CAM
 			}
+		}
+	}
+	focus = {
+		id = qcsh
+		icon = GFX_focus_GER_integrated_economies
+		x = 8
+		y = 7
+		cost = 5
+		allow_branch = {tag = CAM}
+		prerequisite = {
+			focus = hsgm1
+		}
+		available = {
+			has_government = communism
+		}
+		ai_will_do = {
+			base = 50
+			
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = qcsh
+		}
+	}
+	focus = {
+		id = nyjth3
+		icon = GFX_focus_generic_land_reclamation
+		x = 4
+		y = 7
+		cost = 5
+		allow_branch = {tag = CAM}
+		prerequisite = {
+			focus = hsgm1
+		}
+		available = {
+			has_government = communism
+		}
+		ai_will_do = {
+			base = 50
+			
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = qzjtld
+		}
+	}
+	focus = {
+		id = zyyj
+		icon = GFX_focus_generic_total_war
+		x = 10
+		y = 7
+		cost = 5
+		allow_branch = {tag = CAM}
+		prerequisite = {
+			focus = hsgm1
+		}
+		available = {
+			has_government = communism
+		}
+		ai_will_do = {
+			base = 50
+			
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = zyyj
+		}
+	}
+	focus = {
+		id = jszl
+		icon = GFX_focus_generic_secret_service_agency
+		x = 12
+		y = 7
+		cost = 5
+		allow_branch = {tag = CAM}
+		prerequisite = {
+			focus = hsgm1
+		}
+		available = {
+			has_government = communism
+		}
+		ai_will_do = {
+			base = 50
+			
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_country_leader_trait = jpykys
+			add_ideas = jhyd
 		}
 	}
 	focus = {
@@ -12238,23 +12362,22 @@ focus_tree = {
 		icon = GFX_goal_continuous_suppression
 		cost = 10
 		prerequisite = {
-			focus = hsgm
+			focus = qcsh
 		}
-		prerequisite = {
-			focus = brbt
-		}
-		x = 9
-		y = 7
+		x = 8
+		y = 9
 		ai_will_do = {
 			factor = 10
 		}
 		search_filters = { FOCUS_FILTER_CAIDAN }
 		text_icon = tygc_biaotilan
-		completion_reward={
-			set_cosmetic_tag = hsgm
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = qcsh
+				add_idea = qqqcsh
+			}
 			custom_effect_tooltip = qqqcsh_tt
 			unlock_decision_category_tooltip = qqqcsh
-			
 		}
 	}
 	focus = {
@@ -16302,6 +16425,10 @@ focus_tree = {
 						state = 422
 						state = 281
 						state = 733
+						is_in_array = {
+							array = RAJ.owned_states_at_game_start
+							value = THIS
+						}
 					}
 				}
 				add_core_of = ROOT
@@ -17048,7 +17175,13 @@ focus_tree = {
 			}
 			every_state = {
 				limit = {
-					is_core_of = RAJ
+					or= {
+						is_core_of = RAJ
+						is_in_array = {
+							array = RAJ.owned_states_at_game_start
+							value = THIS
+						}
+					}
 				}
 				add_core_of = SOV
 			}
@@ -19134,6 +19267,10 @@ focus_tree = {
 						state = 422
 						state = 281
 						state = 733
+						is_in_array = {
+							array = RAJ.owned_states_at_game_start
+							value = THIS
+						}
 					}
 					not = { is_core_of = ROOT }
 				}
@@ -20129,6 +20266,10 @@ focus_tree = {
 						state = 422
 						state = 281
 						state = 733
+						is_in_array = {
+							array = RAJ.owned_states_at_game_start
+							value = THIS
+						}
 					}
 					not = { is_core_of = ROOT }
 				}
@@ -31556,6 +31697,75 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = mgdgzy
 			set_cosmetic_tag = MOGE
+			hidden_effect = {
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = CHI
+						is_core_of = TIB
+						is_core_of = TAN
+						is_core_of = KOR
+						state = 561
+						state = 560
+						state = 657
+						state = 409
+						state = 408
+						state = 655
+						state = 537
+						state = 329
+						state = 654
+						#state = 588
+						state = 589
+						state = 586
+						state = 732
+						#state = 742
+						#state = 787
+						state = 441
+						state = 434
+						state = 563
+						state = 564
+						state = 566
+						
+					}
+				}
+				add_core_of = ROOT
+			}
+			if = {
+				limit = { has_global_flag = qydtxh }
+				every_state = {
+					limit = {
+						OR = {
+							state = 1017
+							state = 1018
+							state = 1019
+							state = 1020
+							state = 1021
+							state = 1022
+						}
+					}
+					add_core_of = ROOT
+				}
+			}
+			329 = { set_state_name = "唐努乌梁海" }
+			654 = { set_state_name = "阿尔泰乌梁海" }
+			408 = { set_state_name = "海参崴" }
+			409 = { set_state_name = "伯力" }
+			434 = { set_state_name = "藏南" }
+			441 = { set_state_name = "拉达克" }
+			526 = { set_state_name = "琉球" }
+			537 = { set_state_name = "南库页" }
+			560 = { set_state_name = "庙街" }
+			561 = { set_state_name = "外兴安岭" }
+			586 = { set_state_name = "乌什" }
+			589 = { set_state_name = "巴尔喀什" }
+			655 = { set_state_name = "北库页" }
+			657 = { set_state_name = "海兰泡" }
+			728 = { set_state_name = "湛江" }
+			732 = { set_state_name = "帕米尔" }
+			set_province_name = { id = 957 name = "海参崴" }
+			set_province_name = { id = 12446 name = "苦兀" }
+			set_province_name = { id = 12189 name = "伯利" }
+			}
 			every_state = {
 				limit = {
 					OR = {

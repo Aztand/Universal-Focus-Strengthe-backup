@@ -295,6 +295,351 @@ country_event = {
 	}
 }
 country_event = {
+	id = NSB_qita.11
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_war = yes }
+			remove_ideas = ymyzd
+			add_ideas = ymyzd1
+			country_event = {
+				id = NSB_qita.12
+				days = 90
+			}
+		}
+		if = {
+			limit = { has_war = no }
+			country_event = {
+				id = NSB_qita.11
+				days = 7
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.12
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_war = yes }
+			remove_ideas = ymyzd1
+			add_ideas = ymyzd2
+			country_event = {
+				id = NSB_qita.13
+				days = 90
+			}
+		}
+		if = {
+			limit = { has_war = no }
+			country_event = {
+				id = NSB_qita.12
+				days = 7
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.13
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_war = yes }
+			remove_ideas = ymyzd2
+			add_ideas = ymyzd3
+			country_event = {
+				id = NSB_qita.14
+				days = 90
+			}
+		}
+		if = {
+			limit = { has_war = no }
+			country_event = {
+				id = NSB_qita.13
+				days = 7
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.14
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_war = yes }
+			remove_ideas = ymyzd3
+			add_ideas = ymyzd4
+			country_event = {
+				id = NSB_qita.15
+				days = 90
+			}
+		}
+		if = {
+			limit = { has_war = no }
+			country_event = {
+				id = NSB_qita.14
+				days = 7
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.15
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_war = yes }
+			remove_ideas = ymyzd4
+			add_ideas = ymyzd5
+			country_event = {
+				id = NSB_qita.16
+				days = 90
+			}
+		}
+		if = {
+			limit = { has_war = no }
+			country_event = {
+				id = NSB_qita.15
+				days = 7
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.16
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_war = yes }
+			remove_ideas = ymyzd5
+			add_ideas = ymyzd6
+		}
+		if = {
+			limit = { has_war = no }
+			country_event = {
+				id = NSB_qita.16
+				days = 7
+			}
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.17
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		every_controlled_state = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = gxtp_dynamic_modifier
+						scope = GXC
+					}
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = gxtp_dynamic_modifier
+				scope = GXC
+			}
+		}
+		country_event = {
+			id = NSB_qita.17
+			days = 7
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.18
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_country_flag = lbwnb10  }
+			swap_ruler_traits = {
+				remove = lbwnb10
+				add = lbwnb11
+			}
+			clr_country_flag = lbwnb10
+		}
+		if = {
+			limit = { has_country_flag = lbwnb9  }
+			swap_ruler_traits = {
+				remove = lbwnb9
+				add = lbwnb10
+			}
+			set_country_flag = lbwnb10
+			clr_country_flag = lbwnb9
+		}
+		if = {
+			limit = { has_country_flag = lbwnb8  }
+			swap_ruler_traits = {
+				remove = lbwnb8
+				add = lbwnb9
+			}
+			set_country_flag = lbwnb9
+			clr_country_flag = lbwnb8
+		}
+		if = {
+			limit = { has_country_flag = lbwnb7  }
+			swap_ruler_traits = {
+				remove = lbwnb7
+				add = lbwnb8
+			}
+			set_country_flag = lbwnb8
+			clr_country_flag = lbwnb7
+		}
+		if = {
+			limit = { has_country_flag = lbwnb6  }
+			swap_ruler_traits = {
+				remove = lbwnb6
+				add = lbwnb7
+			}
+			set_country_flag = lbwnb7
+			clr_country_flag = lbwnb6
+		}
+		if = {
+			limit = { has_country_flag = lbwnb5  }
+			swap_ruler_traits = {
+				remove = lbwnb5
+				add = lbwnb6
+			}
+			set_country_flag = lbwnb6
+			clr_country_flag = lbwnb5
+		}
+		if = {
+			limit = { has_country_flag = lbwnb4  }
+			swap_ruler_traits = {
+				remove = lbwnb4
+				add = lbwnb5
+			}
+			set_country_flag = lbwnb5
+			clr_country_flag = lbwnb4
+		}
+		if = {
+			limit = { has_country_flag = lbwnb3  }
+			swap_ruler_traits = {
+				remove = lbwnb3
+				add = lbwnb4
+			}
+			set_country_flag = lbwnb4
+			clr_country_flag = lbwnb3
+		}
+		if = {
+			limit = { has_country_flag = lbwnb2  }
+			swap_ruler_traits = {
+				remove = lbwnb2
+				add = lbwnb3
+			}
+			set_country_flag = lbwnb3
+			clr_country_flag = lbwnb2
+		}
+		if = {
+			limit = { has_country_flag = lbwnb1  }
+			swap_ruler_traits = {
+				remove = lbwnb1
+				add = lbwnb2
+			}
+			set_country_flag = lbwnb2
+			clr_country_flag = lbwnb1
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.19
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		set_variable = { lbw55k_v1 = has_army_manpower }
+		set_variable = { lbw55k_v2 = num_of_factories }
+		if = {
+			limit = { has_global_flag = lbw55k }
+			every_country = {
+				limit = {
+					not = {
+						is_in_faction_with = ROOT
+						original_tag = LBW
+					}
+					strength_ratio = {
+						tag = LBW
+						ratio > 0.95
+					}
+				}
+				add_ideas = qx55k1
+			}
+			every_country = {
+				limit = {
+					not = {
+						is_in_faction_with = ROOT
+						original_tag = LBW
+					}
+					strength_ratio = {
+						tag = LBW
+						ratio < 0.95
+					}
+				}
+				remove_ideas = qx55k1
+			}
+			every_country = {
+				limit = {
+					not = {
+						is_in_faction_with = ROOT
+						original_tag = LBW
+					}
+					num_of_factories > LBW.num_of_factories
+				}
+				add_ideas = qx55k2
+			}
+			every_country = {
+				limit = {
+					not = {
+						is_in_faction_with = ROOT
+						original_tag = LBW
+					}
+					num_of_factories < LBW.num_of_factories
+				}
+				remove_ideas = qx55k2
+			}
+		}
+		country_event = {
+			id = NSB_qita.19
+			days = 7
+		}
+	}
+}
+country_event = {
+	id = NSB_qita.20
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				not = { has_idea = zcdzmd }
+				is_subject_of = ROOT
+			}
+			add_ideas = zcdzmd
+		}
+		country_event = {
+			id = NSB_qita.20
+			days = 7
+		}
+	}
+}
+country_event = {
 	id = NSB_sfgj.1
 	title = NSB_sfgj.1.t
 	desc = NSB_sfgj.1.desc
@@ -3500,332 +3845,6 @@ country_event = {
 	immediate = {
 		remove_ideas = zxbn5
 		add_ideas = zxbn6
-	}
-}
-country_event = {
-	id = NSB_qita.11
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-		if = {
-			limit = { has_war = yes }
-			remove_ideas = ymyzd
-			add_ideas = ymyzd1
-			country_event = {
-				id = NSB_qita.12
-				days = 90
-			}
-		}
-		if = {
-			limit = { has_war = no }
-			country_event = {
-				id = NSB_qita.11
-				days = 7
-			}
-		}
-	}
-}
-country_event = {
-	id = NSB_qita.12
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-		if = {
-			limit = { has_war = yes }
-			remove_ideas = ymyzd1
-			add_ideas = ymyzd2
-			country_event = {
-				id = NSB_qita.13
-				days = 90
-			}
-		}
-		if = {
-			limit = { has_war = no }
-			country_event = {
-				id = NSB_qita.12
-				days = 7
-			}
-		}
-	}
-}
-country_event = {
-	id = NSB_qita.13
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-		if = {
-			limit = { has_war = yes }
-			remove_ideas = ymyzd2
-			add_ideas = ymyzd3
-			country_event = {
-				id = NSB_qita.14
-				days = 90
-			}
-		}
-		if = {
-			limit = { has_war = no }
-			country_event = {
-				id = NSB_qita.13
-				days = 7
-			}
-		}
-	}
-}
-country_event = {
-	id = NSB_qita.14
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-		if = {
-			limit = { has_war = yes }
-			remove_ideas = ymyzd3
-			add_ideas = ymyzd4
-			country_event = {
-				id = NSB_qita.15
-				days = 90
-			}
-		}
-		if = {
-			limit = { has_war = no }
-			country_event = {
-				id = NSB_qita.14
-				days = 7
-			}
-		}
-	}
-}
-country_event = {
-	id = NSB_qita.15
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-		if = {
-			limit = { has_war = yes }
-			remove_ideas = ymyzd4
-			add_ideas = ymyzd5
-			country_event = {
-				id = NSB_qita.16
-				days = 90
-			}
-		}
-		if = {
-			limit = { has_war = no }
-			country_event = {
-				id = NSB_qita.15
-				days = 7
-			}
-		}
-	}
-}
-country_event = {
-	id = NSB_qita.16
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-		if = {
-			limit = { has_war = yes }
-			remove_ideas = ymyzd5
-			add_ideas = ymyzd6
-		}
-		if = {
-			limit = { has_war = no }
-			country_event = {
-				id = NSB_qita.16
-				days = 7
-			}
-		}
-	}
-}
-country_event = {
-	id = NSB_qita.17
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-		every_controlled_state = {
-			limit = {
-				NOT = {
-					has_dynamic_modifier = {
-						modifier = gxtp_dynamic_modifier
-						scope = GXC
-					}
-				}
-			}
-			add_dynamic_modifier = {
-				modifier = gxtp_dynamic_modifier
-				scope = GXC
-			}
-		}
-		country_event = {
-			id = NSB_qita.17
-			days = 7
-		}
-	}
-}
-country_event = {
-	id = NSB_qita.18
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-		if = {
-			limit = { has_country_flag = lbwnb10  }
-			swap_ruler_traits = {
-				remove = lbwnb10
-				add = lbwnb11
-			}
-			clr_country_flag = lbwnb10
-		}
-		if = {
-			limit = { has_country_flag = lbwnb9  }
-			swap_ruler_traits = {
-				remove = lbwnb9
-				add = lbwnb10
-			}
-			set_country_flag = lbwnb10
-			clr_country_flag = lbwnb9
-		}
-		if = {
-			limit = { has_country_flag = lbwnb8  }
-			swap_ruler_traits = {
-				remove = lbwnb8
-				add = lbwnb9
-			}
-			set_country_flag = lbwnb9
-			clr_country_flag = lbwnb8
-		}
-		if = {
-			limit = { has_country_flag = lbwnb7  }
-			swap_ruler_traits = {
-				remove = lbwnb7
-				add = lbwnb8
-			}
-			set_country_flag = lbwnb8
-			clr_country_flag = lbwnb7
-		}
-		if = {
-			limit = { has_country_flag = lbwnb6  }
-			swap_ruler_traits = {
-				remove = lbwnb6
-				add = lbwnb7
-			}
-			set_country_flag = lbwnb7
-			clr_country_flag = lbwnb6
-		}
-		if = {
-			limit = { has_country_flag = lbwnb5  }
-			swap_ruler_traits = {
-				remove = lbwnb5
-				add = lbwnb6
-			}
-			set_country_flag = lbwnb6
-			clr_country_flag = lbwnb5
-		}
-		if = {
-			limit = { has_country_flag = lbwnb4  }
-			swap_ruler_traits = {
-				remove = lbwnb4
-				add = lbwnb5
-			}
-			set_country_flag = lbwnb5
-			clr_country_flag = lbwnb4
-		}
-		if = {
-			limit = { has_country_flag = lbwnb3  }
-			swap_ruler_traits = {
-				remove = lbwnb3
-				add = lbwnb4
-			}
-			set_country_flag = lbwnb4
-			clr_country_flag = lbwnb3
-		}
-		if = {
-			limit = { has_country_flag = lbwnb2  }
-			swap_ruler_traits = {
-				remove = lbwnb2
-				add = lbwnb3
-			}
-			set_country_flag = lbwnb3
-			clr_country_flag = lbwnb2
-		}
-		if = {
-			limit = { has_country_flag = lbwnb1  }
-			swap_ruler_traits = {
-				remove = lbwnb1
-				add = lbwnb2
-			}
-			set_country_flag = lbwnb2
-			clr_country_flag = lbwnb1
-		}
-	}
-}
-country_event = {
-	id = NSB_qita.19
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-		set_variable = { lbw55k_v1 = has_army_manpower }
-		set_variable = { lbw55k_v2 = num_of_factories }
-		if = {
-			limit = { has_global_flag = lbw55k }
-			every_country = {
-				limit = {
-					not = {
-						is_in_faction_with = ROOT
-						original_tag = LBW
-					}
-					strength_ratio = {
-						tag = LBW
-						ratio > 0.95
-					}
-				}
-				add_ideas = qx55k1
-			}
-			every_country = {
-				limit = {
-					not = {
-						is_in_faction_with = ROOT
-						original_tag = LBW
-					}
-					strength_ratio = {
-						tag = LBW
-						ratio < 0.95
-					}
-				}
-				remove_ideas = qx55k1
-			}
-			every_country = {
-				limit = {
-					not = {
-						is_in_faction_with = ROOT
-						original_tag = LBW
-					}
-					num_of_factories > LBW.num_of_factories
-				}
-				add_ideas = qx55k2
-			}
-			every_country = {
-				limit = {
-					not = {
-						is_in_faction_with = ROOT
-						original_tag = LBW
-					}
-					num_of_factories < LBW.num_of_factories
-				}
-				remove_ideas = qx55k2
-			}
-		}
-		country_event = {
-			id = NSB_qita.19
-			days = 7
-		}
 	}
 }
 country_event = {

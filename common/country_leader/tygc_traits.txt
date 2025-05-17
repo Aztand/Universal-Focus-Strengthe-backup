@@ -161,7 +161,7 @@ leader_traits = {
 	jpykys = {
 		random = no
 		research_speed_factor = -0.25
-		local_manpower = -0.25
+		monthly_population = -0.25
 
 		ai_will_do = {
 			factor = 1
@@ -169,9 +169,9 @@ leader_traits = {
 	}
 	yjdlx = {
 		random = no
-		army_core_attack_factor = 0.2
-		army_attack_factor = 0.2
-		army_core_defence_factor = 0.3
+		army_core_attack_factor = 0.25
+		army_core_defence_factor = 0.25
+		war_stability_factor = 0.25
 
 		ai_will_do = {
 			factor = 1

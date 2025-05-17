@@ -3064,9 +3064,15 @@ ACMD_assault_guns_organization = {
 	}
 
 	equipment_type = {
-        light_tank_artillery_chassis
-        medium_tank_artillery_chassis
-        heavy_tank_artillery_chassis
+		light_tank_aa_chassis
+		light_tank_artillery_chassis
+		light_tank_destroyer_chassis
+		medium_tank_aa_chassis
+		medium_tank_artillery_chassis
+		medium_tank_destroyer_chassis
+		heavy_tank_aa_chassis
+		heavy_tank_artillery_chassis
+		heavy_tank_destroyer_chassis
     }
     research_categories = {
         mio_cat_tech_all_armor_and_modules
