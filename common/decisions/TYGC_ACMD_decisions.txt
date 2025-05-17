@@ -1148,7 +1148,7 @@ focus_114514 = {
 					traits = { operative_commando operative_tough operative_safe_cracker operative_escape_artist }
 					nationalities = { SOV ENG FRA USA CHI JAP GER PRC }
 				}
-				set_country_flag = flag_ACMD_on
+				set_country_flag = flag_ACMD_on_1
 			}
 		}
 	}

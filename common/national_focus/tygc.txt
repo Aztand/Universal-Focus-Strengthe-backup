@@ -8219,7 +8219,6 @@ focus_tree = {
 						#state = 787
 						state = 441
 						state = 434
-						
 					}
 				}
 				add_core_of = ROOT
@@ -14488,6 +14487,7 @@ focus_tree = {
 					OR = {
 						is_core_of = AFG
 						is_core_of = PER
+						is_core_of = KOR
 						state = 330
 						state = 817
 						state = 818
@@ -14733,6 +14733,7 @@ focus_tree = {
 						state = 80
 						state = 525
 						state = 527
+						state = 561
 						state = 971
 						state = 987
 						state = 988
@@ -19572,7 +19573,6 @@ focus_tree = {
 						#state = 787
 						state = 441
 						state = 434
-						
 					}
 				}
 				add_core_of = ROOT
@@ -31559,6 +31559,7 @@ focus_tree = {
 			every_state = {
 				limit = {
 					OR = {
+						is_core_of = KOR
 						is_core_of = AFG
 						is_core_of = PER
 						state = 330
@@ -31806,6 +31807,7 @@ focus_tree = {
 						state = 80
 						state = 525
 						state = 527
+						state = 561
 						state = 971
 						state = 987
 						state = 988
@@ -32378,6 +32380,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_CAIDAN }
 		text_icon = tygc_biaotilan
 		completion_reward = {
+			set_capital = { state = 64 }
 			swap_ideas = {
 				remove_idea = ggxdg
 				add_idea = ggxdg2
@@ -32392,6 +32395,13 @@ focus_tree = {
 				add_core_of = ROOT
 			}
 			add_research_slot = 2
+			if = {
+				limit = { AUS = { exists = yes } }
+				annex_country = {
+					target = AUS
+					transfer_troops = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -32701,7 +32711,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 500
 			add_ideas = tjxd
-			set_cosmetic_tag = GER_greater_german_reich
 			set_province_name = { id = 6521 name = "日耳曼尼亚" }
 			hidden_effect = {
 				set_global_flag = form_greater_german_reich_flag

@@ -115,6 +115,13 @@ mcgjsd = {
         has_completed_focus = fpmc
     }
 }
+fngqzxz = {
+	priority = 30
+    visible ={
+        has_completed_focus = hswmzhzj
+        not = { has_country_flag = fngqzxz_off }
+    }
+}
 lhgsw = {
     picture = GFX_decision_lhg
 	priority = 30

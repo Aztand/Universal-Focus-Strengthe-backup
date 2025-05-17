@@ -9,7 +9,7 @@ ACMD_tank_organization = {
 
 	visible = {
 		FROM = {
-			has_country_flag = flag_ACMD_on
+			has_country_flag = flag_ACMD_on_1
 		}
 	}
 
@@ -309,7 +309,7 @@ ACMD_motorized_mechanized_organization = {
 
 	visible = {
 		FROM = {
-			has_country_flag = flag_ACMD_on
+			has_country_flag = flag_ACMD_on_1
 		}
 	}
 
@@ -654,7 +654,7 @@ ACMD_infantry_support_organization = {
 
 	visible = {
 		FROM = {
-			has_country_flag = flag_ACMD_on
+			has_country_flag = flag_ACMD_on_1
 		}
 	}
 
@@ -963,7 +963,7 @@ ACMD_artillery_organization = {
 
 	visible = {
 		FROM = {
-			has_country_flag = flag_ACMD_on
+			has_country_flag = flag_ACMD_on_1
 		}
 	}
 
@@ -1169,7 +1169,7 @@ ACMD_mini_plane_organization = {
 
 	visible = {
 		FROM = {
-			has_country_flag = flag_ACMD_on
+			has_country_flag = flag_ACMD_on_1
 		}
 	}
 
@@ -1641,7 +1641,7 @@ ACMD_huge_plane_organization = {
 
 	visible = {
 		FROM = {
-			has_country_flag = flag_ACMD_on
+			has_country_flag = flag_ACMD_on_1
 		}
 	}
 
@@ -2034,7 +2034,7 @@ ACMD_capital_ship_organization = {
 
 	visible = {
 		FROM = {
-			has_country_flag = flag_ACMD_on
+			has_country_flag = flag_ACMD_on_1
 		}
 	}
 
@@ -2409,7 +2409,7 @@ ACMD_screen_ship_organization = {
 
 	visible = {
 		FROM = {
-			has_country_flag = flag_ACMD_on
+			has_country_flag = flag_ACMD_on_1
 		}
 	}
 
@@ -2853,7 +2853,7 @@ ACMD_submarine_organization = {
 
 	visible = {
 		FROM = {
-			has_country_flag = flag_ACMD_on
+			has_country_flag = flag_ACMD_on_1
 		}
 	}
 
@@ -3059,7 +3059,7 @@ ACMD_assault_guns_organization = {
 
 	visible = {
 		FROM = {
-			has_country_flag = flag_ACMD_on
+			has_country_flag = flag_ACMD_on_1
 		}
 	}
 

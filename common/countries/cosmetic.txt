@@ -50,6 +50,10 @@ FNG_2 = {
 	color = rgb { 238 187 18 }
 	color_ui = rgb { 238 187 18 }
 }
+FNG_3 = {
+	color = rgb { 238 207 18 }
+	color_ui = rgb { 238 207 18 }
+}
 huimie = {
 	color = rgb { 88 67 10 }
 	color_ui = rgb { 88 67 10 }

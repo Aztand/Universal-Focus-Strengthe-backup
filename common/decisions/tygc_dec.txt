@@ -2031,6 +2031,46 @@ mcgjsd = {
 		}
 	}
 }
+fngqzxz = {
+	fxztqz = {
+		icon = generic_formable_nations
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_cosmetic_tag = FNG
+		}
+	}
+	xqtdztqz = {
+		icon = generic_formable_nations
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_cosmetic_tag = FNG_3
+		}
+	}
+	zhdgztqz = {
+		icon = generic_formable_nations
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			has_completed_focus = xzhdg
+		}
+		complete_effect = {
+			set_cosmetic_tag = FNG_2
+		}
+	}
+	bzxsztqz = {
+		complete_effect = {
+			set_country_flag = fngqzxz_off
+		}
+	}
+}
 dgys = {
 	mryh = {
 		cost = 999
