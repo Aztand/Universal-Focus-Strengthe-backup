@@ -230,12 +230,12 @@ spriteTypes = {
 		texturefile = "gfx/leaders/TYGC/bks1.png"
 	}
 	spriteType = {
-		name = "GFX_portrait_bks2"
-		texturefile = "gfx/leaders/TYGC/bks2.png"
+		name = "GFX_portrait_lfxn"
+		texturefile = "gfx/leaders/TYGC/lfxn.png"
 	}
 	spriteType = {
-		name = "GFX_portrait_bks0"
-		texturefile = "gfx/leaders/TYGC/bks0.png"
+		name = "GFX_portrait_abln"
+		texturefile = "gfx/leaders/TYGC/abln.png"
 	}
 
 

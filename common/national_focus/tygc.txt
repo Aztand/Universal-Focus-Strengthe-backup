@@ -508,7 +508,7 @@ focus_tree = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
-					instant_build = yes						
+					instant_build = yes
 				}
 			}
 		}
@@ -4109,7 +4109,7 @@ focus_tree = {
 		completion_reward = {
 			set_cosmetic_tag = hsgm
 			create_country_leader = {
-				name = "波尔布特"
+				name = " 波尔布特 "
 				desc = "porput_desc"
 				picture = GFX_portrait_brbt
 				expire = "1965.1.1"
@@ -11385,16 +11385,13 @@ focus_tree = {
 		icon = GFX_focus_SOV_the_supreme_soviet
 		x = 6
 		y = 9
-		cost = 25
+		cost = 15
 		allow_branch = {tag = IRE}
+		prerequisite = {
+			focus = jlketlm
+		}
 		available = {
-			has_government = communism
-			IRE = { controls_state = 119 }
-			IRE = { controls_state = 121 }
-			IRE = { controls_state = 122 }
-			SOV = {
-				has_government = communism
-			}
+			is_in_faction_with = SOV
 		}
 		ai_will_do = {
 			base = 50
@@ -11424,30 +11421,533 @@ focus_tree = {
 				target = SOV
 				transfer_troops = yes
 			}
+		}
+	}
+	focus = {
+		id = tlsqsdhl
+		icon = GFX_wh
+		x = 4
+		y = 12
+		cost = 5
+		allow_branch = {tag = IRE}
+		ai_will_do = {
+			base = 50
+			
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
 			create_country_leader = {
-				name = "Joseph Stalin"
-				desc = "POLITICS_Joseph_Stalin_DESC"
-				picture = GFX_portrait_SOV_iosif_stalin
+				name = "爱布拉娜·都柏林"
+				desc = "abln_desc"
+				picture = GFX_portrait_abln
 				expire = "1965.1.1"
-				ideology = stalinism
+				ideology = despotism
 				traits = {
-					stalin_father_of_nations
-					slgydzz
+					gsym
 				}
+			}
+			create_country_leader = {
+				name = "爱布拉娜·都柏林"
+				desc = "abln_desc"
+				picture = GFX_portrait_abln
+				expire = "1965.1.1"
+				ideology = 	nazism
+				traits = {
+					gsym
+				}
+			}
+			create_country_leader = {
+				name = "拉芙希妮·都柏林"
+				desc = "lfxn_desc"
+				picture = GFX_portrait_lfxn
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					smhz
+				}
+			}
+			create_country_leader = {
+				name = "拉芙希妮·都柏林"
+				desc = "lfxn_desc"
+				picture = GFX_portrait_lfxn
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					smhz
+				}
+			}
+		}
+	}
+	focus = {
+		id = tjketr
+		icon = GFX_goal_generic_national_unity
+		x = 8
+		y = 6
+		cost = 4
+		allow_branch = {tag = IRE}
+		ai_will_do = {
+			base = 20
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_war_support = 0.1
+			unlock_decision_category_tooltip = tjketr
+			custom_effect_tooltip = tjketr_tt
+		}
+	}
+	focus = {
+		id = wlbnydtd
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 8
+		y = 7
+		cost = 6
+		allow_branch = {tag = IRE}
+		prerequisite = {
+			focus = tjketr
+		}
+		ai_will_do = {
+			base = 20
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			create_faction = ketlm
+			add_ideas = wlbnydtd
+			create_wargoal = {
+				type = annex_everything
+				target = ENG
+				expire = 0
+			}
+			custom_effect_tooltip = wlbnydtd_tt
+			if = {
+				limit = { has_country_flag = zcsgldlyd }
+				SCO = {
+					every_core_state = {
+						transfer_state_to = PREV
+					}
+					hidden_effect = {
+						add_ideas = tjketr
+					}
+					IRE = {
+						add_to_faction = PREV
+					}
+					ENG = {
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+					division_template = {
+						name = "凯尔特步兵师"
+						priority = 8
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }			
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+						}
+					}
+					121 = {
+						create_unit = {
+							division = " division_template = \"凯尔特步兵师\" start_experience_factor = 0.25"
+							owner = PREV
+							count = 8
+						}
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = zcwesdlyd }
+				WLS = {
+					every_core_state = {
+						transfer_state_to = PREV
+					}
+					hidden_effect = {
+						add_ideas = tjketr
+					}
+					IRE = {
+						add_to_faction = PREV
+					}
+					ENG = {
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+					division_template = {
+						name = "凯尔特步兵师"
+						priority = 8
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }			
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+						}
+					}
+					122 = {
+						create_unit = {
+							division = " division_template = \"凯尔特步兵师\" start_experience_factor = 0.25"
+							owner = PREV
+							count = 6
+						}
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = zcbltndlyd }
+				BRI = {
+					every_core_state = {
+						transfer_state_to = PREV
+					}
+					hidden_effect = {
+						add_ideas = tjketr
+					}
+					IRE = {
+						add_to_faction = PREV
+					}
+					FRA = {
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+					division_template = {
+						name = "凯尔特步兵师"
+						priority = 8
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }			
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+						}
+					}
+					14 = {
+						create_unit = {
+							division = " division_template = \"凯尔特步兵师\" start_experience_factor = 0.25"
+							owner = PREV
+							count = 8
+						}
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = zcbaeldlyd }
+				NIR = {
+					every_core_state = {
+						transfer_state_to = PREV
+					}
+					hidden_effect = {
+						add_ideas = tjketr
+					}
+					IRE = {
+						add_to_faction = PREV
+					}
+					ENG = {
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+					division_template = {
+						name = "凯尔特步兵师"
+						priority = 8
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }			
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+						}
+					}
+					119 = {
+						create_unit = {
+							division = " division_template = \"凯尔特步兵师\" start_experience_factor = 0.25"
+							owner = PREV
+							count = 4
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = jlketlm
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = 8
+		y = 8
+		cost = 6
+		allow_branch = {tag = IRE}
+		prerequisite = {
+			focus = wlbnydtd
+		}
+		available = {
+			has_war = no
+			any_other_country = {
+				is_in_faction_with = ROOT
+				has_war = no
+			}
+			custom_trigger_tooltip = {
+				tooltip = jlketlm_tt
+				OR = {
+					ROOT = { controls_state = 119 }
+					any_other_country = {
+						is_in_faction_with = ROOT
+						controls_state = 119
+					}
+				}
+				OR = {
+					ROOT = { controls_state = 122 }
+					any_other_country = {
+						is_in_faction_with = ROOT
+						controls_state = 122
+					}
+				}
+				OR = {
+					ROOT = { controls_state = 121 }
+					any_other_country = {
+						is_in_faction_with = ROOT
+						controls_state = 121
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 20
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = ketwmfx
+			every_state = {
+				limit = {
+					or = {
+						is_core_of = SCO
+						state = 119
+						state = 122
+						state = 14
+					}
+				}
+				add_core_of = ROOT
+			}
+			if = {
+				limit = { SCO = { exists = yes } }
+				annex_country = {
+					target = SCO
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = { WLS = { exists = yes } }
+				annex_country = {
+					target = WLS
+					transfer_troops = yes
+				}
+			}
+
+			if = {
+				limit = { BRI = { exists = yes } }
+				annex_country = {
+					target = BRI
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = { NIR = { exists = yes } }
+				annex_country = {
+					target = NIR
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = sfqnqdld
+		icon = GFX_zds
+		x = 8
+		y = 10
+		cost = 15
+		allow_branch = {tag = IRE}
+		prerequisite = {
+			focus = jlketlm
+		}
+		ai_will_do = {
+			base = 20
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			set_cosmetic_tag = IRE_CELT_1
+			add_ideas = ketdsfsdyd
+			every_state = {
+				limit = {
+					or = {
+						#伊比利亚
+						state = 41
+						state = 165
+						state = 166
+						state = 167
+						state = 168
+						state = 169
+						state = 170
+						state = 171
+						state = 172
+						state = 173
+						state = 174
+						state = 175
+						state = 176
+						state = 788
+						state = 789
+						state = 790
+						state = 791
+						state = 792
+						state = 793
+						state = 794
+						state = 112
+						state = 179
+						state = 180
+						state = 181
+						state = 177
+						state = 795
+
+						is_core_of = FRA
+						is_core_of = BEL
+						is_core_of = BAY
+						is_core_of = WUR
+						is_core_of = RHI
+						is_core_of = AUS
+						is_core_of = SWI
+						is_core_of = CZE
+						is_core_of = HUN
+						is_core_of = ROM
+						is_core_of = YUG
+						is_core_of = BUL
+						is_core_of = GRE
+						is_core_of = TUR
+						is_core_of = LBV
+						is_core_of = HOL
+						is_core_of = ALB
+						state = 8
+						state = 55
+						state = 56
+						state = 57
+						state = 161
+						state = 158
+					}
+					not = {
+						is_core_of = KUR
+						is_core_of = SYR
+						state = 354
+						state = 344
+					}
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+	focus = {
+		id = lszdgxl
+		icon = GFX_focus_usa_voter_registration_act
+		x = 10
+		y = 9
+		cost = 15
+		allow_branch = {tag = IRE}
+		prerequisite = {
+			focus = jlketlm
+		}
+		available = {
+			is_in_faction_with = USA
+		}
+		ai_will_do = {
+			base = 20
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = USA
+					}
+				}
+				add_core_of = ROOT
+			}
+			USA = {
+				every_unit_leader = {
+					set_nationality = IRE
+				}
+			}
+			annex_country = {
+				target = USA
+				transfer_troops = yes
 			}
 		}
 	}
 	focus = {
 		id = aeljdbldlhwg
 		icon = GFX_focus_generic_monarchy_2
-		x = 8
+		x = 13
 		y = 7
-		cost = 8
+		cost = 6
 		allow_branch = {tag = IRE}
 		available = {
+			controls_state = 119
+			controls_state = 122
+			controls_state = 121
 			ENG = {
 				or = {
-					exists = no 
+					exists = no
+					is_subject_of = ROOT
 					has_capitulated = yes
 				}
 			}
@@ -11472,19 +11972,115 @@ focus_tree = {
 				}
 				add_core_of = ROOT
 			}
+			ENG = {
+				every_unit_leader = {
+					set_nationality = ROOT
+				}
+			}
+			annex_country = {
+				target = ENG
+				transfer_troops = yes
+			}
+		}
+	}
+	focus = {
+		id = cjzmtx
+		icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
+		x = 14
+		y = 8
+		cost = 6
+		allow_branch = {tag = IRE}
+		prerequisite = {
+			focus = aeljdbldlhwg
+		}
+		available = {
+			num_subjects > 0
+		}
+		ai_will_do = {
+			base = 20
+			
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = zmdg
+			hidden_effect = {
+				country_event = {
+					id = NSB_qita.20
+					days = 7
+				}
+			}
+			every_country = {
+				limit = {
+					not = { has_idea = zcdzmd }
+					is_subject_of = ROOT
+				}
+				add_ideas = zcdzmd
+			}
+			custom_effect_tooltip = zmdgyw_tt
+		}
+	}
+	focus = {
+		id = cjhsbq2
+		icon = GFX_focus_eng_global_defense
+		x = 12
+		y = 8
+		cost = 6
+		
+		allow_branch = {tag = IRE}
+		prerequisite = {
+			focus = aeljdbldlhwg
+		}
+		ai_will_do = {
+			base = 20
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = hyzz
+		}
+	}
+	focus = {
+		id = chbldzs2
+		icon = GFX_focus_eng_unite_the_anglosphere
+		x = 13
+		y = 9
+		cost = 6
+		
+		allow_branch = {tag = IRE}
+		prerequisite = {
+			focus = cjzmtx
+		}
+		prerequisite = {
+			focus = cjhsbq2
+		}
+		ai_will_do = {
+			base = 20
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = bldzs
 		}
 	}
 	focus = {
 		id = rbldgjcz
 		icon = GFX_focus_eng_the_sun_never_sets
-		x = 8
-		y = 8
-		cost = 20
+		x = 13
+		y = 10
+		cost = 15
 		allow_branch = {tag = IRE}
-		available = {
-		}
 		prerequisite = {
-			focus = aeljdbldlhwg
+			focus = chbldzs2
 		}
 		ai_will_do = {
 			base = 20
@@ -21131,19 +21727,21 @@ focus_tree = {
 				name = "East African Irregulars"
 				is_locked = yes
 				regiments = {
-					irregular_infantry = { x = 0 y = 0 }
-					irregular_infantry = { x = 0 y = 1 }
-					irregular_infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
 					irregular_infantry = { x = 1 y = 0 }
 					irregular_infantry = { x = 1 y = 1 }
-					irregular_infantry = { x = 1 y = 2 }	
+					irregular_infantry = { x = 1 y = 2 }
+					irregular_infantry = { x = 1 y = 3 }
 				}
 			}
 			capital_scope = {
 				create_unit = {
 					division = "name = \"Irregular Infantry\" division_template = \"East African Irregulars\" start_experience_factor = 0.05 start_equipment_factor = 1 start_manpower_factor = 1"
 					owner = ROOT
-					count = 3
+					count = 6
 				}
 			}
 			add_units_to_division_template = {
@@ -21165,11 +21763,8 @@ focus_tree = {
 	focus = {
 		id = aszrg
 		icon = GFX_focus_ETH_keep_the_chitet
-		#prerequisite = { focus = }
-
 		x = 6
 		y = 6
-		#relative_position_id = 
 		cost = 12
 		prerequisite = {
 			focus = afadkf
@@ -21210,7 +21805,7 @@ focus_tree = {
 		completion_reward = {
 			create_faction = dftm
 			AFA = { add_to_faction = "ETH" }
-			add_war_support = 0.15
+			add_war_support = 0.1
 			add_stability = 0.1
 		}
 	}
@@ -21222,17 +21817,14 @@ focus_tree = {
 		x = 6
 		y = 8
 		#relative_position_id = 
-		cost = 8
+		cost = 6
 		allow_branch = {tag = AFA}
 		available = {
 			is_subject = no
-			custom_trigger_tooltip = {
-				tooltip = HOA_ita_tt
-				NOT = {
-					any_state = {
-						is_core_of = ITA
-						NOT = { is_controlled_by = ROOT }
-					}
+			ITA = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
 				}
 			}
 		}
@@ -21258,30 +21850,80 @@ focus_tree = {
 		x = 8
 		y = 8
 		#relative_position_id = 
-		cost = 8
+		cost = 6
 		allow_branch = {tag = AFA}
 		available = {
-			ETH = { is_in_faction_with = AFA }
 		}
 
-		
 		search_filters = { FOCUS_FILTER_CAIDAN }
 		text_icon = tygc_biaotilan
 		completion_reward = {
 			every_state = {
 				limit = {
-					is_core_of = ETH
+					or = {
+						is_core_of = ETH
+						state = 268
+						state = 269
+						state = 550
+						state = 559
+						state = 844
+					}
 				}
 				add_core_of = ROOT
-			}
-			annex_country = {
-				target = ETH
-				transfer_troops = yes
 			}
 			ETH = {
 				every_unit_leader = {
 					set_nationality = ROOT
 				}
+			}
+			annex_country = {
+				target = ETH
+				transfer_troops = yes
+			}
+		}
+	}
+	focus = {
+		id = kffzzj
+		icon = GFX_focus_generic_land_reclamation
+		prerequisite = { focus = fytm }
+		x = 8
+		y = 9
+		cost = 6
+		allow_branch = {tag = AFA}
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			every_state = {
+				limit = {
+					or = {
+						is_core_of = ETH
+						state = 268
+						state = 269
+						state = 550
+						state = 559
+						state = 844
+					}
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				custom_effect_tooltip = HOA_state_owned_industry_tt
+				add_to_variable = { ETH_state_development_production_speed = 0.15 }
+				add_to_variable = { ETH_state_development_local_building_slots_factor = 0.15 }		
 			}
 		}
 	}

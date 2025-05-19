@@ -7230,6 +7230,68 @@ slzs = {
 		}
 	}
 }
+tjketr = {
+	zcsgldlyd = {
+		cost = 50
+		days_remove = 35
+		fire_only_once = yes
+		available = {
+			has_manpower > 2500
+		}
+		complete_effect = {
+			add_manpower = -2500
+		}
+		remove_effect = {
+			set_country_flag = zcsgldlyd
+			custom_effect_tooltip = tjketr_tt2
+		}
+	}
+	zcwesdlyd = {
+		cost = 40
+		days_remove = 28
+		fire_only_once = yes
+		available = {
+			has_manpower > 2000
+		}
+		complete_effect = {
+			add_manpower = -2000
+		}
+		remove_effect = {
+			set_country_flag = zcwesdlyd
+			custom_effect_tooltip = tjketr_tt2
+		}
+	}
+	zcbltndlyd = {
+		cost = 40
+		days_remove = 28
+		fire_only_once = yes
+		available = {
+			has_manpower > 2000
+		}
+		complete_effect = {
+			add_manpower = -2000
+		}
+		remove_effect = {
+			set_country_flag = zcbltndlyd
+			custom_effect_tooltip = tjketr_tt2
+		}
+	}
+	zcbaeldlyd = {
+		cost = 20
+		days_remove = 14
+		fire_only_once = yes
+		available = {
+			has_manpower > 1000
+		}
+		complete_effect = {
+			add_manpower = -1000
+		}
+		remove_effect = {
+			set_country_flag = zcbaeldlyd
+			custom_effect_tooltip = tjketr_tt2
+		}
+	}
+}
 hbsbtm = {
 	polfzhbsbjz = {
 		cost = 50

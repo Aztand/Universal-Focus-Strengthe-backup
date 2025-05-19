@@ -88,6 +88,20 @@ ideas = {
 				neutrality_acceptance = 200
 			}
 		}
+		tjketr = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.25
+				conscription_factor = 0.15
+				ai_call_ally_desire_factor = 5
+				ai_join_ally_desire_factor = 5
+				ai_get_ally_desire_factor = 5
+				ai_focus_defense_factor = 0.4
+			}
+		}
 		bjzy = {
 			allowed = {
 				always = no
@@ -3807,7 +3821,29 @@ ideas = {
 			
 		}
 		czdyrg = {
-			
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+				industrial_capacity_factory = 0.2
+				production_speed_buildings_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				consumer_goods_factor = -0.2
+				research_speed_factor = 0.15
+				political_power_cost = -0.15
+				generate_wargoal_tension = -0.75
+				subversive_activites_upkeep = -0.25
+				war_support_factor = 0.1
+			}
+		}
+		wlbnydtd = {
 			
 			allowed = {
 				always = no
@@ -3818,31 +3854,33 @@ ideas = {
 			picture = generic_pp_unity_bonus
 	
 			modifier = {
-				industrial_capacity_factory = 0.2
-				industrial_capacity_dockyard = 0.25
-				production_speed_buildings_factor = 0.2
-		        consumer_goods_factor = -0.2
-				army_attack_factor = 0.15
-				army_defence_factor = 0.15
+				war_support_factor = 0.1
+				conscription = 0.02
+				weekly_manpower = 1000
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
 				army_speed_factor = 0.1
-				navy_max_range_factor = 0.2
-				naval_has_potf_in_combat_attack = 0.1
-				naval_has_potf_in_combat_defense = 0.1
-				critical_receive_chance = -0.1
-				naval_accidents_chance = -0.1
-				naval_speed_factor = 0.1
-				navy_visibility = -0.1
-				naval_hit_chance = 0.1
-				naval_coordination = 0.1
-				fighter_sortie_efficiency = 0.1
-				sortie_efficiency = 0.1
-				naval_torpedo_hit_chance_factor = 0.1
-				naval_torpedo_cooldown_factor = -0.1
-				naval_detection = 0.1
-				navy_screen_defence_factor = 0.1
-				navy_screen_attack_factor = 0.1
-				navy_capital_ship_attack_factor = 0.1
-				navy_capital_ship_defence_factor = 0.1
+				supply_consumption_factor = -0.2
+			}
+			
+		}
+		ketdsfsdyd = {
+			
+			allowed = {
+				always = no
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_pp_unity_bonus
+	
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				justify_war_goal_time = -0.75
+				war_support_factor = 0.15
+				mobilization_speed = 0.15
+				training_time_army_factor = -0.25
 			}
 			
 		}
@@ -3868,6 +3906,27 @@ ideas = {
 				industrial_capacity_factory = 0.3
 				production_speed_buildings_factor = 0.3
 				research_speed_factor = 0.3
+			}
+			
+		}
+		ketwmfx = {
+			
+			allowed = {
+				always = no
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_pp_unity_bonus
+	
+			modifier = {
+				consumer_goods_factor = -0.2
+				stability_factor = 0.2
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.15
+				political_power_gain = 0.25
 			}
 			
 		}
@@ -8762,11 +8821,10 @@ ideas = {
 			picture = generic_intel_bonus
 			
 			modifier = {
-				communism_drift = 0.15
 				stability_weekly = 0.005
-				surrender_limit = 0.2
+				surrender_limit = 0.15
 				war_support_factor = 0.15
-				army_defence_factor = 0.1
+				army_defence_factor = 0.15
 			}
 		}
 		jbht1 = {

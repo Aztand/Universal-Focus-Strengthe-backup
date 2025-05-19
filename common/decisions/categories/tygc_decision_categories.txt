@@ -467,6 +467,13 @@ doudizhu = {
        not = { has_idea = zzdduguai }
     }
 }
+tjketr = {
+    priority = 80
+    visible = {
+        has_completed_focus = tjketr
+        not = { has_completed_focus = wlbnydtd }
+    }
+}
 hbsbtm = {
     priority = 72
     visible = {
