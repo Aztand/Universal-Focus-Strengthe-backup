@@ -9241,6 +9241,45 @@ qiandu = {
 		}
 	}
 }
+duiitahejie = {
+	hj_wstt = {
+		available = {
+			ITA = {
+				not = {
+					controls_state = 844
+					controls_state = 550
+					controls_state = 559
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = duiitahejie
+			white_peace = ITA
+			add_stability = 0.1
+			transfer_state = 844
+			transfer_state = 550
+			transfer_state = 559
+		}
+	}
+	hj_zbh = {
+		available = {
+			ITA = {
+				not = {
+					controls_state = 844
+					controls_state = 550
+					controls_state = 559
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = duiitahejie
+			add_war_support = 0.1
+			transfer_state = 844
+			transfer_state = 550
+			transfer_state = 559
+		}
+	}
+}
 qiandu_1 = {
 	qiandu_11 = {
 		visible = {

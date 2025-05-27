@@ -3,5 +3,5 @@ tags={
 	"National Focuses"
 }
 name="通用国策强化v1.11"
-supported_version="1.16.6"
+supported_version="1.16.8"
 remote_file_id="3261530766"

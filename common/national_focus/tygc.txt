@@ -5847,10 +5847,152 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = fzwmdcc
+		icon = GFX_goal_support_democracy
+		x = 6
+		y = 6
+		cost = 5
+		allow_branch = {tag = LIB}
+		ai_will_do = {
+			base = 20
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = fxfzwm
+		}
+	}
+	focus = {
+		id = gjwhrt
+		icon = GFX_goal_support_democracy
+		x = 5
+		y = 7
+		cost = 5
+		allow_branch = {tag = LIB}
+		prerequisite = {
+			focus = fzwmdcc
+		}
+		ai_will_do = {
+			base = 20
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = btctwhrt
+		}
+	}
+	focus = {
+		id = hzfzrm
+		icon = GFX_goal_support_democracy
+		x = 7
+		y = 7
+		cost = 5
+		allow_branch = {tag = LIB}
+		prerequisite = {
+			focus = fzwmdcc
+		}
+		ai_will_do = {
+			base = 20
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = ffzy
+		}
+	}
+	focus = {
+		id = dhjy
+		icon = GFX_goal_support_democracy
+		x = 6
+		y = 8
+		cost = 5
+		allow_branch = {tag = LIB}
+		prerequisite = {
+			focus = gjwhrt
+		}
+		prerequisite = {
+			focus = hzfzrm
+		}
+		ai_will_do = {
+			base = 20
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			every_state = {
+				limit = {
+					or = {
+						state = 779
+						state = 274
+						state = 777
+						state = 776
+						state = 781
+						state = 77
+						state = 898
+						state = 5566
+						state = 780
+						state = 700
+						state = 296
+						state = 899
+						state = 272
+						state = 701
+						state = 557
+						state = 699
+						state = 782
+						state = 786
+					}
+				}
+				add_core_of = ROOT
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						not = { is_controlled_by = ROOT }
+						or = {
+							state = 779
+							state = 274
+							state = 777
+							state = 776
+							state = 781
+							state = 77
+							state = 898
+							state = 556
+							state = 780
+							state = 700
+							state = 296
+							state = 899
+							state = 272
+							state = 701
+							state = 557
+							state = 699
+							state = 782
+							state = 786
+						}
+					}
+					transfer_state_to = MLI
+					add_core_of = MLI
+				}
+			}
+			
+		}
+	}
+	focus = {
 		id = hgmlj
 		icon = GFX_goal_support_democracy
-		x = 8
-		y = 6
+		x = 12
+		y = 12
 		cost = 30
 		available = {
 			has_government = democratic
@@ -21564,8 +21706,8 @@ focus_tree = {
 		}
 		allow_branch = {
 			or = {
-			tag = LIB
-			tag = AFA
+				tag = AFA
+				tag = LIB
 			}
 		}
 		ai_will_do = {
@@ -27842,6 +27984,10 @@ focus_tree = {
 						state = 783
 						state = 699
 						state = 413
+						state = 1010
+						state = 1011
+						state = 1015
+						state = 1016
 						is_core_of = SUD
 						is_core_of = SOM
 						is_core_of = MRT
@@ -28016,6 +28162,10 @@ focus_tree = {
 						state = 115
 						state = 114
 						state = 1
+						state = 118
+						state = 987
+						state = 988
+						state = 1012
 					}
 				}
 				add_core_of = ROOT

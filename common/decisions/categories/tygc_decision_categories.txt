@@ -467,6 +467,20 @@ doudizhu = {
        not = { has_idea = zzdduguai }
     }
 }
+duiitahejie = {
+    priority = 80
+    available = {
+        is_ai = no
+    }
+    visible = {
+        or = {
+            original_tag = AFA
+            original_tag = ETH
+        }
+        not = { has_country_flag = duiitahejie }
+        has_country_flag = qytygcqh
+    }
+}
 tjketr = {
     priority = 80
     visible = {

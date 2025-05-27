@@ -6632,12 +6632,13 @@ ideas = {
 			picture = generic_pp_unity_bonus
 
 			modifier = {
-				compliance_gain = 0.15
-				compliance_growth = 0.15
+				compliance_growth = 0.25
 				local_non_core_manpower = 0.25
 				conscription = 0.05
-				political_power_gain = 0.2
+				political_power_gain = 0.25
 				weekly_manpower = 2000
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
 			}
 			
 		}
@@ -6732,6 +6733,25 @@ ideas = {
 				consumer_goods_factor = -0.1
 				political_power_factor = 0.15
 				conscription = 0.015
+			}
+			
+		}
+		btctwhrt2 = {
+			name = btctwhrt
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				stability_factor = 0.15
+				consumer_goods_factor = -0.2
+				weekly_manpower = 2000
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
 			}
 			
 		}
@@ -11831,6 +11851,23 @@ ideas = {
 				local_resources_factor = 0.2
 				ai_join_ally_desire_factor = 150
 				ai_get_ally_desire_factor = 150
+			}
+			
+		}
+		fxfzwm = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_power_factor = 0.15
+				consumer_goods_factor  = -0.15
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
 			}
 			
 		}
