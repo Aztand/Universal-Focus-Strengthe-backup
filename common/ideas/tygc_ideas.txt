@@ -2969,6 +2969,7 @@ ideas = {
 				research_speed_factor = 9.99
 				army_strength_factor = 9.99
 				army_defence_factor = 9.99
+				army_attack_factor = 9.99
 			}
 		}
 		jiasu1 = {
@@ -11852,7 +11853,6 @@ ideas = {
 				ai_join_ally_desire_factor = 150
 				ai_get_ally_desire_factor = 150
 			}
-			
 		}
 		fxfzwm = {
 			allowed = {
@@ -11870,6 +11870,45 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 			}
 			
+		}
+		mxfzty= {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				consumer_goods_factor  = -0.15
+				research_speed_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				justify_war_goal_time = -0.25
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				annex_cost_factor = -0.25
+			}
+		}
+		zztm = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.15
+				war_support_factor = 0.15
+				training_time_army_factor = -0.25
+				army_speed_factor = 0.15
+				land_reinforce_rate = 0.15
+				army_strength_factor = 0.15
+				supply_consumption_factor = -0.25
+				combat_width_factor = -0.2
+				justify_war_goal_time = -0.5
+			}
 		}
 
 

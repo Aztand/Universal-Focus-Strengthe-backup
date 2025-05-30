@@ -1733,6 +1733,9 @@ focus_tree = {
 		}
 		completion_reward = {              			         
 			add_ideas = tzxl
+			set_technology = { special_forces_mountaineers = 1 }
+			set_technology = { special_forces_marines = 1 }
+			set_technology = { special_forces_paratroopers = 1 }
 		}	
 	}
 	focus = {
@@ -5848,7 +5851,7 @@ focus_tree = {
 	}
 	focus = {
 		id = fzwmdcc
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_generic_national_unity
 		x = 6
 		y = 6
 		cost = 5
@@ -5867,7 +5870,7 @@ focus_tree = {
 	}
 	focus = {
 		id = gjwhrt
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_SWI_establish_pro_helvetia
 		x = 5
 		y = 7
 		cost = 5
@@ -5884,12 +5887,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_CAIDAN }
 		text_icon = tygc_biaotilan
 		completion_reward = {
-			add_ideas = btctwhrt
+			add_ideas = btctwhrt2
 		}
 	}
 	focus = {
 		id = hzfzrm
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_BRA_defense_of_the_fatherland
 		x = 7
 		y = 7
 		cost = 5
@@ -5911,7 +5914,7 @@ focus_tree = {
 	}
 	focus = {
 		id = dhjy
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_POL_riot_of_37
 		x = 6
 		y = 8
 		cost = 5
@@ -5931,6 +5934,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_CAIDAN }
 		text_icon = tygc_biaotilan
 		completion_reward = {
+			add_war_support = 0.1
 			every_state = {
 				limit = {
 					or = {
@@ -5939,7 +5943,7 @@ focus_tree = {
 						state = 777
 						state = 776
 						state = 781
-						state = 77
+						state = 778
 						state = 898
 						state = 5566
 						state = 780
@@ -5966,7 +5970,7 @@ focus_tree = {
 							state = 777
 							state = 776
 							state = 781
-							state = 77
+							state = 778
 							state = 898
 							state = 556
 							state = 780
@@ -5981,21 +5985,92 @@ focus_tree = {
 							state = 786
 						}
 					}
-					transfer_state_to = MLI
 					add_core_of = MLI
+					transfer_state_to = MLI
+				}
+				MLI = {
+					set_cosmetic_tag = MLI_zmd
+					division_template = {
+						name = "西非驻军"
+						priority = 1
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }		
+						}
+					}
+					every_controlled_state = {
+						create_unit = {
+							division = " division_template = \"西非驻军\" start_experience_factor = 0.25"
+							owner = MLI
+							count = 2
+						}
+					}
+				}
+				declare_war_on = {
+					target = MLI
+					type = annex_everything
 				}
 			}
+			custom_effect_tooltip = dhjy_tt
+		}
+	}
+	focus = {
+		id = mxfzty
+		icon = GFX_focus_ETH_african_union
+		x = 6
+		y = 9
+		cost = 15
+		prerequisite = {
+			focus = dhjy
+		}
+		allow_branch = {
+			tag = LIB
+		}
+		ai_will_do = {
+			base = -1000
 			
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = mxfzty
+			every_state = {
+				limit = {
+					is_on_continent = africa
+					NOT = {is_core_of = ROOT}
+				}
+				add_core_of = ROOT
+			}
 		}
 	}
 	focus = {
 		id = hgmlj
 		icon = GFX_goal_support_democracy
-		x = 12
-		y = 12
-		cost = 30
+		x = 10
+		y = 7
+		cost = 15
 		available = {
-			has_government = democratic
+			USA = {
+				exists = yes
+				has_war = no
+			}
+			custom_trigger_tooltip = {
+				tooltip = hgmlj_tt
+				or = {
+					num_of_factories > USA.num_of_factories
+					strength_ratio = {
+						tag = USA
+						ratio > 0.95
+					}
+				}
+			}
 		}
 		allow_branch = {tag = LIB}
 		ai_will_do = {
@@ -6011,30 +6086,63 @@ focus_tree = {
 			custom_effect_tooltip = lblytt
 			hidden_effect = {
 				set_cosmetic_tag = lblyhzg
-			USA = {
-				every_unit_leader = {
-					set_nationality = LIB
+				USA = {
+					every_unit_leader = {
+						set_nationality = LIB
+					}
 				}
-			}
-			annex_country = {
-				target = USA
-				transfer_troops = yes
-			}
-			every_state = {
-				limit = {
-					is_core_of = USA
+				annex_country = {
+					target = USA
+					transfer_troops = yes
 				}
-				add_core_of = LIB
-			}
-			every_state = {
-				limit = {
-					is_core_of = HAW
+				every_state = {
+					limit = {
+						is_core_of = USA
+					}
+					add_core_of = LIB
 				}
-				add_core_of = LIB
+				every_state = {
+					limit = {
+						is_core_of = HAW
+					}
+					add_core_of = LIB
+				}
+				add_state_core = 463
 			}
-			add_state_core = 463
-			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	focus = {
+		id = zztm0
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 10
+		y = 8
+		cost = 10
+		allow_branch = {
+			tag = LIB
+			has_completed_focus = hgmlj
+		}
+		prerequisite = {
+			focus = hgmlj
+		}
+		ai_will_do = {
+			base = -1000
 			
+		}
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_CAIDAN }
+		text_icon = tygc_biaotilan
+		completion_reward = {
+			add_ideas = zztm
+			every_state = {
+				limit = {
+					is_on_continent = north_america
+					NOT = {is_core_of = ROOT}
+				}
+				add_core_of = ROOT
+			}
 		}
 	}
 	focus = {
@@ -12607,7 +12715,7 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = dgys_tt
 				has_completed_focus = ribuluo
-				num_of_factories > 1500
+				num_of_factories > 1999
 			}
 		}
 
@@ -13605,7 +13713,7 @@ focus_tree = {
 			add_ideas = hpfz1
 			set_cosmetic_tag = PRC_proclaimed
 			add_country_leader_trait = wdlx
-			add_research_slot = 1
+			add_research_slot = 2
 			hidden_effect = {
 				news_event = { id = wtt_news.37 days = 3 random_days = 3 }
 			}
@@ -21705,10 +21813,7 @@ focus_tree = {
 		available = {
 		}
 		allow_branch = {
-			or = {
-				tag = AFA
-				tag = LIB
-			}
+			tag = AFA
 		}
 		ai_will_do = {
 			base = -1000
