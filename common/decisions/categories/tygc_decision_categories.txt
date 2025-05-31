@@ -247,7 +247,7 @@ yuanzidang111 = {
         tag = RAJ
     }
 }
-sxjfsj = {
+sxjfsj1 = {
 	priority = 14
     picture = GFX_decision_fdg
     visible ={    

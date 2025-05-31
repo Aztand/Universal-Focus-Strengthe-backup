@@ -2503,14 +2503,14 @@ zccg = {
 				limit = {
 					not = { is_core_of = PRC }
 					or = {
-						is_core_of = RAJ
 						is_in_array = {
 							array = RAJ.owned_states_at_game_start
 							value = THIS
 						}
 					}
 				}
-				transfer_state_to = RAJ
+				transfer_state_to = RHD
+				add_core_of = RHD
 			}
 			every_state = {
 				limit = {
@@ -4356,7 +4356,7 @@ geminzz = {
         }
     }
 }
-sxjfsj = {
+sxjfsj1 = {
     sxjf = {
         icon = generic_formable_nations
 		priority =15
@@ -4370,7 +4370,7 @@ sxjfsj = {
 		}
         target_trigger = {
             FROM = {
-			compliance > 25
+			compliance > 50
                 is_fully_controlled_by = ROOT
 				NOT = { 
                     is_core_of = ROOT

@@ -1,0 +1,7 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_latelan_equipment_medium"
+		texturefile = "gfx/interface/technologies/latelan_equipment.png"
+	}
+
+}

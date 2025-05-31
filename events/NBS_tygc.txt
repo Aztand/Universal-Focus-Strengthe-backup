@@ -640,6 +640,32 @@ country_event = {
 	}
 }
 country_event = {
+	id = NSB_qita.21
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		every_controlled_state = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = jinghua_dynamic_modifier
+						scope = PAP
+					}
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = jinghua_dynamic_modifier
+				scope = PAP
+			}
+		}
+		country_event = {
+			id = NSB_qita.21
+			days = 7
+		}
+	}
+}
+country_event = {
 	id = NSB_sfgj.1
 	title = NSB_sfgj.1.t
 	desc = NSB_sfgj.1.desc

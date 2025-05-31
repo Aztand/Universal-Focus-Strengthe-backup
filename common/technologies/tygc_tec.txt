@@ -115,4 +115,13 @@ technologies = {
 			xilahuo
 		}
 	}
+	latelan_equipment = {
+
+		enable_equipments = {
+			latelan_equipment
+		}
+
+		research_cost = 2
+		
+	}
 }
