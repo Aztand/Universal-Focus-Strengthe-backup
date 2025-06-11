@@ -1,0 +1,144 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_ACMD_battle_hardened_land"
+		texturefile = "gfx/interface/traits/trait_ACMD_battle_hardened.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_ACMD_battle_hardened_navy"
+		texturefile = "gfx/interface/traits/trait_ACMD_battle_hardened.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_trait_ACMD_naturally_stunning_land"
+		texturefile = "gfx/interface/traits/trait_ACMD_naturally_stunning.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_ACMD_naturally_stunning_navy"
+		texturefile = "gfx/interface/traits/trait_ACMD_naturally_stunning.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_ACMD_tethered_to_the_divine_land"
+		texturefile = "gfx/interface/traits/trait_ACMD_tethered_to_the_divine.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_ACMD_tethered_to_the_divine_navy"
+		texturefile = "gfx/interface/traits/trait_ACMD_tethered_to_the_divine.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_ACMD_cold_blooded_and_merciless_land"
+		texturefile = "gfx/interface/traits/trait_ACMD_cold_blooded_and_merciless.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_ACMD_cold_blooded_and_merciless_navy"
+		texturefile = "gfx/interface/traits/trait_ACMD_cold_blooded_and_merciless.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_ACMD_impregnable_fortress_land"
+		texturefile = "gfx/interface/traits/trait_ACMD_impregnable_fortress.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_ACMD_impregnable_fortress_navy"
+		texturefile = "gfx/interface/traits/trait_ACMD_impregnable_fortress.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_ACMD_beauty_of_violence_land"
+		texturefile = "gfx/interface/traits/trait_ACMD_beauty_of_violence.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_ACMD_beauty_of_violence_navy"
+		texturefile = "gfx/interface/traits/trait_ACMD_beauty_of_violence.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_ACMD_lead_from_the_front_land"
+		texturefile = "gfx/interface/traits/trait_ACMD_lead_from_the_front.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_ACMD_lead_from_the_front_navy"
+		texturefile = "gfx/interface/traits/trait_ACMD_lead_from_the_front.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_ACMD_courageous_defiance_land"
+		texturefile = "gfx/interface/traits/trait_ACMD_courageous_defiance.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_ACMD_courageous_defiance_navy"
+		texturefile = "gfx/interface/traits/trait_ACMD_courageous_defiance.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_ACMD_fear_no_sacrifice_land"
+		texturefile = "gfx/interface/traits/trait_ACMD_fear_no_sacrifice.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_ACMD_fear_no_sacrifice_navy"
+		texturefile = "gfx/interface/traits/trait_ACMD_fear_no_sacrifice.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_ACMD_eliminate_the_source_land"
+		texturefile = "gfx/interface/traits/trait_ACMD_eliminate_the_source.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_ACMD_eliminate_the_source_navy"
+		texturefile = "gfx/interface/traits/trait_ACMD_eliminate_the_source.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_ACMD_heavy_machinery_enthusiast_land"
+		texturefile = "gfx/interface/traits/trait_ACMD_heavy_machinery_enthusiast.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_ACMD_heavy_machinery_enthusiast_navy"
+		texturefile = "gfx/interface/traits/trait_ACMD_heavy_machinery_enthusiast.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_ACMD_war_enthusiast_land"
+		texturefile = "gfx/interface/traits/trait_ACMD_war_enthusiast.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_ACMD_war_enthusiast_navy"
+		texturefile = "gfx/interface/traits/trait_ACMD_war_enthusiast.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_ACMD_reliable_land"
+		texturefile = "gfx/interface/traits/trait_ACMD_reliable.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_ACMD_reliable_navy"
+		texturefile = "gfx/interface/traits/trait_ACMD_reliable.png"
+		legacy_lazy_load = no
+	}
+}

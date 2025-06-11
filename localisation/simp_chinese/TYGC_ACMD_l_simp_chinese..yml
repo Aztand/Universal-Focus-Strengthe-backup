@@ -172,7 +172,7 @@
  ACMD_mio_cat_eq_all_armor_car:0 "所有装甲车"
 
  ACMD_tank_organization_1:0 "§R铁血工造§!"
- ACMD_tank_organization_1_mio:0 "§t追求陆战巅峰§!"
+ ACMD_tank_organization_mio:0 "§t追求陆战巅峰§!"
  ACMD_light_tank:0 "轻型-两栖装甲"
  ACMD_medium_tank:0 "中型-现代装甲"
  ACMD_heavy_tank:0 "重型-超重型装甲"
@@ -196,7 +196,7 @@
  ACMD_tank_organization_mio_3:0 "§1工艺标准化§!"
 
  ACMD_motorized_mechanized_organization_1:0 "§1雷神工业§!"
- ACMD_motorized_mechanized_organization_1_mio:0 "§0机动与速度至上§!"
+ ACMD_motorized_mechanized_organization_mio:0 "§0机动与速度至上§!"
  ACMD_motorized:0 "摩托化装备"
  ACMD_armored_car:0 "装甲车"
  ACMD_mechanized:0 "机械化装备"
@@ -219,7 +219,7 @@
  ACMD_motorized_mechanized_organization_mio_motorized_mechanized_1:0 "§1工艺之巅§!"
 
  ACMD_infantry_support_organization_1:0 "§1格里芬与克鲁格§!"
- ACMD_infantry_support_organization_1_mio:0 "§0战场上的皇后§!"
+ ACMD_infantry_support_organization_mio:0 "§0战场上的皇后§!"
  ACMD_infantry_equipment:0 "步兵装备研究"
  ACMD_support_equipment:0 "支援装备研究"
  ACMD_infantry_support_organization_mio_infantry_1:0 "枪身材料更替"
@@ -241,7 +241,7 @@
  ACMD_infantry_support_organization_mio_infantry_support_3:0 "§1先进步枪设计§!"
 
  ACMD_artillery_organization_1:0 "§1黑钢国际§!"
- ACMD_artillery_organization_1_mio:0 "§0火力投射爱好者§!"
+ ACMD_artillery_organization_mio:0 "§0火力投射爱好者§!"
  ACMD_artillery_equipment:0 "火炮研究"
  ACMD_anti_air_equipment:0 "高射炮研究"
  ACMD_anti_tank_equipment:0 "反坦克炮研究"
@@ -264,7 +264,7 @@
  ACMD_artillery_organization_mio_all_4:0 "§1双手一合，顺过气来§!"
 
  ACMD_assault_guns_organization_1:0 "§R菲尔斯因捷尔§!"
- ACMD_assault_guns_organization_1_mio:0 "§t全机动化火力投射§!"
+ ACMD_assault_guns_organization_mio:0 "§t全机动化火力投射§!"
  ACMD_light_tank_artillery:0 "轻型坦克模板"
  ACMD_medium_tank_artillery:0 "中型坦克模板"
  ACMD_heavy_tank_artillery:0 "重型坦克模板"
@@ -287,7 +287,7 @@
  ACMD_assault_guns_organization_mio_heavy_tank_artillery_5:0 "采用先进引擎"
 
  ACMD_mini_plane_organization_1:0 "§7米西利斯§!"
- ACMD_mini_plane_organization_1_mio:0 "§G唯制空权论§!"
+ ACMD_mini_plane_organization_mio:0 "§G唯制空权论§!"
  ACMD_high_performance_small_aircraft:0 "高性能小型机体"
  ACMD_cas_airframe:0 "支援机部门"
  ACMD_naval_airframe:0 "海军航空分支"
@@ -313,7 +313,7 @@
  ACMD_mini_plane_organization_mio_mini_plane_2:0 "§1技术优越性§!"
 
  ACMD_huge_plane_organization_1:0 "§7维多利亚决战兵器§!"
- ACMD_huge_plane_organization_1_mio:0 "§G空中要塞设计师§!"
+ ACMD_huge_plane_organization_mio:0 "§G空中要塞设计师§!"
  ACMD_medium_plane:0 "中型飞机开发"
  ACMD_large_plane:0 "重型飞机开发"
  ACMD_missile_equipment:0 "导弹开发"
@@ -343,7 +343,7 @@
  ACMD_huge_plane_organization_mio_huge_plane_2:0 "§1超前设计理念§!"
 
  ACMD_capital_ship_organization_1:0 "§4玛多纳§!"
- ACMD_capital_ship_organization_1_mio:0 "§2专注大型舰体§!"
+ ACMD_capital_ship_organization_mio:0 "§2专注大型舰体§!"
  ACMD_battleship:0 "大舰巨炮"
  ACMD_carrier:0 "海空联动"
  ACMD_capital_ship_organization_mio_battleship_1:0 "海上迷彩"
@@ -365,7 +365,7 @@
  ACMD_capital_ship_organization_mio_carrier_8:0 "§1大海军之梦§!"
 
  ACMD_screen_ship_organization_1:0 "§4伊比利亚航海§!"
- ACMD_screen_ship_organization_1_mio:0 "§2大规模舰群建造方§!"
+ ACMD_screen_ship_organization_mio:0 "§2大规模舰群建造方§!"
  ACMD_cruiser:0 "巡洋舰设计"
  ACMD_destroyer:0 "驱逐舰设计"
  ACMD_screen_ship_organization_mio_cruiser_1:0 "造舰集团"
@@ -392,7 +392,7 @@
 
 
  ACMD_submarine_organization_1:0 "§4阿戈尔深潜局§!"
- ACMD_submarine_organization_1_mio:0 "§2深海中的理想城§!"
+ ACMD_submarine_organization_mio:0 "§2深海中的理想城§!"
  ACMD_submarine_save:0 "生存设计"
  ACMD_submarine_attack:0 "袭击设计"
  ACMD_submarine_organization_mio_submarine_1:0 "§1海底城市§!"

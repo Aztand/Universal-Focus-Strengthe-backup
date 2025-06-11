@@ -3699,23 +3699,23 @@ country_event = {
 		
 		add_tech_bonus = {
 			name = infantry_artillery_bonus
-			ahead_reduction = 5
-			bonus = 5
-			uses = 8
+			ahead_reduction = 4
+			bonus = 4
+			uses = 6
 			category = artillery
 		}
 		add_tech_bonus = {
 			name = infantry_artillery_bonus
-			ahead_reduction = 5
-			bonus = 5
-			uses = 8
+			ahead_reduction = 4
+			bonus = 4
+			uses = 6
 			category = infantry_weapons
 		}
 		add_tech_bonus = {
 			name = armor_bonus
-			ahead_reduction = 5
-			bonus = 5
-			uses = 8
+			ahead_reduction = 4
+			bonus = 4
+			uses = 6
 			category = armor
 		}
 	}

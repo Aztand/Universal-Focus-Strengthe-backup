@@ -1,0 +1,673 @@
+spriteTypes = {
+
+#盟军（现代自行）
+	spriteType = { 
+		name = "GFX_unit_ACMD_Mengjun_ar_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_AAR_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Mengjun_ar_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_AAR_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Mengjun_ar_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_AAR_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = { 
+		name = "GFX_unit_ACMD_Mengjun_at_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_AAT_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Mengjun_at_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_AAT_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Mengjun_at_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_AAT_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = { 
+		name = "GFX_unit_ACMD_Mengjun_aa_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_AAA_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Mengjun_aa_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_AAA_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Mengjun_aa_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_AAA_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+#BSAA（中自行）
+	spriteType = { 
+		name = "GFX_unit_ACMD_BSAA_ar_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_BAR_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_BSAA_ar_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BAR_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_BSAA_ar_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BAR_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = { 
+		name = "GFX_unit_ACMD_BSAA_at_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_BAT_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_BSAA_at_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BAT_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_BSAA_at_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BAT_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = { 
+		name = "GFX_unit_ACMD_BSAA_aa_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_BAA_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_BSAA_aa_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BAA_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_BSAA_aa_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BAA_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+#黑色守望（重自行）
+	spriteType = { 
+		name = "GFX_unit_ACMD_Heiseshouwang_ar_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_WAR_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Heiseshouwang_ar_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_WAR_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Heiseshouwang_ar_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_WAR_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = { 
+		name = "GFX_unit_ACMD_Heiseshouwang_at_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_WAT_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Heiseshouwang_at_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_WAT_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Heiseshouwang_at_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_WAT_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = { 
+		name = "GFX_unit_ACMD_Heiseshouwang_aa_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_WAA_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Heiseshouwang_aa_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_WAA_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Heiseshouwang_aa_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_WAA_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+#UBCS（轻自行）
+	spriteType = { 
+		name = "GFX_unit_ACMD_UBCS_ar_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_UAR_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_UBCS_ar_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_UAR_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_UBCS_ar_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_UAR_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = { 
+		name = "GFX_unit_ACMD_UBCS_at_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_UAT_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_UBCS_at_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_UAT_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_UBCS_at_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_UAT_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = { 
+		name = "GFX_unit_ACMD_UBCS_aa_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_UAA_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_UBCS_aa_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_UAA_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_UBCS_aa_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_UAA_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#鬼杀队（步兵）
+	spriteType = { 
+		name = "GFX_unit_ACMD_guishadui_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_GSD_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_guishadui_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_GSD_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_guishadui_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_GSD_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#调查兵团（步兵）
+	spriteType = { 
+		name = "GFX_unit_ACMD_diaochabingtuan_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_DCT_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_diaochabingtuan_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_DCT_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_diaochabingtuan_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_DCT_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#代行者（步兵）
+	spriteType = { 
+		name = "GFX_unit_ACMD_daixingzhe_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_DXZ_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_daixingzhe_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_DXZ_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_daixingzhe_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_DXZ_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#最后的大队（空降）
+	spriteType = { 
+		name = "GFX_unit_ACMD_zuihoudedadui_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_XXG_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_zuihoudedadui_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_XXG_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_zuihoudedadui_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_XXG_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#皇帝的利刃（特殊）
+	spriteType = { 
+		name = "GFX_unit_ACMD_huangdideliren_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_WNW_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_huangdideliren_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_WNW_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_huangdideliren_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_WNW_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#R公司（火炮+反坦克炮+防空炮+火箭炮）
+	spriteType = { 
+		name = "GFX_unit_ACMD_Rgongsi_ar_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_RTZ_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Rgongsi_ar_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_RTZ_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Rgongsi_ar_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_RTZ_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+
+	spriteType = { 
+		name = "GFX_unit_ACMD_Rgongsi_at_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_RXN_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Rgongsi_at_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_RXN_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Rgongsi_at_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_RXN_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+
+	spriteType = { 
+		name = "GFX_unit_ACMD_Rgongsi_aa_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_RXL_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Rgongsi_aa_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_RXL_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Rgongsi_aa_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_RXL_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_ACMD_Rgongsi_ra_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_RTE_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Rgongsi_ra_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_RTE_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_Rgongsi_ra_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_RTE_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+#银枪天马（骑兵）
+	spriteType = { 
+		name = "GFX_unit_ACMD_yinqiangtianma_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_YQQ_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_yinqiangtianma_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_YQQ_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_yinqiangtianma_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_YQQ_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#武侦（装甲车）
+	spriteType = { 
+		name = "GFX_unit_ACMD_wuzhen_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_WZC_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_wuzhen_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_WZC_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_wuzhen_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_WZC_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#地狱潜兵（摩托化）
+	spriteType = { 
+		name = "GFX_unit_ACMD_diyuqianbing_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_DYB_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_diyuqianbing_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_DYB_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_diyuqianbing_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_DYB_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+#格拉默（机械化）
+	spriteType = { 
+		name = "GFX_unit_ACMD_gelamotieqi_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_GLM_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_gelamotieqi_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_GLM_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_gelamotieqi_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_GLM_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#基地驻扎军团（两栖机械化）
+	spriteType = { 
+		name = "GFX_unit_ACMD_haijun_mechanized_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_HJM_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_haijun_mechanized_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_HJM_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_haijun_mechanized_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_HJM_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#四海基地派遣军（两栖化轻型坦克）
+	spriteType = { 
+		name = "GFX_unit_ACMD_haijun_armor_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_HJA_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_haijun_armor_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_HJA_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_haijun_armor_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_HJA_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+#伟大航路基地派遣军（两栖化中型坦克）
+	spriteType = { 
+		name = "GFX_unit_ACMD_haijun_light_armor_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_HJL_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_haijun_light_armor_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_HJL_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_haijun_light_armor_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_HJL_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#本部基地派遣军（两栖化重型坦克）
+	spriteType = { 
+		name = "GFX_unit_ACMD_haijun_medium_armor_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_HJZ_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_haijun_medium_armor_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_HJZ_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_haijun_medium_armor_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_HJZ_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#屠魔令派遣军（两栖坦克）
+	spriteType = { 
+		name = "GFX_unit_ACMD_haijun_heavy_armor_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_HJH_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_haijun_heavy_armor_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_HJH_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_haijun_heavy_armor_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_HJH_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#86（坦克）
+	spriteType = { 
+		name = "GFX_unit_ACMD_86_light_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_BLL_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_86_light_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BLL_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_86_light_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BLL_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+
+	spriteType = { 
+		name = "GFX_unit_ACMD_86_medium_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_BLM_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_86_medium_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BLM_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_86_medium_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BLM_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+
+	spriteType = { 
+		name = "GFX_unit_ACMD_86_heavy_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_BLH_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_86_heavy_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BLH_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_86_heavy_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BLH_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_ACMD_86_modern_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_BLX_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_86_modern_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BLX_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_86_modern_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_BLX_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+#Gease（支援）
+	spriteType = { 
+		name = "GFX_unit_ACMD_gease_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_GEA_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_gease_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_GEA_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_gease_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_GEA_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#创伤小组（支援）
+	spriteType = { 
+		name = "GFX_unit_ACMD_chuangshangxiaozu_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_CSZ_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_chuangshangxiaozu_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_CSZ_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_chuangshangxiaozu_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_CSZ_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#雾隐追忍（支援）
+	spriteType = { 
+		name = "GFX_unit_ACMD_zhuiren_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_WZR_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_zhuiren_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_WZR_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_zhuiren_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_WZR_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+#恶魔猎人（支援）
+	spriteType = { 
+		name = "GFX_unit_ACMD_emolieren_icon_medium"
+		textureFile = "gfx/interface/counters/ACMD_divisions_large/unit_ACMD_DJR_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_emolieren_icon_medium_white"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_DJR_icon.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ACMD_emolieren_icon_small"
+		texturefile = "gfx/interface/counters/ACMD_divisions_small/onmap_unit_ACMD_DJR_icon.png"  
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+}

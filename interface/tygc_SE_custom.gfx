@@ -1,0 +1,53 @@
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_bigevent_border"
+		size= { x=192 y=243 }
+		textureFile = "gfx//superevent//interface//tiles//ACMD_tiled_window_bigevent_border.dds"
+		borderSize = { x=64 y=71 }
+		tilingCenter = yes
+		effectFile = "gfx/superevent/FX/ACMD_buttonstate_nodowneffect.lua"
+	}
+	#spriteType = {
+	#	name = "GFX_button_super_event"
+	#	textureFile = "gfx//superevent//interface//button_359x34.dds"
+	#}
+	spriteType = {
+		name = "GFX_superevent_text_underlay"
+		textureFile = "gfx//superevent//interface//ACMD_superevent_text_underlay.dds"
+	}
+	spriteType = {
+		name = "GFX_superevent_text_underlay_twolines"
+		textureFile = "gfx//superevent//interface//ACMD_superevent_text_underlay_twolines.dds"
+	}
+	spriteType = {
+		name = "GFX_superevent_text_underlay_threelines"
+		textureFile = "gfx//superevent//interface//ACMD_superevent_text_underlay_threelines.dds"
+	}
+	spriteType = {
+		name = "GFX_superevent_text_underlay_fourlines"
+		textureFile = "gfx//superevent//interface//ACMD_superevent_text_underlay_fourlines.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_1b_no_border"
+		size= { x=192 y=192 }
+		textureFile = "gfx/superevent/interface/tiles/ACMD_tiled_window_thin_border.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/superevent/FX/ACMD_buttonstate_nodowneffect.lua"
+	}
+	#诸神黄昏行动
+	spriteType = {
+		name = "GFX_ACMD_super_weapon_the_end_picture"
+		textureFile = "gfx//superevent//superevent_pictures//ACMD_super_weapon_the_end_picture.png"
+	}
+	#落雪，浸黑国土
+	spriteType = {
+		name = "GFX_ACMD_special_units_organization_the_end_picture"
+		textureFile = "gfx//superevent//superevent_pictures//ACMD_special_units_organization_the_end_picture.png"
+	}
+	#心灵终结
+	spriteType = {
+		name = "GFX_ACMD_occupation_laws_organization_the_end_picture"
+		textureFile = "gfx//superevent//superevent_pictures//ACMD_occupation_laws_organization_the_end_picture.png"
+	}
+}

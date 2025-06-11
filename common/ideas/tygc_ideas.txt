@@ -8067,7 +8067,7 @@ ideas = {
 				supply_consumption_factor = -0.35
 				army_strength_factor = 0.35
 				army_org_factor = 0.35
-				training_time_army_factor = -0.2
+				training_time_army_factor = -0.15
 				ai_desired_divisions_factor = 2
 			}
 		}
@@ -8104,7 +8104,7 @@ ideas = {
 				supply_consumption_factor = -0.35
 				army_strength_factor = 0.5
 				army_org_factor = 0.5
-				training_time_army_factor = -0.4
+				training_time_army_factor = -0.2
 				ai_desired_divisions_factor = 4
 			}
 		}
@@ -9440,11 +9440,11 @@ ideas = {
 			
 			
 			modifier = {
-				production_speed_buildings_factor = 0.5
+				production_speed_buildings_factor = 0.35
 				research_speed_factor = 2
 				local_resources_factor = 1
-				industrial_capacity_factory = 0.5
-				industrial_capacity_dockyard = 0.5
+				industrial_capacity_factory = 0.4
+				industrial_capacity_dockyard = 0.4
 				global_building_slots_factor = 0.4
 			}
 		}

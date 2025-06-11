@@ -1,0 +1,85 @@
+spriteTypes = {
+
+	
+	spriteType = {
+		name = GFX_portrait_ACMD_ALSTY
+		texturefile = gfx/portraits/large/spy/ACMD_ALSTY_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_JK
+		texturefile = gfx/portraits/large/spy/ACMD_JK_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_JM
+		texturefile = gfx/portraits/large/spy/ACMD_JM_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_YE
+		texturefile = gfx/portraits/large/spy/ACMD_YE_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_LYS
+		texturefile = gfx/portraits/large/spy/ACMD_LYS_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_KLT
+		texturefile = gfx/portraits/large/spy/ACMD_KLT_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_YQ
+		texturefile = gfx/portraits/large/spy/ACMD_YQ_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_SND
+		texturefile = gfx/portraits/large/spy/ACMD_SND_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_SLYXY
+		texturefile = gfx/portraits/large/spy/ACMD_SLYXY_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_SQKS
+		texturefile = gfx/portraits/large/spy/ACMD_SQKS_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_LX
+		texturefile = gfx/portraits/large/spy/ACMD_LX_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_C
+		texturefile = gfx/portraits/large/spy/ACMD_C_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_DJ
+		texturefile = gfx/portraits/large/spy/ACMD_DJ_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_LHFX
+		texturefile = gfx/portraits/large/spy/ACMD_LHFX_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_YMA
+		texturefile = gfx/portraits/large/spy/ACMD_YMA_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_SPXYQS
+		texturefile = gfx/portraits/large/spy/ACMD_SPXYQS_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_HMNDYBESTE
+		texturefile = gfx/portraits/large/spy/ACMD_HMNDYBESTE_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_CC
+		texturefile = gfx/portraits/large/spy/ACMD_CC_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_YLY
+		texturefile = gfx/portraits/large/spy/ACMD_YLY_SPY_large.png
+	}
+	spriteType = {
+		name = GFX_portrait_ACMD_XTY
+		texturefile = gfx/portraits/large/spy/ACMD_XTY_SPY_large.png
+	}
+
+}
