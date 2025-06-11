@@ -239,7 +239,7 @@ tygc_tank_organization = {
 		all_parents = { generic_mio_trait_crew_ergonomics generic_mio_trait_defensive_equipment }
 
 		equipment_bonus = {
-			ap_attack = 0.05
+			ap_attack = 0.08
 			hard_attack = 0.05
 		}
 	}
@@ -257,8 +257,8 @@ tygc_tank_organization = {
 		#mutually_exclusive = { generic_mio_trait_infantry_support_tanks }
 		
 		equipment_bonus = {
-			armor_value = 0.05
-			hard_attack = 0.05
+			armor_value = 0.08
+			hard_attack = 0.08
 		}
 	}
 
@@ -275,11 +275,11 @@ tygc_tank_organization = {
 		#mutually_exclusive = { generic_mio_trait_anti_tank_specialization }
 		
 		equipment_bonus = {
-			soft_attack = 0.05
+			soft_attack = 0.08
 		}
 
 		production_bonus = {
-			production_cost_factor = -0.05
+			production_cost_factor = -0.06
 		}
 	}
 }
@@ -396,7 +396,7 @@ tygc_artillery_organization = {
 		#mutually_exclusive = { generic_mio_trait_mobile_limbers }
 
 		equipment_bonus = {
-			defense = 0.05
+			defense = 0.08
 		}
 	}
 
@@ -415,6 +415,7 @@ tygc_artillery_organization = {
 
 		equipment_bonus = {
 			reliability = 0.08
+			build_cost_ic = -0.05
 		}
 	}
 
@@ -437,8 +438,8 @@ tygc_artillery_organization = {
 		}
 
 		equipment_bonus = {
-			ap_attack = 0.05
-			hard_attack = 0.05
+			ap_attack = 0.1
+			hard_attack = 0.1
 		}
 	}
 
@@ -464,7 +465,7 @@ tygc_artillery_organization = {
 		}
 
 		equipment_bonus = {
-			air_attack = 0.07
+			air_attack = 0.1
 		}
 	}
 
@@ -492,7 +493,7 @@ tygc_artillery_organization = {
 
 		equipment_bonus = {
 			hard_attack = 1
-			breakthrough = 0.05
+			breakthrough = 0.08
 		}
 	}
 
@@ -510,8 +511,8 @@ tygc_artillery_organization = {
 		}
 
 		equipment_bonus = {
-			soft_attack = 0.05
-			breakthrough = 0.03
+			soft_attack = 0.08
+			breakthrough = 0.05
 		}
 	}
 
@@ -544,7 +545,7 @@ tygc_artillery_organization = {
 		relative_position_id = generic_mio_trait_rapid_fire
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.1
+			production_efficiency_gain_factor = 0.15
 		}
 	}
 
@@ -562,7 +563,7 @@ tygc_artillery_organization = {
 		}
 
 		equipment_bonus = {
-			soft_attack = 0.02
+			soft_attack = 0.05
 			build_cost_ic = -0.03
 		}
 	}
@@ -578,8 +579,8 @@ tygc_artillery_organization = {
 		all_parents = {	generic_mio_trait_advanced_barrel_forging }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.03
-			production_efficiency_cap_factor = 0.03
+			production_efficiency_gain_factor = 0.05
+			production_efficiency_cap_factor = 0.05
 		}
 
 		organization_modifier = {
@@ -603,8 +604,8 @@ tygc_artillery_organization = {
 		}
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.03
-			production_efficiency_cap_factor = 0.03
+			production_efficiency_gain_factor = 0.05
+			production_efficiency_cap_factor = 0.05
 		}
 
 		organization_modifier = {
@@ -1109,7 +1110,10 @@ tygc_support_equipment_organization = {
 		limit_to_equipment_type = { support_equipment }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.1
+			production_efficiency_gain_factor = 0.15
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.05
 		}
 	}
 
@@ -1145,7 +1149,7 @@ tygc_support_equipment_organization = {
 		limit_to_equipment_type = { support_equipment }
 
 		production_bonus = {
-			production_capacity_factor = 0.05
+			production_capacity_factor = 0.08
 		}
 	}
 
@@ -1328,7 +1332,7 @@ tygc_motorized_mechanized_organization = {
 		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
 
 		equipment_bonus = {
-			reliability = -0.07
+			reliability = 0.06
 			build_cost_ic = -0.05
 		}
 	}
@@ -1346,10 +1350,10 @@ tygc_motorized_mechanized_organization = {
 		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
 
 		equipment_bonus = {
-			reliability = 0.05
+			reliability = 0.06
 		}
 		production_bonus = {
-			production_resource_need_factor = 0.02
+			production_resource_need_factor = -0.05
 		}
 	}
 
@@ -1385,7 +1389,7 @@ tygc_motorized_mechanized_organization = {
 		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
 
 		equipment_bonus = {
-			fuel_consumption = -0.05
+			fuel_consumption = -0.15
 		}
 	}
 
@@ -1404,8 +1408,8 @@ tygc_motorized_mechanized_organization = {
 		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
 
 		equipment_bonus = {
-			fuel_consumption = 0.05
-			maximum_speed = 0.05
+			fuel_consumption = -0.05
+			maximum_speed = 0.1
 		}
 	}
 
@@ -1433,7 +1437,8 @@ tygc_motorized_mechanized_organization = {
 		all_parents = { generic_mio_trait_medium_machinegun_mounts }
 
 		equipment_bonus = {
-			hardness = 0.05
+			hardness = 0.1
+			breakthrough = 0.05
 		}
 	}
 	trait = {
@@ -1480,8 +1485,9 @@ tygc_motorized_mechanized_organization = {
 		limit_to_equipment_type = { motorized_rocket_equipment }
 
 		equipment_bonus = {
-			soft_attack = 0.035
-			build_cost_ic = 0.06
+			soft_attack = 0.1
+			breakthrough = 0.035
+			build_cost_ic = -0.02
 		}
 	}
 
@@ -1500,8 +1506,9 @@ tygc_motorized_mechanized_organization = {
 		limit_to_equipment_type = { mechanized_equipment motorized_equipment }
 		
 		equipment_bonus = {
-			breakthrough = 0.04
-			build_cost_ic = 0.01
+			hard_attack = 0.1
+			breakthrough = 0.035
+			build_cost_ic = -0.02
 		}
 	}
 
@@ -1538,8 +1545,8 @@ tygc_motorized_mechanized_organization = {
 		#mutually_exclusive = { generic_mio_trait_closed_chassi }
 
 		equipment_bonus = {
-			defense = -0.02
-			build_cost_ic = -0.03
+			defense = 0.04
+			build_cost_ic = -0.04
 		}
 	}
 
@@ -1556,7 +1563,8 @@ tygc_motorized_mechanized_organization = {
 		#mutually_exclusive = { generic_mio_trait_open_chassi }
 
 		equipment_bonus = {
-			armor_value = 0.05
+			armor_value = 0.1
+			breakthrough = 0.05
 		}
 	}
 
@@ -1574,7 +1582,8 @@ tygc_motorized_mechanized_organization = {
 		any_parent = { generic_mio_trait_closed_chassi generic_mio_trait_open_chassi }
 
 		equipment_bonus = {
-			hardness = 0.05
+			hardness = 0.08
+			armor_value = 0.08
 		}
 	}
 
@@ -1591,7 +1600,7 @@ tygc_motorized_mechanized_organization = {
 		all_parents = { generic_mio_trait_bulletproof_panels }
 
 		equipment_bonus = {
-			breakthrough = 0.035
+			breakthrough = 0.1
 		}
 	}
 
@@ -1608,7 +1617,7 @@ tygc_motorized_mechanized_organization = {
 		all_parents = { generic_mio_trait_bulletproof_panels }
 
 		equipment_bonus = {
-			defense = 0.06
+			defense = 0.08
 			maximum_speed = -0.02
 		}
 	}
@@ -1666,8 +1675,8 @@ tygc_raider_ship_organization = {
 
 
 		equipment_bonus = {
-			naval_range = 0.05
-			fuel_consumption = 0.05
+			naval_range = 0.1
+			fuel_consumption = -0.05
 		}
 	}
 
@@ -1682,7 +1691,7 @@ tygc_raider_ship_organization = {
 
 		equipment_bonus = {
 			naval_speed = 0.1
-			fuel_consumption = 0.05
+			fuel_consumption = -0.05
 		}
 	}
 
@@ -1736,7 +1745,7 @@ tygc_raider_ship_organization = {
 		}
 
 		equipment_bonus = {
-			naval_speed = 0.05
+			naval_speed = 0.08
 		}
 	}
 
@@ -1754,7 +1763,7 @@ tygc_raider_ship_organization = {
 
 		equipment_bonus = {
 			surface_visibility = -0.05
-			hg_attack = 0.05
+			hg_attack = 0.08
 		}
 	}
 
@@ -1823,7 +1832,7 @@ tygc_raider_ship_organization = {
 		limit_to_equipment_type = { capital_ship screen_ship carrier }
 
 		equipment_bonus = {
-			lg_attack = 0.1
+			lg_attack = 0.15
 		}
 	}
 
@@ -1840,7 +1849,7 @@ tygc_raider_ship_organization = {
 		limit_to_equipment_type = { ship_hull_cruiser }
 
 		equipment_bonus = {
-			surface_visibility = -0.1
+			surface_visibility = -0.12
 		}
 	}
 
@@ -1858,7 +1867,7 @@ tygc_raider_ship_organization = {
 
 		equipment_bonus = {
 			surface_visibility = -0.05
-			sub_visibility = -0.05
+			sub_visibility = -0.08
 		}
 	}
 
@@ -1891,7 +1900,7 @@ tygc_raider_ship_organization = {
 		any_parent = { generic_mio_trait_raiding_submarines }
 
 		equipment_bonus = {
-			torpedo_attack = 0.1
+			torpedo_attack = 0.15
 		}
 	}
 
@@ -1906,7 +1915,7 @@ tygc_raider_ship_organization = {
 		all_parents = { generic_mio_trait_spotting_tops generic_mio_trait_large_torpedo_banks }
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.15
 		}
 	}
 	trait = {

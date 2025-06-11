@@ -1549,7 +1549,7 @@ focus_tree = {
 	}
 	focus = {
 		id = dwzc3
-		icon = GFX_SOV_keep_commissars_organization_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_major_war
 		cost = 1
 		prerequisite = {
 			focus = dwzc2
@@ -1827,7 +1827,12 @@ focus_tree = {
 			mio:tygc_infantry_equipment_organization = {
 				add_mio_size = 3
 			}
-			
+			if = {
+				limit = { has_country_flag = flag_ACMD_on_1 }
+				mio:ACMD_infantry_support_organization_1 = {
+					add_mio_size = 3
+				}
+			}
 		}
 		
 	}
@@ -1860,6 +1865,12 @@ focus_tree = {
 			set_country_flag = tygc_huopao
 			mio:tygc_artillery_organization = {
 				add_mio_size = 3
+			}
+			if = {
+				limit = { has_country_flag = flag_ACMD_on_1 }
+				mio:ACMD_artillery_organization_1 = {
+					add_mio_size = 3
+				}
 			}
 		}
 	}
@@ -1926,7 +1937,13 @@ focus_tree = {
 			}
 			set_country_flag = tygc_kc
 			mio:tygc_motorized_mechanized_organization = {
-				add_mio_size = 2
+				add_mio_size = 1
+			}
+			if = {
+				limit = { has_country_flag = flag_ACMD_on_1 }
+				mio:ACMD_motorized_mechanized_organization_1 = {
+					add_mio_size = 1
+				}
 			}
 		}
 	}
@@ -1957,7 +1974,12 @@ focus_tree = {
 			mio:tygc_motorized_mechanized_organization = {
 				add_mio_size = 2
 			}
-			
+			if = {
+				limit = { has_country_flag = flag_ACMD_on_1 }
+				mio:ACMD_motorized_mechanized_organization_1 = {
+					add_mio_size = 2
+				}
+			}
 		}
 	}
 	focus = {
@@ -1986,6 +2008,15 @@ focus_tree = {
 			set_country_flag = tygc_tank
 			mio:tygc_tank_organization = {
 				add_mio_size = 1
+			}
+			if = {
+				limit = { has_country_flag = flag_ACMD_on_1 }
+				mio:ACMD_tank_organization_1 = {
+					add_mio_size = 1
+				}
+				mio:ACMD_assault_guns_organization_1 = {
+					add_mio_size = 1
+				}
 			}
 		}
 	}
@@ -2018,6 +2049,15 @@ focus_tree = {
 			add_equipment_to_stockpile = { type =medium_tank_chassis amount = 2000  }
 			mio:tygc_tank_organization = {
 				add_mio_size = 2
+			}
+			if = {
+				limit = { has_country_flag = flag_ACMD_on_1 }
+				mio:ACMD_tank_organization_1 = {
+					add_mio_size = 2
+				}
+				mio:ACMD_assault_guns_organization_1 = {
+					add_mio_size = 2
+				}
 			}
 		}
 	}
@@ -2119,6 +2159,15 @@ focus_tree = {
 			set_country_flag = tygc_feiji
 			mio:tygc_light_aircraft_organization = {
 				add_mio_size = 3
+			}
+			if = {
+				limit = { has_country_flag = flag_ACMD_on_1 }
+				mio:ACMD_mini_plane_organization_1 = {
+					add_mio_size = 3
+				}
+				mio:ACMD_huge_plane_organization_1 = {
+					add_mio_size = 3
+				}
 			}
 		}
 	}
@@ -2337,6 +2386,18 @@ focus_tree = {
 			set_country_flag = tygc_chuang
 			mio:tygc_raider_ship_organization = {
 				add_mio_size = 3
+			}
+			if = {
+				limit = { has_country_flag = flag_ACMD_on_1 }
+				mio:ACMD_capital_ship_organization_1 = {
+					add_mio_size = 3
+				}
+				mio:ACMD_screen_ship_organization_1 = {
+					add_mio_size = 3
+				}
+				mio:ACMD_submarine_organization_1 = {
+					add_mio_size = 3
+				}
 			}
 		}
 	}

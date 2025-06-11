@@ -3630,7 +3630,7 @@ ideas = {
 				org_loss_when_moving = 0.1
 				experience_loss_factor = 0.1
 				land_reinforce_rate = -0.01
-				
+				army_speed_factor = 0.1
 			}
 			
 		}
@@ -4874,6 +4874,7 @@ ideas = {
 				army_core_attack_factor = -0.1
 				army_org_factor = 0.25
 				army_morale_factor = 0.25
+				army_strength_factor = 0.1
 			}
 		}
 		czbsrg = {
